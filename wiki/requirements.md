@@ -57,3 +57,5 @@ These are explicitly out of scope: login, a database, Urdu script and right-to-l
 - [ADR-0012: Indian Helplines Only](adr-0012-india-helplines.md)
 - [PR #3: Research Safety and Escalation](pr-0003-research-safety-escalation.md)
 - [Research: Safety and Escalation](research-safety-escalation.md)
+- [PR #6: Research Roman Urdu Handling](pr-0006-research-roman-urdu.md)
+- [Research: Roman Urdu Handling](research-roman-urdu.md)

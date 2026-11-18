@@ -1,7 +1,7 @@
 ---
 title: "ticket-0005: Research Roman Urdu Handling"
 type: ticket
-status: todo
+status: done
 updated: 2026-11-18
 summary: Work out how the coach detects Roman Urdu (Urdu in Latin letters) versus English, replies in matching Roman Urdu, and copes with mixed English and Urdu messages.
 ---
@@ -24,6 +24,12 @@ Roman Urdu only: no Urdu script and no right-to-left UI ([ADR-0004](adr-0004-rom
 
 A `research-roman-urdu.md` page, plus a set of Roman Urdu test concerns for the TDD fixtures.
 
+## Result
+
+- [Research: Roman Urdu handling](research-roman-urdu.md): detection, mixed messages, spelling style, crisis-phrase seeds, draft escalation wording, fixtures
+- [ADR-0013](adr-0013-roman-urdu-detection.md) (proposed)
+- Delivered in [PR #6](pr-0006-research-roman-urdu.md)
+
 ## See also
 
 - [Index: Research](index-research.md)
@@ -36,3 +42,4 @@ A `research-roman-urdu.md` page, plus a set of Roman Urdu test concerns for the 
 - [Research: Safety and Escalation](research-safety-escalation.md)
 - [Session 2026-11-18 #6: Safety Research](session-2026-11-18-06-safety-research.md)
 - [Session 2026-11-18 #7: PR #3 Review and a Security Alert](session-2026-11-18-07-review-and-security.md)
+- [Session 2026-11-18 #8: Roman Urdu Research](session-2026-11-18-08-roman-urdu-research.md)

@@ -39,3 +39,4 @@ Each number is verified in [Research: Safety and escalation](research-safety-esc
 - [PR #3: Research Safety and Escalation](pr-0003-research-safety-escalation.md)
 - [Research: Alpha Kids (the company)](research-alpha-kids.md)
 - [ticket-0004: Research Safety and Escalation](ticket-0004-research-safety-escalation.md)
+- [Research: Roman Urdu Handling](research-roman-urdu.md)

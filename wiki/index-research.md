@@ -18,9 +18,9 @@ Back to: [Home](index.md)
 | [Bootstrapping Next.js with Vite+](research-vite-plus-nextjs.md) | active | `vp create next-app` scaffolds Next.js and hands over the toolchain; Turbopack still builds. Trial run and fixes                                  |
 | [Website conventions](research-website-conventions.md)           | active | What was copied from Aadit's website repo, what was left out, and why                                                                             |
 | [Safety and escalation](research-safety-escalation.md)           | active | Layered crisis detection, fixed escalation text, verified Indian helplines (112, 1098, 181, 14416), allowed vs forbidden advice, prompt injection |
-
-Planned: Roman Urdu ([ticket-0005](ticket-0005-research-roman-urdu.md)).
+| [Roman Urdu handling](research-roman-urdu.md)                    | active | Language detection, mixed messages, spelling style, Roman Urdu crisis phrases, draft escalation wording; safety detection degrades in Roman Urdu  |
 
 ## See also
 
 - [ticket-0004: Research Safety and Escalation](ticket-0004-research-safety-escalation.md)
+- [ticket-0005: Research Roman Urdu Handling](ticket-0005-research-roman-urdu.md)

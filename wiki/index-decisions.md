@@ -24,6 +24,7 @@ Back to: [Home](index.md)
 | [ADR-0010: PR pages without status](adr-0010-pr-pages-without-status.md)              | accepted | PR pages have no status (GitHub is the source of truth); CI requires a page named after each PR's number and branch |
 | [ADR-0011: Layered safety, fixed escalation](adr-0011-layered-safety-escalation.md)   | accepted | Keyword pre-check before the model, model risk field, fail-safe; escalation text is fixed, never generated          |
 | [ADR-0012: Indian helplines only](adr-0012-india-helplines.md)                        | accepted | Escalation lists 112, 1098, 181 and 14416, all verified from official sources                                       |
+| [ADR-0013: Roman Urdu detection](adr-0013-roman-urdu-detection.md)                    | proposed | Model reports reply language; marker-word heuristic for fixed text; Hindustani vocabulary; regex crisis phrases     |
 
 ## See also
 

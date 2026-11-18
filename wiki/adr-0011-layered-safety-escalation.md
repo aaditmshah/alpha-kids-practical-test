@@ -50,3 +50,7 @@ R8 in [Requirements](requirements.md) says the coach must _"clearly escalate if 
 - [PR #3: Research Safety and Escalation](pr-0003-research-safety-escalation.md)
 - [Session 2026-11-18 #6: Safety Research](session-2026-11-18-06-safety-research.md)
 - [Session 2026-11-18 #7: PR #3 Review and a Security Alert](session-2026-11-18-07-review-and-security.md)
+- [ADR-0013: Roman Urdu Detection and Reply Language](adr-0013-roman-urdu-detection.md)
+- [PR #6: Research Roman Urdu Handling](pr-0006-research-roman-urdu.md)
+- [Research: Roman Urdu Handling](research-roman-urdu.md)
+- [Session 2026-11-18 #8: Roman Urdu Research](session-2026-11-18-08-roman-urdu-research.md)

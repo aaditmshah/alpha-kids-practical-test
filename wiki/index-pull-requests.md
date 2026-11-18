@@ -19,6 +19,7 @@ Back to: [Home](index.md)
 | [PR #3: Research safety and escalation](pr-0003-research-safety-escalation.md) | Safety and escalation research, ADR-0011 (layered detection) and ADR-0012 (Indian helplines)                         |
 | [PR #4: Record PR #3's review](pr-0004-record-pr-3-review.md)                  | ADR-0011 accepted; reviews are recorded before merge from now on                                                     |
 | [PR #5: Fix the basic-ftp vulnerability](pr-0005-security-basic-ftp.md)        | Overrides basic-ftp to a patched version (Dependabot alert #2); documents stacked PRs. Stacked on PR #4              |
+| [PR #6: Research Roman Urdu handling](pr-0006-research-roman-urdu.md)          | Roman Urdu research and ADR-0013 (proposed); confirms one-push stack merges                                          |
 
 ## Before pull requests
 

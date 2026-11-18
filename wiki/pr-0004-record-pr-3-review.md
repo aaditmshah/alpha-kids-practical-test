@@ -38,3 +38,4 @@ Aadit reviewed PR #4 together with PR #5, which is stacked on it: _"Both look go
 
 - [Log](log.md)
 - [PR #5: Fix the basic-ftp Vulnerability](pr-0005-security-basic-ftp.md)
+- [Session 2026-11-18 #8: Roman Urdu Research](session-2026-11-18-08-roman-urdu-research.md)

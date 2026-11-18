@@ -84,3 +84,5 @@ GitHub accepts the push to protected `main` because those exact commits passed t
 - [PR #4: Record PR #3's Review](pr-0004-record-pr-3-review.md)
 - [PR #5: Fix the basic-ftp Vulnerability](pr-0005-security-basic-ftp.md)
 - [Session 2026-11-18 #7: PR #3 Review and a Security Alert](session-2026-11-18-07-review-and-security.md)
+- [PR #6: Research Roman Urdu Handling](pr-0006-research-roman-urdu.md)
+- [Session 2026-11-18 #8: Roman Urdu Research](session-2026-11-18-08-roman-urdu-research.md)

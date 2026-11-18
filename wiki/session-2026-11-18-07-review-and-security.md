@@ -38,3 +38,7 @@ Aadit then asked: _"If I fast-forward main to the top of a stacked PR and push i
 ## Open at end of session
 
 - Next: [ticket-0005](ticket-0005-research-roman-urdu.md), Roman Urdu handling, including the Roman Urdu escalation wording for Aadit to check.
+
+## See also
+
+- [Session 2026-11-18 #8: Roman Urdu Research](session-2026-11-18-08-roman-urdu-research.md)

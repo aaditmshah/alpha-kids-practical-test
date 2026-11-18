@@ -35,3 +35,5 @@ An ADR for the schema, and the prompt's design rationale recorded in the wiki.
 - [ADR-0011: Layered Safety with Fixed Escalation Messages](adr-0011-layered-safety-escalation.md)
 - [PR #3: Research Safety and Escalation](pr-0003-research-safety-escalation.md)
 - [Research: Safety and Escalation](research-safety-escalation.md)
+- [Research: Roman Urdu Handling](research-roman-urdu.md)
+- [Session 2026-11-18 #8: Roman Urdu Research](session-2026-11-18-08-roman-urdu-research.md)

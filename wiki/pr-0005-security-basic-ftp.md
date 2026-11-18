@@ -39,3 +39,4 @@ Aadit reviewed PR #5 together with [PR #4](pr-0004-record-pr-3-review.md), the P
 ## See also
 
 - [Log](log.md)
+- [Session 2026-11-18 #8: Roman Urdu Research](session-2026-11-18-08-roman-urdu-research.md)
