@@ -55,3 +55,4 @@ Format: `YYYY-MM-DD: [type] what happened (links)`. Append only; never rewrite e
 - 2026-11-18: [research] Safety and escalation researched; Indian helplines only, verified from official sources; layered detection proposed ([research](research-safety-escalation.md), [ADR-0011](adr-0011-layered-safety-escalation.md), [ADR-0012](adr-0012-india-helplines.md))
 - 2026-11-18: [decision] ADR-0011 accepted after Aadit reviewed PR #3; reviews are now recorded before merge ([PR #4](pr-0004-record-pr-3-review.md))
 - 2026-11-18: [security] basic-ftp overridden to 6.2.6 to fix Dependabot alert #2, GHSA-5pm8-86m8-9m6r ([PR #5](pr-0005-security-basic-ftp.md))
+- 2026-11-18: [git] PRs #4 and #5 merged by one fast-forward push, confirming ADR-0008; Dependabot alert #2 fixed ([PR #5](pr-0005-security-basic-ftp.md))
