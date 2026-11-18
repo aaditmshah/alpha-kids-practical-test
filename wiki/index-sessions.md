@@ -23,3 +23,4 @@ Back to: [Home](index.md)
 | [2026-11-18 #9: LLM client](session-2026-11-18-09-llm-client.md)                    | Gemini SDK vs Vercel AI SDK compared; AI SDK proposed                                                                 |
 | [2026-11-18 #10: Coach contract](session-2026-11-18-10-coach-contract.md)           | Reply schema, post-checks and system prompt designed                                                                  |
 | [2026-11-18 #11: Implementation plan](session-2026-11-18-11-implementation-plan.md) | Plan written; 11 build tickets created; stale Home and plan statuses fixed                                            |
+| [2026-11-18 #12: Build setup](session-2026-11-18-12-build-setup.md)                 | Ticket-0013: dependencies, test projects, Gherkin runner, `.env.example`                                              |

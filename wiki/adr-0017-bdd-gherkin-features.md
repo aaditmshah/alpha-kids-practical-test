@@ -46,3 +46,5 @@ Aadit chose option 3: _"It's simpler and more popular"_, and _"we should have ex
 - [ADR-0018: Design the UI in Claude Design, Pastel and Playful](adr-0018-ui-design-claude-design.md)
 - [Alpha Kids Practical Test Wiki](index.md)
 - [ticket-0013: Add Dependencies and Test Projects](ticket-0013-test-and-runtime-setup.md)
+- [PR #10: Add Dependencies and Test Projects](pr-0010-test-and-runtime-setup.md)
+- [Session 2026-11-18 #12: Build Setup](session-2026-11-18-12-build-setup.md)

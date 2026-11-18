@@ -24,7 +24,7 @@ Back to: [Home](index.md) · Board view: [Kanban](kanban.md)
 | [ticket-0010](ticket-0010-bootstrap-app.md)               | done   | Bootstrap the Next.js app with Vite+            |
 | [ticket-0011](ticket-0011-protect-main.md)                | done   | Protect main and enforce linear history         |
 | [ticket-0012](ticket-0012-backlinks-and-pr-tracking.md)   | done   | Wiki backlinks and pull request tracking        |
-| [ticket-0013](ticket-0013-test-and-runtime-setup.md)      | todo   | Add dependencies and test projects              |
+| [ticket-0013](ticket-0013-test-and-runtime-setup.md)      | done   | Add dependencies and test projects              |
 | [ticket-0014](ticket-0014-language-detection.md)          | todo   | Detect the reply language                       |
 | [ticket-0015](ticket-0015-safety-precheck.md)             | todo   | Build the keyword safety pre-check              |
 | [ticket-0016](ticket-0016-fixed-messages.md)              | todo   | Write the fixed messages                        |

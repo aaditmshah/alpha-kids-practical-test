@@ -108,3 +108,4 @@ Each ticket is one PR, stacked on the previous one where it depends on it ([ADR-
 - [Wiki Conventions](conventions.md)
 - [PR #9: Write the Implementation Plan](pr-0009-implementation-plan.md)
 - [Session 2026-11-18 #11: Implementation Plan](session-2026-11-18-11-implementation-plan.md)
+- [PR #10: Add Dependencies and Test Projects](pr-0010-test-and-runtime-setup.md)

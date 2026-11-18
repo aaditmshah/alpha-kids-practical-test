@@ -53,3 +53,4 @@ He then asked for executable Gherkin user stories that trace to the brief, and f
 ## See also
 
 - [Log](log.md)
+- [Session 2026-11-18 #12: Build Setup](session-2026-11-18-12-build-setup.md)

@@ -47,3 +47,4 @@ Gemini is the model ([ADR-0003](adr-0003-llm-provider.md)) and Next.js is the ap
 - [ticket-0013: Add Dependencies and Test Projects](ticket-0013-test-and-runtime-setup.md)
 - [ticket-0018: Build the Model Adapter and Prompt](ticket-0018-model-adapter.md)
 - [ticket-0020: Add the Server Action](ticket-0020-server-action.md)
+- [PR #10: Add Dependencies and Test Projects](pr-0010-test-and-runtime-setup.md)
