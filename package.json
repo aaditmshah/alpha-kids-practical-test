@@ -11,6 +11,7 @@
 	"scripts": {
 		"build": "next build",
 		"dev": "next dev",
+		"githooks:install": "git config core.hooksPath .githooks",
 		"start": "next start"
 	},
 	"dependencies": {
@@ -24,6 +25,7 @@
 		"@types/react": "^19",
 		"@types/react-dom": "^19",
 		"babel-plugin-react-compiler": "1.0.0",
+		"gitmoji-cli": "^9.7.0",
 		"tailwindcss": "4.3.3",
 		"typescript": "^5",
 		"vite-plus": "catalog:"
@@ -37,5 +39,13 @@
 	},
 	"engines": {
 		"node": "26.13.0"
+	},
+	"gitmoji": {
+		"autoAdd": false,
+		"emojiFormat": "emoji",
+		"scopePrompt": false,
+		"messagePrompt": true,
+		"capitalizeTitle": true,
+		"gitmojisUrl": "https://gitmoji.dev/api/gitmojis"
 	}
 }
