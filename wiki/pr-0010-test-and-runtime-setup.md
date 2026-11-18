@@ -33,10 +33,13 @@ The first build ticket of the [plan](plan.md). The Gherkin features ([ticket-002
 | 3   | `✅ Split tests into unit and component projects`   | Node and jsdom projects, sample tests, a lint rule for Gherkin steps | Logic runs in Node, the UI needs a DOM. The sample proves a missing step fails                  |
 | 4   | `🔧 Add .env.example for the Gemini key and model`  | `.env.example`, plus a `.gitignore` exception                        | Reviewers need to know which variables to set ([ADR-0005](adr-0005-local-only.md))              |
 | 5   | `📝 Record ticket-0013 in the wiki`                 | Ticket done, board, session #12, this page                           | Everything is recorded in the wiki                                                              |
+| 6   | `📝 Record PR #10's review`                         | This review section                                                  | Records the review before merge                                                                 |
 
 ## Review
 
-_(Recorded here before merge.)_
+Aadit: _"I reviewed the PR. Looks good to me."_ No changes requested.
+
+He also asked Claude to build the next tickets as one stack of PRs, which he will review and merge together, and to leave some of the code for him to implement: _"I'd like to learn."_ See [session #12](session-2026-11-18-12-build-setup.md).
 
 ## See also
 
