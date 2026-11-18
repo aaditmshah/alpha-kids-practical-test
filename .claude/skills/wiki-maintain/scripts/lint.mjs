@@ -92,7 +92,7 @@ for (const page of pages.filter((p) => p.startsWith("ticket-"))) {
   const status = frontmatter(contents[page])?.status;
   const idx = contents["index-tickets.md"] ?? "";
   const row = idx.split("\n").find((l) => l.includes(`](${page})`));
-  if (row && status && !row.includes(`| ${status} |`))
+  if (row && status && !row.split("|").map((cell) => cell.trim()).includes(status))
     errors.push(`index-tickets.md: status for ${page} disagrees with ticket (${status})`);
   const kanban = contents["kanban.md"] ?? "";
   const sections = kanban.split(/^## /m).slice(1);
