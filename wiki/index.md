@@ -14,9 +14,9 @@ This wiki records the **whole process** of building a small bilingual (English/R
 
 ## Current state (2026-11-18)
 
-- **Phase:** research and planning. The Next.js app is scaffolded with Vite+ ([ADR-0007](adr-0007-nextjs-with-vite-plus.md)), but the coach is not built yet. `main` is protected: changes arrive as pull requests that pass CI and are fast-forwarded into `main` ([ADR-0008](adr-0008-protected-main-linear-history.md)). The work is committed to git, following [ADR-0006](adr-0006-gitmoji-atomic-commits.md), and pushed to the public repository [github.com/aaditmshah/alpha-kids-practical-test](https://github.com/aaditmshah/alpha-kids-practical-test).
-- **Decided:** [flat LLM wiki](adr-0001-flat-llm-wiki.md); [minimal scope, built with TDD](adr-0002-minimal-scope-tdd.md); [Gemini free tier](adr-0003-llm-provider.md); [Roman Urdu only](adr-0004-roman-urdu-only.md); [local only, no deployment](adr-0005-local-only.md); [Gitmoji and atomic commits](adr-0006-gitmoji-atomic-commits.md); [Next.js with Vite+](adr-0007-nextjs-with-vite-plus.md); [protected main, linear history](adr-0008-protected-main-linear-history.md).
-- **Next:** the implementation [plan](plan.md) and build tickets ([ticket-0008](ticket-0008-write-implementation-plan.md)).
+- **Phase:** planning is complete pending Aadit's approval of the [plan](plan.md); the build (tickets 0013–0023) is next. The Next.js app is scaffolded with Vite+ ([ADR-0007](adr-0007-nextjs-with-vite-plus.md)), but the coach is not built yet. `main` is protected: changes arrive as pull requests that pass CI and are fast-forwarded into `main` ([ADR-0008](adr-0008-protected-main-linear-history.md)). The work is committed to git, following [ADR-0006](adr-0006-gitmoji-atomic-commits.md), and pushed to the public repository [github.com/aaditmshah/alpha-kids-practical-test](https://github.com/aaditmshah/alpha-kids-practical-test).
+- **Decided:** [flat LLM wiki](adr-0001-flat-llm-wiki.md); [minimal scope, built with TDD](adr-0002-minimal-scope-tdd.md); [Gemini free tier](adr-0003-llm-provider.md); [Roman Urdu only](adr-0004-roman-urdu-only.md); [local only, no deployment](adr-0005-local-only.md); [Gitmoji and atomic commits](adr-0006-gitmoji-atomic-commits.md); [Next.js with Vite+](adr-0007-nextjs-with-vite-plus.md); [protected main, linear history](adr-0008-protected-main-linear-history.md); [page titles in frontmatter and H1](adr-0009-title-in-frontmatter-and-h1.md); [PR pages without status](adr-0010-pr-pages-without-status.md); [layered safety, fixed escalation](adr-0011-layered-safety-escalation.md); [Indian helplines only](adr-0012-india-helplines.md); [Roman Urdu detection](adr-0013-roman-urdu-detection.md); [Vercel AI SDK](adr-0014-vercel-ai-sdk.md); [coach reply schema](adr-0015-coach-reply-schema.md); [system prompt](adr-0016-system-prompt.md).
+- **Next:** Aadit's review of the [plan](plan.md), then milestone M1 starting with [ticket-0013](ticket-0013-test-and-runtime-setup.md).
 
 ## Start here
 
@@ -54,3 +54,4 @@ This wiki records the **whole process** of building a small bilingual (English/R
 - [ticket-0006: Design the Coach Reply Schema and Prompt](ticket-0006-design-coach-contract.md)
 - [ADR-0015: Coach Reply Schema and Post-Checks](adr-0015-coach-reply-schema.md)
 - [ADR-0016: The Coach's System Prompt](adr-0016-system-prompt.md)
+- [ticket-0008: Write the Implementation Plan and Build Tickets](ticket-0008-write-implementation-plan.md)

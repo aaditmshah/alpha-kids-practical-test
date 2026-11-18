@@ -22,6 +22,7 @@ Back to: [Home](index.md)
 | [PR #6: Research Roman Urdu handling](pr-0006-research-roman-urdu.md)          | Roman Urdu research and ADR-0013 (proposed); confirms one-push stack merges                                          |
 | [PR #7: Choose the LLM client](pr-0007-choose-llm-client.md)                   | LLM client research and ADR-0014 (proposed)                                                                          |
 | [PR #8: Design the coach contract](pr-0008-design-coach-contract.md)           | Reply schema and post-checks (ADR-0015) and system prompt (ADR-0016), both proposed                                  |
+| [PR #9: Write the implementation plan](pr-0009-implementation-plan.md)         | Architecture, test plan, milestones and build tickets 0013–0023                                                      |
 
 ## Before pull requests
 

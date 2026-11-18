@@ -12,11 +12,21 @@ Back to: [Home](index.md) · List view: [Tickets](index-tickets.md)
 
 ## Todo
 
-- [ticket-0008](ticket-0008-write-implementation-plan.md): Write the implementation plan and build tickets
+- [ticket-0013](ticket-0013-test-and-runtime-setup.md): Add dependencies and test projects
+- [ticket-0014](ticket-0014-language-detection.md): Detect the reply language
+- [ticket-0015](ticket-0015-safety-precheck.md): Build the keyword safety pre-check
+- [ticket-0016](ticket-0016-fixed-messages.md): Write the fixed messages
+- [ticket-0017](ticket-0017-reply-schema-and-postchecks.md): Implement the reply schema and post-checks
+- [ticket-0018](ticket-0018-model-adapter.md): Build the model adapter and prompt
+- [ticket-0019](ticket-0019-coach-orchestrator.md): Build the coach orchestrator
+- [ticket-0020](ticket-0020-server-action.md): Add the Server Action
+- [ticket-0021](ticket-0021-chat-ui.md): Build the chat page
+- [ticket-0022](ticket-0022-live-smoke-test.md): Add the opt-in live smoke test
+- [ticket-0023](ticket-0023-readme-and-submission.md): Finish the README and submit
 
 ## In progress
 
-Nothing in progress.
+- [ticket-0008](ticket-0008-write-implementation-plan.md): Write the implementation plan and build tickets _(awaiting Aadit's approval)_
 
 ## Done
 

@@ -45,3 +45,4 @@ Aadit prefers Gitmoji-style commit messages and asked for a skill that writes go
 - [ticket-0009: Commit Conventions and the git-commit Skill](ticket-0009-commit-conventions.md)
 - [Index: Pull Requests](index-pull-requests.md)
 - [PR #1: Bootstrap the Next.js App with Vite+](pr-0001-bootstrap-nextjs.md)
+- [Plan](plan.md)

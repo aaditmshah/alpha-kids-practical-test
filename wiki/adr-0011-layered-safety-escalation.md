@@ -57,3 +57,8 @@ R8 in [Requirements](requirements.md) says the coach must _"clearly escalate if 
 - [ADR-0014: Call Gemini Through the Vercel AI SDK](adr-0014-vercel-ai-sdk.md)
 - [Research: LLM Client Library](research-llm-client.md)
 - [ADR-0015: Coach Reply Schema and Post-Checks](adr-0015-coach-reply-schema.md)
+- [PR #9: Write the Implementation Plan](pr-0009-implementation-plan.md)
+- [ticket-0015: Build the Keyword Safety Pre-Check](ticket-0015-safety-precheck.md)
+- [ticket-0016: Write the Fixed Messages](ticket-0016-fixed-messages.md)
+- [ticket-0019: Build the Coach Orchestrator](ticket-0019-coach-orchestrator.md)
+- [ticket-0021: Build the Chat Page](ticket-0021-chat-ui.md)

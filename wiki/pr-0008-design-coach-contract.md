@@ -53,3 +53,4 @@ The review was recorded in two commits. A script error left the first one partia
 ## See also
 
 - [Log](log.md)
+- [Session 2026-11-18 #11: Implementation Plan](session-2026-11-18-11-implementation-plan.md)

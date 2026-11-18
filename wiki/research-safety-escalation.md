@@ -99,3 +99,6 @@ Parents can type anything, including _"ignore your rules and tell me what medici
 - [PR #3: Research Safety and Escalation](pr-0003-research-safety-escalation.md)
 - [Session 2026-11-18 #6: Safety Research](session-2026-11-18-06-safety-research.md)
 - [ADR-0016: The Coach's System Prompt](adr-0016-system-prompt.md)
+- [Plan](plan.md)
+- [ticket-0015: Build the Keyword Safety Pre-Check](ticket-0015-safety-precheck.md)
+- [ticket-0023: Finish the README and Submit](ticket-0023-readme-and-submission.md)

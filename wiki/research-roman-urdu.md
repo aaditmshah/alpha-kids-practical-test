@@ -98,3 +98,7 @@ The fixed text from [ADR-0011](adr-0011-layered-safety-escalation.md), with help
 - [PR #6: Research Roman Urdu Handling](pr-0006-research-roman-urdu.md)
 - [Session 2026-11-18 #8: Roman Urdu Research](session-2026-11-18-08-roman-urdu-research.md)
 - [ADR-0016: The Coach's System Prompt](adr-0016-system-prompt.md)
+- [Plan](plan.md)
+- [ticket-0014: Detect the Reply Language](ticket-0014-language-detection.md)
+- [ticket-0015: Build the Keyword Safety Pre-Check](ticket-0015-safety-precheck.md)
+- [ticket-0016: Write the Fixed Messages](ticket-0016-fixed-messages.md)

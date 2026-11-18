@@ -38,3 +38,5 @@ Aadit said: _"This is a simple throwaway app. I don't want to spend too much tim
 - [ADR-0014: Call Gemini Through the Vercel AI SDK](adr-0014-vercel-ai-sdk.md)
 - [Research: LLM Client Library](research-llm-client.md)
 - [ADR-0016: The Coach's System Prompt](adr-0016-system-prompt.md)
+- [ticket-0013: Add Dependencies and Test Projects](ticket-0013-test-and-runtime-setup.md)
+- [ticket-0022: Add the Opt-In Live Smoke Test](ticket-0022-live-smoke-test.md)

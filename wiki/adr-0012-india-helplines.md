@@ -40,3 +40,6 @@ Each number is verified in [Research: Safety and escalation](research-safety-esc
 - [Research: Alpha Kids (the company)](research-alpha-kids.md)
 - [ticket-0004: Research Safety and Escalation](ticket-0004-research-safety-escalation.md)
 - [Research: Roman Urdu Handling](research-roman-urdu.md)
+- [Alpha Kids Practical Test Wiki](index.md)
+- [ticket-0016: Write the Fixed Messages](ticket-0016-fixed-messages.md)
+- [ticket-0023: Finish the README and Submit](ticket-0023-readme-and-submission.md)

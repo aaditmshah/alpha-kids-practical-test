@@ -46,3 +46,4 @@ For the check:
 - [Log](log.md)
 - [PR #1: Bootstrap the Next.js App with Vite+](pr-0001-bootstrap-nextjs.md)
 - [ticket-0012: Wiki Backlinks and Pull Request Tracking](ticket-0012-backlinks-and-pr-tracking.md)
+- [Alpha Kids Practical Test Wiki](index.md)

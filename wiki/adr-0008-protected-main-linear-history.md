@@ -88,3 +88,5 @@ GitHub accepts the push to protected `main` because those exact commits passed t
 - [Session 2026-11-18 #8: Roman Urdu Research](session-2026-11-18-08-roman-urdu-research.md)
 - [PR #7: Choose the LLM Client](pr-0007-choose-llm-client.md)
 - [PR #8: Design the Coach Contract](pr-0008-design-coach-contract.md)
+- [Plan](plan.md)
+- [PR #9: Write the Implementation Plan](pr-0009-implementation-plan.md)

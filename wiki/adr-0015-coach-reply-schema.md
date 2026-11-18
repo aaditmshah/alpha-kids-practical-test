@@ -80,3 +80,8 @@ The page keeps the history in browser state (R9) and sends the **last 6 messages
 - [Log](log.md)
 - [PR #8: Design the Coach Contract](pr-0008-design-coach-contract.md)
 - [Session 2026-11-18 #10: Coach Contract](session-2026-11-18-10-coach-contract.md)
+- [ticket-0016: Write the Fixed Messages](ticket-0016-fixed-messages.md)
+- [ticket-0017: Implement the Reply Schema and Post-Checks](ticket-0017-reply-schema-and-postchecks.md)
+- [ticket-0018: Build the Model Adapter and Prompt](ticket-0018-model-adapter.md)
+- [ticket-0019: Build the Coach Orchestrator](ticket-0019-coach-orchestrator.md)
+- [ticket-0021: Build the Chat Page](ticket-0021-chat-ui.md)
