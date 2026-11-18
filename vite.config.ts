@@ -51,7 +51,7 @@ export default defineConfig({
 		},
 	},
 	test: {
-		include: ["src/**/*.test.{ts,tsx}"],
+		include: ["src/**/*.test.{ts,tsx}", "scripts/**/*.test.ts"],
 		environment: "node",
 		// The app has no tests until the first TDD cycle, and CI must still pass until then.
 		passWithNoTests: true,

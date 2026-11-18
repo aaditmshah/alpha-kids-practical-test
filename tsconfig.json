@@ -24,6 +24,7 @@
 			"#/*": ["./src/*"]
 		},
 		"noEmit": true,
+		"allowImportingTsExtensions": true,
 		"incremental": true,
 		"isolatedModules": true,
 		"resolveJsonModule": true,

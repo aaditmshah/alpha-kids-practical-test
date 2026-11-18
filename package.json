@@ -12,6 +12,7 @@
 		"build": "next build",
 		"dev": "next dev",
 		"githooks:install": "git config core.hooksPath .githooks",
+		"pr:wiki-page": "node scripts/check-pr-wiki-page.ts",
 		"start": "next start",
 		"typegen": "next typegen",
 		"wiki:lint": "node .claude/skills/wiki-maintain/scripts/lint.ts wiki"
