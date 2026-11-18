@@ -7,5 +7,5 @@
 	// Oxfmt and .editorconfig own line length and indentation. Oxfmt leaves prose unwrapped, and
 	// .editorconfig indents with tabs, so these defaults would contradict the formatter.
 	"MD010": false,
-	"MD013": false,
+	"MD013": false
 }

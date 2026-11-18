@@ -11,6 +11,14 @@ export default defineConfig({
 		sortTailwindcss: { stylesheet: "./src/app/globals.css" },
 		sortImports: {},
 		quoteProps: "consistent",
+		overrides: [
+			{
+				// The JSONC spec only lets parsers accept trailing commas, and its reference parser rejects
+				// them by default.
+				files: ["**/*.jsonc"],
+				options: { trailingComma: "none" },
+			},
+		],
 	},
 	lint: {
 		ignorePatterns: [".next/**", "next-env.d.ts"],
