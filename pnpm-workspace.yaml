@@ -1,6 +1,3 @@
-allowBuilds:
-  sharp: false
-  unrs-resolver: false
 catalog:
   vite: npm:@voidzero-dev/vite-plus-core@1.4.0
   vite-plus: 1.4.0
@@ -11,3 +8,22 @@ peerDependencyRules:
     - vite
   allowedVersions:
     vite: "*"
+# Only install versions published at least a week ago (in minutes), so a compromised release has
+# time to be caught before it reaches this project. The Vite+ toolchain is exempt: it ships as a
+# set and is upgraded deliberately.
+minimumReleaseAge: 10080
+minimumReleaseAgeExclude:
+  - vite-plus
+  - "@voidzero-dev/*"
+  - oxlint
+  - "@oxlint/*"
+  - oxlint-tsgolint
+  - "@oxlint-tsgolint/*"
+  - oxfmt
+  - "@oxfmt/*"
+  - vitest
+  - "@vitest/*"
+allowBuilds:
+  # sharp ships prebuilt binaries as optional dependencies; its install script only compiles from
+  # source when none match the platform, so it stays off.
+  sharp: false
