@@ -37,7 +37,7 @@ An atomic commit is **one logical change** that is **complete**: the linter and 
 4. **TDD cycles:** commit when the cycle is green, with the test and the implementation together, using ✨, 🐛 or ✅ as appropriate. Use 🧪 only when you deliberately commit a failing test on its own.
 5. Stage explicitly by path (`git add <paths>`) or by hunk. Never use `git add -A` or `git add .` blindly.
 6. Before each commit:
-   - run `node .claude/skills/wiki-maintain/scripts/lint.mjs wiki` (and the test suite, once one exists)
+   - run `node .claude/skills/wiki-maintain/scripts/lint.ts wiki` (and the test suite, once one exists)
    - never commit secrets (`.env*`, API keys) or `.claude/settings.local.json`
 
 ## 2. Write the message

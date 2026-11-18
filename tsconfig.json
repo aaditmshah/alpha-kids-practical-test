@@ -4,6 +4,7 @@
 		"**/*.ts",
 		"**/*.tsx",
 		"**/*.mts",
+		".claude/**/*.ts",
 		".next/types/**/*.ts",
 		".next/dev/types/**/*.ts"
 	],

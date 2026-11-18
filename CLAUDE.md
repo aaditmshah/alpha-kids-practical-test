@@ -12,7 +12,7 @@ Use the project skills. Prefer them over ad-hoc reading and editing:
 | ----------------------------------------------------------------------------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | Starting a session, answering a project question, or before researching something         | **`wiki-query`**. Start at `wiki/index.md`                                                                                                                                        |
 | Something was learned, decided, discussed or done, and **always before ending a session** | **`wiki-update`**                                                                                                                                                                 |
-| After many edits, before committing or submitting, or when something seems inconsistent   | **`wiki-maintain`** (runs `node .claude/skills/wiki-maintain/scripts/lint.mjs wiki`)                                                                                              |
+| After many edits, before committing or submitting, or when something seems inconsistent   | **`wiki-maintain`** (runs `node .claude/skills/wiki-maintain/scripts/lint.ts wiki`)                                                                                               |
 | Committing anything                                                                       | **`git-commit`**: atomic commits, Unicode gitmoji, imperative subject, body with _what_ in the imperative and _why_ in the indicative (`wiki/adr-0006-gitmoji-atomic-commits.md`) |
 
 Wiki rules (full detail in `wiki/conventions.md`):

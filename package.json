@@ -14,7 +14,7 @@
 		"githooks:install": "git config core.hooksPath .githooks",
 		"start": "next start",
 		"typegen": "next typegen",
-		"wiki:lint": "node .claude/skills/wiki-maintain/scripts/lint.mjs wiki"
+		"wiki:lint": "node .claude/skills/wiki-maintain/scripts/lint.ts wiki"
 	},
 	"dependencies": {
 		"next": "16.4.6",

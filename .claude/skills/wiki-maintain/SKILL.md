@@ -8,7 +8,7 @@ description: Check the project's LLM wiki (wiki/) for health problems (broken li
 ## 1. Mechanical checks (automated)
 
 ```bash
-node .claude/skills/wiki-maintain/scripts/lint.mjs wiki
+node .claude/skills/wiki-maintain/scripts/lint.ts wiki
 ```
 
 It reports these problems:

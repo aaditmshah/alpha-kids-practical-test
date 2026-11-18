@@ -30,7 +30,7 @@ The standing rule: **everything we discuss, decide and do is recorded in the wik
 5. Run the linter and fix anything it reports:
 
    ```bash
-   node .claude/skills/wiki-maintain/scripts/lint.mjs wiki
+   node .claude/skills/wiki-maintain/scripts/lint.ts wiki
    ```
 
 ## Rules
