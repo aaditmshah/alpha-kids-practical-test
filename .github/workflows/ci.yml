@@ -1,0 +1,40 @@
+name: CI
+
+# Pull requests run the checks that branch protection requires before merging into main, and pushes
+# to main run them again on the merged result. Nothing here reads a secret: the LLM is mocked in
+# tests, so no API key is needed.
+on:
+  push:
+    branches: [main]
+  pull_request:
+
+permissions:
+  contents: read
+
+concurrency:
+  group: ci-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  # Branch protection requires this job by its name, `ci`.
+  ci:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v7.0.1
+
+      # Pinned exactly: the `v1` tag no longer receives updates. Dependabot moves this forward.
+      - uses: voidzero-dev/setup-vp@v1.22.0
+        with:
+          node-version: "26"
+          cache: true
+
+      - run: vp install
+
+      # Next.js generates its route types (such as `LayoutProps`) into `.next/`, which is
+      # gitignored. Without them the type check fails on a clean checkout.
+      - run: vp run typegen
+
+      - run: vp check
+      - run: vp test --run
+      - run: vp run wiki:lint
+      - run: vp run build

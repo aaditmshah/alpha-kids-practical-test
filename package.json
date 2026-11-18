@@ -12,7 +12,9 @@
 		"build": "next build",
 		"dev": "next dev",
 		"githooks:install": "git config core.hooksPath .githooks",
-		"start": "next start"
+		"start": "next start",
+		"typegen": "next typegen",
+		"wiki:lint": "node .claude/skills/wiki-maintain/scripts/lint.mjs wiki"
 	},
 	"dependencies": {
 		"next": "16.4.6",
