@@ -32,7 +32,7 @@ Back to: [Pull requests](index-pull-requests.md) · Session: [2026-11-18 #7](ses
 
 ## Review
 
-_(Recorded here before merge.)_
+Aadit reviewed PR #4 together with PR #5, which is stacked on it: _"Both look good. Please update and restack them. After that, I'll merge them."_ No changes requested. Recorded before merge, as the new `git-commit` step requires.
 
 ## See also
 
