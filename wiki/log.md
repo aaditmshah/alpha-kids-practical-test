@@ -37,3 +37,4 @@ Format: `YYYY-MM-DD: [type] what happened (links)`. Append only; never rewrite e
 - 2026-11-18: [git] Repository set to rebase-only merging; branch protection applied to `main` ([ticket-0011](ticket-0011-protect-main.md))
 - 2026-11-18: [git] App bootstrapped on `bootstrap-nextjs`; [PR #1](https://github.com/aaditmshah/alpha-kids-practical-test/pull/1) opened ([ticket-0010](ticket-0010-bootstrap-app.md))
 - 2026-11-18: [decision] Keep page titles in both frontmatter and H1; configure markdownlint MD025; the wiki linter enforces a match ([ADR-0009](adr-0009-title-in-frontmatter-and-h1.md))
+- 2026-11-18: [wiki] markdownlint aligned with the formatter (MD010 and MD013 off); genuine findings fixed in the wiki, the skills and CLAUDE.md ([ADR-0009](adr-0009-title-in-frontmatter-and-h1.md))

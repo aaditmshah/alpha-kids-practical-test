@@ -33,5 +33,6 @@ The candidate's constraint: _"a human reading the wiki should be able to see the
 ## Consequences
 
 - Titles stay prominent in VS Code and on GitHub, and agents can still triage pages from the frontmatter alone.
-- Every other markdownlint rule still applies.
+- Every other markdownlint rule still applies, except MD010 (hard tabs) and MD013 (line length), which are off. Oxfmt and `.editorconfig` own indentation (tabs) and line length (prose left unwrapped), so those defaults would contradict the formatter. This was added in a follow-up in the same session.
+- Generated agent files are not hand-fixed. The Vite+ block in `CLAUDE.md` sits under a scoped `markdownlint-disable MD025 MD034` comment, and `AGENTS.md`, which `next dev` rewrites, keeps its one MD041 finding.
 - The duplication is deliberate and enforced: a title that drifts from its H1 fails CI.

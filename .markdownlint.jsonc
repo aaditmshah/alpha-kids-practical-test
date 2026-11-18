@@ -4,4 +4,8 @@
 	// the frontmatter title as a second H1. The wiki linter checks that the two match
 	// (wiki/adr-0009-title-in-frontmatter-and-h1.md).
 	"MD025": { "front_matter_title": "" },
+	// Oxfmt and .editorconfig own line length and indentation. Oxfmt leaves prose unwrapped, and
+	// .editorconfig indents with tabs, so these defaults would contradict the formatter.
+	"MD010": false,
+	"MD013": false,
 }

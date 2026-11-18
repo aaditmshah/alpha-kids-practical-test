@@ -59,6 +59,8 @@ While reviewing PR #1, the candidate reported a markdownlint warning on every wi
 
 The agent compared the options and recommended keeping both. That means configuring MD025's `front_matter_title` to `""` and adding a linter check that the H1 matches `title`. The candidate agreed: _"Go with option 4 and add it to PR #1."_ → [ADR-0009](adr-0009-title-in-frontmatter-and-h1.md)
 
+Running markdownlint over the whole repository then showed 339 findings from other rules. Most were MD013 (line length, 80 by default) and MD010 (hard tabs), and both contradict the formatter. The candidate approved turning those two off and fixing the genuine findings: bare URLs, emphasis used as a heading, a fenced code block missing its language, and a fenced code block missing its blank lines. One of those fixes wraps a bare URL in `<…>` on an existing [log](log.md) line. The text is unchanged; only the Markdown syntax changed. Generated agent files were left as they are. See [ADR-0009](adr-0009-title-in-frontmatter-and-h1.md).
+
 ## Open at end of session
 
 - PR #1 is waiting for CI and for the candidate's review and merge (rebase).
