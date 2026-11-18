@@ -14,7 +14,7 @@ Back to: [Pull requests](index-pull-requests.md) · Session: [2026-11-18 #12](se
 |             |                                                                                                                                  |
 | ----------- | -------------------------------------------------------------------------------------------------------------------------------- |
 | GitHub      | [aaditmshah/alpha-kids-practical-test#12](https://github.com/aaditmshah/alpha-kids-practical-test/pull/12)                       |
-| Branch      | `safety-precheck` → `main`, branched from `gherkin-features`                                                                     |
+| Branch      | `safety-precheck` → `gherkin-features` (stacked; Aadit corrected the base from `main`)                                           |
 | Opened      | 2026-11-18, by Aadit's GitHub account (aaditmshah)                                                                               |
 | Written by  | Claude Code (Claude Opus 5.5), working with Aadit                                                                                |
 | Reviewed by | Aadit                                                                                                                            |
@@ -35,7 +35,11 @@ The first safety layer ([ADR-0011](adr-0011-layered-safety-escalation.md)): cris
 
 ## Review
 
-_(Recorded here before merge.)_
+Aadit reviewed the whole stack (PRs #10 to #15) at once: _"I reviewed all the PRs. They look good."_ No changes requested.
+
+He also found that this PR, like the rest of the stack, had been opened against `main` instead of the branch below it, and retargeted it himself. See the correction in [ADR-0008](adr-0008-protected-main-linear-history.md).
+
+The review is recorded on the top PR ([PR #15](pr-0015-model-adapter.md)) for the whole stack, so the stack didn't need restacking.
 
 ## See also
 

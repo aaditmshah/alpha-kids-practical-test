@@ -14,7 +14,7 @@ Back to: [Pull requests](index-pull-requests.md) · Session: [2026-11-18 #12](se
 |             |                                                                                                                                  |
 | ----------- | -------------------------------------------------------------------------------------------------------------------------------- |
 | GitHub      | [aaditmshah/alpha-kids-practical-test#13](https://github.com/aaditmshah/alpha-kids-practical-test/pull/13)                       |
-| Branch      | `fixed-messages` → `main`, branched from `safety-precheck`                                                                       |
+| Branch      | `fixed-messages` → `safety-precheck` (stacked; Aadit corrected the base from `main`)                                             |
 | Opened      | 2026-11-18, by Aadit's GitHub account (aaditmshah)                                                                               |
 | Written by  | Claude Code (Claude Opus 5.5), working with Aadit                                                                                |
 | Reviewed by | Aadit                                                                                                                            |
@@ -33,7 +33,11 @@ Escalations are fixed text, never generated ([ADR-0011](adr-0011-layered-safety-
 
 ## Review
 
-_(Recorded here before merge.)_
+Aadit reviewed the whole stack (PRs #10 to #15) at once: _"I reviewed all the PRs. They look good."_ No changes requested.
+
+He also found that this PR, like the rest of the stack, had been opened against `main` instead of the branch below it, and retargeted it himself. See the correction in [ADR-0008](adr-0008-protected-main-linear-history.md).
+
+The review is recorded on the top PR ([PR #15](pr-0015-model-adapter.md)) for the whole stack, so the stack didn't need restacking.
 
 ## See also
 

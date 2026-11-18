@@ -23,7 +23,6 @@ Back to: [Home](index.md) · List view: [Tickets](index-tickets.md)
 ## In progress
 
 - [ticket-0017](ticket-0017-reply-schema-and-postchecks.md): Implement the reply schema and post-checks _(schema done; post-checks are Aadit's exercise)_
-- [ticket-0024](ticket-0024-gherkin-features.md): Write the Gherkin features _(awaiting Aadit's review of the stories)_
 
 ## Done
 
@@ -38,6 +37,7 @@ Back to: [Home](index.md) · List view: [Tickets](index-tickets.md)
 - [ticket-0015](ticket-0015-safety-precheck.md): Build the keyword safety pre-check
 - [ticket-0016](ticket-0016-fixed-messages.md): Write the fixed messages
 - [ticket-0018](ticket-0018-model-adapter.md): Build the model adapter and prompt
+- [ticket-0024](ticket-0024-gherkin-features.md): Write the Gherkin features
 - [ticket-0006](ticket-0006-design-coach-contract.md): Design the coach reply schema and prompt
 - [ticket-0009](ticket-0009-commit-conventions.md): Commit conventions and the git-commit skill
 - [ticket-0010](ticket-0010-bootstrap-app.md): Bootstrap the Next.js app with Vite+

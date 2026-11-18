@@ -14,7 +14,7 @@ Back to: [Pull requests](index-pull-requests.md) · Session: [2026-11-18 #12](se
 |             |                                                                                                                                  |
 | ----------- | -------------------------------------------------------------------------------------------------------------------------------- |
 | GitHub      | [aaditmshah/alpha-kids-practical-test#14](https://github.com/aaditmshah/alpha-kids-practical-test/pull/14)                       |
-| Branch      | `reply-schema` → `main`, branched from `fixed-messages`                                                                          |
+| Branch      | `reply-schema` → `fixed-messages` (stacked; Aadit corrected the base from `main`)                                                |
 | Opened      | 2026-11-18, by Aadit's GitHub account (aaditmshah)                                                                               |
 | Written by  | Claude Code (Claude Opus 5.5), working with Aadit                                                                                |
 | Reviewed by | Aadit                                                                                                                            |
@@ -34,7 +34,11 @@ The reply schema is the contract the model is held to ([ADR-0015](adr-0015-coach
 
 ## Review
 
-_(Recorded here before merge.)_
+Aadit reviewed the whole stack (PRs #10 to #15) at once: _"I reviewed all the PRs. They look good."_ No changes requested.
+
+He also found that this PR, like the rest of the stack, had been opened against `main` instead of the branch below it, and retargeted it himself. See the correction in [ADR-0008](adr-0008-protected-main-linear-history.md).
+
+The review is recorded on the top PR ([PR #15](pr-0015-model-adapter.md)) for the whole stack, so the stack didn't need restacking.
 
 ## See also
 

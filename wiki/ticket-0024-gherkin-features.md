@@ -1,7 +1,7 @@
 ---
 title: "ticket-0024: Write the Gherkin Features"
 type: ticket
-status: in-progress
+status: done
 updated: 2026-11-18
 summary: Write executable Gherkin features for the brief's requirements, each quoting the brief and tagged with requirement IDs, plus a tested CI check that every functional requirement has a scenario.
 ---
@@ -26,7 +26,7 @@ Back to: [Tickets](index-tickets.md) · [Kanban](kanban.md) · [Plan](plan.md)
 
 ## Also
 
-- [ ] Aadit reviews the features against the brief before the build relies on them
+- [x] Aadit reviews the features against the brief before the build relies on them: approved with the stack ([PR #11](pr-0011-gherkin-features.md))
 - [x] CI runs the coverage check (`vp run features:coverage`)
 
 ## See also
@@ -39,3 +39,7 @@ Back to: [Tickets](index-tickets.md) · [Kanban](kanban.md) · [Plan](plan.md)
 - [PR #10: Add Dependencies and Test Projects](pr-0010-test-and-runtime-setup.md)
 - [Session 2026-11-18 #12: Build Setup](session-2026-11-18-12-build-setup.md)
 - [PR #11: Write the Gherkin Features](pr-0011-gherkin-features.md)
+
+## Result
+
+Delivered in [PR #11](pr-0011-gherkin-features.md): six features in `features/` and the `vp run features:coverage` check in CI. Approved by Aadit with the stack.

@@ -35,7 +35,7 @@ Back to: [Home](index.md) · Board view: [Kanban](kanban.md)
 | [ticket-0021](ticket-0021-chat-ui.md)                     | todo        | Build the chat page                             |
 | [ticket-0022](ticket-0022-live-smoke-test.md)             | todo        | Add the opt-in live smoke test                  |
 | [ticket-0023](ticket-0023-readme-and-submission.md)       | todo        | Finish the README and submit                    |
-| [ticket-0024](ticket-0024-gherkin-features.md)            | in-progress | Write the Gherkin features                      |
+| [ticket-0024](ticket-0024-gherkin-features.md)            | done        | Write the Gherkin features                      |
 | [ticket-0025](ticket-0025-ui-design.md)                   | todo        | Design the UI in Claude Design                  |
 
 ## See also

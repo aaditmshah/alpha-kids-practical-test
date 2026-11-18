@@ -14,7 +14,7 @@ Back to: [Pull requests](index-pull-requests.md) · Session: [2026-11-18 #12](se
 |             |                                                                                                                                  |
 | ----------- | -------------------------------------------------------------------------------------------------------------------------------- |
 | GitHub      | [aaditmshah/alpha-kids-practical-test#11](https://github.com/aaditmshah/alpha-kids-practical-test/pull/11)                       |
-| Branch      | `gherkin-features` → `main`, branched from `test-and-runtime-setup`                                                              |
+| Branch      | `gherkin-features` → `test-and-runtime-setup` (stacked; Aadit corrected the base from `main`)                                    |
 | Opened      | 2026-11-18, by Aadit's GitHub account (aaditmshah)                                                                               |
 | Written by  | Claude Code (Claude Opus 5.5), working with Aadit                                                                                |
 | Reviewed by | Aadit                                                                                                                            |
@@ -34,12 +34,14 @@ Back to: [Pull requests](index-pull-requests.md) · Session: [2026-11-18 #12](se
 
 ## Review
 
-Questions for Aadit:
+Aadit reviewed the whole stack (PRs #10 to #15) at once: _"I reviewed all the PRs. They look good."_ No changes requested.
 
-1. Do the six features capture the brief correctly? Any stories to add, drop or reword?
-2. Are the exercises in ADR-0019 the right ones for you?
+He also found that this PR, like the rest of the stack, had been opened against `main` instead of the branch below it, and retargeted it himself. See the correction in [ADR-0008](adr-0008-protected-main-linear-history.md).
 
-_(Answers are recorded here before merge.)_
+The review is recorded on the top PR ([PR #15](pr-0015-model-adapter.md)) for the whole stack, so the stack didn't need restacking.
+
+- **The features:** approved as written, which completes [ticket-0024](ticket-0024-gherkin-features.md).
+- **The exercises in [ADR-0019](adr-0019-learning-exercises.md):** Aadit is taking them on next: _"I'll attempt the exercises next."_
 
 ## See also
 

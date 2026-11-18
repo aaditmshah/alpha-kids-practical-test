@@ -35,13 +35,15 @@ even for admins. So:
 6. If `main` moves, rebase the branch onto it (`git rebase origin/main`) and push with
    `--force-with-lease`. Never create merge commits.
    **Stacked PRs are welcome.** For work that depends on an open PR, branch from that PR's
-   branch and still open the new PR against `main`. The user fast-forwards the stack in order,
-   bottom PR first, and each later PR then fast-forwards cleanly. Fast-forwarding `main` to the
-   top of the stack and pushing once marks every PR in the stack merged, because GitHub treats a
-   PR as merged once its head commit is reachable from `main`. So every PR in the stack must have
-   passing CI and a recorded review before that push. Say in the PR body and on
-   its wiki page which PR it stacks on. If a lower PR changes, rebase the PRs above it onto
-   the new tip.
+   branch and open the new PR **against that branch**, not `main`:
+   `gh pr create --base <lower-branch>`. Each PR's diff then shows only its own commits. The
+   bottom PR targets `main`. Say in the PR body and on its wiki page which PR it stacks on.
+   If a lower PR changes, rebase the PRs above it onto its new tip and push them with
+   `--force-with-lease`. The user may review a whole stack at once. Then record every PR's
+   review in one commit on the top PR, so the stack doesn't need restacking. To merge, the
+   user fast-forwards `main` to the top of the stack and pushes once. GitHub marks a PR merged
+   when its head is reachable from its base, and retargets PRs based on a deleted branch to that
+   branch's base. Check afterwards that every PR in the stack shows as merged (see ADR-0008).
 7. Before the user merges, record the review on the PR's wiki page: the user's answers to any
    questions the PR asked (quoted), the ADRs they accept or change, and any comments with how
    each was resolved. Push that as the PR's last commit. If a PR merges before its review is

@@ -45,6 +45,18 @@ Aadit approved [PR #10](pr-0010-test-and-runtime-setup.md) and asked for the nex
 
 - **Where the stack stops.** It ends here, before the orchestrator ([ticket-0019](ticket-0019-coach-orchestrator.md)), which needs Aadit's `detectLanguage` and `postcheck` ([ADR-0019](adr-0019-learning-exercises.md)).
 
+## Stack review
+
+Aadit: _"I reviewed all the PRs. They look good. I'll attempt the exercises next."_ He also corrected a mistake: _"All your PRs had the base branch set to main, which is incorrect. For stacked PRs, the base branch should be the head of the previous PR branch. I fixed it for you."_
+
+Claude made three changes:
+
+- **The stacking rule,** in the `git-commit` skill and [ADR-0008](adr-0008-protected-main-linear-history.md): a stacked PR targets the branch below it.
+- **The reviews:** recorded for PRs #11 to #15 in one commit on the top PR, rather than restacking six branches.
+- **Ticket-0024 closed,** since the features were approved.
+
+With per-branch bases, the one-push merge now depends on GitHub retargeting the upper PRs when the lower branches are deleted. That behaviour is documented for merges from the UI, and is to be confirmed on this merge.
+
 ## Open at end of session
 
 - Aadit's review of [PR #10](pr-0010-test-and-runtime-setup.md).
