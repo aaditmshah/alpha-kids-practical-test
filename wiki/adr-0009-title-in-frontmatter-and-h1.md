@@ -34,5 +34,6 @@ The candidate's constraint: _"a human reading the wiki should be able to see the
 
 - Titles stay prominent in VS Code and on GitHub, and agents can still triage pages from the frontmatter alone.
 - Every other markdownlint rule still applies, except MD010 (hard tabs) and MD013 (line length), which are off. Oxfmt and `.editorconfig` own indentation (tabs) and line length (prose left unwrapped), so those defaults would contradict the formatter. This was added in a follow-up in the same session.
-- Generated agent files are not hand-fixed. The Vite+ block in `CLAUDE.md` sits under a scoped `markdownlint-disable MD025 MD034` comment, and `AGENTS.md`, which `next dev` rewrites, keeps its one MD041 finding.
+- Generated agent files are not hand-fixed. The Vite+ block in `CLAUDE.md` sits under a scoped `markdownlint-disable MD025 MD034` comment, `AGENTS.md` gets an H1 (`# Next.js Agent Rules`) above Next's managed block. `next dev` replaces only the text between its markers, which was confirmed by running it, so the H1 survives and MD041 is satisfied.
+- `.markdownlint.jsonc` has no trailing comma. The [JSONC spec](https://jsonc.org/) only lets parsers accept one, and its reference parser rejects them by default. An Oxfmt override (`trailingComma: "none"` for `**/*.jsonc`) stops the formatter from adding it back.
 - The duplication is deliberate and enforced: a title that drifts from its H1 fails CI.

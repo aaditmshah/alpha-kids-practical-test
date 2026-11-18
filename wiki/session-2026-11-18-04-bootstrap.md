@@ -61,6 +61,8 @@ The agent compared the options and recommended keeping both. That means configur
 
 Running markdownlint over the whole repository then showed 339 findings from other rules. Most were MD013 (line length, 80 by default) and MD010 (hard tabs), and both contradict the formatter. The candidate approved turning those two off and fixing the genuine findings: bare URLs, emphasis used as a heading, a fenced code block missing its language, and a fenced code block missing its blank lines. One of those fixes wraps a bare URL in `<…>` on an existing [log](log.md) line. The text is unchanged; only the Markdown syntax changed. Generated agent files were left as they are. See [ADR-0009](adr-0009-title-in-frontmatter-and-h1.md).
 
+The candidate then pointed out two nits. First, `.markdownlint.jsonc` had a trailing comma, which the formatter had added and which the JSONC spec doesn't guarantee is allowed. Fixed with an Oxfmt override for `*.jsonc`. Second, `AGENTS.md` started with an H2 (MD041). Fixed with an H1 above Next's managed block, after checking that `next dev` keeps content outside its markers. markdownlint now reports no issues in the repository.
+
 ## Open at end of session
 
 - PR #1 is waiting for CI and for the candidate's review and merge (rebase).
