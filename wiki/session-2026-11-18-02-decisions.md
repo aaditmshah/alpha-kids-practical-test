@@ -14,7 +14,7 @@ The candidate answered the open questions left at the end of [session #1](sessio
 
 ## 1. Company website confirmed
 
-The candidate confirmed the company's website is **https://alpha.kids/**. They asked to remove the other companies listed in the research, because there is _"no need to keep it around"_ (the pink elephant paradox: mentioning unrelated companies only invites confusion). → [Research: Alpha Kids](research-alpha-kids.md) updated.
+The candidate confirmed the company's website is **<https://alpha.kids/>**. They asked to remove the other companies listed in the research, because there is _"no need to keep it around"_ (the pink elephant paradox: mentioning unrelated companies only invites confusion). → [Research: Alpha Kids](research-alpha-kids.md) updated.
 
 ## 2. LLM provider accepted
 

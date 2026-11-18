@@ -20,7 +20,7 @@ Back to: [Home](index.md) · List view: [Tickets](index-tickets.md)
 
 ## In progress
 
-_(none)_
+Nothing in progress.
 
 ## Done
 

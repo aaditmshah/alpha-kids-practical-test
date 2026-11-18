@@ -42,7 +42,7 @@ An atomic commit is **one logical change** that is **complete**: the linter and 
 
 ## 2. Write the message
 
-```
+```text
 <emoji> <Subject in imperative mood>
 
 <What: imperative sentences or bullets describing the change.>
@@ -104,7 +104,7 @@ Choose the emoji for the commit's **main intent**. Common choices in this repo:
 | 🔒️           | Fix security or privacy issues                         |
 | ⏪️           | Revert changes                                         |
 
-The full list is at https://gitmoji.dev/. If two emoji fit, the change is probably not atomic; consider splitting it.
+The full list is at [gitmoji.dev](https://gitmoji.dev/). If two emoji fit, the change is probably not atomic; consider splitting it.
 
 ## 3. Commit and verify
 

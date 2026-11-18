@@ -28,6 +28,7 @@ The standing rule: **everything we discuss, decide and do is recorded in the wik
 3. Refresh the **Current state** section of `wiki/index.md` if the phase, the key decisions or "next" changed.
 4. Link generously: new pages link to related pages, and related pages link back.
 5. Run the linter and fix anything it reports:
+
    ```bash
    node .claude/skills/wiki-maintain/scripts/lint.mjs wiki
    ```

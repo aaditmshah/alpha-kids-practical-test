@@ -53,6 +53,9 @@ stays linear. There are no pre-commit checks; run the checks yourself before pus
 
 Next.js-specific agent rules live in AGENTS.md, which `next dev` keeps up to date: @AGENTS.md
 
+<!-- The block below is generated and rewritten by Vite+, so lint findings in it are not fixed by hand. -->
+<!-- markdownlint-disable MD025 MD034 -->
+
 <!--VITE PLUS START-->
 
 # Using Vite+, the Unified Toolchain for the Web
