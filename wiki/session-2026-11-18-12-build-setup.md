@@ -21,6 +21,15 @@ Aadit merged [PR #9](pr-0009-implementation-plan.md). Claude took [ticket-0013](
 - **A lint clash:** Oxlint's `vitest/no-standalone-expect` flagged `expect` inside Gherkin steps. It now treats `Given`, `When`, `Then`, `And` and `But` as test blocks.
 - **`.env.example`** documents the key and the model, with a reminder about free-tier data.
 
+## The PR stack and Aadit's exercises
+
+Aadit approved [PR #10](pr-0010-test-and-runtime-setup.md) and asked for the next tickets as one stack of PRs, _"I'll review them and merge them all once you're done"_, with some of the code left for him: _"I'd like to learn."_ → [ADR-0019](adr-0019-learning-exercises.md): `detectLanguage` and the post-checks are his to build, from typed stubs, and the stack pauses before the orchestrator.
+
+- **[PR #11](pr-0011-gherkin-features.md), ticket-0024:**
+  - six features, each quoting the brief, tagged with requirement IDs, and checked to parse with `vitest-cucumber`
+  - a tested coverage check in CI, which also verifies each quote word for word against the brief
+- **A change to ADR-0017.** Because unimplemented steps fail, each feature's spec arrives with the ticket that builds the behaviour, not with the features.
+
 ## Open at end of session
 
 - Aadit's review of [PR #10](pr-0010-test-and-runtime-setup.md).

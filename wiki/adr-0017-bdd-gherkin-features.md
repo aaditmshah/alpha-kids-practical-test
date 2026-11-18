@@ -34,6 +34,7 @@ Aadit chose option 3: _"It's simpler and more popular"_, and _"we should have ex
   - Conversation-history and banner scenarios run against the chat component, in jsdom.
   - Scenario Outlines with `Examples` tables reuse the fixtures from the [safety](research-safety-escalation.md) and [Roman Urdu](research-roman-urdu.md) research.
 - **Two loops:** a failing scenario is the outer loop (BDD). The unit tests in each ticket are the inner loop (TDD).
+- **Specs arrive with behaviour.** `vitest-cucumber` fails any unimplemented step, so a feature's `.spec.ts` lands in the ticket that builds the behaviour, not in [ticket-0024](ticket-0024-gherkin-features.md). Until then the feature is a reviewed specification, and the coverage check still guards it. Found while doing ticket-0024 ([PR #11](pr-0011-gherkin-features.md)).
 
 ## Consequences
 

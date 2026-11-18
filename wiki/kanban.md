@@ -12,12 +12,11 @@ Back to: [Home](index.md) · List view: [Tickets](index-tickets.md)
 
 ## Todo
 
-- [ticket-0024](ticket-0024-gherkin-features.md): Write the Gherkin features _(M0)_
 - [ticket-0025](ticket-0025-ui-design.md): Design the UI in Claude Design _(M0; needed before 0021)_
-- [ticket-0014](ticket-0014-language-detection.md): Detect the reply language
+- [ticket-0014](ticket-0014-language-detection.md): Detect the reply language _(Aadit's exercise)_
 - [ticket-0015](ticket-0015-safety-precheck.md): Build the keyword safety pre-check
 - [ticket-0016](ticket-0016-fixed-messages.md): Write the fixed messages
-- [ticket-0017](ticket-0017-reply-schema-and-postchecks.md): Implement the reply schema and post-checks
+- [ticket-0017](ticket-0017-reply-schema-and-postchecks.md): Implement the reply schema and post-checks _(post-checks are Aadit's exercise)_
 - [ticket-0018](ticket-0018-model-adapter.md): Build the model adapter and prompt
 - [ticket-0019](ticket-0019-coach-orchestrator.md): Build the coach orchestrator
 - [ticket-0020](ticket-0020-server-action.md): Add the Server Action
@@ -27,7 +26,7 @@ Back to: [Home](index.md) · List view: [Tickets](index-tickets.md)
 
 ## In progress
 
-Nothing in progress.
+- [ticket-0024](ticket-0024-gherkin-features.md): Write the Gherkin features _(awaiting Aadit's review of the stories)_
 
 ## Done
 

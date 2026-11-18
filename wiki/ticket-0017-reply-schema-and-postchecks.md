@@ -17,6 +17,8 @@ Back to: [Tickets](index-tickets.md) · [Kanban](kanban.md) · [Plan](plan.md)
 | Depends on   | [ticket-0013](ticket-0013-test-and-runtime-setup.md)  |
 | Files        | `src/coach/schema.ts`, `src/coach/postcheck.ts`       |
 
+**Split** ([ADR-0019](adr-0019-learning-exercises.md)): Claude builds the schema. The post-checks are **Aadit's exercise**, starting from a typed stub in `src/coach/postcheck.ts`.
+
 ## Tests that drive it
 
 - [ ] Valid replies parse; missing fields, 1 or 5 plan steps, unknown enums and over-length strings fail

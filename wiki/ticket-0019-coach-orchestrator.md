@@ -30,3 +30,4 @@ Back to: [Tickets](index-tickets.md) · [Kanban](kanban.md) · [Plan](plan.md)
 
 - [ticket-0020: Add the Server Action](ticket-0020-server-action.md)
 - [ticket-0022: Add the Opt-In Live Smoke Test](ticket-0022-live-smoke-test.md)
+- [ADR-0019: Leave Learning Exercises for Aadit](adr-0019-learning-exercises.md)

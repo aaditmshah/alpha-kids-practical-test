@@ -109,3 +109,4 @@ Each ticket is one PR, stacked on the previous one where it depends on it ([ADR-
 - [PR #9: Write the Implementation Plan](pr-0009-implementation-plan.md)
 - [Session 2026-11-18 #11: Implementation Plan](session-2026-11-18-11-implementation-plan.md)
 - [PR #10: Add Dependencies and Test Projects](pr-0010-test-and-runtime-setup.md)
+- [ADR-0019: Leave Learning Exercises for Aadit](adr-0019-learning-exercises.md)

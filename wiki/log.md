@@ -66,3 +66,4 @@ Format: `YYYY-MM-DD: [type] what happened (links)`. Append only; never rewrite e
 - 2026-11-18: [decision] Executable Gherkin features (ADR-0017) and a pastel Claude Design UI (ADR-0018) added to the plan as milestone M0 ([PR #9](pr-0009-implementation-plan.md))
 - 2026-11-18: [plan] Plan approved by Aadit; ticket-0008 done ([PR #9](pr-0009-implementation-plan.md))
 - 2026-11-18: [build] Test setup done: dependencies, unit and component test projects, Gherkin runner, .env.example ([PR #10](pr-0010-test-and-runtime-setup.md), [ticket-0013](ticket-0013-test-and-runtime-setup.md))
+- 2026-11-18: [build] Gherkin features written with a coverage check against the brief; learning exercises for Aadit decided ([PR #11](pr-0011-gherkin-features.md), [ADR-0019](adr-0019-learning-exercises.md))

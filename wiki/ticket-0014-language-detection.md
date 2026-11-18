@@ -17,6 +17,8 @@ Back to: [Tickets](index-tickets.md) · [Kanban](kanban.md) · [Plan](plan.md)
 | Depends on   | [ticket-0013](ticket-0013-test-and-runtime-setup.md) |
 | Files        | `src/coach/normalize.ts`, `src/coach/language.ts`    |
 
+**Aadit's exercise** ([ADR-0019](adr-0019-learning-exercises.md)): Aadit writes the tests and `detectLanguage`. Claude provides a typed stub in `src/coach/language.ts`. `normalize` moved to [ticket-0015](ticket-0015-safety-precheck.md).
+
 ## Tests that drive it
 
 - [ ] `normalize`: lowercases, collapses runs of the same letter (_nahiiii_ → _nahi_) and whitespace
