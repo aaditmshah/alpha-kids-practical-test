@@ -38,6 +38,9 @@ jobs:
       - run: vp test --run
       - run: vp run wiki:lint
 
+      # Every functional requirement has a Gherkin scenario quoting the brief (ADR-0017).
+      - run: vp run features:coverage
+
       # Every pull request is recorded on a wiki page named after its number and branch. The values
       # go through the environment, never into the script, so a branch name can't inject commands.
       - if: github.event_name == 'pull_request'
