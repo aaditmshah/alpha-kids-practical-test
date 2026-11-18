@@ -63,3 +63,4 @@ Format: `YYYY-MM-DD: [type] what happened (links)`. Append only; never rewrite e
 - 2026-11-18: [design] Coach reply schema and system prompt designed ([ADR-0015](adr-0015-coach-reply-schema.md), [ADR-0016](adr-0016-system-prompt.md))
 - 2026-11-18: [decision] Reply schema (ADR-0015), system prompt (ADR-0016) and the Roman Urdu referral wording approved ([PR #8](pr-0008-design-coach-contract.md))
 - 2026-11-18: [plan] Implementation plan and build tickets 0013–0023 written; Home and plan statuses corrected ([PR #9](pr-0009-implementation-plan.md))
+- 2026-11-18: [decision] Executable Gherkin features (ADR-0017) and a pastel Claude Design UI (ADR-0018) added to the plan as milestone M0 ([PR #9](pr-0009-implementation-plan.md))

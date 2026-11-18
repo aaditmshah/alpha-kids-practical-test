@@ -12,6 +12,8 @@ Back to: [Home](index.md) · List view: [Tickets](index-tickets.md)
 
 ## Todo
 
+- [ticket-0024](ticket-0024-gherkin-features.md): Write the Gherkin features _(M0)_
+- [ticket-0025](ticket-0025-ui-design.md): Design the UI in Claude Design _(M0; needed before 0021)_
 - [ticket-0013](ticket-0013-test-and-runtime-setup.md): Add dependencies and test projects
 - [ticket-0014](ticket-0014-language-detection.md): Detect the reply language
 - [ticket-0015](ticket-0015-safety-precheck.md): Build the keyword safety pre-check

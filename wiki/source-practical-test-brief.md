@@ -21,3 +21,5 @@ Received by Aadit from Alpha Kids as part of their interview process. Captured 2
 - [Wiki Conventions](conventions.md)
 - [Log](log.md)
 - [Session 2026-11-18 #1: Kickoff](session-2026-11-18-01-kickoff.md)
+- [ADR-0017: Executable Gherkin Features Drive the Build](adr-0017-bdd-gherkin-features.md)
+- [ticket-0024: Write the Gherkin Features](ticket-0024-gherkin-features.md)

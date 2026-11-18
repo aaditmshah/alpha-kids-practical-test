@@ -71,3 +71,6 @@ These are explicitly out of scope: login, a database, Urdu script and right-to-l
 - [ticket-0021: Build the Chat Page](ticket-0021-chat-ui.md)
 - [ticket-0022: Add the Opt-In Live Smoke Test](ticket-0022-live-smoke-test.md)
 - [ticket-0023: Finish the README and Submit](ticket-0023-readme-and-submission.md)
+- [ADR-0017: Executable Gherkin Features Drive the Build](adr-0017-bdd-gherkin-features.md)
+- [ticket-0024: Write the Gherkin Features](ticket-0024-gherkin-features.md)
+- [ticket-0025: Design the UI in Claude Design](ticket-0025-ui-design.md)

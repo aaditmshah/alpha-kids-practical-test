@@ -48,3 +48,4 @@ The company is **Alpha Kids**, website **[https://alpha.kids/](https://alpha.kid
 - [Session 2026-11-18 #2: Decisions](session-2026-11-18-02-decisions.md)
 - [Alpha Kids Practical Test Wiki](index.md)
 - [ticket-0004: Research Safety and Escalation](ticket-0004-research-safety-escalation.md)
+- [ADR-0018: Design the UI in Claude Design, Pastel and Playful](adr-0018-ui-design-claude-design.md)

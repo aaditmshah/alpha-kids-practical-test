@@ -24,6 +24,7 @@ Back to: [Tickets](index-tickets.md) · [Kanban](kanban.md) · [Plan](plan.md)
 - [ ] A post-check hit returns the referral reply
 - [ ] Any model failure returns the fail-safe, in the language detected from the parent's message
 - [ ] Otherwise returns the plan turn: summary, steps, optional referral, check-in
+- [ ] The `respond()`-level scenarios in [ticket-0024](ticket-0024-gherkin-features.md)'s features pass
 
 ## See also
 

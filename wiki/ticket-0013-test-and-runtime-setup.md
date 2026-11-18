@@ -19,12 +19,13 @@ Back to: [Tickets](index-tickets.md) · [Kanban](kanban.md) · [Plan](plan.md)
 
 ## Tests that drive it
 
-- [ ] `vp test` runs two projects: `unit` (Node, `src/**/*.test.ts`, `scripts/**/*.test.ts`) and `component` (jsdom, `src/**/*.test.tsx`)
+- [ ] `vp test` runs two projects: `unit` (Node, `src/**/*.test.ts`, `scripts/**/*.test.ts`, `features/**/*.spec.ts`) and `component` (jsdom, `src/**/*.test.tsx`, `features/**/*.spec.tsx`)
+- [ ] A sample `.feature` runs through `@amiceli/vitest-cucumber`, and fails when a scenario has no implementation
 - [ ] A placeholder test in each project proves the setup, and is deleted by the first real ticket in that project
 
 ## Also
 
-- [ ] `ai`, `@ai-sdk/google`, `zod` (4.x) added; `@testing-library/react`, `@testing-library/dom`, `jsdom` added as dev dependencies, all within the one-week release delay
+- [ ] `ai`, `@ai-sdk/google`, `zod` (4.x) added; `@testing-library/react`, `@testing-library/dom`, `jsdom` and `@amiceli/vitest-cucumber` ([ADR-0017](adr-0017-bdd-gherkin-features.md)) added as dev dependencies, all within the one-week release delay
 - [ ] `.env.example` documents `GOOGLE_GENERATIVE_AI_API_KEY` and `COACH_MODEL` (default `gemini-3.8-flash`); `.env*` stays gitignored except `.env.example`
 
 ## See also
@@ -35,3 +36,4 @@ Back to: [Tickets](index-tickets.md) · [Kanban](kanban.md) · [Plan](plan.md)
 - [ticket-0014: Detect the Reply Language](ticket-0014-language-detection.md)
 - [ticket-0016: Write the Fixed Messages](ticket-0016-fixed-messages.md)
 - [ticket-0017: Implement the Reply Schema and Post-Checks](ticket-0017-reply-schema-and-postchecks.md)
+- [ticket-0024: Write the Gherkin Features](ticket-0024-gherkin-features.md)

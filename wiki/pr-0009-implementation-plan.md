@@ -2,7 +2,7 @@
 title: "PR #9: Write the Implementation Plan"
 type: pr
 updated: 2026-11-18
-summary: Fills in the plan's architecture, test plan and milestones, creates build tickets 0013–0023, and fixes stale statuses on Home and in the plan.
+summary: Fills in the plan's architecture, test plan and milestones, creates build tickets 0013–0025 (including executable Gherkin features and a Claude Design UI, added in review), and fixes stale statuses on Home and in the plan.
 ---
 
 # PR #9: Write the Implementation Plan
@@ -26,9 +26,10 @@ Research and design are done ([ADR-0011](adr-0011-layered-safety-escalation.md) 
 
 ## Commits
 
-| #   | Commit                                               | What                                                                                                                    | Why                                                       |
-| --- | ---------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------- | --------------------------------------------------------- |
-| 1   | `📝 Write the implementation plan and build tickets` | [Plan](plan.md) architecture, test plan and milestones; tickets 0013–0023; board, indexes, Home; session #11; this page | The build starts from an approved plan, one ticket per PR |
+| #   | Commit                                               | What                                                                                                                                                                       | Why                                                                        |
+| --- | ---------------------------------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | -------------------------------------------------------------------------- |
+| 1   | `📝 Write the implementation plan and build tickets` | [Plan](plan.md) architecture, test plan and milestones; tickets 0013–0023; board, indexes, Home; session #11; this page                                                    | The build starts from an approved plan, one ticket per PR                  |
+| 2   | `📝 Add BDD and UI design to the plan`               | [ADR-0017](adr-0017-bdd-gherkin-features.md), [ADR-0018](adr-0018-ui-design-claude-design.md), tickets 0024 and 0025, milestone M0, updates to tickets 0013, 0019 and 0021 | Aadit's review asked for executable Gherkin stories and a Claude Design UI |
 
 ## Review
 

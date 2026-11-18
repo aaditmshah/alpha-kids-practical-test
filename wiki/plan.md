@@ -3,7 +3,7 @@ title: Plan
 type: plan
 status: active
 updated: 2026-11-18
-summary: Phased plan, architecture, test plan and build milestones. Research and design are done; the build runs through tickets 0013–0023, test-first.
+summary: Phased plan, architecture, test plan and build milestones. Research and design are done; the build runs from executable Gherkin features and a Claude Design UI (M0) through tickets 0013–0025, test-first.
 ---
 
 # Plan
@@ -20,20 +20,24 @@ Back to: [Home](index.md) · [Requirements](requirements.md) · [Kanban](kanban.
 
 ## Phases
 
-| #   | Phase                                                                                                          | Tickets                                                                                                                            | Status      |
-| --- | -------------------------------------------------------------------------------------------------------------- | ---------------------------------------------------------------------------------------------------------------------------------- | ----------- |
-| 1   | Set up the wiki and do context research                                                                        | [0001](ticket-0001-set-up-wiki.md), [0002](ticket-0002-research-alpha-kids.md), [0003](ticket-0003-research-llm-providers.md)      | done        |
-| 2   | Research what is still open: safety, Roman Urdu, stack                                                         | [0004](ticket-0004-research-safety-escalation.md), [0005](ticket-0005-research-roman-urdu.md), [0007](ticket-0007-choose-stack.md) | done        |
-| 3   | Design the reply schema and prompt, and write the implementation plan                                          | [0006](ticket-0006-design-coach-contract.md), [0008](ticket-0008-write-implementation-plan.md)                                     | in progress |
-| 3½  | Bootstrap the app and protect `main`                                                                           | [0010](ticket-0010-bootstrap-app.md), [0011](ticket-0011-protect-main.md)                                                          | done        |
-| 4   | Build with TDD                                                                                                 | [0013](ticket-0013-test-and-runtime-setup.md)–[0022](ticket-0022-live-smoke-test.md)                                               | todo        |
-| 5   | Submit: README with local build and run steps ([ADR-0005](adr-0005-local-only.md)), live smoke run, wiki check | [0023](ticket-0023-readme-and-submission.md)                                                                                       | todo        |
+| #   | Phase                                                                                                          | Tickets                                                                                                                                                         | Status |
+| --- | -------------------------------------------------------------------------------------------------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------ |
+| 1   | Set up the wiki and do context research                                                                        | [0001](ticket-0001-set-up-wiki.md), [0002](ticket-0002-research-alpha-kids.md), [0003](ticket-0003-research-llm-providers.md)                                   | done   |
+| 2   | Research what is still open: safety, Roman Urdu, stack                                                         | [0004](ticket-0004-research-safety-escalation.md), [0005](ticket-0005-research-roman-urdu.md), [0007](ticket-0007-choose-stack.md)                              | done   |
+| 3   | Design the reply schema and prompt, and write the implementation plan                                          | [0006](ticket-0006-design-coach-contract.md), [0008](ticket-0008-write-implementation-plan.md)                                                                  | done   |
+| 3½  | Bootstrap the app and protect `main`                                                                           | [0010](ticket-0010-bootstrap-app.md), [0011](ticket-0011-protect-main.md)                                                                                       | done   |
+| 4   | Specify (Gherkin), design (Claude Design), then build with BDD and TDD                                         | [0024](ticket-0024-gherkin-features.md), [0025](ticket-0025-ui-design.md), [0013](ticket-0013-test-and-runtime-setup.md)–[0022](ticket-0022-live-smoke-test.md) | todo   |
+| 5   | Submit: README with local build and run steps ([ADR-0005](adr-0005-local-only.md)), live smoke run, wiki check | [0023](ticket-0023-readme-and-submission.md)                                                                                                                    | todo   |
 
 ## Architecture
 
 One page, one Server Function and a pure core. Everything that decides what a parent sees lives in `src/coach/`, as plain functions that unit tests can reach without Next.js or the network.
 
 ```text
+features/               Gherkin user stories, quoting the brief, tagged @R1–@R10   (ADR-0017)
+  *.feature, *.spec.ts  executable through @amiceli/vitest-cucumber
+scripts/
+  feature-coverage.ts   fails CI if a functional requirement has no scenario
 src/
   app/
     page.tsx            server component; renders <Chat />
@@ -75,24 +79,27 @@ src/
 
 ## Test plan
 
-| Layer      | Runner                                     | What                                                                                                                                            | Tickets                                                                        |
-| ---------- | ------------------------------------------ | ----------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------ |
-| Unit       | Vitest, Node (`vp test`)                   | Normalisation, language, pre-check, messages, schema, post-checks, prompt, adapter (with `MockLanguageModelV4`), orchestrator, input validation | [0014](ticket-0014-language-detection.md)–[0020](ticket-0020-server-action.md) |
-| Component  | Vitest, jsdom, Testing Library (`vp test`) | `CoachTurnView` and `Chat` rendering and interaction, with the action mocked                                                                    | [0021](ticket-0021-chat-ui.md)                                                 |
-| Live smoke | Vitest, opt-in (`vp run smoke`)            | About 10 fixtures against real Gemini, only when an API key is set                                                                              | [0022](ticket-0022-live-smoke-test.md)                                         |
+| Layer            | Runner                                          | What                                                                                                                                            | Tickets                                                                                                                               |
+| ---------------- | ----------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------- |
+| Acceptance (BDD) | Vitest + `@amiceli/vitest-cucumber` (`vp test`) | The Gherkin scenarios in `features/`, against `respond()` with a mocked model and against the chat component                                    | [0024](ticket-0024-gherkin-features.md), passing through [0019](ticket-0019-coach-orchestrator.md) and [0021](ticket-0021-chat-ui.md) |
+| Unit             | Vitest, Node (`vp test`)                        | Normalisation, language, pre-check, messages, schema, post-checks, prompt, adapter (with `MockLanguageModelV4`), orchestrator, input validation | [0014](ticket-0014-language-detection.md)–[0020](ticket-0020-server-action.md)                                                        |
+| Component        | Vitest, jsdom, Testing Library (`vp test`)      | `CoachTurnView` and `Chat` rendering and interaction, with the action mocked                                                                    | [0021](ticket-0021-chat-ui.md)                                                                                                        |
+| Live smoke       | Vitest, opt-in (`vp run smoke`)                 | About 10 fixtures against real Gemini, only when an API key is set                                                                              | [0022](ticket-0022-live-smoke-test.md)                                                                                                |
 
+- **BDD outside, TDD inside ([ADR-0017](adr-0017-bdd-gherkin-features.md)):** a failing scenario says _what_ to build, and the unit tests in each ticket drive _how_. `vp run features:coverage` fails CI if a functional requirement (R1–R10) has no scenario.
 - **TDD, every ticket:** write a failing test, make it pass, then refactor. Commit when green, with test and code together ([ADR-0006](adr-0006-gitmoji-atomic-commits.md)).
 - **Fixtures** come from the research pages: [Safety](research-safety-escalation.md) and [Roman Urdu](research-roman-urdu.md).
 - **CI** (`ci` job) runs the unit and component tests on every PR. The live smoke test never runs in CI, because it needs a key and costs quota.
 
 ## Milestones
 
-| Milestone              | Tickets                                                                                                                                                                                                                     | Result                                                 |
-| ---------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------ |
-| M1: deterministic core | [0013](ticket-0013-test-and-runtime-setup.md), [0014](ticket-0014-language-detection.md), [0015](ticket-0015-safety-precheck.md), [0016](ticket-0016-fixed-messages.md), [0017](ticket-0017-reply-schema-and-postchecks.md) | Everything that doesn't need the model, fully tested   |
-| M2: the model          | [0018](ticket-0018-model-adapter.md), [0019](ticket-0019-coach-orchestrator.md), [0020](ticket-0020-server-action.md)                                                                                                       | `respond` works end to end, with the model mocked      |
-| M3: the page           | [0021](ticket-0021-chat-ui.md)                                                                                                                                                                                              | A usable chat in the browser                           |
-| M4: submit             | [0022](ticket-0022-live-smoke-test.md), [0023](ticket-0023-readme-and-submission.md)                                                                                                                                        | Verified against real Gemini, documented for reviewers |
+| Milestone              | Tickets                                                                                                                                                                                                                     | Result                                                                                                                     |
+| ---------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | -------------------------------------------------------------------------------------------------------------------------- |
+| M0: specify and design | [0024](ticket-0024-gherkin-features.md), [0025](ticket-0025-ui-design.md)                                                                                                                                                   | Executable user stories traced to the brief; an approved UI design. Design runs alongside M1–M2 and must be done before M3 |
+| M1: deterministic core | [0013](ticket-0013-test-and-runtime-setup.md), [0014](ticket-0014-language-detection.md), [0015](ticket-0015-safety-precheck.md), [0016](ticket-0016-fixed-messages.md), [0017](ticket-0017-reply-schema-and-postchecks.md) | Everything that doesn't need the model, fully tested                                                                       |
+| M2: the model          | [0018](ticket-0018-model-adapter.md), [0019](ticket-0019-coach-orchestrator.md), [0020](ticket-0020-server-action.md)                                                                                                       | `respond` works end to end, with the model mocked                                                                          |
+| M3: the page           | [0021](ticket-0021-chat-ui.md)                                                                                                                                                                                              | The designed chat, in the browser                                                                                          |
+| M4: submit             | [0022](ticket-0022-live-smoke-test.md), [0023](ticket-0023-readme-and-submission.md)                                                                                                                                        | Verified against real Gemini, documented for reviewers                                                                     |
 
 Each ticket is one PR, stacked on the previous one where it depends on it ([ADR-0008](adr-0008-protected-main-linear-history.md)), so Aadit can fast-forward a milestone with one push.
 
