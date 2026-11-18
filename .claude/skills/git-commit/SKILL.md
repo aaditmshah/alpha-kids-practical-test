@@ -72,39 +72,16 @@ Co-Authored-By: ...   (trailers last, when attribution applies)
 
 ### Choosing the gitmoji
 
-Choose the emoji for the commit's **main intent**. Common choices in this repo:
+Choose the emoji for the commit's **main intent**. The gitmoji CLI, a dev dependency, prints the
+current list with each emoji's meaning:
 
-| Emoji        | Use for                                                |
-| ------------ | ------------------------------------------------------ |
-| 🎉           | Begin a project (first commit only)                    |
-| ✨           | Introduce a feature                                    |
-| 🐛           | Fix a bug                                              |
-| 🩹           | Simple fix for a non-critical issue                    |
-| ✅           | Add, update or pass tests                              |
-| 🧪           | Add a failing test (deliberately red commit)           |
-| ♻️           | Refactor code                                          |
-| 🎨           | Improve structure or format                            |
-| 📝           | Add or update documentation (including the wiki)       |
-| 💬           | Add or update text and literals (prompts, UI copy)     |
-| 🌐           | Internationalisation and localisation (Roman Urdu)     |
-| 💄           | Add or update the UI and style files                   |
-| 🚸           | Improve user experience or usability                   |
-| 🦺           | Add or update validation code (reply-schema checks)    |
-| 🥅           | Catch errors (for example, 429 handling)               |
-| 👔           | Add or update business logic (coach rules, escalation) |
-| 🤡           | Mock things                                            |
-| 🔧           | Add or update configuration files                      |
-| 🔨           | Add or update development scripts                      |
-| 🧑‍💻           | Improve developer experience (skills, tooling)         |
-| ➕ / ➖ / ⬆️ | Add, remove or upgrade a dependency                    |
-| 🙈           | Add or update `.gitignore`                             |
-| 🔥           | Remove code or files                                   |
-| 🚚           | Move or rename files                                   |
-| ✏️           | Fix typos                                              |
-| 🔒️           | Fix security or privacy issues                         |
-| ⏪️           | Revert changes                                         |
+```bash
+vpx gitmoji list           # every gitmoji
+vpx gitmoji search <word>  # gitmojis matching a keyword, for example "test" or "config"
+```
 
-The full list is at [gitmoji.dev](https://gitmoji.dev/). If two emoji fit, the change is probably not atomic; consider splitting it.
+Use the emoji character from the first column, not the `:shortcode:`. If two emoji fit, the
+change is probably not atomic; consider splitting it.
 
 ## 3. Commit and verify
 
