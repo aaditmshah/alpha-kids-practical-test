@@ -105,6 +105,8 @@ Tracked as [ticket-0012](ticket-0012-backlinks-and-pr-tracking.md).
 
 The candidate asked to remove the status from PR pages (_"That's an infinite regress. The last PR that's merged will always be out of date"_), and for a workflow check that every PR has its wiki page with a matching PR number and title. The agent built the check test-first, against PR titles. The candidate then clarified: _"Sorry, by title I meant the name of the branch."_ The check was rewritten test-first to compare the PR's number and head branch with `wiki/pr-NNNN-<branch>.md`. Page titles are free-form again. → [ADR-0010](adr-0010-pr-pages-without-status.md)
 
+The agent first wrote that a PR's page had to come after `gh pr create`, once GitHub had assigned the number. The candidate corrected this: _"Note, we can guess the PR number. We don't have to wait."_ Issues and PRs share one number sequence, so the `git-commit` skill now computes the next number and puts the page in the branch's first push.
+
 Supporting changes:
 
 - `allowImportingTsExtensions` was added to tsconfig, as on the website, because Node's type stripping needs `.ts` import paths.

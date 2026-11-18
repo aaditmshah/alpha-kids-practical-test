@@ -37,7 +37,7 @@ For the check:
 ## Consequences
 
 - A PR page is only edited while its own PR is open, and nothing goes stale after a merge.
-- GitHub assigns the PR number when the PR opens, so the page lands in a commit after `gh pr create`, and the PR's first CI run fails until it does. The [`git-commit` skill](../.claude/skills/git-commit/SKILL.md) spells out this order.
+- The page is written before the PR exists, so its number has to be guessed. Issues and pull requests share one number sequence, so the next number is the highest so far plus one. The candidate pointed this out: _"we can guess the PR number. We don't have to wait."_ If something else takes the number first, CI fails until the page is renamed. The [`git-commit` skill](../.claude/skills/git-commit/SKILL.md) gives the command.
 - Branch names must be valid wiki file names (lowercase kebab-case), which the `git-commit` skill already requires.
 
 ## See also
