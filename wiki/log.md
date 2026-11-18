@@ -69,3 +69,4 @@ Format: `YYYY-MM-DD: [type] what happened (links)`. Append only; never rewrite e
 - 2026-11-18: [build] Gherkin features written with a coverage check against the brief; learning exercises for Aadit decided ([PR #11](pr-0011-gherkin-features.md), [ADR-0019](adr-0019-learning-exercises.md))
 - 2026-11-18: [build] Keyword safety pre-check and normalisation built test-first; detectLanguage stubbed for Aadit ([PR #12](pr-0012-safety-precheck.md))
 - 2026-11-18: [build] Fixed escalation, referral and fail-safe messages written ([PR #13](pr-0013-fixed-messages.md))
+- 2026-11-18: [build] Reply schema defined; postcheck stubbed for Aadit ([PR #14](pr-0014-reply-schema.md))

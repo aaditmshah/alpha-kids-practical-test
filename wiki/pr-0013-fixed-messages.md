@@ -38,3 +38,4 @@ _(Recorded here before merge.)_
 ## See also
 
 - [Log](log.md)
+- [PR #14: Define the Reply Schema](pr-0014-reply-schema.md)

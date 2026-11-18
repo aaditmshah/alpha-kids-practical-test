@@ -34,6 +34,8 @@ Aadit approved [PR #10](pr-0010-test-and-runtime-setup.md) and asked for the nex
 
 - **[PR #13](pr-0013-fixed-messages.md), ticket-0016:** the helplines and the fixed messages as structured objects, using the approved wording, with 18 tests.
 
+- **[PR #14](pr-0014-reply-schema.md), the schema half of ticket-0017:** the `CoachReply` Zod schema, with 12 tests and descriptions for the model, plus the `postcheck` stub.
+
 ## Open at end of session
 
 - Aadit's review of [PR #10](pr-0010-test-and-runtime-setup.md).

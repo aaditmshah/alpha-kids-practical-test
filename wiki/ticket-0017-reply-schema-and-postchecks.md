@@ -1,7 +1,7 @@
 ---
 title: "ticket-0017: Implement the Reply Schema and Post-Checks"
 type: ticket
-status: todo
+status: in-progress
 updated: 2026-11-18
 summary: The CoachReply Zod schema and the dose and diagnosis post-checks from ADR-0015.
 ---
@@ -21,9 +21,9 @@ Back to: [Tickets](index-tickets.md) · [Kanban](kanban.md) · [Plan](plan.md)
 
 ## Tests that drive it
 
-- [ ] Valid replies parse; missing fields, 1 or 5 plan steps, unknown enums and over-length strings fail
-- [ ] `5 ml`, `2 tablets`, `10mg` → dose hit; `sounds like ADHD`, `might have autism` → diagnosis hit
-- [ ] Echoing the parent's own diagnosis (_since your son has ADHD_) → no hit
+- [x] Valid replies parse; missing fields, 1 or 5 plan steps, unknown enums and over-length strings fail _(Claude, [PR #14](pr-0014-reply-schema.md))_
+- [ ] _(Aadit)_ `5 ml`, `2 tablets`, `10mg` → dose hit; `sounds like ADHD`, `might have autism` → diagnosis hit
+- [ ] _(Aadit)_ Echoing the parent's own diagnosis (_since your son has ADHD_) → no hit
 
 ## See also
 
