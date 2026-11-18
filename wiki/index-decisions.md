@@ -25,7 +25,7 @@ Back to: [Home](index.md)
 | [ADR-0011: Layered safety, fixed escalation](adr-0011-layered-safety-escalation.md)   | accepted | Keyword pre-check before the model, model risk field, fail-safe; escalation text is fixed, never generated          |
 | [ADR-0012: Indian helplines only](adr-0012-india-helplines.md)                        | accepted | Escalation lists 112, 1098, 181 and 14416, all verified from official sources                                       |
 | [ADR-0013: Roman Urdu detection](adr-0013-roman-urdu-detection.md)                    | accepted | Model reports reply language; marker-word heuristic for fixed text; Hindustani vocabulary; regex crisis phrases     |
-| [ADR-0014: Vercel AI SDK](adr-0014-vercel-ai-sdk.md)                                  | proposed | Call Gemini via `ai` + `@ai-sdk/google` with Zod schemas, behind a one-function adapter                             |
+| [ADR-0014: Vercel AI SDK](adr-0014-vercel-ai-sdk.md)                                  | accepted | Call Gemini via `ai` + `@ai-sdk/google` with Zod schemas, behind a one-function adapter                             |
 
 ## See also
 

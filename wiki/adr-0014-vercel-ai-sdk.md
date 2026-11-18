@@ -1,16 +1,16 @@
 ---
 title: "ADR-0014: Call Gemini Through the Vercel AI SDK"
 type: adr
-status: proposed
+status: accepted
 updated: 2026-11-18
-summary: Proposed. Use the Vercel AI SDK (ai, @ai-sdk/google) with Zod 4 schemas behind a one-function adapter. It gives Zod-validated structured output, built-in test mocks and a one-import switch to Groq.
+summary: Use the Vercel AI SDK (ai, @ai-sdk/google) with Zod 4 schemas behind a one-function adapter. It gives Zod-validated structured output, built-in test mocks and a one-import switch to Groq.
 ---
 
 # ADR-0014: Call Gemini Through the Vercel AI SDK
 
 Back to: [Decisions](index-decisions.md) · Research: [LLM client library](research-llm-client.md) · Ticket: [ticket-0007](ticket-0007-choose-stack.md)
 
-**Status: proposed.** It becomes accepted when Aadit agrees.
+**Status: accepted** on 2026-11-18, in Aadit's review of [PR #7](pr-0007-choose-llm-client.md): _"Vercel AI SDK sounds excellent. I especially love that it supports Zod out of the box, holds the AI model to that schema, is easy to mock, and the AI model can be changed easily. Let's lock it in."_
 
 ## Context
 

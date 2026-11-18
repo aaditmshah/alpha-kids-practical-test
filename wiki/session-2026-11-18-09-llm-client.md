@@ -20,5 +20,5 @@ Aadit: _"Merged."_ That was [PR #6](pr-0006-research-roman-urdu.md). Claude then
 
 ## Open at end of session
 
-- Aadit's review of ADR-0014, to be recorded on [PR #7](pr-0007-choose-llm-client.md) before merge.
+- ~~Aadit's review of ADR-0014.~~ Accepted (_"Let's lock it in."_), recorded on [PR #7](pr-0007-choose-llm-client.md).
 - Next: [ticket-0006](ticket-0006-design-coach-contract.md) (reply schema and prompt), then [ticket-0008](ticket-0008-write-implementation-plan.md) (implementation plan).

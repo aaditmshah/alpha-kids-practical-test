@@ -3,7 +3,7 @@ title: "ticket-0007: Choose the Stack and Test Tooling"
 type: ticket
 status: done
 updated: 2026-11-18
-summary: Framework, test runner and styling are decided (ADR-0007). The LLM client is the Vercel AI SDK (ADR-0014, proposed).
+summary: Framework, test runner and styling are decided (ADR-0007). The LLM client is the Vercel AI SDK (ADR-0014).
 ---
 
 # ticket-0007: Choose the Stack and Test Tooling
@@ -24,7 +24,7 @@ An ADR for the LLM client library.
 ## Result
 
 - [Research: LLM client library](research-llm-client.md)
-- [ADR-0014](adr-0014-vercel-ai-sdk.md): the Vercel AI SDK, behind a one-function adapter (proposed)
+- [ADR-0014](adr-0014-vercel-ai-sdk.md): the Vercel AI SDK, behind a one-function adapter (accepted)
 - Delivered in [PR #7](pr-0007-choose-llm-client.md)
 
 ## See also

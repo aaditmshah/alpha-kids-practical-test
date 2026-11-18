@@ -34,4 +34,12 @@ The LLM client was the last open stack choice, and the reply schema and implemen
 
 Question for Aadit: accept ADR-0014 (the Vercel AI SDK), or prefer Google's SDK?
 
-_(The answer is recorded here before merge.)_
+Aadit's answer:
+
+> "Vercel AI SDK sounds excellent. I especially love that it supports Zod out of the box, holds the AI model to that schema, is easy to mock, and the AI model can be changed easily. Let's lock it in."
+
+- **ADR-0014:** accepted, with no changes ([ADR-0014](adr-0014-vercel-ai-sdk.md)). The reasons he valued most: Zod support out of the box, the model held to the schema, easy mocking, and an easy model switch.
+
+## See also
+
+- [Log](log.md)

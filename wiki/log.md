@@ -59,3 +59,4 @@ Format: `YYYY-MM-DD: [type] what happened (links)`. Append only; never rewrite e
 - 2026-11-18: [research] Roman Urdu handling researched; escalation wording drafted in English and Roman Urdu; ADR-0013 proposed ([research](research-roman-urdu.md), [ADR-0013](adr-0013-roman-urdu-detection.md))
 - 2026-11-18: [decision] ADR-0013 accepted and the Roman Urdu escalation wording approved as drafted ([PR #6](pr-0006-research-roman-urdu.md))
 - 2026-11-18: [research] LLM client compared; Vercel AI SDK proposed ([research](research-llm-client.md), [ADR-0014](adr-0014-vercel-ai-sdk.md))
+- 2026-11-18: [decision] Vercel AI SDK accepted as the LLM client ([ADR-0014](adr-0014-vercel-ai-sdk.md), [PR #7](pr-0007-choose-llm-client.md))
