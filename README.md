@@ -1,36 +1,46 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Alpha Kids Practical Test
 
-## Getting Started
+A small parenting coach for the [Alpha Kids](https://alpha.kids/) practical test. A parent types a
+concern in English or Roman Urdu, and an LLM coach replies with a short, structured, safe plan and a
+follow-up check-in. It escalates clearly when the parent describes an emergency, abuse or self-harm.
 
-First, run the development server:
+> **Status:** the app is scaffolded and the coach is not built yet. The [project wiki](wiki/index.md)
+> records the current state, the plan and every decision.
+
+## Run it locally
+
+The app runs locally only; there is no hosted demo ([why](wiki/adr-0005-local-only.md)).
+
+### Prerequisites
+
+- [Vite+](https://viteplus.dev/guide/), the `vp` command. It provides the pinned Node.js and pnpm
+  versions; see `vp env` for runtime management.
+
+### Install and start
 
 ```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+vp install          # install dependencies with the pinned pnpm
+vp run build        # production build (Next.js)
+vp run start        # serve it at http://localhost:3000
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+For development, run `vp run dev` instead. Use `vp run <script>` for this project's scripts: the
+built-in `vp dev` and `vp build` run Vite, not Next.js.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## Checks
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+```bash
+vp run typegen      # generate Next.js route types (needed once on a fresh clone)
+vp check            # format, lint and type check
+vp test             # unit tests (Vitest)
+vp run wiki:lint    # check the wiki's links, indexes and frontmatter
+```
 
-## Learn More
+CI runs these checks and the build on every pull request. They must pass before anything merges into
+`main`.
 
-To learn more about Next.js, take a look at the following resources:
+## Project wiki
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+The [`wiki/`](wiki/index.md) directory is the project's memory. It holds the research, architectural
+decision records, tickets, a Kanban board and a record of every working session. Start at the
+[home page](wiki/index.md).
