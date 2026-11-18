@@ -41,3 +41,5 @@ Gemini free tier, Groq, OpenRouter `:free`, Cerebras, Mistral, GitHub Models, Cl
 - [Session 2026-11-18 #1: Kickoff](session-2026-11-18-01-kickoff.md)
 - [ticket-0003: Research Free LLM Providers](ticket-0003-research-llm-providers.md)
 - [ticket-0007: Choose the Stack and Test Tooling](ticket-0007-choose-stack.md)
+- [ADR-0014: Call Gemini Through the Vercel AI SDK](adr-0014-vercel-ai-sdk.md)
+- [Research: LLM Client Library](research-llm-client.md)

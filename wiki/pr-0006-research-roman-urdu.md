@@ -48,3 +48,4 @@ Aadit's answer:
 ## See also
 
 - [Log](log.md)
+- [Session 2026-11-18 #9: LLM Client](session-2026-11-18-09-llm-client.md)

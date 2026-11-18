@@ -1,9 +1,9 @@
 ---
 title: "ticket-0007: Choose the Stack and Test Tooling"
 type: ticket
-status: todo
+status: done
 updated: 2026-11-18
-summary: Framework, test runner and styling are decided (ADR-0007). Still open is the LLM client library (Google Gen AI SDK or Vercel AI SDK).
+summary: Framework, test runner and styling are decided (ADR-0007). The LLM client is the Vercel AI SDK (ADR-0014, proposed).
 ---
 
 # ticket-0007: Choose the Stack and Test Tooling
@@ -21,6 +21,12 @@ Back to: [Home](index.md) · [Tickets](index-tickets.md) · [Kanban](kanban.md) 
 
 An ADR for the LLM client library.
 
+## Result
+
+- [Research: LLM client library](research-llm-client.md)
+- [ADR-0014](adr-0014-vercel-ai-sdk.md): the Vercel AI SDK, behind a one-function adapter (proposed)
+- Delivered in [PR #7](pr-0007-choose-llm-client.md)
+
 ## See also
 
 - [Plan](plan.md)
@@ -30,3 +36,4 @@ An ADR for the LLM client library.
 - [Session 2026-11-18 #5: Fast-Forward Merges](session-2026-11-18-05-fast-forward-merges.md)
 - [Session 2026-11-18 #6: Safety Research](session-2026-11-18-06-safety-research.md)
 - [Session 2026-11-18 #8: Roman Urdu Research](session-2026-11-18-08-roman-urdu-research.md)
+- [Session 2026-11-18 #9: LLM Client](session-2026-11-18-09-llm-client.md)

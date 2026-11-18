@@ -45,3 +45,4 @@ The [brief](source-practical-test-brief.md) allows Next.js or Node. Aadit asked 
 - [Log](log.md)
 - [ticket-0010: Bootstrap the Next.js App with Vite+](ticket-0010-bootstrap-app.md)
 - [PR #1: Bootstrap the Next.js App with Vite+](pr-0001-bootstrap-nextjs.md)
+- [ADR-0014: Call Gemini Through the Vercel AI SDK](adr-0014-vercel-ai-sdk.md)

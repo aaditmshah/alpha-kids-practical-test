@@ -19,6 +19,7 @@ Back to: [Home](index.md)
 | [Website conventions](research-website-conventions.md)           | active | What was copied from Aadit's website repo, what was left out, and why                                                                             |
 | [Safety and escalation](research-safety-escalation.md)           | active | Layered crisis detection, fixed escalation text, verified Indian helplines (112, 1098, 181, 14416), allowed vs forbidden advice, prompt injection |
 | [Roman Urdu handling](research-roman-urdu.md)                    | active | Language detection, mixed messages, spelling style, Roman Urdu crisis phrases, draft escalation wording; safety detection degrades in Roman Urdu  |
+| [LLM client library](research-llm-client.md)                     | active | `@google/genai` vs the Vercel AI SDK; AI SDK recommended for Zod-validated structured output, test mocks and an easy Groq switch                  |
 
 ## See also
 

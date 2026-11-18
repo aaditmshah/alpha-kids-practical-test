@@ -37,3 +37,6 @@ An ADR for the schema, and the prompt's design rationale recorded in the wiki.
 - [Research: Safety and Escalation](research-safety-escalation.md)
 - [Research: Roman Urdu Handling](research-roman-urdu.md)
 - [Session 2026-11-18 #8: Roman Urdu Research](session-2026-11-18-08-roman-urdu-research.md)
+- [Alpha Kids Practical Test Wiki](index.md)
+- [Research: LLM Client Library](research-llm-client.md)
+- [Session 2026-11-18 #9: LLM Client](session-2026-11-18-09-llm-client.md)
