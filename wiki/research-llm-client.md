@@ -53,6 +53,8 @@ Versions are picked by pnpm's one-week `minimumReleaseAge`, since both packages 
 
 ## To confirm while building
 
+_Confirmed in [ticket-0018](ticket-0018-model-adapter.md): bad output raises `NoObjectGeneratedError`, API errors are `APICallError` with `statusCode`, and retried errors arrive wrapped in `RetryError` (`lastError`)._
+
 - **Error types:** which AI SDK error classes and fields mark a 429 rate limit, a Gemini safety block and a validation failure, so the fail-safe can tell them apart. Pin these down test-first.
 - **Model ID:** that `gemini-3.8-flash` works through `@ai-sdk/google`, in the opt-in live smoke test.
 

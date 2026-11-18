@@ -36,7 +36,18 @@ Aadit approved [PR #10](pr-0010-test-and-runtime-setup.md) and asked for the nex
 
 - **[PR #14](pr-0014-reply-schema.md), the schema half of ticket-0017:** the `CoachReply` Zod schema, with 12 tests and descriptions for the model, plus the `postcheck` stub.
 
+- **[PR #15](pr-0015-model-adapter.md), ticket-0018:**
+  - the system prompt, with examples that are tested against the schema
+  - history trimmed to the last 6 messages
+  - `askModel`, with typed failures
+
+  The AI SDK's error classes were confirmed from its bundled docs.
+
+- **Where the stack stops.** It ends here, before the orchestrator ([ticket-0019](ticket-0019-coach-orchestrator.md)), which needs Aadit's `detectLanguage` and `postcheck` ([ADR-0019](adr-0019-learning-exercises.md)).
+
 ## Open at end of session
 
 - Aadit's review of [PR #10](pr-0010-test-and-runtime-setup.md).
-- Next: [ticket-0024](ticket-0024-gherkin-features.md), the Gherkin features, stacked on PR #10.
+- Aadit reviews and merges the stack, PRs #10 to #15. His review of the features (PR #11) completes [ticket-0024](ticket-0024-gherkin-features.md).
+- Aadit's exercises: [ticket-0014](ticket-0014-language-detection.md) (`detectLanguage`) and the post-checks in [ticket-0017](ticket-0017-reply-schema-and-postchecks.md).
+- Then Claude: the orchestrator ([ticket-0019](ticket-0019-coach-orchestrator.md)). The UI design ([ticket-0025](ticket-0025-ui-design.md)) can start any time.

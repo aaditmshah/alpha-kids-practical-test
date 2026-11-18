@@ -28,6 +28,7 @@ Back to: [Home](index.md)
 | [PR #12: Add the keyword safety pre-check](pr-0012-safety-precheck.md)          | `normalize`, `precheck` (English and Roman Urdu crisis phrases), and the `detectLanguage` stub. Stacked on PR #11       |
 | [PR #13: Write the fixed messages](pr-0013-fixed-messages.md)                   | Helplines constant and the escalation, referral and fail-safe messages in English and Roman Urdu. Stacked on PR #12     |
 | [PR #14: Define the reply schema](pr-0014-reply-schema.md)                      | `CoachReply` Zod schema and the `postcheck` stub for Aadit. Stacked on PR #13                                           |
+| [PR #15: Build the model adapter and prompt](pr-0015-model-adapter.md)          | System prompt with examples, history trimming, and `askModel` with typed failures. Stacked on PR #14                    |
 
 ## Before pull requests
 

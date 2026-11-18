@@ -39,3 +39,4 @@ _(Recorded here before merge.)_
 ## See also
 
 - [Log](log.md)
+- [PR #15: Build the Model Adapter and Prompt](pr-0015-model-adapter.md)

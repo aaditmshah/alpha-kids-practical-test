@@ -29,3 +29,4 @@ Back to: [Tickets](index-tickets.md) · [Kanban](kanban.md) · [Plan](plan.md)
 
 - [Alpha Kids Practical Test Wiki](index.md)
 - [Session 2026-11-18 #11: Implementation Plan](session-2026-11-18-11-implementation-plan.md)
+- [Session 2026-11-18 #12: Build Setup](session-2026-11-18-12-build-setup.md)

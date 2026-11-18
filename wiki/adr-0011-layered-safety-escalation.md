@@ -65,3 +65,4 @@ R8 in [Requirements](requirements.md) says the coach must _"clearly escalate if 
 - [ticket-0025: Design the UI in Claude Design](ticket-0025-ui-design.md)
 - [PR #12: Add the Keyword Safety Pre-Check](pr-0012-safety-precheck.md)
 - [PR #13: Write the Fixed Messages](pr-0013-fixed-messages.md)
+- [PR #15: Build the Model Adapter and Prompt](pr-0015-model-adapter.md)

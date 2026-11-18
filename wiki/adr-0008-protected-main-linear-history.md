@@ -95,3 +95,4 @@ GitHub accepts the push to protected `main` because those exact commits passed t
 - [PR #12: Add the Keyword Safety Pre-Check](pr-0012-safety-precheck.md)
 - [PR #13: Write the Fixed Messages](pr-0013-fixed-messages.md)
 - [PR #14: Define the Reply Schema](pr-0014-reply-schema.md)
+- [PR #15: Build the Model Adapter and Prompt](pr-0015-model-adapter.md)

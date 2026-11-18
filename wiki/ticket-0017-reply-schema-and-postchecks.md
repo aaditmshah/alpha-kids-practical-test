@@ -28,3 +28,5 @@ Back to: [Tickets](index-tickets.md) · [Kanban](kanban.md) · [Plan](plan.md)
 ## See also
 
 - [ticket-0018: Build the Model Adapter and Prompt](ticket-0018-model-adapter.md)
+- [Alpha Kids Practical Test Wiki](index.md)
+- [Session 2026-11-18 #12: Build Setup](session-2026-11-18-12-build-setup.md)

@@ -34,3 +34,5 @@ Back to: [Tickets](index-tickets.md) · [Kanban](kanban.md) · [Plan](plan.md)
 
 - [ticket-0015: Build the Keyword Safety Pre-Check](ticket-0015-safety-precheck.md)
 - [ticket-0019: Build the Coach Orchestrator](ticket-0019-coach-orchestrator.md)
+- [Alpha Kids Practical Test Wiki](index.md)
+- [Session 2026-11-18 #12: Build Setup](session-2026-11-18-12-build-setup.md)
