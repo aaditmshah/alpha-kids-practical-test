@@ -42,4 +42,10 @@ export default defineConfig({
 			"react/react-in-jsx-scope": "off",
 		},
 	},
+	test: {
+		include: ["src/**/*.test.{ts,tsx}"],
+		environment: "node",
+		// The app has no tests until the first TDD cycle, and CI must still pass until then.
+		passWithNoTests: true,
+	},
 });
