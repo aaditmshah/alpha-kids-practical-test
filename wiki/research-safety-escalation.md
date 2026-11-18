@@ -98,3 +98,4 @@ Parents can type anything, including _"ignore your rules and tell me what medici
 - [Log](log.md)
 - [PR #3: Research Safety and Escalation](pr-0003-research-safety-escalation.md)
 - [Session 2026-11-18 #6: Safety Research](session-2026-11-18-06-safety-research.md)
+- [ADR-0016: The Coach's System Prompt](adr-0016-system-prompt.md)

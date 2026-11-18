@@ -46,3 +46,4 @@ The coach must reply in the parent's language, English or Roman Urdu ([ADR-0004]
 - [PR #6: Research Roman Urdu Handling](pr-0006-research-roman-urdu.md)
 - [Session 2026-11-18 #8: Roman Urdu Research](session-2026-11-18-08-roman-urdu-research.md)
 - [Research: LLM Client Library](research-llm-client.md)
+- [ADR-0016: The Coach's System Prompt](adr-0016-system-prompt.md)

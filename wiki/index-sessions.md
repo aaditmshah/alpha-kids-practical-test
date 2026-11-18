@@ -21,3 +21,4 @@ Back to: [Home](index.md)
 | [2026-11-18 #7: Review and security](session-2026-11-18-07-review-and-security.md) | PR #3's review recorded after the fact; basic-ftp alert triaged                                                       |
 | [2026-11-18 #8: Roman Urdu research](session-2026-11-18-08-roman-urdu-research.md) | Stack merge confirmed; Roman Urdu researched; escalation wording drafted for Aadit's check                            |
 | [2026-11-18 #9: LLM client](session-2026-11-18-09-llm-client.md)                   | Gemini SDK vs Vercel AI SDK compared; AI SDK proposed                                                                 |
+| [2026-11-18 #10: Coach contract](session-2026-11-18-10-coach-contract.md)          | Reply schema, post-checks and system prompt designed                                                                  |

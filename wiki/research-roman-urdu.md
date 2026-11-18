@@ -97,3 +97,4 @@ The fixed text from [ADR-0011](adr-0011-layered-safety-escalation.md), with help
 - [Log](log.md)
 - [PR #6: Research Roman Urdu Handling](pr-0006-research-roman-urdu.md)
 - [Session 2026-11-18 #8: Roman Urdu Research](session-2026-11-18-08-roman-urdu-research.md)
+- [ADR-0016: The Coach's System Prompt](adr-0016-system-prompt.md)

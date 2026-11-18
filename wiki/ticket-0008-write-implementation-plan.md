@@ -23,3 +23,5 @@ Depends on: [ticket-0004](ticket-0004-research-safety-escalation.md) through [ti
 - [Session 2026-11-18 #5: Fast-Forward Merges](session-2026-11-18-05-fast-forward-merges.md)
 - [Alpha Kids Practical Test Wiki](index.md)
 - [Session 2026-11-18 #9: LLM Client](session-2026-11-18-09-llm-client.md)
+- [PR #8: Design the Coach Contract](pr-0008-design-coach-contract.md)
+- [Session 2026-11-18 #10: Coach Contract](session-2026-11-18-10-coach-contract.md)

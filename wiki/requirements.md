@@ -41,7 +41,7 @@ These are explicitly out of scope: login, a database, Urdu script and right-to-l
 
 ## Notes on interpretation
 
-- **"Structured"** means a fixed reply shape (plan steps plus check-in plus optional escalation), not free prose. A typed output schema enforces it. The details are still to be designed in [ticket-0006](ticket-0006-design-coach-contract.md).
+- **"Structured"** means a fixed reply shape (summary, 2–4 plan steps, check-in, optional referral, plus risk and language), not free prose. The Zod schema in [ADR-0015](adr-0015-coach-reply-schema.md) enforces it.
 - **"Escalate clearly"** means the escalation must be visually distinct, appear first, and must not depend on the model remembering to add it. The approach is still to be researched in [ticket-0004](ticket-0004-research-safety-escalation.md).
 - **Urdu** means Roman Urdu only ([ADR-0004](adr-0004-roman-urdu-only.md)). If a parent types in Urdu script anyway, the coach replies in Roman Urdu; no extra work goes into this case.
 
@@ -59,3 +59,4 @@ These are explicitly out of scope: login, a database, Urdu script and right-to-l
 - [Research: Safety and Escalation](research-safety-escalation.md)
 - [PR #6: Research Roman Urdu Handling](pr-0006-research-roman-urdu.md)
 - [Research: Roman Urdu Handling](research-roman-urdu.md)
+- [ticket-0006: Design the Coach Reply Schema and Prompt](ticket-0006-design-coach-contract.md)

@@ -22,3 +22,7 @@ Aadit: _"Merged."_ That was [PR #6](pr-0006-research-roman-urdu.md). Claude then
 
 - ~~Aadit's review of ADR-0014.~~ Accepted (_"Let's lock it in."_), recorded on [PR #7](pr-0007-choose-llm-client.md).
 - Next: [ticket-0006](ticket-0006-design-coach-contract.md) (reply schema and prompt), then [ticket-0008](ticket-0008-write-implementation-plan.md) (implementation plan).
+
+## See also
+
+- [Session 2026-11-18 #10: Coach Contract](session-2026-11-18-10-coach-contract.md)

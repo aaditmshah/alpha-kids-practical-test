@@ -61,3 +61,4 @@ Versions are picked by pnpm's one-week `minimumReleaseAge`, since both packages 
 - [Log](log.md)
 - [PR #7: Choose the LLM Client](pr-0007-choose-llm-client.md)
 - [Session 2026-11-18 #9: LLM Client](session-2026-11-18-09-llm-client.md)
+- [ADR-0015: Coach Reply Schema and Post-Checks](adr-0015-coach-reply-schema.md)

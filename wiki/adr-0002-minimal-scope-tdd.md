@@ -37,3 +37,4 @@ Aadit said: _"This is a simple throwaway app. I don't want to spend too much tim
 - [ADR-0013: Roman Urdu Detection and Reply Language](adr-0013-roman-urdu-detection.md)
 - [ADR-0014: Call Gemini Through the Vercel AI SDK](adr-0014-vercel-ai-sdk.md)
 - [Research: LLM Client Library](research-llm-client.md)
+- [ADR-0016: The Coach's System Prompt](adr-0016-system-prompt.md)

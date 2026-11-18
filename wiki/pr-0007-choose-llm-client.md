@@ -43,3 +43,4 @@ Aadit's answer:
 ## See also
 
 - [Log](log.md)
+- [Session 2026-11-18 #10: Coach Contract](session-2026-11-18-10-coach-contract.md)

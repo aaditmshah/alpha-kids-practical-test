@@ -56,3 +56,4 @@ R8 in [Requirements](requirements.md) says the coach must _"clearly escalate if 
 - [Session 2026-11-18 #8: Roman Urdu Research](session-2026-11-18-08-roman-urdu-research.md)
 - [ADR-0014: Call Gemini Through the Vercel AI SDK](adr-0014-vercel-ai-sdk.md)
 - [Research: LLM Client Library](research-llm-client.md)
+- [ADR-0015: Coach Reply Schema and Post-Checks](adr-0015-coach-reply-schema.md)

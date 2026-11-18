@@ -12,8 +12,7 @@ Back to: [Home](index.md) · List view: [Tickets](index-tickets.md)
 
 ## Todo
 
-- [ticket-0006](ticket-0006-design-coach-contract.md): Design the coach reply schema and prompt
-- [ticket-0008](ticket-0008-write-implementation-plan.md): Write the implementation plan and build tickets _(blocked by 0006)_
+- [ticket-0008](ticket-0008-write-implementation-plan.md): Write the implementation plan and build tickets
 
 ## In progress
 
@@ -27,6 +26,7 @@ Nothing in progress.
 - [ticket-0004](ticket-0004-research-safety-escalation.md): Research safety and escalation
 - [ticket-0005](ticket-0005-research-roman-urdu.md): Research Roman Urdu handling
 - [ticket-0007](ticket-0007-choose-stack.md): Choose the stack and test tooling
+- [ticket-0006](ticket-0006-design-coach-contract.md): Design the coach reply schema and prompt
 - [ticket-0009](ticket-0009-commit-conventions.md): Commit conventions and the git-commit skill
 - [ticket-0010](ticket-0010-bootstrap-app.md): Bootstrap the Next.js app with Vite+
 - [ticket-0011](ticket-0011-protect-main.md): Protect main and enforce linear history

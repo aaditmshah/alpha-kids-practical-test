@@ -1,7 +1,7 @@
 ---
 title: "ticket-0006: Design the Coach Reply Schema and Prompt"
 type: ticket
-status: todo
+status: done
 updated: 2026-11-18
 summary: Define the structured reply schema (plan, check-in, risk and escalation, language) and the system prompt that enforces brevity, scope and safety.
 ---
@@ -12,7 +12,7 @@ Back to: [Tickets](index-tickets.md) · [Kanban](kanban.md) · Requirements: R3�
 
 Depends on: [ticket-0004](ticket-0004-research-safety-escalation.md), [ticket-0005](ticket-0005-research-roman-urdu.md)
 
-## Starting sketch (not decided)
+## Starting sketch (superseded by [ADR-0015](adr-0015-coach-reply-schema.md))
 
 ```ts
 type CoachReply = {
@@ -28,6 +28,12 @@ type CoachReply = {
 
 An ADR for the schema, and the prompt's design rationale recorded in the wiki.
 
+## Result
+
+- [ADR-0015](adr-0015-coach-reply-schema.md): reply schema, length limits, post-checks, display rules, conversation history (proposed)
+- [ADR-0016](adr-0016-system-prompt.md): system prompt and model settings (proposed)
+- Delivered in [PR #8](pr-0008-design-coach-contract.md)
+
 ## See also
 
 - [Plan](plan.md)
@@ -40,3 +46,4 @@ An ADR for the schema, and the prompt's design rationale recorded in the wiki.
 - [Alpha Kids Practical Test Wiki](index.md)
 - [Research: LLM Client Library](research-llm-client.md)
 - [Session 2026-11-18 #9: LLM Client](session-2026-11-18-09-llm-client.md)
+- [Session 2026-11-18 #10: Coach Contract](session-2026-11-18-10-coach-contract.md)

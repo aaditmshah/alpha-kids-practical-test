@@ -43,3 +43,4 @@ Gemini is the model ([ADR-0003](adr-0003-llm-provider.md)) and Next.js is the ap
 - [Log](log.md)
 - [PR #7: Choose the LLM Client](pr-0007-choose-llm-client.md)
 - [Session 2026-11-18 #9: LLM Client](session-2026-11-18-09-llm-client.md)
+- [ADR-0015: Coach Reply Schema and Post-Checks](adr-0015-coach-reply-schema.md)
