@@ -7,6 +7,23 @@ description: Commit changes in this repo as atomic commits with Gitmoji-style me
 
 The full rationale is on the wiki pages `wiki/research-commit-messages.md` and `wiki/adr-0006-gitmoji-atomic-commits.md`.
 
+## 0. Work on a branch
+
+`main` is protected (`wiki/adr-0008-protected-main-linear-history.md`). Direct pushes are rejected,
+even for admins. So:
+
+1. Start from an up-to-date `main`: `git switch main && git pull --ff-only`.
+2. Create a short kebab-case branch named after the work, for example `git switch -c safety-precheck`.
+3. Commit on the branch (sections 1 to 3).
+4. Before pushing, run the CI checks locally: `vp run typegen`, `vp check`, `vp test --run`,
+   `vp run wiki:lint` and `vp run build`.
+5. Push with `git push -u origin <branch>`, then open a pull request with
+   `gh pr create --base main`. Give it a gitmoji title and a body that says what changes and why.
+6. If `main` moves, rebase the branch onto it (`git rebase origin/main`) and push with
+   `--force-with-lease`. Never create merge commits.
+7. Merging is the user's call: rebase merges only (`gh pr merge --rebase`), and only after `ci`
+   passes. Squash and merge commits are disabled.
+
 ## 1. Plan atomic commits
 
 An atomic commit is **one logical change** that is **complete**: the linter and tests pass at that commit, and it can be reverted on its own.
@@ -107,6 +124,6 @@ git log -1 --stat
 ```
 
 - Follow any attribution-trailer instructions given by the harness or the user.
-- Commit only when the user has asked. Never push unless asked.
+- Commit only when the user has asked. Never push unless asked, and never push to `main`.
 - Never amend or rewrite published history.
 - Don't log individual commits in `wiki/log.md`; git history is that record. Log milestones only.

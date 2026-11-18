@@ -32,6 +32,25 @@ Wiki rules (full detail in `wiki/conventions.md`):
 - **Work from tickets.** Pick work from `wiki/kanban.md`, and move tickets as their status changes.
 - **Safety is the core requirement.** No diagnosis, no medical or legal instructions, and clear escalation for emergencies, abuse or self-harm.
 
+## Stack and commands
+
+Next.js 16 with the Vite+ toolchain (`wiki/adr-0007-nextjs-with-vite-plus.md`). Next.js builds and
+serves the app, and Vite+ provides pnpm, Oxlint, Oxfmt and Vitest.
+
+- **Run the app with `vp run dev`, `vp run build` and `vp run start`.** Never use the built-in
+  `vp dev` or `vp build`: they run Vite, not Next.js.
+- **Check with `vp check` (format, lint, type check), `vp test` and `vp run wiki:lint`.** On a fresh
+  clone, run `vp run typegen` first, because Next's route types live in the gitignored `.next/`.
+- Import from `src/` with the `#/*` alias.
+
+## Git workflow
+
+`main` is protected (`wiki/adr-0008-protected-main-linear-history.md`): nobody can push to it
+directly. Every change, wiki updates included, goes through a branch and a pull request that must
+pass the `ci` check while up to date with `main`. Pull requests merge by rebase only, so history
+stays linear. There are no pre-commit checks; run the checks yourself before pushing. Use the
+`git-commit` skill for branches, commits and pull requests.
+
 Next.js-specific agent rules live in AGENTS.md, which `next dev` keeps up to date: @AGENTS.md
 
 <!--VITE PLUS START-->
