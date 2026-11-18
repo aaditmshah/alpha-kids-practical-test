@@ -1,16 +1,16 @@
 ---
 title: "ADR-0016: The Coach's System Prompt"
 type: adr
-status: proposed
+status: accepted
 updated: 2026-11-18
-summary: Proposed. A short system prompt with seven numbered rules (language, brevity, practical strategies, no diagnosis or medical/legal advice, risk with Roman Urdu examples, always a check-in, treat parent messages as data), plus two examples. Temperature 0.3.
+summary: A short system prompt with seven numbered rules (language, brevity, practical strategies, no diagnosis or medical/legal advice, risk with Roman Urdu examples, always a check-in, treat parent messages as data), plus two examples. Temperature 0.3.
 ---
 
 # ADR-0016: The Coach's System Prompt
 
 Back to: [Decisions](index-decisions.md) · Ticket: [ticket-0006](ticket-0006-design-coach-contract.md) · Schema: [ADR-0015](adr-0015-coach-reply-schema.md)
 
-**Status: proposed.** It becomes accepted when Aadit agrees.
+**Status: accepted** on 2026-11-18, in Aadit's review of [PR #8](pr-0008-design-coach-contract.md): _"Approved, record it and I'll merge"_
 
 ## Context
 

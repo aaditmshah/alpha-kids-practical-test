@@ -39,3 +39,7 @@ Questions for Aadit:
 3. Is the Roman Urdu referral reply wording right?
 
 _(Answers are recorded here before merge.)_
+
+## See also
+
+- [Log](log.md)

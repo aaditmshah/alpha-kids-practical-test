@@ -1,16 +1,16 @@
 ---
 title: "ADR-0015: Coach Reply Schema and Post-Checks"
 type: adr
-status: proposed
+status: accepted
 updated: 2026-11-18
-summary: Proposed. The model returns one flat Zod-validated object (language, risk, summary, 2–4 plan steps, a check-in, an optional referral). Code then applies length limits and post-checks for doses and diagnoses, and the app decides what to show.
+summary: The model returns one flat Zod-validated object (language, risk, summary, 2–4 plan steps, a check-in, an optional referral). Code then applies length limits and post-checks for doses and diagnoses, and the app decides what to show.
 ---
 
 # ADR-0015: Coach Reply Schema and Post-Checks
 
 Back to: [Decisions](index-decisions.md) · Ticket: [ticket-0006](ticket-0006-design-coach-contract.md) · Prompt: [ADR-0016](adr-0016-system-prompt.md)
 
-**Status: proposed.** It becomes accepted when Aadit agrees.
+**Status: accepted** on 2026-11-18, in Aadit's review of [PR #8](pr-0008-design-coach-contract.md): _"Approved, record it and I'll merge"_
 
 ## Context
 
@@ -47,7 +47,7 @@ These checks cover the model's text only. A hit replaces the reply with a fixed 
 | Dose or medicine amount | `\b\d+(\.\d+)?\s?(mg\|ml\|mcg\|drops?\|tablets?\|goli)\b`                                                                                                     | R7: no medical instructions                                                                                                  |
 | Suggested diagnosis     | `(sounds like\|might have\|probably has\|likely has\|signs of\|symptoms of)\s+(adhd\|autism\|autistic\|depression\|bipolar\|ocd\|dyslexia\|anxiety disorder)` | R6: no diagnosis. Narrow on purpose: echoing a diagnosis the parent already mentioned ("since your son has ADHD") is allowed |
 
-Draft referral reply, for Aadit to check:
+Referral reply (Aadit approved the wording in [PR #8](pr-0008-design-coach-contract.md)):
 
 | English                                                                                                                    | Roman Urdu (draft)                                                                                                                                 |
 | -------------------------------------------------------------------------------------------------------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------- |
