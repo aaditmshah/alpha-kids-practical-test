@@ -1,7 +1,7 @@
 ---
 title: "ticket-0008: Write the Implementation Plan and Build Tickets"
 type: ticket
-status: in-progress
+status: done
 updated: 2026-11-18
 summary: Turn the research and ADRs into the implementation section of the plan and a set of small, TDD-driven build tickets.
 ---
@@ -16,7 +16,7 @@ Depends on: [ticket-0004](ticket-0004-research-safety-escalation.md) through [ti
 
 - [x] The [Plan](plan.md) has its architecture, test plan and milestones filled in
 - [x] Build tickets are created, each naming the tests that drive it: [0013](ticket-0013-test-and-runtime-setup.md)–[0023](ticket-0023-readme-and-submission.md)
-- [ ] Aadit has reviewed and approved the plan
+- [x] Aadit has reviewed and approved the plan, adding executable Gherkin features and a Claude Design UI ([PR #9](pr-0009-implementation-plan.md))
 
 ## See also
 

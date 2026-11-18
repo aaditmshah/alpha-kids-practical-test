@@ -53,5 +53,5 @@ Claude proposed the following, and asked three questions:
 
 ## Open at end of session
 
-- Aadit's review of the plan, to be recorded on [PR #9](pr-0009-implementation-plan.md) before merge. Approval completes ticket-0008.
-- Next: milestone M1, starting with [ticket-0013](ticket-0013-test-and-runtime-setup.md).
+- ~~Aadit's review of the plan.~~ Approved with the M0 additions, and recorded on [PR #9](pr-0009-implementation-plan.md). Ticket-0008 is done.
+- Next: milestone M0 ([ticket-0024](ticket-0024-gherkin-features.md), [ticket-0025](ticket-0025-ui-design.md)). [ticket-0013](ticket-0013-test-and-runtime-setup.md) comes first, since the features need the runner.
