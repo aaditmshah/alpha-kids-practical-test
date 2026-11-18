@@ -12,7 +12,7 @@ Back to: [Home](index.md) · [Decisions](index-decisions.md) · Session: [2026-1
 
 ## Context
 
-The candidate said: _"This is a simple throwaway app. I don't want to spend too much time on this … Let's use test-driven development. However, I don't want to implement all the bells and whistles of a full-scale application."_
+Aadit said: _"This is a simple throwaway app. I don't want to spend too much time on this … Let's use test-driven development. However, I don't want to implement all the bells and whistles of a full-scale application."_
 
 ## Decision
 
@@ -24,7 +24,7 @@ The candidate said: _"This is a simple throwaway app. I don't want to spend too 
 
 ## Consequences
 
-- The candidate gets a reviewable, well-tested core quickly.
+- Aadit gets a reviewable, well-tested core quickly.
 - Some ideas from the first discussion are deferred, unless they turn out to be cheap: a full eval scoring script, Roman Urdu, rate limiting, and polished streaming. These are tracked in [Open questions](open-questions.md).
 
 ## See also
@@ -32,5 +32,5 @@ The candidate said: _"This is a simple throwaway app. I don't want to spend too 
 - [ADR-0005: Local Only, No Deployment](adr-0005-local-only.md)
 - [Log](log.md)
 - [Plan](plan.md)
-- [Research: The Candidate's Website Conventions](research-website-conventions.md)
+- [Research: Aadit's Website Conventions](research-website-conventions.md)
 - [ticket-0007: Choose the Stack and Test Tooling](ticket-0007-choose-stack.md)

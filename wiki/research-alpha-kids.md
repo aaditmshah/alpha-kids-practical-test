@@ -14,7 +14,7 @@ All facts were accessed on 2026-11-18. Inferences are labelled as such.
 
 ## Company
 
-The company is **Alpha Kids**, website **[https://alpha.kids/](https://alpha.kids/)**, confirmed by the candidate on 2026-11-18. The site title is _"Alpha Kids: AI Parenting Coach, Free During Preview"_. The practical test (an LLM parenting coach) matches its product.
+The company is **Alpha Kids**, website **[https://alpha.kids/](https://alpha.kids/)**, confirmed by Aadit on 2026-11-18. The site title is _"Alpha Kids: AI Parenting Coach, Free During Preview"_. The practical test (an LLM parenting coach) matches its product.
 
 ## Facts
 
@@ -46,3 +46,4 @@ The company is **Alpha Kids**, website **[https://alpha.kids/](https://alpha.kid
 - [Log](log.md)
 - [Session 2026-11-18 #1: Kickoff](session-2026-11-18-01-kickoff.md)
 - [Session 2026-11-18 #2: Decisions](session-2026-11-18-02-decisions.md)
+- [Alpha Kids Practical Test Wiki](index.md)

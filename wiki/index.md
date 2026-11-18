@@ -10,6 +10,8 @@ summary: The wiki's home page. Start here to understand the project's state, its
 
 This wiki records the **whole process** of building a small bilingual (English/Roman Urdu) LLM parenting coach for the [Alpha Kids practical test](source-practical-test-brief.md): research, decisions, plans, the work board, and a record of every working session. It is written for both AI agents and human reviewers. Every link opens another page, as on Wikipedia.
 
+**Who:** Aadit Shah built this as a candidate for a role at [Alpha Kids](research-alpha-kids.md), working with Claude (Claude Code, an AI coding agent). Throughout the wiki, "Aadit" is the person who asks, reviews and decides, and "Claude" is the agent that researches, proposes and implements.
+
 ## Current state (2026-11-18)
 
 - **Phase:** research and planning. The Next.js app is scaffolded with Vite+ ([ADR-0007](adr-0007-nextjs-with-vite-plus.md)), but the coach is not built yet. `main` is protected: changes arrive as pull requests that pass CI and are merged by rebase ([ADR-0008](adr-0008-protected-main-linear-history.md)). The work is committed to git, following [ADR-0006](adr-0006-gitmoji-atomic-commits.md), and pushed to the public repository [github.com/aaditmshah/alpha-kids-practical-test](https://github.com/aaditmshah/alpha-kids-practical-test).
@@ -41,3 +43,4 @@ This wiki records the **whole process** of building a small bilingual (English/R
 ## See also
 
 - [ticket-0001: Set Up the LLM Wiki and Its Skills](ticket-0001-set-up-wiki.md)
+- [Session 2026-11-18 #4: Bootstrap the App](session-2026-11-18-04-bootstrap.md)

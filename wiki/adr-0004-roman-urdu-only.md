@@ -19,16 +19,16 @@ The [brief](source-practical-test-brief.md) says a parent should be able to type
 
 ## Options considered
 
-1. **Urdu script only.** Needs right-to-left layout, mixed-direction text handling and Nastaliq fonts. The candidate can't read it, so can't check the replies.
+1. **Urdu script only.** Needs right-to-left layout, mixed-direction text handling and Nastaliq fonts. Aadit can't read it, so can't check the replies.
 2. **Both scripts.** Has all the cost of option 1, plus detecting which script was used.
-3. **Roman Urdu only.** No layout work. The candidate knows Hindi, which is mutually intelligible with spoken Urdu, so can read and check the replies.
+3. **Roman Urdu only.** No layout work. Aadit knows Hindi, which is mutually intelligible with spoken Urdu, so can read and check the replies.
 
 ## Decision
 
-**Option 3.** The candidate gave two reasons:
+**Option 3.** Aadit gave two reasons:
 
 1. _"This is a throwaway app. So, I don't want to spend time on supporting a use case that's high effort and low value."_
-2. The candidate knows Hindi but can't read the Arabic alphabet, so couldn't check Urdu-script replies.
+2. Aadit knows Hindi but can't read the Arabic alphabet, so couldn't check Urdu-script replies.
 
 ## Consequences
 

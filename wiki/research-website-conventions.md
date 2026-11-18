@@ -1,16 +1,16 @@
 ---
-title: "Research: The Candidate's Website Conventions"
+title: "Research: Aadit's Website Conventions"
 type: research
 status: active
 updated: 2026-11-18
-summary: What we copied from the candidate's website repo (kybernetic-systems/kybernetic.systems) into this project, what we left out, and why.
+summary: What we copied from Aadit's website repo (kybernetic-systems/kybernetic.systems) into this project, what we left out, and why.
 ---
 
-# Research: The Candidate's Website Conventions
+# Research: Aadit's Website Conventions
 
 Back to: [Research](index-research.md) · Ticket: [ticket-0010](ticket-0010-bootstrap-app.md)
 
-Source: [github.com/kybernetic-systems/kybernetic.systems](https://github.com/kybernetic-systems/kybernetic.systems), the candidate's own website. It is a TanStack Start site built with Vite+. Accessed 2026-11-18.
+Source: [github.com/kybernetic-systems/kybernetic.systems](https://github.com/kybernetic-systems/kybernetic.systems), Aadit's own website. It is a TanStack Start site built with Vite+. Accessed 2026-11-18.
 
 ## Copied (adapted where noted)
 
@@ -36,7 +36,7 @@ Source: [github.com/kybernetic-systems/kybernetic.systems](https://github.com/ky
 
 - **Storybook, Playwright browser tests, Content Collections, Wrangler/Cloudflare and favicon generation.** The website needs them, but a throwaway coach app doesn't ([ADR-0002](adr-0002-minimal-scope-tdd.md), [ADR-0005](adr-0005-local-only.md)).
 - **TypeScript 7 (the native `tsgo`).** Next.js runs the `typescript` package's API during `next build`, so we kept the TypeScript 5 that Next ships with. The VS Code setting `js/ts.experimental.useTsgo` still gives the faster editor experience.
-- **Vite+'s own commit hooks (`.vite-hooks`, `vp staged`).** The candidate: _"I don't believe in running lint and other checks in the staging area on commit … I believe in enforcing code quality by protecting the main branch and enforcing GitHub checks to pass."_
+- **Vite+'s own commit hooks (`.vite-hooks`, `vp staged`).** Aadit: _"I don't believe in running lint and other checks in the staging area on commit … I believe in enforcing code quality by protecting the main branch and enforcing GitHub checks to pass."_
 
 ## See also
 

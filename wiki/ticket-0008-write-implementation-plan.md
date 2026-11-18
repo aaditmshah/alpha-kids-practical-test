@@ -16,4 +16,4 @@ Depends on: [ticket-0004](ticket-0004-research-safety-escalation.md) through [ti
 
 - [ ] The [Plan](plan.md) has its architecture, test plan and milestones filled in
 - [ ] Build tickets are created, each naming the tests that drive it
-- [ ] The candidate has reviewed and approved the plan
+- [ ] Aadit has reviewed and approved the plan

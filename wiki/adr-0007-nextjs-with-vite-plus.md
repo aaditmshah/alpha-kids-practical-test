@@ -3,7 +3,7 @@ title: "ADR-0007: Next.js App with the Vite+ Toolchain"
 type: adr
 status: accepted
 updated: 2026-11-18
-summary: The app is Next.js 16 (App Router, TypeScript, Tailwind, React Compiler), scaffolded with Vite+. Vite+ provides pnpm, Oxlint, Oxfmt and Vitest, and Next builds and serves with Turbopack. Conventions are copied from the candidate's website.
+summary: The app is Next.js 16 (App Router, TypeScript, Tailwind, React Compiler), scaffolded with Vite+. Vite+ provides pnpm, Oxlint, Oxfmt and Vitest, and Next builds and serves with Turbopack. Conventions are copied from Aadit's website.
 ---
 
 # ADR-0007: Next.js App with the Vite+ Toolchain
@@ -12,13 +12,13 @@ Back to: [Home](index.md) · [Decisions](index-decisions.md) · Research: [Vite+
 
 ## Context
 
-The [brief](source-practical-test-brief.md) allows Next.js or Node. The candidate asked for _"a simple Next.js application"_ bootstrapped with [Vite+](https://viteplus.dev/), which they already use for their website. This answers part of [ticket-0007](ticket-0007-choose-stack.md) and Q4 in [Open questions](open-questions.md).
+The [brief](source-practical-test-brief.md) allows Next.js or Node. Aadit asked for _"a simple Next.js application"_ bootstrapped with [Vite+](https://viteplus.dev/), which they already use for their website. This answers part of [ticket-0007](ticket-0007-choose-stack.md) and Q4 in [Open questions](open-questions.md).
 
 ## Options considered
 
 1. **Next.js scaffolded with `vp create next-app`.** Vite+ provides the toolchain, and Next keeps Turbopack for building and serving.
 2. **[vinext](https://cdn.jsdelivr.net/gh/cloudflare/vinext@main/README.md)**, a reimplementation of Next.js on Vite. It is experimental, and too risky for an interview submission.
-3. **A plain Node server, or a Vite React app.** Allowed by the brief, but not what the candidate asked for.
+3. **A plain Node server, or a Vite React app.** Allowed by the brief, but not what Aadit asked for.
 
 ## Decision
 
@@ -30,7 +30,7 @@ The [brief](source-practical-test-brief.md) allows Next.js or Node. The candidat
   - Oxlint, with type-aware linting and type checking
   - Oxfmt, configured by `.editorconfig`
   - Vitest
-- **Config:** the short lint and format style from the candidate's website, which replaced the 1,249-line config migrated from ESLint. See [Website conventions](research-website-conventions.md).
+- **Config:** the short lint and format style from Aadit's website, which replaced the 1,249-line config migrated from ESLint. See [Website conventions](research-website-conventions.md).
 - **Commands:** use `vp run dev`, `vp run build` and `vp run start`. Never use the built-in `vp dev` or `vp build`, which run Vite.
 
 ## Consequences

@@ -12,9 +12,9 @@ Back to: [Sessions](index-sessions.md)
 
 ## 1. Brief and first proposal
 
-The candidate shared the [practical test brief](source-practical-test-brief.md) and asked to research and plan before building, with everything documented in an LLM wiki.
+Aadit shared the [practical test brief](source-practical-test-brief.md) and asked to research and plan before building, with everything documented in an LLM wiki.
 
-The agent proposed:
+Claude proposed:
 
 - an LLM wiki
 - research topics: requirements, safety and escalation, regional helplines, Urdu/RTL, model and output design, parenting content, stack, testing, and Alpha Kids
@@ -22,11 +22,11 @@ The agent proposed:
 
 It asked four questions: time budget, LLM provider, whether to submit the wiki, and whether to research Alpha Kids.
 
-## 2. Candidate's answers
+## 2. Aadit's answers
 
 1. **Scope:** _"This is a simple throwaway app … Let's use test-driven development. However, I don't want to implement all the bells and whistles of a full-scale application."_ → [ADR-0002](adr-0002-minimal-scope-tdd.md)
 2. **Cost:** _"The biggest concern for me is cost. I don't want to pay for the LLM model … Let's research which is the best LLM provider for this purpose."_ → [Research](research-free-llm-providers.md), [ADR-0003](adr-0003-llm-provider.md)
-3. **Wiki:** It is part of the submission, so interviewers can see the process. It should contain plans, ADRs, decision documents, a Kanban board and tickets, so that _"an LLM should be able to understand the full state of the application via the wiki, including the development process. Everything we talk about, decide, and do should be recorded."_ The candidate also asked for:
+3. **Wiki:** It is part of the submission, so interviewers can see the process. It should contain plans, ADRs, decision documents, a Kanban board and tickets, so that _"an LLM should be able to understand the full state of the application via the wiki, including the development process. Everything we talk about, decide, and do should be recorded."_ Aadit also asked for:
    - skills to query, update and maintain the wiki, with the root CLAUDE.md nudging agents to use them
    - pages readable by humans
    - a **flat directory**, so hyperlinks work in VS Code and on GitHub
@@ -46,7 +46,7 @@ It asked four questions: time budget, LLM provider, whether to submit the wiki, 
 ## 4. Decisions
 
 - Accepted: [ADR-0001](adr-0001-flat-llm-wiki.md), [ADR-0002](adr-0002-minimal-scope-tdd.md)
-- Proposed (awaiting the candidate): [ADR-0003](adr-0003-llm-provider.md)
+- Proposed (awaiting Aadit): [ADR-0003](adr-0003-llm-provider.md)
 
 ## 5. Open at end of session
 

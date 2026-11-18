@@ -12,12 +12,12 @@ Back to: [Home](index.md) · [Decisions](index-decisions.md) · Session: [2026-1
 
 ## Context
 
-The candidate: _"I don't believe in running lint and other checks in the staging area on commit … I believe in enforcing code quality by protecting the main branch and enforcing GitHub checks to pass before being able to merge into main."_ They also said: _"I want to enforce linear commits. I'm a fast-forward and rebase guy … Let's disable merge commits and squash merging for PRs."_ They asked for CI on pushes and PRs, and for a branch protection rule like the one on their website.
+Aadit: _"I don't believe in running lint and other checks in the staging area on commit … I believe in enforcing code quality by protecting the main branch and enforcing GitHub checks to pass before being able to merge into main."_ They also said: _"I want to enforce linear commits. I'm a fast-forward and rebase guy … Let's disable merge commits and squash merging for PRs."_ They asked for CI on pushes and PRs, and for a branch protection rule like the one on their website.
 
 ## Options considered
 
-1. **Pre-commit checks** (Vite+'s `vp staged`). Rejected by the candidate.
-2. **CI plus branch protection,** copied from the candidate's website.
+1. **Pre-commit checks** (Vite+'s `vp staged`). Rejected by Aadit.
+2. **CI plus branch protection,** copied from Aadit's website.
 
 ## Decision
 
@@ -52,13 +52,13 @@ The candidate: _"I don't believe in running lint and other checks in the staging
 
 - Nobody, admins included, can push straight to `main`. Every change, wiki updates too, goes through a branch and a pull request.
 - Rebase merging keeps every atomic commit ([ADR-0006](adr-0006-gitmoji-atomic-commits.md)) on `main` exactly as written.
-- Requiring an up-to-date branch means rebasing onto `main` before merging, which suits the candidate's workflow.
+- Requiring an up-to-date branch means rebasing onto `main` before merging, which suits Aadit's workflow.
 - The [`git-commit` skill](../.claude/skills/git-commit/SKILL.md) and the root CLAUDE.md describe the branch and pull request workflow.
 
 ## See also
 
 - [Log](log.md)
-- [Research: The Candidate's Website Conventions](research-website-conventions.md)
+- [Research: Aadit's Website Conventions](research-website-conventions.md)
 - [ticket-0011: Protect Main and Enforce Linear History](ticket-0011-protect-main.md)
 - [Index: Pull Requests](index-pull-requests.md)
 - [PR #1: Bootstrap the Next.js App with Vite+](pr-0001-bootstrap-nextjs.md)

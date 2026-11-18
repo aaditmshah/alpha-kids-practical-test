@@ -12,7 +12,7 @@ Back to: [Home](index.md) · [Decisions](index-decisions.md) · Session: [2026-1
 
 ## Context
 
-The candidate wants the interviewers to see the _process_ of building the app, not just the result. An AI agent starting cold should be able to rebuild the full project state (research, decisions, plans, board and history) from the repo alone. Humans must also be able to browse it.
+Aadit wants the interviewers to see the _process_ of building the app, not just the result. An AI agent starting cold should be able to rebuild the full project state (research, decisions, plans, board and history) from the repo alone. Humans must also be able to browse it.
 
 ## Options considered
 
@@ -36,7 +36,7 @@ The rules are in [Conventions](conventions.md). Three project skills (`wiki-quer
 
 - Recording takes discipline: every session must end with a wiki update. The `wiki-update` skill and `CLAUDE.md` enforce this.
 - Indexes must be kept in sync by hand, and the `wiki-maintain` skill checks them.
-- The wiki is submitted with the code. It must not contain secrets (API keys) or personal details beyond what the candidate wants to share.
+- The wiki is submitted with the code. It must not contain secrets (API keys) or personal details beyond what Aadit wants to share.
 
 ## See also
 

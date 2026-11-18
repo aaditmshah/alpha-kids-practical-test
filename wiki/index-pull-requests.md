@@ -24,7 +24,7 @@ Before branch protection existed, three commits went straight to `main`:
 | ------------------------------------------------ | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | `🎉 Begin project with an LLM wiki`              | The wiki, its three skills, the linter and the root CLAUDE.md, from [session #1](session-2026-11-18-01-kickoff.md) and [session #2](session-2026-11-18-02-decisions.md) |
 | `🧑‍💻 Add git-commit skill and commit conventions` | The `git-commit` skill and [ADR-0006](adr-0006-gitmoji-atomic-commits.md), from [session #3](session-2026-11-18-03-commit-conventions.md)                               |
-| `📝 Record the push to GitHub in the wiki`       | The public repository link, recorded after the candidate's first push                                                                                                   |
+| `📝 Record the push to GitHub in the wiki`       | The public repository link, recorded after Aadit's first push                                                                                                           |
 
 ## See also
 

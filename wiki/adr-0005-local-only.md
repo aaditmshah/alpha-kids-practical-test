@@ -12,7 +12,7 @@ Back to: [Home](index.md) · [Decisions](index-decisions.md) · Session: [2026-1
 
 ## Context
 
-The options were a public demo (for example, a free Vercel deployment) or a local-only app. The candidate said: _"I don't want to deploy the application anywhere. Keep it completely local for now. The interviewer can create a production build and run it locally when he wants to test it. Deploying the application on Vercel is too much effort for an interview test."_
+The options were a public demo (for example, a free Vercel deployment) or a local-only app. Aadit said: _"I don't want to deploy the application anywhere. Keep it completely local for now. The interviewer can create a production build and run it locally when he wants to test it. Deploying the application on Vercel is too much effort for an interview test."_
 
 ## Options considered
 
@@ -40,6 +40,6 @@ The options were a public demo (for example, a free Vercel deployment) or a loca
 - [Open Questions](open-questions.md)
 - [Plan](plan.md)
 - [Requirements](requirements.md)
-- [Research: The Candidate's Website Conventions](research-website-conventions.md)
+- [Research: Aadit's Website Conventions](research-website-conventions.md)
 - [ticket-0010: Bootstrap the Next.js App with Vite+](ticket-0010-bootstrap-app.md)
 - [PR #1: Bootstrap the Next.js App with Vite+](pr-0001-bootstrap-nextjs.md)

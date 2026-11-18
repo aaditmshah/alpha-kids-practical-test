@@ -12,13 +12,13 @@ Back to: [Home](index.md) · [Decisions](index-decisions.md) · Research: [Commi
 
 ## Context
 
-The candidate prefers Gitmoji-style commit messages and asked for a skill that writes good messages and commits atomic changes. The git history is submitted alongside the [wiki](adr-0001-flat-llm-wiki.md), so it is part of how reviewers see the process.
+Aadit prefers Gitmoji-style commit messages and asked for a skill that writes good messages and commits atomic changes. The git history is submitted alongside the [wiki](adr-0001-flat-llm-wiki.md), so it is part of how reviewers see the process.
 
 ## Options considered
 
-1. **Conventional Commits** (`feat:`, `fix:`). A well-known standard, but not what the candidate prefers.
+1. **Conventional Commits** (`feat:`, `fix:`). A well-known standard, but not what Aadit prefers.
 2. **Gitmoji with `:shortcodes:`.** Shortcodes render as emoji only on some websites; in a terminal they appear as text.
-3. **Gitmoji with Unicode emoji,** plus cbeams' seven rules and the candidate's mood rule.
+3. **Gitmoji with Unicode emoji,** plus cbeams' seven rules and Aadit's mood rule.
 
 ## Decision
 
@@ -41,7 +41,7 @@ The candidate prefers Gitmoji-style commit messages and asked for a skill that w
 
 - [ADR-0008: Protected Main, Linear History, Quality Checks in CI Only](adr-0008-protected-main-linear-history.md)
 - [Wiki Conventions](conventions.md)
-- [Research: The Candidate's Website Conventions](research-website-conventions.md)
+- [Research: Aadit's Website Conventions](research-website-conventions.md)
 - [ticket-0009: Commit Conventions and the git-commit Skill](ticket-0009-commit-conventions.md)
 - [Index: Pull Requests](index-pull-requests.md)
 - [PR #1: Bootstrap the Next.js App with Vite+](pr-0001-bootstrap-nextjs.md)

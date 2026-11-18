@@ -3,7 +3,7 @@ title: "Research: Commit Messages (Gitmoji and the Seven Rules)"
 type: research
 status: active
 updated: 2026-11-18
-summary: How to write good commit messages, from cbeams' seven rules and the Gitmoji convention, plus how we combine them with the candidate's mood rule (imperative for what, indicative for why).
+summary: How to write good commit messages, from cbeams' seven rules and the Gitmoji convention, plus how we combine them with Aadit's mood rule (imperative for what, indicative for why).
 ---
 
 # Research: Commit Messages (Gitmoji and the Seven Rules)
@@ -43,9 +43,9 @@ Combined from the rules above and common practice:
 - **Easy to work with later:** each commit can be reviewed, reverted and searched with `git bisect` on its own.
 - **Don't mix intents:** keep refactors, features, fixes, dependency changes and formatting in separate commits.
 
-## The candidate's mood rule
+## Aadit's mood rule
 
-The candidate added: _"use the imperative mood in the subject body to describe the changes we made. Use the indicative mood for why we made those changes."_ We read this as follows:
+Aadit added: _"use the imperative mood in the subject body to describe the changes we made. Use the indicative mood for why we made those changes."_ We read this as follows:
 
 - **Subject and the "what" part of the body:** imperative ("Add …", "Rename …").
 - **The "why" part of the body:** indicative ("Reviewers need …", "Spelling varies …, so …").

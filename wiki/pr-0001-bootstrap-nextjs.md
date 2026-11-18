@@ -2,7 +2,7 @@
 title: "PR #1: Bootstrap the Next.js App with Vite+"
 type: pr
 updated: 2026-11-18
-summary: Scaffolds Next.js with Vite+, adopts the candidate's website conventions, adds CI and branch protection, and tightens the wiki (markdownlint, TypeScript linter, backlinks, PR tracking). 27 atomic commits; reviewed by the candidate.
+summary: Scaffolds Next.js with Vite+, adopts Aadit's website conventions, adds CI and branch protection, and tightens the wiki (markdownlint, TypeScript linter, backlinks, PR tracking). 28 atomic commits; reviewed by Aadit.
 ---
 
 # PR #1: Bootstrap the Next.js App with Vite+
@@ -11,18 +11,18 @@ Back to: [Pull requests](index-pull-requests.md) · Session: [2026-11-18 #4](ses
 
 ## Facts
 
-|             |                                                                                                                                              |
-| ----------- | -------------------------------------------------------------------------------------------------------------------------------------------- |
-| GitHub      | [aaditmshah/alpha-kids-practical-test#1](https://github.com/aaditmshah/alpha-kids-practical-test/pull/1)                                     |
-| Branch      | `bootstrap-nextjs` → `main`                                                                                                                  |
-| Opened      | 2026-11-18, by the candidate's GitHub account (aaditmshah)                                                                                   |
-| Written by  | Claude Code (Claude Opus 5.5), working with the candidate. Commits carry the candidate's git identity and a `Co-Authored-By: Claude` trailer |
-| Reviewed by | The candidate (aaditmshah)                                                                                                                   |
-| Merge       | Rebase only ([ADR-0008](adr-0008-protected-main-linear-history.md)), after the required `ci` check passes                                    |
+|             |                                                                                                                              |
+| ----------- | ---------------------------------------------------------------------------------------------------------------------------- |
+| GitHub      | [aaditmshah/alpha-kids-practical-test#1](https://github.com/aaditmshah/alpha-kids-practical-test/pull/1)                     |
+| Branch      | `bootstrap-nextjs` → `main`                                                                                                  |
+| Opened      | 2026-11-18, by Aadit's GitHub account (aaditmshah)                                                                           |
+| Written by  | Claude Code (Claude Opus 5.5), working with Aadit. Commits carry Aadit's git identity and a `Co-Authored-By: Claude` trailer |
+| Reviewed by | Aadit (aaditmshah)                                                                                                           |
+| Merge       | Rebase only ([ADR-0008](adr-0008-protected-main-linear-history.md)), after the required `ci` check passes                    |
 
 ## Why
 
-The candidate asked for a Next.js app bootstrapped with [Vite+](https://viteplus.dev/), with the conventions of their website repository, before research on safety and escalation continued. The decisions are in [ADR-0007](adr-0007-nextjs-with-vite-plus.md) (stack) and [ADR-0008](adr-0008-protected-main-linear-history.md) (workflow). The research is in [Bootstrapping Next.js with Vite+](research-vite-plus-nextjs.md) and [Website conventions](research-website-conventions.md).
+Aadit asked for a Next.js app bootstrapped with [Vite+](https://viteplus.dev/), with the conventions of their website repository, before research on safety and escalation continued. The decisions are in [ADR-0007](adr-0007-nextjs-with-vite-plus.md) (stack) and [ADR-0008](adr-0008-protected-main-linear-history.md) (workflow). The research is in [Bootstrapping Next.js with Vite+](research-vite-plus-nextjs.md) and [Website conventions](research-website-conventions.md).
 
 ## Commits
 
@@ -48,13 +48,13 @@ In order. Commit SHAs are left out, because GitHub's rebase merge rewrites them.
 
 ### Review round 1: markdownlint
 
-| #   | Commit                                                    | What                                                                                   | Why                                                                                                |
-| --- | --------------------------------------------------------- | -------------------------------------------------------------------------------------- | -------------------------------------------------------------------------------------------------- |
-| 14  | `🚨 Stop MD025 from flagging every wiki page title`       | MD025 told to ignore the frontmatter title; linter requires exactly one H1 matching it | The candidate saw a warning on every page; see [ADR-0009](adr-0009-title-in-frontmatter-and-h1.md) |
-| 15  | `🚨 Fix markdownlint findings in docs and the wiki`       | Bare URLs, a fence language, a fence blank line, emphasis used as a heading            | Genuine issues flagged in the editor                                                               |
-| 16  | `🔧 Turn off markdownlint rules that fight the formatter` | MD010 and MD013 off                                                                    | Oxfmt and `.editorconfig` own tabs and line length                                                 |
-| 17  | `🔧 Keep trailing commas out of JSONC files`              | Oxfmt override for `*.jsonc`                                                           | The JSONC spec doesn't guarantee trailing commas parse                                             |
-| 18  | `🚨 Give AGENTS.md a top-level heading`                   | H1 above Next's managed block                                                          | MD041; `next dev` only rewrites inside its markers                                                 |
+| #   | Commit                                                    | What                                                                                   | Why                                                                                        |
+| --- | --------------------------------------------------------- | -------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------ |
+| 14  | `🚨 Stop MD025 from flagging every wiki page title`       | MD025 told to ignore the frontmatter title; linter requires exactly one H1 matching it | Aadit saw a warning on every page; see [ADR-0009](adr-0009-title-in-frontmatter-and-h1.md) |
+| 15  | `🚨 Fix markdownlint findings in docs and the wiki`       | Bare URLs, a fence language, a fence blank line, emphasis used as a heading            | Genuine issues flagged in the editor                                                       |
+| 16  | `🔧 Turn off markdownlint rules that fight the formatter` | MD010 and MD013 off                                                                    | Oxfmt and `.editorconfig` own tabs and line length                                         |
+| 17  | `🔧 Keep trailing commas out of JSONC files`              | Oxfmt override for `*.jsonc`                                                           | The JSONC spec doesn't guarantee trailing commas parse                                     |
+| 18  | `🚨 Give AGENTS.md a top-level heading`                   | H1 above Next's managed block                                                          | MD041; `next dev` only rewrites inside its markers                                         |
 
 ### Review round 2: gitmoji list and TypeScript linter
 
@@ -79,17 +79,18 @@ In order. Commit SHAs are left out, because GitHub's rebase merge rewrites them.
 | 25  | `👷 Check in CI that every PR has its wiki page` | Tested script comparing the PR's number and branch with `wiki/pr-NNNN-<branch>.md`; a step in the `ci` job | A PR without its page can't merge                                                 |
 | 26  | `🔥 Drop the status from PR wiki pages`          | No `status` on PR pages; the linter rejects one; [ADR-0010](adr-0010-pr-pages-without-status.md)           | A status would be stale after every merge; the GitHub link is the source of truth |
 | 27  | `📝 Guess the next PR number for its wiki page`  | `git-commit` skill computes the next number from the newest issue or PR                                    | The page can go in the branch's first push, so CI never fails waiting for it      |
+| 28  | `📝 Call people by name in the wiki`             | "The candidate" became "Aadit" and "the agent" became "Claude"                                             | Aadit found "candidate" weird; names read naturally                               |
 
 ## Review
 
-The candidate reviewed the PR in four rounds:
+Aadit reviewed the PR in four rounds:
 
-1. **markdownlint.** _"MD025/single-title/single-h1"_ on every wiki page. Four options were compared, and the candidate chose to keep both the title and the H1 ([ADR-0009](adr-0009-title-in-frontmatter-and-h1.md)). Then the rest of markdownlint's findings, and two nits: a trailing comma in JSONC, and MD041 in `AGENTS.md`. Commits 14–18.
+1. **markdownlint.** _"MD025/single-title/single-h1"_ on every wiki page. Four options were compared, and Aadit chose to keep both the title and the H1 ([ADR-0009](adr-0009-title-in-frontmatter-and-h1.md)). Then the rest of markdownlint's findings, and two nits: a trailing comma in JSONC, and MD041 in `AGENTS.md`. Commits 14–18.
 2. **Hardcoded gitmoji table; lint script in JavaScript.** Replaced with the CLI, and converted to TypeScript. The conversion exposed a build failure after `next dev`, which had come in with commit 5. Commits 19–22.
 3. **Backlinks and PR tracking.** _"Let's ensure that all page hyperlinks have backreferences"_, and _"Let's also track PRs in the wiki … Reading the PR description doesn't give me enough context."_ Commits 23–24.
-4. **PR page status and a CI check.** _"It's not practical to have to update outdated information in a separate PR. That's an infinite regress."_ The page check was first built against PR titles, then rewritten after the candidate clarified that they meant branch names. Commits 25–27.
+4. **PR page status and a CI check.** _"It's not practical to have to update outdated information in a separate PR. That's an infinite regress."_ The page check was first built against PR titles, then rewritten after Aadit clarified that they meant branch names. Commits 25–27. Finally, names replaced "the candidate" and "the agent" (commit 28).
 
-Also recorded: the agent once committed a staged `git mv` into the wrong commit. It rebuilt both commits before pushing, so the history never contained the mistake.
+Also recorded: Claude once committed a staged `git mv` into the wrong commit. It rebuilt both commits before pushing, so the history never contained the mistake.
 
 The full discussion is in [session #4](session-2026-11-18-04-bootstrap.md).
 

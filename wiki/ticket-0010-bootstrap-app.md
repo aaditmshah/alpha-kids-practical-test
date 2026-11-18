@@ -3,7 +3,7 @@ title: "ticket-0010: Bootstrap the Next.js App with Vite+"
 type: ticket
 status: done
 updated: 2026-11-18
-summary: Scaffold Next.js with Vite+, adopt the candidate's website conventions (editor, lint, format, TypeScript, pins, VS Code, gitmoji hook), add CI and a README.
+summary: Scaffold Next.js with Vite+, adopt Aadit's website conventions (editor, lint, format, TypeScript, pins, VS Code, gitmoji hook), add CI and a README.
 ---
 
 # ticket-0010: Bootstrap the Next.js App with Vite+

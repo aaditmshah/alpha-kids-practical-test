@@ -16,7 +16,7 @@ Roman Urdu only: no Urdu script and no right-to-left UI ([ADR-0004](adr-0004-rom
 
 - **Detection:** should the model report the reply language (`en` or `ur-Latn`) in the structured reply? A keyword heuristic is unreliable for Roman Urdu because spelling varies widely ("nahi", "nahin", "nai").
 - **Mixed messages:** parents often mix English and Urdu in one message. Which language should the reply use? Proposal: follow the dominant language, or the parent's last message.
-- **Spelling:** which spelling conventions should replies follow, so that a Hindi reader like the candidate can check them?
+- **Spelling:** which spelling conventions should replies follow, so that a Hindi reader like Aadit can check them?
 - **Safety keywords:** collect Roman Urdu crisis terms for the fixed pre-check (shared with [ticket-0004](ticket-0004-research-safety-escalation.md)).
 - **Urdu script typed anyway:** what happens if a parent types in Urdu script? Proposal: reply in Roman Urdu and spend no further effort.
 

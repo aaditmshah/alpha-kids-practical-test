@@ -12,7 +12,7 @@ Back to: [Sessions](index-sessions.md) · Previous: [Session #2](session-2026-11
 
 ## Request
 
-The candidate asked to:
+Aadit asked to:
 
 - commit everything so far, using Gitmoji-style messages
 - research [gitmoji.dev](https://gitmoji.dev/) and [cbea.ms/git-commit](https://cbea.ms/git-commit/)
@@ -32,7 +32,7 @@ They added the rule: _"use the imperative mood in the subject body to describe t
 - Made the commits:
   1. `🎉 Begin project with an LLM wiki`: the state at the end of [session #2](session-2026-11-18-02-decisions.md), committed as one bootstrap because its pages all link to each other.
   2. `🧑‍💻 Add git-commit skill and commit conventions`: this session's work.
-- The candidate pushed both commits to the public GitHub repository [aaditmshah/alpha-kids-practical-test](https://github.com/aaditmshah/alpha-kids-practical-test) (`main`).
+- Aadit pushed both commits to the public GitHub repository [aaditmshah/alpha-kids-practical-test](https://github.com/aaditmshah/alpha-kids-practical-test) (`main`).
 - No `.gitignore` yet. It is added when the app is scaffolded, because nothing needs ignoring until then.
 
 ## Open at end of session

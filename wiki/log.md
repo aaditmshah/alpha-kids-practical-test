@@ -35,9 +35,9 @@ Format: `YYYY-MM-DD: [type] what happened (links)`. Append only; never rewrite e
 - 2026-11-18: [research] Commit messages: cbeams' seven rules and Gitmoji ([research](research-commit-messages.md))
 - 2026-11-18: [decision] Gitmoji, atomic commits and the mood rule; git-commit skill created ([ADR-0006](adr-0006-gitmoji-atomic-commits.md), [ticket-0009](ticket-0009-commit-conventions.md))
 - 2026-11-18: [git] First commit made: `🎉 Begin project with an LLM wiki`
-- 2026-11-18: [git] Candidate pushed `main` to the public GitHub repository ([aaditmshah/alpha-kids-practical-test](https://github.com/aaditmshah/alpha-kids-practical-test))
+- 2026-11-18: [git] Aadit pushed `main` to the public GitHub repository ([aaditmshah/alpha-kids-practical-test](https://github.com/aaditmshah/alpha-kids-practical-test))
 - 2026-11-18: [session] Bootstrap session ([session](session-2026-11-18-04-bootstrap.md))
-- 2026-11-18: [research] Vite+ with Next.js, and the candidate's website conventions ([research](research-vite-plus-nextjs.md), [research](research-website-conventions.md))
+- 2026-11-18: [research] Vite+ with Next.js, and Aadit's website conventions ([research](research-vite-plus-nextjs.md), [research](research-website-conventions.md))
 - 2026-11-18: [decision] Next.js with the Vite+ toolchain ([ADR-0007](adr-0007-nextjs-with-vite-plus.md))
 - 2026-11-18: [decision] Protected main, linear history, checks in CI only ([ADR-0008](adr-0008-protected-main-linear-history.md))
 - 2026-11-18: [git] Repository set to rebase-only merging; branch protection applied to `main` ([ticket-0011](ticket-0011-protect-main.md))
@@ -49,3 +49,4 @@ Format: `YYYY-MM-DD: [type] what happened (links)`. Append only; never rewrite e
 - 2026-11-18: [wiki] Every wiki link now needs a backlink: linter rule and `--fix` added, 111 backlinks added under "See also", leaf "Back to:" lines point at their category index ([Conventions](conventions.md))
 - 2026-11-18: [wiki] Pull requests tracked in the wiki: `pr-` pages, an index, and [PR #1](pr-0001-bootstrap-nextjs.md) recorded ([ticket-0012](ticket-0012-backlinks-and-pr-tracking.md))
 - 2026-11-18: [decision] PR pages have no status; CI requires a wiki page named after each PR's number and branch ([ADR-0010](adr-0010-pr-pages-without-status.md))
+- 2026-11-18: [wiki] "The candidate" renamed to "Aadit" and "the agent" to "Claude" throughout the wiki; earlier log entries reworded to match ([session](session-2026-11-18-04-bootstrap.md))

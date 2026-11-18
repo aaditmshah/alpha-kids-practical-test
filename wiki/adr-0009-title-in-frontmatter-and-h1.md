@@ -14,7 +14,7 @@ Back to: [Decisions](index-decisions.md) · Session: [2026-11-18 #4](session-202
 
 Opening a wiki page in VS Code showed the markdownlint warning _"MD025/single-title/single-h1: Multiple top-level headings in the same document"_. By default, [MD025](https://github.com/DavidAnson/markdownlint/blob/v0.41.1/doc/md025.md) treats a frontmatter `title` as an H1, so the page's own H1 counts as a second one.
 
-The candidate's constraint: _"a human reading the wiki should be able to see the title clearly and prominently."_ Note that VS Code's Markdown preview hides frontmatter, and GitHub shows it only as a small table above the page.
+Aadit's constraint: _"a human reading the wiki should be able to see the title clearly and prominently."_ Note that VS Code's Markdown preview hides frontmatter, and GitHub shows it only as a small table above the page.
 
 ## Options considered
 

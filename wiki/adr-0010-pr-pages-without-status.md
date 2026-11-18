@@ -12,9 +12,9 @@ Back to: [Decisions](index-decisions.md) · Pages: [Pull requests](index-pull-re
 
 ## Context
 
-PR pages were introduced with a status (`open`, `merged`, `closed`). Since `main` is protected ([ADR-0008](adr-0008-protected-main-linear-history.md)), a page could only be marked `merged` by the next pull request. The candidate: _"It's not practical to have to update outdated information in a separate PR. That's an infinite regress. The last PR that's merged will always be out of date. Instead, we can find the status of the PR by simply following the link to the PR."_
+PR pages were introduced with a status (`open`, `merged`, `closed`). Since `main` is protected ([ADR-0008](adr-0008-protected-main-linear-history.md)), a page could only be marked `merged` by the next pull request. Aadit: _"It's not practical to have to update outdated information in a separate PR. That's an infinite regress. The last PR that's merged will always be out of date. Instead, we can find the status of the PR by simply following the link to the PR."_
 
-The candidate also asked for _"a GitHub workflow check to ensure that every PR has a corresponding wiki page and that the PR numbers and [branch names] match."_
+Aadit also asked for _"a GitHub workflow check to ensure that every PR has a corresponding wiki page and that the PR numbers and [branch names] match."_
 
 ## Options considered
 
@@ -37,7 +37,7 @@ For the check:
 ## Consequences
 
 - A PR page is only edited while its own PR is open, and nothing goes stale after a merge.
-- The page is written before the PR exists, so its number has to be guessed. Issues and pull requests share one number sequence, so the next number is the highest so far plus one. The candidate pointed this out: _"we can guess the PR number. We don't have to wait."_ If something else takes the number first, CI fails until the page is renamed. The [`git-commit` skill](../.claude/skills/git-commit/SKILL.md) gives the command.
+- The page is written before the PR exists, so its number has to be guessed. Issues and pull requests share one number sequence, so the next number is the highest so far plus one. Aadit pointed this out: _"we can guess the PR number. We don't have to wait."_ If something else takes the number first, CI fails until the page is renamed. The [`git-commit` skill](../.claude/skills/git-commit/SKILL.md) gives the command.
 - Branch names must be valid wiki file names (lowercase kebab-case), which the `git-commit` skill already requires.
 
 ## See also
