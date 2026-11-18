@@ -16,6 +16,7 @@ It reports these problems:
 - subdirectories, or filenames that aren't kebab-case
 - missing or invalid frontmatter (`title`, `type`, `status`, `updated`, `summary`, and valid status values)
 - broken relative links, and `[[wikilinks]]`
+- a missing or extra H1, or an H1 that doesn't match the frontmatter `title`
 - orphan pages, which no other page links to
 - prefixed pages missing from their category index
 - a ticket status that disagrees with `index-tickets.md` or its `kanban.md` column

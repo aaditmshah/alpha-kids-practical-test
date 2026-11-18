@@ -64,6 +64,13 @@ for (const page of pages) {
 			);
 		if (fm.updated && !/^\d{4}-\d{2}-\d{2}$/.test(fm.updated))
 			errors.push(`${page}: "updated" must be YYYY-MM-DD`);
+		// Each page has exactly one H1, and it repeats the frontmatter title: agents read the title
+		// from the frontmatter, humans see the H1. Fenced code is skipped so examples don't count.
+		const body = text.replace(/^---\n[\s\S]*?\n---\n/, "").replace(/```[\s\S]*?```/g, "");
+		const h1s = [...body.matchAll(/^# (.+)$/gm)].map(([, heading]) => heading.trim());
+		if (h1s.length !== 1) errors.push(`${page}: expected exactly one H1, found ${h1s.length}`);
+		else if (fm.title && h1s[0] !== fm.title)
+			errors.push(`${page}: H1 "${h1s[0]}" does not match frontmatter title "${fm.title}"`);
 	}
 	if (/\[\[[^\]]+\]\]/.test(text.replace(/```[\s\S]*?```/g, "").replace(/`[^`]*`/g, "")))
 		errors.push(`${page}: uses [[wikilinks]] (not rendered by GitHub); use [text](page.md)`);

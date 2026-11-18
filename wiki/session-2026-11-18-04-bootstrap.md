@@ -53,6 +53,12 @@ Back to: [Home](index.md) · [Sessions](index-sessions.md) · Previous: [Session
   - recorded all of this in the wiki
 - Applied the repository merge settings and branch protection on GitHub ([ticket-0011](ticket-0011-protect-main.md)).
 
+## Follow-up: markdownlint MD025
+
+While reviewing PR #1, the candidate reported a markdownlint warning on every wiki page: _"MD025/single-title/single-h1: Multiple top-level headings in the same document"_. The cause is the frontmatter `title` plus the page's H1. The candidate listed the options (use an H2, remove the H1, remove `title`, or something else), with the constraint that humans must see the title clearly and prominently.
+
+The agent compared the options and recommended keeping both. That means configuring MD025's `front_matter_title` to `""` and adding a linter check that the H1 matches `title`. The candidate agreed: _"Go with option 4 and add it to PR #1."_ → [ADR-0009](adr-0009-title-in-frontmatter-and-h1.md)
+
 ## Open at end of session
 
 - PR #1 is waiting for CI and for the candidate's review and merge (rebase).

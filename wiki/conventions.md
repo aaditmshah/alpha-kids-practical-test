@@ -43,6 +43,8 @@ summary: One or two sentences. This is what the index pages repeat.
 ---
 ```
 
+The body then starts with exactly one H1 that repeats `title` word for word, for example `# Wiki Conventions`. The frontmatter is what agents read; the H1 is the prominent title humans see, since VS Code's preview hides frontmatter and GitHub shows it only as a small table. The wiki linter fails if the two differ, and `.markdownlint.jsonc` stops markdownlint from counting the frontmatter `title` as a second H1 ([ADR-0009](adr-0009-title-in-frontmatter-and-h1.md)).
+
 Status values:
 
 - **ADRs:** `proposed`, `accepted`, `superseded`, `rejected`. A superseded ADR links to the ADR that replaces it.
