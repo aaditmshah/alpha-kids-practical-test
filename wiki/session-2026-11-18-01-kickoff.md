@@ -8,7 +8,7 @@ summary: Brief received. Agreed on minimal scope, TDD, $0 LLM cost and a flat LL
 
 # Session 2026-11-18 #1: Kickoff
 
-Back to: [Home](index.md) · [Sessions](index-sessions.md)
+Back to: [Sessions](index-sessions.md)
 
 ## 1. Brief and first proposal
 
@@ -51,3 +51,8 @@ It asked four questions: time budget, LLM provider, whether to submit the wiki, 
 ## 5. Open at end of session
 
 See [Open questions](open-questions.md), Q1–Q6.
+
+## See also
+
+- [Log](log.md)
+- [Session 2026-11-18 #2: Decisions](session-2026-11-18-02-decisions.md)

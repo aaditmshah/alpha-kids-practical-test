@@ -32,3 +32,12 @@ Gemini free tier, Groq, OpenRouter `:free`, Cerebras, Mistral, GitHub Models, Cl
 - **Free-tier prompts may be used by Google to improve its products.** The demo must use made-up example concerns only, and the README will say so.
 - Free-tier limits aren't published and may change. The app must show a friendly "coach is busy, try again" message when it hits a 429 (rate limit) response.
 - Avoid the deprecated `gemini-2.5-*` model IDs, which are rerouted on 2026-12-01.
+
+## See also
+
+- [Log](log.md)
+- [Open Questions](open-questions.md)
+- [Plan](plan.md)
+- [Session 2026-11-18 #1: Kickoff](session-2026-11-18-01-kickoff.md)
+- [ticket-0003: Research Free LLM Providers](ticket-0003-research-llm-providers.md)
+- [ticket-0007: Choose the Stack and Test Tooling](ticket-0007-choose-stack.md)

@@ -8,7 +8,7 @@ summary: Alpha Kids (https://alpha.kids/) is an AI parenting coach run by Vibbbe
 
 # Research: Alpha Kids (the company)
 
-Back to: [Home](index.md) · [Research](index-research.md) · Ticket: [ticket-0002](ticket-0002-research-alpha-kids.md)
+Back to: [Research](index-research.md) · Ticket: [ticket-0002](ticket-0002-research-alpha-kids.md)
 
 All facts were accessed on 2026-11-18. Inferences are labelled as such.
 
@@ -39,3 +39,10 @@ The company is **Alpha Kids**, website **[https://alpha.kids/](https://alpha.kid
 3. **The Urdu requirement points to new markets.** A Dubai company with no stated language support asking for Urdu suggests Pakistan or the South Asian diaspora in the Gulf. Escalation resources should therefore cover Pakistan and the UAE, with a general fallback. Researched in [ticket-0004](ticket-0004-research-safety-escalation.md).
 4. **Our safety stance should match theirs:** informational only, redirect to professionals, and be honest that safeguards are imperfect.
 5. **Tone:** confident, warm and research-grounded, with an action-oriented style that matches their blog titles.
+
+## See also
+
+- [Wiki Conventions](conventions.md)
+- [Log](log.md)
+- [Session 2026-11-18 #1: Kickoff](session-2026-11-18-01-kickoff.md)
+- [Session 2026-11-18 #2: Decisions](session-2026-11-18-02-decisions.md)

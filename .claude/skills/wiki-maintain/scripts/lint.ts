@@ -1,14 +1,17 @@
 // Wiki linter: checks the flat wiki/ directory against wiki/conventions.md.
-// Usage: node .claude/skills/wiki-maintain/scripts/lint.ts [wikiDir]
+// Usage: node .claude/skills/wiki-maintain/scripts/lint.ts [--fix] [wikiDir]
 // Node.js runs it directly by stripping the types. Exits 1 if any errors are found; warnings never
-// fail.
+// fail. `--fix` adds every missing backlink to the target page's "See also" section, then exits so
+// the check can be run again.
 
-import { existsSync, readdirSync, readFileSync, statSync } from "node:fs";
+import { existsSync, readdirSync, readFileSync, statSync, writeFileSync } from "node:fs";
 import { dirname, join, resolve } from "node:path";
 
 type Frontmatter = Partial<Record<string, string>>;
 
-const wikiDir = resolve(process.argv[2] ?? "wiki");
+const args = process.argv.slice(2);
+const fix = args.includes("--fix");
+const wikiDir = resolve(args.find((arg) => !arg.startsWith("--")) ?? "wiki");
 const repoRoot = dirname(wikiDir);
 const errors: string[] = [];
 const warnings: string[] = [];
@@ -37,6 +40,21 @@ const KANBAN_COLUMNS: Readonly<Partial<Record<string, string>>> = {
 const withoutCode = (text: string): string =>
 	text.replace(/```[\s\S]*?```/g, "").replace(/`[^`]*`/g, "");
 
+/**
+ * Adds list items to the page's "See also" section. The items go at the end of the section if it
+ * exists, wherever it is (the log keeps it above its entries); otherwise a new section is appended
+ * to the page.
+ */
+const addToSeeAlso = (text: string, items: string): string => {
+	const heading = /^## See also\n/m.exec(text);
+	if (heading === null) return `${text.trimEnd()}\n\n## See also\n\n${items}\n`;
+	const start = heading.index + heading[0].length;
+	const next = /^## /m.exec(text.slice(start));
+	const end = next === null ? text.length : start + next.index;
+	const section = text.slice(start, end).trimEnd();
+	return `${text.slice(0, start)}${section}\n${items}\n${next === null ? "" : "\n"}${text.slice(end)}`;
+};
+
 /** Reads the flat `key: value` pairs of a page's YAML frontmatter, or `null` if it has none. */
 const frontmatter = (text: string): Frontmatter | null => {
 	const block = /^---\n([\s\S]*?)\n---\n/.exec(text)?.[1];
@@ -59,7 +77,9 @@ for (const entry of entries) {
 }
 const pages = entries.filter((entry) => entry.endsWith(".md"));
 
+// Wiki-page links in both directions, so every link can be checked for a link back.
 const inbound = new Map(pages.map((page) => [page, new Set<string>()]));
+const outbound = new Map(pages.map((page) => [page, new Set<string>()]));
 const contents = new Map<string, string>();
 
 for (const page of pages) {
@@ -101,7 +121,10 @@ for (const page of pages) {
 			errors.push(`${page}: broken link -> ${target}`);
 			continue;
 		}
-		if (dirname(abs) === wikiDir && path !== page) inbound.get(path)?.add(page);
+		if (dirname(abs) === wikiDir && path !== page && inbound.has(path)) {
+			inbound.get(path)?.add(page);
+			outbound.get(page)?.add(path);
+		}
 		if (dirname(abs) !== wikiDir && !abs.startsWith(repoRoot))
 			warnings.push(`${page}: link leaves repo -> ${target}`);
 	}
@@ -117,6 +140,35 @@ for (const page of pages) {
 			errors.push(`${page}: not listed in ${index}`);
 	}
 }
+
+// Every link between wiki pages needs a link back, because VS Code's preview has no back button.
+// Links woven into the prose count; the rest go in a "See also" section.
+const missingBacklinks = new Map<string, string[]>();
+for (const [page, targets] of outbound) {
+	for (const target of targets) {
+		if (outbound.get(target)?.has(page)) continue;
+		missingBacklinks.set(target, [...(missingBacklinks.get(target) ?? []), page]);
+	}
+}
+if (fix) {
+	for (const [page, sources] of missingBacklinks) {
+		const items = sources
+			.toSorted()
+			.map((source) => {
+				const title = frontmatter(contents.get(source) ?? "")?.["title"] ?? source;
+				return `- [${title}](${source})`;
+			})
+			.join("\n");
+		writeFileSync(join(wikiDir, page), addToSeeAlso(contents.get(page) ?? "", items));
+	}
+	const count = [...missingBacklinks.values()].flat().length;
+	console.log(
+		`Added ${count} backlink(s) to ${missingBacklinks.size} page(s). Run the check again.`,
+	);
+	process.exit(0);
+}
+for (const [page, sources] of missingBacklinks)
+	for (const source of sources) errors.push(`${page}: no backlink to ${source}, which links here`);
 
 // Kanban and ticket index must agree with each ticket's status.
 const ticketIndex = contents.get("index-tickets.md") ?? "";

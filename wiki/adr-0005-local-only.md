@@ -33,3 +33,12 @@ The options were a public demo (for example, a free Vercel deployment) or a loca
   - running the tests
 - Each reviewer uses their own free API key, so nobody's quota is shared and rate limiting is unnecessary. This fits [ADR-0002](adr-0002-minimal-scope-tdd.md).
 - The production build must work with no setup beyond the API key.
+
+## See also
+
+- [Log](log.md)
+- [Open Questions](open-questions.md)
+- [Plan](plan.md)
+- [Requirements](requirements.md)
+- [Research: The Candidate's Website Conventions](research-website-conventions.md)
+- [ticket-0010: Bootstrap the Next.js App with Vite+](ticket-0010-bootstrap-app.md)

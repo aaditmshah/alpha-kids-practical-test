@@ -8,7 +8,7 @@ summary: The candidate confirmed the Alpha Kids website (https://alpha.kids/), a
 
 # Session 2026-11-18 #2: Decisions
 
-Back to: [Home](index.md) · [Sessions](index-sessions.md) · Previous: [Session #1](session-2026-11-18-01-kickoff.md)
+Back to: [Sessions](index-sessions.md) · Previous: [Session #1](session-2026-11-18-01-kickoff.md)
 
 The candidate answered the open questions left at the end of [session #1](session-2026-11-18-01-kickoff.md).
 
@@ -40,3 +40,8 @@ _"I don't want to deploy the application anywhere. Keep it completely local for 
 ## Open at end of session
 
 Q3 (helpline regions), Q4 (Next.js or Node) and Q6 (actual Gemini quota) in [Open questions](open-questions.md). Next up: [ticket-0004](ticket-0004-research-safety-escalation.md) and [ticket-0005](ticket-0005-research-roman-urdu.md).
+
+## See also
+
+- [Log](log.md)
+- [Session 2026-11-18 #3: Commit Conventions](session-2026-11-18-03-commit-conventions.md)

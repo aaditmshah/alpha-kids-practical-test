@@ -44,3 +44,12 @@ These are explicitly out of scope: login, a database, Urdu script and right-to-l
 - **"Structured"** means a fixed reply shape (plan steps plus check-in plus optional escalation), not free prose. A typed output schema enforces it. The details are still to be designed in [ticket-0006](ticket-0006-design-coach-contract.md).
 - **"Escalate clearly"** means the escalation must be visually distinct, appear first, and must not depend on the model remembering to add it. The approach is still to be researched in [ticket-0004](ticket-0004-research-safety-escalation.md).
 - **Urdu** means Roman Urdu only ([ADR-0004](adr-0004-roman-urdu-only.md)). If a parent types in Urdu script anyway, the coach replies in Roman Urdu; no extra work goes into this case.
+
+## See also
+
+- [Wiki Conventions](conventions.md)
+- [Plan](plan.md)
+- [Research: Free LLM Providers](research-free-llm-providers.md)
+- [Session 2026-11-18 #2: Decisions](session-2026-11-18-02-decisions.md)
+- [ticket-0005: Research Roman Urdu Handling](ticket-0005-research-roman-urdu.md)
+- [ticket-0010: Bootstrap the Next.js App with Vite+](ticket-0010-bootstrap-app.md)

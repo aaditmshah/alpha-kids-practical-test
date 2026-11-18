@@ -8,7 +8,7 @@ summary: How to write good commit messages, from cbeams' seven rules and the Git
 
 # Research: Commit Messages (Gitmoji and the Seven Rules)
 
-Back to: [Home](index.md) · [Research](index-research.md) · Decision: [ADR-0006](adr-0006-gitmoji-atomic-commits.md) · Ticket: [ticket-0009](ticket-0009-commit-conventions.md)
+Back to: [Research](index-research.md) · Decision: [ADR-0006](adr-0006-gitmoji-atomic-commits.md) · Ticket: [ticket-0009](ticket-0009-commit-conventions.md)
 
 Accessed 2026-11-18.
 
@@ -55,3 +55,8 @@ This extends rule 5 into the body, and gives rule 7's what/why split a grammatic
 ## Applied
 
 All of this is encoded in the [`git-commit` skill](../.claude/skills/git-commit/SKILL.md).
+
+## See also
+
+- [Log](log.md)
+- [Session 2026-11-18 #3: Commit Conventions](session-2026-11-18-03-commit-conventions.md)

@@ -18,10 +18,15 @@ It reports these problems:
 - broken relative links, and `[[wikilinks]]`
 - a missing or extra H1, or an H1 that doesn't match the frontmatter `title`
 - orphan pages, which no other page links to
+- links without a backlink (page A links to page B, but B doesn't link back to A)
 - prefixed pages missing from their category index
 - a ticket status that disagrees with `index-tickets.md` or its `kanban.md` column
 
-Fix every error. Re-run until it is clean.
+Fix every error. Re-run until it is clean. For missing backlinks, prefer a natural link in the prose; otherwise run the fixer, which adds them to the page's `## See also` section:
+
+```bash
+node .claude/skills/wiki-maintain/scripts/lint.ts --fix wiki
+```
 
 ## 2. Judgement checks (manual)
 

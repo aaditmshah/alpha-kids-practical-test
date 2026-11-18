@@ -56,7 +56,8 @@ Status values:
 - Use plain relative Markdown links only, such as `[Gemini decision](adr-0003-llm-provider.md)`. They work in VS Code preview and on GitHub. Do **not** use `[[wikilinks]]`, because GitHub does not render them.
 - Links to files outside `wiki/` use `../`, for example `[CLAUDE.md](../CLAUDE.md)`.
 - Link generously, the way Wikipedia does. The first time a page mentions a concept that has its own page, link it.
-- Every page links back to [Home](index.md) and to its category index. Every page must be reachable from an index; a page nothing links to is a bug.
+- Every page starts with a **"Back to:" line** linking up the hierarchy: Home ↔ category index ↔ page. Leaf pages (`source-`, `research-`, `adr-`, `ticket-`, `session-`) link to their category index, and to [Home](index.md) only when Home links to them directly. Every page must be reachable from an index; a page nothing links to is a bug.
+- **Every link needs a backlink.** If page A links to page B, B must link back to A, because VS Code's preview has no back button. The best backlink is a natural link in the prose. Otherwise, put it under a `## See also` section at the end of the page, as Wikipedia does. The [log](log.md) keeps its See also section above `## Entries`, so new entries can still be appended. `vp run wiki:lint` reports every missing backlink, and `node .claude/skills/wiki-maintain/scripts/lint.ts --fix wiki` adds them to See also.
 - Cite external facts with inline links to the original URL, plus the date accessed when the fact is likely to change, such as prices or rate limits.
 
 ## Indexes
@@ -79,7 +80,7 @@ The user's standing instruction is that **everything we discuss, decide and do i
 
 - Write for a human first: short paragraphs, clear headings, tables where they help.
 - Separate fact from inference. Write "inferred" or "unverified" explicitly.
-- Never edit `source-` pages after capture. Corrections go in research pages.
+- Never edit the captured content of `source-` pages, and never rewrite earlier [log](log.md) entries. Corrections go in research pages. Navigation (the "Back to:" line and `## See also`) is the only part of these pages that may change.
 
 ## Skills
 
@@ -90,3 +91,7 @@ Agents should use these project skills rather than editing the wiki by hand:
 - `wiki-maintain`: check the wiki for broken links, orphans, stale indexes and contradictions ([SKILL.md](../.claude/skills/wiki-maintain/SKILL.md))
 
 Commits use the `git-commit` skill ([SKILL.md](../.claude/skills/git-commit/SKILL.md), [ADR-0006](adr-0006-gitmoji-atomic-commits.md)). Wiki updates go in the same commit as the change they record.
+
+## See also
+
+- [Session 2026-11-18 #4: Bootstrap the App](session-2026-11-18-04-bootstrap.md)

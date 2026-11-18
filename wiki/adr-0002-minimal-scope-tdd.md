@@ -26,3 +26,11 @@ The candidate said: _"This is a simple throwaway app. I don't want to spend too 
 
 - The candidate gets a reviewable, well-tested core quickly.
 - Some ideas from the first discussion are deferred, unless they turn out to be cheap: a full eval scoring script, Roman Urdu, rate limiting, and polished streaming. These are tracked in [Open questions](open-questions.md).
+
+## See also
+
+- [ADR-0005: Local Only, No Deployment](adr-0005-local-only.md)
+- [Log](log.md)
+- [Plan](plan.md)
+- [Research: The Candidate's Website Conventions](research-website-conventions.md)
+- [ticket-0007: Choose the Stack and Test Tooling](ticket-0007-choose-stack.md)

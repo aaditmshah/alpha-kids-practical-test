@@ -8,7 +8,7 @@ summary: Vite+ (vp) can scaffold Next.js through create-next-app and then takes 
 
 # Research: Bootstrapping Next.js with Vite+
 
-Back to: [Home](index.md) · [Research](index-research.md) · Decision: [ADR-0007](adr-0007-nextjs-with-vite-plus.md) · Ticket: [ticket-0010](ticket-0010-bootstrap-app.md)
+Back to: [Research](index-research.md) · Decision: [ADR-0007](adr-0007-nextjs-with-vite-plus.md) · Ticket: [ticket-0010](ticket-0010-bootstrap-app.md)
 
 Accessed 2026-11-18, with Vite+ 1.4.0, create-next-app 16.4.6 and Node.js 26.13.0.
 
@@ -67,3 +67,8 @@ What it produced:
 
 - **Use `vp run dev`, `vp run build` and `vp run start`.** The built-in `vp dev` and `vp build` run Vite, not Next.js.
 - **Checks:** `vp check` (format, lint and type check), `vp test`, and `vp run wiki:lint`.
+
+## See also
+
+- [Log](log.md)
+- [Session 2026-11-18 #4: Bootstrap the App](session-2026-11-18-04-bootstrap.md)

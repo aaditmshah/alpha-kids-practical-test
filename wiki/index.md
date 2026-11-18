@@ -36,3 +36,7 @@ This wiki records the **whole process** of building a small bilingual (English/R
 | [Decisions](index-decisions.md) | Architectural decision records (ADRs) |
 | [Tickets](index-tickets.md)     | Every unit of work                    |
 | [Sessions](index-sessions.md)   | Records of each working conversation  |
+
+## See also
+
+- [ticket-0001: Set Up the LLM Wiki and Its Skills](ticket-0001-set-up-wiki.md)

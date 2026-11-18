@@ -20,3 +20,10 @@ Back to: [Home](index.md) · [Tickets](index-tickets.md) · [Kanban](kanban.md) 
 ## Output
 
 An ADR for the LLM client library.
+
+## See also
+
+- [Plan](plan.md)
+- [Research: Free LLM Providers](research-free-llm-providers.md)
+- [Session 2026-11-18 #4: Bootstrap the App](session-2026-11-18-04-bootstrap.md)
+- [ticket-0008: Write the Implementation Plan and Build Tickets](ticket-0008-write-implementation-plan.md)

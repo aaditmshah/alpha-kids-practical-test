@@ -8,7 +8,7 @@ summary: Research Gitmoji and cbeams' commit rules, write the git-commit skill, 
 
 # ticket-0009: Commit Conventions and the git-commit Skill
 
-Back to: [Home](index.md) · [Tickets](index-tickets.md) · [Kanban](kanban.md) · Decision: [ADR-0006](adr-0006-gitmoji-atomic-commits.md)
+Back to: [Tickets](index-tickets.md) · [Kanban](kanban.md) · Decision: [ADR-0006](adr-0006-gitmoji-atomic-commits.md)
 
 ## Acceptance criteria
 
@@ -17,3 +17,7 @@ Back to: [Home](index.md) · [Tickets](index-tickets.md) · [Kanban](kanban.md) 
 - [x] Point agents to the skill in the root [CLAUDE.md](../CLAUDE.md)
 - [x] Record the convention in [ADR-0006](adr-0006-gitmoji-atomic-commits.md)
 - [x] Commit the work so far as atomic commits
+
+## See also
+
+- [Log](log.md)

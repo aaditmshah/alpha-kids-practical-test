@@ -8,7 +8,7 @@ summary: First commits. Researched Gitmoji and cbeams' seven rules, created the 
 
 # Session 2026-11-18 #3: Commit Conventions
 
-Back to: [Home](index.md) · [Sessions](index-sessions.md) · Previous: [Session #2](session-2026-11-18-02-decisions.md)
+Back to: [Sessions](index-sessions.md) · Previous: [Session #2](session-2026-11-18-02-decisions.md)
 
 ## Request
 
@@ -38,3 +38,8 @@ They added the rule: _"use the imperative mood in the subject body to describe t
 ## Open at end of session
 
 Unchanged: Q3, Q4 and Q6 in [Open questions](open-questions.md). Next: [ticket-0004](ticket-0004-research-safety-escalation.md).
+
+## See also
+
+- [Log](log.md)
+- [Session 2026-11-18 #4: Bootstrap the App](session-2026-11-18-04-bootstrap.md)

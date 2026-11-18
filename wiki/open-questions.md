@@ -18,3 +18,11 @@ Back to: [Home](index.md)
 | ~~Q4~~ | ~~Next.js or plain Node?~~                                                                       | —                                         | Answered: Next.js with the Vite+ toolchain ([ADR-0007](adr-0007-nextjs-with-vite-plus.md)) |
 | ~~Q5~~ | ~~Deploy a public demo or keep it local-only?~~                                                  | —                                         | Answered: local only ([ADR-0005](adr-0005-local-only.md))                                  |
 | Q6     | Actual free-tier RPM/RPD for the chosen Gemini model                                             | Candidate (needs the AI Studio dashboard) | [Research: Free LLM providers](research-free-llm-providers.md)                             |
+
+## See also
+
+- [ADR-0002: Minimal Scope, Test-Driven Development](adr-0002-minimal-scope-tdd.md)
+- [Wiki Conventions](conventions.md)
+- [Session 2026-11-18 #1: Kickoff](session-2026-11-18-01-kickoff.md)
+- [Session 2026-11-18 #2: Decisions](session-2026-11-18-02-decisions.md)
+- [Session 2026-11-18 #3: Commit Conventions](session-2026-11-18-03-commit-conventions.md)

@@ -35,3 +35,11 @@ The [brief](source-practical-test-brief.md) says a parent should be able to type
 - R2 and R10 in [Requirements](requirements.md) now mean Roman Urdu.
 - **Risk:** a reviewer might type in Urdu script. Mitigation at no extra cost: the model will probably still understand it, and the coach replies in Roman Urdu. The README states that Urdu is supported as Roman Urdu, and why.
 - Roman Urdu spelling varies a lot, so the language and safety checks must cope with variants. See [ticket-0005](ticket-0005-research-roman-urdu.md) and [ticket-0004](ticket-0004-research-safety-escalation.md).
+
+## See also
+
+- [ADR-0003: LLM Provider: Gemini Free Tier](adr-0003-llm-provider.md)
+- [Log](log.md)
+- [Open Questions](open-questions.md)
+- [Plan](plan.md)
+- [Research: Free LLM Providers](research-free-llm-providers.md)

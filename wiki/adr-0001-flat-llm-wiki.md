@@ -37,3 +37,9 @@ The rules are in [Conventions](conventions.md). Three project skills (`wiki-quer
 - Recording takes discipline: every session must end with a wiki update. The `wiki-update` skill and `CLAUDE.md` enforce this.
 - Indexes must be kept in sync by hand, and the `wiki-maintain` skill checks them.
 - The wiki is submitted with the code. It must not contain secrets (API keys) or personal details beyond what the candidate wants to share.
+
+## See also
+
+- [ADR-0006: Gitmoji, Atomic Commits and the Mood Rule](adr-0006-gitmoji-atomic-commits.md)
+- [Plan](plan.md)
+- [ticket-0001: Set Up the LLM Wiki and Its Skills](ticket-0001-set-up-wiki.md)

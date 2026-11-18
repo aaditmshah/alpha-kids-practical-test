@@ -54,3 +54,9 @@ The candidate: _"I don't believe in running lint and other checks in the staging
 - Rebase merging keeps every atomic commit ([ADR-0006](adr-0006-gitmoji-atomic-commits.md)) on `main` exactly as written.
 - Requiring an up-to-date branch means rebasing onto `main` before merging, which suits the candidate's workflow.
 - The [`git-commit` skill](../.claude/skills/git-commit/SKILL.md) and the root CLAUDE.md describe the branch and pull request workflow.
+
+## See also
+
+- [Log](log.md)
+- [Research: The Candidate's Website Conventions](research-website-conventions.md)
+- [ticket-0011: Protect Main and Enforce Linear History](ticket-0011-protect-main.md)

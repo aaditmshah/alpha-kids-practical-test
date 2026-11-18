@@ -23,3 +23,11 @@ Roman Urdu only: no Urdu script and no right-to-left UI ([ADR-0004](adr-0004-rom
 ## Output
 
 A `research-roman-urdu.md` page, plus a set of Roman Urdu test concerns for the TDD fixtures.
+
+## See also
+
+- [Index: Research](index-research.md)
+- [Log](log.md)
+- [Plan](plan.md)
+- [Session 2026-11-18 #2: Decisions](session-2026-11-18-02-decisions.md)
+- [ticket-0006: Design the Coach Reply Schema and Prompt](ticket-0006-design-coach-contract.md)

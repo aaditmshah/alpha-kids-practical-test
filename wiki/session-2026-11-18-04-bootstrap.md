@@ -8,7 +8,7 @@ summary: Bootstrapped Next.js with Vite+, copied the candidate's website convent
 
 # Session 2026-11-18 #4: Bootstrap the App
 
-Back to: [Home](index.md) · [Sessions](index-sessions.md) · Previous: [Session #3](session-2026-11-18-03-commit-conventions.md)
+Back to: [Sessions](index-sessions.md) · Previous: [Session #3](session-2026-11-18-03-commit-conventions.md)
 
 ## Requests
 
@@ -76,6 +76,18 @@ The conversion turned up two problems, both now fixed and listed in [Research: V
 - **`next build` failed after a `next dev` run.** That bug came in with the strict tsconfig commit: the generated `.next/dev/types/validator.ts` broke the build under `noUnusedLocals` and `noUnusedParameters`. Both options were dropped, and Oxlint's `no-unused-vars` now reports unused code.
 
 The agent also made and caught a mistake of its own. A staged `git mv` slipped into the bug-fix commit, so the two commits were rebuilt before pushing.
+
+## Final review: backlinks
+
+After approving PR #1, the candidate asked for backlinks: _"Let's ensure that all page hyperlinks have backreferences … otherwise I have no way to go back to the previous page when exploring the wiki in VS Code which doesn't have a "back" button … For all the other backlinks we can add a "See also" section like we have on wikipedia. We should also add a lint rule."_
+
+What changed:
+
+- **New linter rule:** every link from page A to page B needs a link from B back to A. A new `--fix` mode adds missing backlinks to a `## See also` section.
+- **"Back to:" lines** on leaf pages now point at their category index instead of Home, unless Home links to the page directly. Otherwise Home would have needed a See also entry for almost every page.
+- **The log** keeps its See also section above a new `## Entries` heading, so entries are still appended at the bottom.
+- **The fixer added 111 backlinks across 36 pages.**
+- **Frozen pages:** the [Conventions](conventions.md) now allow navigation changes on source pages and the log, but never content changes.
 
 ## Open at end of session
 

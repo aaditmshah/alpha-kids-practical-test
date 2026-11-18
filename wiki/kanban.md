@@ -30,3 +30,9 @@ Nothing in progress.
 - [ticket-0009](ticket-0009-commit-conventions.md): Commit conventions and the git-commit skill
 - [ticket-0010](ticket-0010-bootstrap-app.md): Bootstrap the Next.js app with Vite+
 - [ticket-0011](ticket-0011-protect-main.md): Protect main and enforce linear history
+
+## See also
+
+- [ADR-0001: Record Everything in a Flat, Linked LLM Wiki](adr-0001-flat-llm-wiki.md)
+- [Wiki Conventions](conventions.md)
+- [Plan](plan.md)

@@ -8,7 +8,7 @@ summary: A comparison of $0 LLM API tiers (Gemini, Groq, OpenRouter, Cerebras, M
 
 # Research: Free LLM Providers
 
-Back to: [Home](index.md) · [Research](index-research.md) · Ticket: [ticket-0003](ticket-0003-research-llm-providers.md) · Decision: [ADR-0003](adr-0003-llm-provider.md)
+Back to: [Research](index-research.md) · Ticket: [ticket-0003](ticket-0003-research-llm-providers.md) · Decision: [ADR-0003](adr-0003-llm-provider.md)
 
 Accessed 2026-11-18. **Free-tier limits change often.** Treat the numbers here as indicative and check the provider's console before relying on them.
 
@@ -63,3 +63,9 @@ Calling the model through a small adapter keeps the provider swappable. The conc
 
 - [ ] Actual RPM/RPD for the chosen model, from the [AI Studio dashboard](https://aistudio.google.com/rate-limit) once the user has created a key.
 - [ ] A quick qualitative Urdu check: two or three concerns written in **Roman Urdu** ([ADR-0004](adr-0004-roman-urdu-only.md)), run through Flash and Flash-Lite.
+
+## See also
+
+- [Log](log.md)
+- [Open Questions](open-questions.md)
+- [Session 2026-11-18 #1: Kickoff](session-2026-11-18-01-kickoff.md)

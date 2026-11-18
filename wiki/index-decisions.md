@@ -21,3 +21,7 @@ Back to: [Home](index.md)
 | [ADR-0007: Next.js with Vite+](adr-0007-nextjs-with-vite-plus.md)                     | accepted | Next.js 16 scaffolded with Vite+; pnpm, Oxlint, Oxfmt and Vitest from Vite+; Turbopack builds |
 | [ADR-0008: Protected main, linear history](adr-0008-protected-main-linear-history.md) | accepted | PRs must pass the `ci` check; rebase-only merges; no pre-commit checks                        |
 | [ADR-0009: Title in frontmatter and H1](adr-0009-title-in-frontmatter-and-h1.md)      | accepted | Keep both; MD025 told to ignore the frontmatter title; wiki linter enforces a match           |
+
+## See also
+
+- [Wiki Conventions](conventions.md)

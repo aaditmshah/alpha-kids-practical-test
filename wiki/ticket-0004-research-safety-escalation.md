@@ -21,3 +21,17 @@ Back to: [Home](index.md) · [Tickets](index-tickets.md) · [Kanban](kanban.md) 
 ## Output
 
 A `research-safety-escalation.md` page, plus an ADR for the detection approach.
+
+## See also
+
+- [ADR-0004: Support Urdu Only as Roman Urdu (Latin Script)](adr-0004-roman-urdu-only.md)
+- [Index: Research](index-research.md)
+- [Open Questions](open-questions.md)
+- [Plan](plan.md)
+- [Research: Alpha Kids (the company)](research-alpha-kids.md)
+- [Session 2026-11-18 #2: Decisions](session-2026-11-18-02-decisions.md)
+- [Session 2026-11-18 #3: Commit Conventions](session-2026-11-18-03-commit-conventions.md)
+- [Session 2026-11-18 #4: Bootstrap the App](session-2026-11-18-04-bootstrap.md)
+- [ticket-0005: Research Roman Urdu Handling](ticket-0005-research-roman-urdu.md)
+- [ticket-0006: Design the Coach Reply Schema and Prompt](ticket-0006-design-coach-contract.md)
+- [ticket-0008: Write the Implementation Plan and Build Tickets](ticket-0008-write-implementation-plan.md)

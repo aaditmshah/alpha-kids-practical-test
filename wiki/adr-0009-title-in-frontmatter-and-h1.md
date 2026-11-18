@@ -8,7 +8,7 @@ summary: Every wiki page keeps its title in the frontmatter (for agents) and rep
 
 # ADR-0009: Page Title in Both Frontmatter and H1
 
-Back to: [Home](index.md) · [Decisions](index-decisions.md) · Session: [2026-11-18 #4](session-2026-11-18-04-bootstrap.md) · Rules: [Conventions](conventions.md)
+Back to: [Decisions](index-decisions.md) · Session: [2026-11-18 #4](session-2026-11-18-04-bootstrap.md) · Rules: [Conventions](conventions.md)
 
 ## Context
 
@@ -37,3 +37,7 @@ The candidate's constraint: _"a human reading the wiki should be able to see the
 - Generated agent files are not hand-fixed. The Vite+ block in `CLAUDE.md` sits under a scoped `markdownlint-disable MD025 MD034` comment, `AGENTS.md` gets an H1 (`# Next.js Agent Rules`) above Next's managed block. `next dev` replaces only the text between its markers, which was confirmed by running it, so the H1 survives and MD041 is satisfied.
 - `.markdownlint.jsonc` has no trailing comma. The [JSONC spec](https://jsonc.org/) only lets parsers accept one, and its reference parser rejects them by default. An Oxfmt override (`trailingComma: "none"` for `**/*.jsonc`) stops the formatter from adding it back.
 - The duplication is deliberate and enforced: a title that drifts from its H1 fails CI.
+
+## See also
+
+- [Log](log.md)

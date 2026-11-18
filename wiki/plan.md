@@ -41,3 +41,7 @@ _To be filled in by [ticket-0008](ticket-0008-write-implementation-plan.md)._ Wo
 ## Test plan (draft)
 
 _To be filled in by [ticket-0008](ticket-0008-write-implementation-plan.md)._ Unit tests with the LLM mocked, plus an opt-in live smoke test ([ADR-0002](adr-0002-minimal-scope-tdd.md)).
+
+## See also
+
+- [Wiki Conventions](conventions.md)

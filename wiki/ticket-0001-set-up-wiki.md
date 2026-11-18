@@ -8,7 +8,7 @@ summary: Create the flat wiki (conventions, indexes, log, board), the wiki-query
 
 # ticket-0001: Set Up the LLM Wiki and Its Skills
 
-Back to: [Home](index.md) · [Tickets](index-tickets.md) · [Kanban](kanban.md) · Decision: [ADR-0001](adr-0001-flat-llm-wiki.md)
+Back to: [Tickets](index-tickets.md) · [Kanban](kanban.md) · Decision: [ADR-0001](adr-0001-flat-llm-wiki.md)
 
 ## Acceptance criteria
 
@@ -21,3 +21,7 @@ Back to: [Home](index.md) · [Tickets](index-tickets.md) · [Kanban](kanban.md) 
 ## Notes
 
 Done in [session 2026-11-18-01](session-2026-11-18-01-kickoff.md).
+
+## See also
+
+- [Plan](plan.md)

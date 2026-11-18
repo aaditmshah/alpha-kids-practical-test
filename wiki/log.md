@@ -12,6 +12,12 @@ Back to: [Home](index.md)
 
 Format: `YYYY-MM-DD: [type] what happened (links)`. Append only; never rewrite earlier lines.
 
+## See also
+
+- [Wiki Conventions](conventions.md)
+
+## Entries
+
 - 2026-11-18: [source] Practical test brief received ([brief](source-practical-test-brief.md))
 - 2026-11-18: [session] Kickoff discussion; first research plan proposed ([session](session-2026-11-18-01-kickoff.md))
 - 2026-11-18: [decision] Flat LLM wiki with skills, submitted with the code ([ADR-0001](adr-0001-flat-llm-wiki.md))
@@ -40,3 +46,4 @@ Format: `YYYY-MM-DD: [type] what happened (links)`. Append only; never rewrite e
 - 2026-11-18: [wiki] markdownlint aligned with the formatter (MD010 and MD013 off); genuine findings fixed in the wiki, the skills and CLAUDE.md ([ADR-0009](adr-0009-title-in-frontmatter-and-h1.md))
 - 2026-11-18: [wiki] Trailing commas kept out of JSONC files; H1 added to AGENTS.md; markdownlint now reports no issues ([ADR-0009](adr-0009-title-in-frontmatter-and-h1.md))
 - 2026-11-18: [review] PR #1 review: gitmoji list now comes from the CLI; wiki linter converted to TypeScript; build failure after `next dev` fixed ([session](session-2026-11-18-04-bootstrap.md))
+- 2026-11-18: [wiki] Every wiki link now needs a backlink: linter rule and `--fix` added, 111 backlinks added under "See also", leaf "Back to:" lines point at their category index ([Conventions](conventions.md))

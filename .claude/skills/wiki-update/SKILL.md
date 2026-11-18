@@ -26,7 +26,7 @@ The standing rule: **everything we discuss, decide and do is recorded in the wik
 1. Set `updated:` in the frontmatter of every page you touch.
 2. Add or refresh the page's row in its category index (`index-*.md`) with the current `summary` and `status`.
 3. Refresh the **Current state** section of `wiki/index.md` if the phase, the key decisions or "next" changed.
-4. Link generously: new pages link to related pages, and related pages link back.
+4. Link generously: new pages link to related pages, and **every link needs a backlink**, in the prose or under `## See also` (the linter enforces this, and `--fix` adds what's missing).
 5. Run the linter and fix anything it reports:
 
    ```bash
@@ -38,4 +38,4 @@ The standing rule: **everything we discuss, decide and do is recorded in the wik
 - Flat directory only. No subfolders. Use relative links like `[Text](page.md)`, never `[[wikilinks]]`.
 - Write for humans too: headings, short paragraphs, tables.
 - No secrets (API keys) and no real personal data. The wiki is submitted to Alpha Kids.
-- Don't rewrite history. `log.md` is append-only, and `source-*` pages are frozen.
+- Don't rewrite history. `log.md` entries are append-only, and the captured content of `source-*` pages is frozen. Only their navigation ("Back to:" and `## See also`) may change.

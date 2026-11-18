@@ -8,7 +8,7 @@ summary: Identify the company behind the test and what its product, channels and
 
 # ticket-0002: Research Alpha Kids
 
-Back to: [Home](index.md) · [Tickets](index-tickets.md) · [Kanban](kanban.md)
+Back to: [Tickets](index-tickets.md) · [Kanban](kanban.md)
 
 ## Acceptance criteria
 
@@ -18,3 +18,8 @@ Back to: [Home](index.md) · [Tickets](index-tickets.md) · [Kanban](kanban.md)
 ## Result
 
 See [Research: Alpha Kids](research-alpha-kids.md).
+
+## See also
+
+- [Plan](plan.md)
+- [Session 2026-11-18 #1: Kickoff](session-2026-11-18-01-kickoff.md)

@@ -36,3 +36,10 @@ The candidate prefers Gitmoji-style commit messages and asked for a skill that w
 - `git log --oneline` reads as a short story of the project.
 - Some discipline is needed to split work into separate commits. The skill makes the agent plan its commits before staging anything.
 - The first commit (`🎉 Begin project with an LLM wiki`) bundles the whole initial wiki. Its pages all link to each other, so splitting it would have left commits with broken links.
+
+## See also
+
+- [ADR-0008: Protected Main, Linear History, Quality Checks in CI Only](adr-0008-protected-main-linear-history.md)
+- [Wiki Conventions](conventions.md)
+- [Research: The Candidate's Website Conventions](research-website-conventions.md)
+- [ticket-0009: Commit Conventions and the git-commit Skill](ticket-0009-commit-conventions.md)

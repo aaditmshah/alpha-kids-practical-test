@@ -39,3 +39,8 @@ The [brief](source-practical-test-brief.md) allows Next.js or Node. The candidat
 - Agents must remember the `vp run` versus built-in difference. It is noted in the root CLAUDE.md and the README.
 - A fresh clone needs `vp run typegen` before `vp check`, because Next's route types live in `.next/`.
 - The LLM client library is still open in [ticket-0007](ticket-0007-choose-stack.md).
+
+## See also
+
+- [Log](log.md)
+- [ticket-0010: Bootstrap the Next.js App with Vite+](ticket-0010-bootstrap-app.md)
