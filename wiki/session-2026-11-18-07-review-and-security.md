@@ -29,7 +29,9 @@ Claude considered three fixes:
 - **Wait for the chain to update:** `get-uri@8.0.2` moved to `basic-ftp@^6.2.4` only on 2026-11-16, and gitmoji-cli's chain still uses `get-uri@6`.
 - **Dismiss the alert as unreachable.**
 
-Claude chose the override; it ships in the next PR.
+Claude chose the override. It resolves to `basic-ftp@6.2.6`, the newest version past the one-week delay, and `vpx gitmoji`, the checks, the tests and the build all pass. It ships in [PR #5](pr-0005-security-basic-ftp.md), stacked on PR #4.
+
+Aadit added: _"By the way, you can create stacked PRs. I can merge them quickly."_ The `git-commit` skill now covers stacking.
 
 ## Open at end of session
 

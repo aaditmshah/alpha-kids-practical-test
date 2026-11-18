@@ -3,6 +3,10 @@ catalog:
   vite-plus: 1.4.0
 overrides:
   vite@*: "catalog:"
+  # GHSA-5pm8-86m8-9m6r (Dependabot alert #2): basic-ftp <= 6.2.3 can crash on a malicious MLSD
+  # listing. gitmoji-cli reaches it through proxy-agent -> pac-proxy-agent -> get-uri@6, which still
+  # asks for basic-ftp 5. Drop this once that chain moves to get-uri@8.0.2 or later.
+  basic-ftp@<6.2.4: ^6.2.4
 peerDependencyRules:
   allowAny:
     - vite
