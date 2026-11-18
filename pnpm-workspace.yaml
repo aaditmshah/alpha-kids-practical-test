@@ -1,8 +1,12 @@
 catalog:
   vite: npm:@voidzero-dev/vite-plus-core@1.4.0
   vite-plus: 1.4.0
+  # The Vitest that Vite+ 1.4.0 ships. @amiceli/vitest-cucumber asks for vitest as a peer, so the
+  # catalog and override keep every package on this one copy.
+  vitest: 5.0.5
 overrides:
   vite@*: "catalog:"
+  vitest@*: "catalog:"
   # GHSA-5pm8-86m8-9m6r (Dependabot alert #2): basic-ftp <= 6.2.3 can crash on a malicious MLSD
   # listing. gitmoji-cli reaches it through proxy-agent -> pac-proxy-agent -> get-uri@6, which still
   # asks for basic-ftp 5. Drop this once that chain moves to get-uri@8.0.2 or later.
@@ -10,8 +14,10 @@ overrides:
 peerDependencyRules:
   allowAny:
     - vite
+    - vitest
   allowedVersions:
     vite: "*"
+    vitest: "*"
 # Only install versions published at least a week ago (in minutes), so a compromised release has
 # time to be caught before it reaches this project. The Vite+ toolchain is exempt: it ships as a
 # set and is upgraded deliberately.
