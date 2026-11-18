@@ -75,3 +75,4 @@ GitHub accepts the push to protected `main` because those exact commits passed t
 - [ADR-0010: PR Pages Have No Status, and CI Requires One per PR](adr-0010-pr-pages-without-status.md)
 - [PR #2: Document Fast-Forward Merges](pr-0002-fast-forward-merges.md)
 - [Session 2026-11-18 #5: Fast-Forward Merges](session-2026-11-18-05-fast-forward-merges.md)
+- [PR #3: Research Safety and Escalation](pr-0003-research-safety-escalation.md)

@@ -14,7 +14,7 @@ Back to: [Home](index.md)
 | ------ | ---------------------------------------------------------------------------------------- | ------------------------------------- | ------------------------------------------------------------------------------------------ |
 | ~~Q1~~ | ~~Does Aadit accept the Gemini free tier, including Google's use of free-tier prompts?~~ | —                                     | Answered: yes, for now ([ADR-0003](adr-0003-llm-provider.md))                              |
 | ~~Q2~~ | ~~Support Roman Urdu? If so, reply in Roman Urdu or in Urdu script?~~                    | —                                     | Answered: Roman Urdu only, in and out ([ADR-0004](adr-0004-roman-urdu-only.md))            |
-| Q3     | Which regions' helplines to show (Pakistan, UAE, generic)?                               | Claude                                | [ticket-0004](ticket-0004-research-safety-escalation.md)                                   |
+| ~~Q3~~ | ~~Which regions' helplines to show?~~                                                    | —                                     | Answered: India only ([ADR-0012](adr-0012-india-helplines.md))                             |
 | ~~Q4~~ | ~~Next.js or plain Node?~~                                                               | —                                     | Answered: Next.js with the Vite+ toolchain ([ADR-0007](adr-0007-nextjs-with-vite-plus.md)) |
 | ~~Q5~~ | ~~Deploy a public demo or keep it local-only?~~                                          | —                                     | Answered: local only ([ADR-0005](adr-0005-local-only.md))                                  |
 | Q6     | Actual free-tier RPM/RPD for the chosen Gemini model                                     | Aadit (needs the AI Studio dashboard) | [Research: Free LLM providers](research-free-llm-providers.md)                             |
@@ -27,3 +27,5 @@ Back to: [Home](index.md)
 - [Session 2026-11-18 #2: Decisions](session-2026-11-18-02-decisions.md)
 - [Session 2026-11-18 #3: Commit Conventions](session-2026-11-18-03-commit-conventions.md)
 - [Session 2026-11-18 #5: Fast-Forward Merges](session-2026-11-18-05-fast-forward-merges.md)
+- [Session 2026-11-18 #6: Safety Research](session-2026-11-18-06-safety-research.md)
+- [ticket-0004: Research Safety and Escalation](ticket-0004-research-safety-escalation.md)

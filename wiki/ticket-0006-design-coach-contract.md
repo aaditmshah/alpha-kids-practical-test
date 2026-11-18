@@ -32,3 +32,6 @@ An ADR for the schema, and the prompt's design rationale recorded in the wiki.
 
 - [Plan](plan.md)
 - [Session 2026-11-18 #5: Fast-Forward Merges](session-2026-11-18-05-fast-forward-merges.md)
+- [ADR-0011: Layered Safety with Fixed Escalation Messages](adr-0011-layered-safety-escalation.md)
+- [PR #3: Research Safety and Escalation](pr-0003-research-safety-escalation.md)
+- [Research: Safety and Escalation](research-safety-escalation.md)

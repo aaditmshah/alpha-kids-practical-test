@@ -53,3 +53,7 @@ These are explicitly out of scope: login, a database, Urdu script and right-to-l
 - [Session 2026-11-18 #2: Decisions](session-2026-11-18-02-decisions.md)
 - [ticket-0005: Research Roman Urdu Handling](ticket-0005-research-roman-urdu.md)
 - [ticket-0010: Bootstrap the Next.js App with Vite+](ticket-0010-bootstrap-app.md)
+- [ADR-0011: Layered Safety with Fixed Escalation Messages](adr-0011-layered-safety-escalation.md)
+- [ADR-0012: Indian Helplines Only](adr-0012-india-helplines.md)
+- [PR #3: Research Safety and Escalation](pr-0003-research-safety-escalation.md)
+- [Research: Safety and Escalation](research-safety-escalation.md)

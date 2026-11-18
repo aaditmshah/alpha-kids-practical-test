@@ -36,7 +36,7 @@ The company is **Alpha Kids**, website **[https://alpha.kids/](https://alpha.kid
 
 1. **The test is a miniature of the real product.** It is a parent-facing coach that gives practical plans and redirects to professionals when needed. Reviewers will probably judge whether we understand that shape of product.
 2. **Replies should be chat-sized.** Their WhatsApp and TikTok channels need short messages, which explains why the brief stresses "brief and practical". Aim for a reply that fits on a phone screen.
-3. **The Urdu requirement points to new markets.** A Dubai company with no stated language support asking for Urdu suggests Pakistan or the South Asian diaspora in the Gulf. Escalation resources should therefore cover Pakistan and the UAE, with a general fallback. Researched in [ticket-0004](ticket-0004-research-safety-escalation.md).
+3. **The Urdu requirement points to South Asian users.** A Dubai company with no stated language support asking for Urdu suggests South Asian families. Escalation lists Indian helplines only, by Aadit's choice ([ADR-0012](adr-0012-india-helplines.md)).
 4. **Our safety stance should match theirs:** informational only, redirect to professionals, and be honest that safeguards are imperfect.
 5. **Tone:** confident, warm and research-grounded, with an action-oriented style that matches their blog titles.
 
@@ -47,3 +47,4 @@ The company is **Alpha Kids**, website **[https://alpha.kids/](https://alpha.kid
 - [Session 2026-11-18 #1: Kickoff](session-2026-11-18-01-kickoff.md)
 - [Session 2026-11-18 #2: Decisions](session-2026-11-18-02-decisions.md)
 - [Alpha Kids Practical Test Wiki](index.md)
+- [ticket-0004: Research Safety and Escalation](ticket-0004-research-safety-escalation.md)

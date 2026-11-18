@@ -35,3 +35,7 @@ From the [Kanban board](kanban.md):
 4. [ticket-0006](ticket-0006-design-coach-contract.md) (reply schema and prompt), then [ticket-0008](ticket-0008-write-implementation-plan.md) (implementation plan and build tickets)
 
 Aadit still needs to create a free Gemini API key, which also answers Q6 in [Open questions](open-questions.md).
+
+## See also
+
+- [Session 2026-11-18 #6: Safety Research](session-2026-11-18-06-safety-research.md)

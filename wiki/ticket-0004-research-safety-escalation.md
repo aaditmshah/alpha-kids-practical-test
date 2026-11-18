@@ -1,7 +1,7 @@
 ---
 title: "ticket-0004: Research Safety and Escalation"
 type: ticket
-status: todo
+status: done
 updated: 2026-11-18
 summary: Decide how the coach detects and escalates emergencies, abuse and self-harm, where the no-diagnosis and no-medical/legal line sits, and which verified helplines to show.
 ---
@@ -14,13 +14,20 @@ Back to: [Home](index.md) · [Tickets](index-tickets.md) · [Kanban](kanban.md) 
 
 - How do we detect crisis content? Options: a fixed keyword check (English and Urdu), the model classifying risk inside the structured reply, or both. Lean toward both, because then escalation does not depend on the model alone.
 - What does an escalation reply look like? It should be fixed text, appear first, be visually distinct and be bilingual.
-- Which helplines and emergency numbers apply in **Pakistan** and the **UAE**, and what is the generic fallback? **Every number must be verified from an official source**, because a wrong number is worse than none.
+- Which helplines and emergency numbers should be shown? **Every number must be verified from an official source**, because a wrong number is worse than none. Answered: Indian helplines only ([ADR-0012](adr-0012-india-helplines.md)).
 - What is the boundary between allowed and forbidden? For example, "talk to your paediatrician" is allowed; "give 5 ml of X" is forbidden. Write down example phrasings.
 - How should the coach handle a parent trying to talk it out of its rules (prompt injection)?
 
 ## Output
 
 A `research-safety-escalation.md` page, plus an ADR for the detection approach.
+
+## Result
+
+- [Research: Safety and escalation](research-safety-escalation.md)
+- [ADR-0011](adr-0011-layered-safety-escalation.md): layered detection with fixed escalation messages (proposed)
+- [ADR-0012](adr-0012-india-helplines.md): Indian helplines only (accepted)
+- Delivered in [PR #3](pr-0003-research-safety-escalation.md)
 
 ## See also
 
@@ -36,3 +43,4 @@ A `research-safety-escalation.md` page, plus an ADR for the detection approach.
 - [ticket-0006: Design the Coach Reply Schema and Prompt](ticket-0006-design-coach-contract.md)
 - [ticket-0008: Write the Implementation Plan and Build Tickets](ticket-0008-write-implementation-plan.md)
 - [Session 2026-11-18 #5: Fast-Forward Merges](session-2026-11-18-05-fast-forward-merges.md)
+- [Session 2026-11-18 #6: Safety Research](session-2026-11-18-06-safety-research.md)

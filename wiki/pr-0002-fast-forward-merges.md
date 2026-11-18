@@ -37,3 +37,4 @@ _(Review comments are recorded here as they arrive.)_
 ## See also
 
 - [Log](log.md)
+- [Session 2026-11-18 #6: Safety Research](session-2026-11-18-06-safety-research.md)

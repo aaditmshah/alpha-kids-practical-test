@@ -32,3 +32,6 @@ A `research-roman-urdu.md` page, plus a set of Roman Urdu test concerns for the 
 - [Session 2026-11-18 #2: Decisions](session-2026-11-18-02-decisions.md)
 - [ticket-0006: Design the Coach Reply Schema and Prompt](ticket-0006-design-coach-contract.md)
 - [Session 2026-11-18 #5: Fast-Forward Merges](session-2026-11-18-05-fast-forward-merges.md)
+- [ADR-0011: Layered Safety with Fixed Escalation Messages](adr-0011-layered-safety-escalation.md)
+- [Research: Safety and Escalation](research-safety-escalation.md)
+- [Session 2026-11-18 #6: Safety Research](session-2026-11-18-06-safety-research.md)

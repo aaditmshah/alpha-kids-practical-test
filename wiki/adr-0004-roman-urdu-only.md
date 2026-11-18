@@ -43,3 +43,4 @@ The [brief](source-practical-test-brief.md) says a parent should be able to type
 - [Open Questions](open-questions.md)
 - [Plan](plan.md)
 - [Research: Free LLM Providers](research-free-llm-providers.md)
+- [Research: Safety and Escalation](research-safety-escalation.md)
