@@ -11,6 +11,7 @@ summary: Create the flat wiki (conventions, indexes, log, board), the wiki-query
 Back to: [Home](index.md) · [Tickets](index-tickets.md) · [Kanban](kanban.md) · Decision: [ADR-0001](adr-0001-flat-llm-wiki.md)
 
 ## Acceptance criteria
+
 - [x] Flat `wiki/` directory with [Conventions](conventions.md), [Home](index.md), category indexes, [Log](log.md) and [Kanban](kanban.md)
 - [x] Skills `wiki-query`, `wiki-update` and `wiki-maintain` in `.claude/skills/`
 - [x] Root [CLAUDE.md](../CLAUDE.md) tells agents to use the skills first
@@ -18,4 +19,5 @@ Back to: [Home](index.md) · [Tickets](index-tickets.md) · [Kanban](kanban.md) 
 - [x] A link checker script exists for the maintenance skill
 
 ## Notes
+
 Done in [session 2026-11-18-01](session-2026-11-18-01-kickoff.md).

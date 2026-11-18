@@ -12,7 +12,7 @@ Back to: [Home](index.md) · [Decisions](index-decisions.md) · Session: [2026-1
 
 ## Context
 
-The candidate wants the interviewers to see the *process* of building the app, not just the result. An AI agent starting cold should be able to rebuild the full project state (research, decisions, plans, board and history) from the repo alone. Humans must also be able to browse it.
+The candidate wants the interviewers to see the _process_ of building the app, not just the result. An AI agent starting cold should be able to rebuild the full project state (research, decisions, plans, board and history) from the repo alone. Humans must also be able to browse it.
 
 ## Options considered
 
@@ -24,6 +24,7 @@ The candidate wants the interviewers to see the *process* of building the app, n
 ## Decision
 
 **Option 2.** A flat `wiki/` directory with standard relative Markdown links, which work in VS Code and on GitHub. It has:
+
 - a home page and per-category index pages
 - YAML frontmatter on every page (type, status, updated, summary)
 - an append-only [log](log.md)

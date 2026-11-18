@@ -13,6 +13,7 @@ Back to: [Home](index.md) · [Tickets](index-tickets.md) · [Kanban](kanban.md) 
 Depends on: [ticket-0004](ticket-0004-research-safety-escalation.md) through [ticket-0007](ticket-0007-choose-stack.md)
 
 ## Acceptance criteria
+
 - [ ] The [Plan](plan.md) has its architecture, test plan and milestones filled in
 - [ ] Build tickets are created, each naming the tests that drive it
 - [ ] The candidate has reviewed and approved the plan

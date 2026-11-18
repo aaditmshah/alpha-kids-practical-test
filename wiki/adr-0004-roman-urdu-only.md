@@ -13,6 +13,7 @@ Back to: [Home](index.md) · [Decisions](index-decisions.md) · Session: [2026-1
 ## Context
 
 The [brief](source-practical-test-brief.md) says a parent should be able to type a concern "in English or Urdu". Urdu can be written two ways:
+
 - **Urdu script:** Perso-Arabic, written right to left, usually in the Nastaliq style.
 - **Roman Urdu:** the Latin alphabet, very common in texting and on WhatsApp.
 
@@ -25,7 +26,8 @@ The [brief](source-practical-test-brief.md) says a parent should be able to type
 ## Decision
 
 **Option 3.** The candidate gave two reasons:
-1. *"This is a throwaway app. So, I don't want to spend time on supporting a use case that's high effort and low value."*
+
+1. _"This is a throwaway app. So, I don't want to spend time on supporting a use case that's high effort and low value."_
 2. The candidate knows Hindi but can't read the Arabic alphabet, so couldn't check Urdu-script replies.
 
 ## Consequences

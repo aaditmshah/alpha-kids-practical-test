@@ -17,15 +17,15 @@ Back to: [Home](index.md)
 - **Flat directory.** Every page lives directly in `wiki/`. Never create subdirectories. Flat files make links trivial: every link is just `[Text](other-page.md)`.
 - **Page type comes from the filename prefix.** Without folders, a prefix groups related pages so they sort together:
 
-| Prefix | Type | Example |
-|---|---|---|
-| `index-` | Category index | [index-decisions.md](index-decisions.md) |
-| `source-` | A raw source, captured as it was and never edited afterwards | [source-practical-test-brief.md](source-practical-test-brief.md) |
-| `research-` | What we learned on a topic, with citations | [research-alpha-kids.md](research-alpha-kids.md) |
-| `adr-NNNN-` | Architectural decision record | [adr-0001-flat-llm-wiki.md](adr-0001-flat-llm-wiki.md) |
-| `ticket-NNNN-` | A unit of work tracked on the [Kanban board](kanban.md) | [ticket-0001-set-up-wiki.md](ticket-0001-set-up-wiki.md) |
-| `session-YYYY-MM-DD-NN-` | A record of one working conversation: what was discussed, asked, decided and done | [session-2026-11-18-01-kickoff.md](session-2026-11-18-01-kickoff.md) |
-| *(no prefix)* | Hub and singleton pages | [plan.md](plan.md), [requirements.md](requirements.md), [kanban.md](kanban.md), [log.md](log.md), [open-questions.md](open-questions.md) |
+| Prefix                   | Type                                                                              | Example                                                                                                                                  |
+| ------------------------ | --------------------------------------------------------------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------- |
+| `index-`                 | Category index                                                                    | [index-decisions.md](index-decisions.md)                                                                                                 |
+| `source-`                | A raw source, captured as it was and never edited afterwards                      | [source-practical-test-brief.md](source-practical-test-brief.md)                                                                         |
+| `research-`              | What we learned on a topic, with citations                                        | [research-alpha-kids.md](research-alpha-kids.md)                                                                                         |
+| `adr-NNNN-`              | Architectural decision record                                                     | [adr-0001-flat-llm-wiki.md](adr-0001-flat-llm-wiki.md)                                                                                   |
+| `ticket-NNNN-`           | A unit of work tracked on the [Kanban board](kanban.md)                           | [ticket-0001-set-up-wiki.md](ticket-0001-set-up-wiki.md)                                                                                 |
+| `session-YYYY-MM-DD-NN-` | A record of one working conversation: what was discussed, asked, decided and done | [session-2026-11-18-01-kickoff.md](session-2026-11-18-01-kickoff.md)                                                                     |
+| _(no prefix)_            | Hub and singleton pages                                                           | [plan.md](plan.md), [requirements.md](requirements.md), [kanban.md](kanban.md), [log.md](log.md), [open-questions.md](open-questions.md) |
 
 - Filenames are lowercase kebab-case, ASCII only. Numbers are zero-padded to 4 digits and never reused.
 
@@ -44,6 +44,7 @@ summary: One or two sentences. This is what the index pages repeat.
 ```
 
 Status values:
+
 - **ADRs:** `proposed`, `accepted`, `superseded`, `rejected`. A superseded ADR links to the ADR that replaces it.
 - **Tickets:** `todo`, `in-progress`, `done`, `dropped`.
 - **Everything else:** `active`, `draft`, `stale`.
@@ -81,6 +82,7 @@ The user's standing instruction is that **everything we discuss, decide and do i
 ## Skills
 
 Agents should use these project skills rather than editing the wiki by hand:
+
 - `wiki-query`: answer questions from the wiki ([SKILL.md](../.claude/skills/wiki-query/SKILL.md))
 - `wiki-update`: record new information, decisions, sessions and tickets ([SKILL.md](../.claude/skills/wiki-update/SKILL.md))
 - `wiki-maintain`: check the wiki for broken links, orphans, stale indexes and contradictions ([SKILL.md](../.claude/skills/wiki-maintain/SKILL.md))

@@ -11,10 +11,12 @@ summary: Choose the web framework (Next.js or plain Node), the LLM client librar
 Back to: [Home](index.md) · [Tickets](index-tickets.md) · [Kanban](kanban.md) · Constraints: [ADR-0002](adr-0002-minimal-scope-tdd.md), [ADR-0003](adr-0003-llm-provider.md)
 
 ## Questions to answer
+
 - Next.js App Router (one route handler plus one page) or a plain Node server with static HTML?
 - LLM client: the official Google Gen AI SDK, or the Vercel AI SDK (whose schema-based object generation makes switching to Groq easy)?
 - Tests: Vitest for units, with the model adapter mocked. Optionally React Testing Library for the UI.
 - Styling: plain CSS or Tailwind.
 
 ## Output
+
 An ADR for the stack.

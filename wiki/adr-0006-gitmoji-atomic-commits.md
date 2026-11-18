@@ -23,8 +23,9 @@ The candidate prefers Gitmoji-style commit messages and asked for a skill that w
 ## Decision
 
 **Option 3.**
+
 - **Subject:** `<unicode gitmoji> <Imperative, capitalised subject>`. No scope, no trailing period, and 50 characters or fewer after the emoji (72 at most).
-- **Body:** a blank line after the subject, wrapped at 72 characters. Say *what* changed in the **imperative** mood and *why* in the **indicative** mood. Don't explain *how*.
+- **Body:** a blank line after the subject, wrapped at 72 characters. Say _what_ changed in the **imperative** mood and _why_ in the **indicative** mood. Don't explain _how_.
 - **Atomic:** one logical change per commit, and the linter and tests pass at each commit. A change and the wiki pages that record it go in the same commit.
 - **TDD:** commit at green, with the test and the code together. 🧪 is only for a deliberately red commit.
 - **Individual commits are not logged in [log.md](log.md);** git history is that record.

@@ -12,6 +12,7 @@ node .claude/skills/wiki-maintain/scripts/lint.mjs wiki
 ```
 
 It reports these problems:
+
 - subdirectories, or filenames that aren't kebab-case
 - missing or invalid frontmatter (`title`, `type`, `status`, `updated`, `summary`, and valid status values)
 - broken relative links, and `[[wikilinks]]`
@@ -34,4 +35,5 @@ Skim `wiki/index.md`, each `index-*.md`, `kanban.md` and `open-questions.md`, th
 - **Readability:** does every page have a "Back to" line and sensible headings?
 
 ## 3. Record it
+
 Append a `log.md` line such as `YYYY-MM-DD: [wiki] maintenance pass: <what was fixed>`, following the `wiki-update` skill.

@@ -8,14 +8,15 @@ A small bilingual (English and Roman Urdu) LLM parenting coach, built as an inte
 
 Use the project skills. Prefer them over ad-hoc reading and editing:
 
-| When | Skill |
-|---|---|
-| Starting a session, answering a project question, or before researching something | **`wiki-query`**. Start at `wiki/index.md` |
-| Something was learned, decided, discussed or done, and **always before ending a session** | **`wiki-update`** |
-| After many edits, before committing or submitting, or when something seems inconsistent | **`wiki-maintain`** (runs `node .claude/skills/wiki-maintain/scripts/lint.mjs wiki`) |
-| Committing anything | **`git-commit`**: atomic commits, Unicode gitmoji, imperative subject, body with *what* in the imperative and *why* in the indicative (`wiki/adr-0006-gitmoji-atomic-commits.md`) |
+| When                                                                                      | Skill                                                                                                                                                                             |
+| ----------------------------------------------------------------------------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| Starting a session, answering a project question, or before researching something         | **`wiki-query`**. Start at `wiki/index.md`                                                                                                                                        |
+| Something was learned, decided, discussed or done, and **always before ending a session** | **`wiki-update`**                                                                                                                                                                 |
+| After many edits, before committing or submitting, or when something seems inconsistent   | **`wiki-maintain`** (runs `node .claude/skills/wiki-maintain/scripts/lint.mjs wiki`)                                                                                              |
+| Committing anything                                                                       | **`git-commit`**: atomic commits, Unicode gitmoji, imperative subject, body with _what_ in the imperative and _why_ in the indicative (`wiki/adr-0006-gitmoji-atomic-commits.md`) |
 
 Wiki rules (full detail in `wiki/conventions.md`):
+
 - Keep it flat: no subdirectories. Filename prefixes give the type: `source-`, `research-`, `adr-NNNN-`, `ticket-NNNN-`, `session-YYYY-MM-DD-NN-`, `index-`.
 - Use relative Markdown links (`[Text](page.md)`), never `[[wikilinks]]`. Links must work in VS Code and on GitHub.
 - Every page has frontmatter (`title`, `type`, `status`, `updated`, `summary`) and appears in its category index.

@@ -14,17 +14,17 @@ Accessed 2026-11-18.
 
 ## The seven rules (cbeams, "How to Write a Git Commit Message")
 
-Source: [cbea.ms/git-commit](https://cbea.ms/git-commit/). The premise is that a diff shows *what* changed, but only the message can explain *why*.
+Source: [cbea.ms/git-commit](https://cbea.ms/git-commit/). The premise is that a diff shows _what_ changed, but only the message can explain _why_.
 
-| # | Rule | Reason |
-|---|---|---|
-| 1 | Separate the subject from the body with a blank line | `log`, `shortlog` and `rebase` use the blank line to find the subject |
-| 2 | Limit the subject line to 50 characters | It keeps subjects readable and forces concision. 72 is the hard limit, because GitHub truncates longer subjects |
-| 3 | Capitalise the subject line | It keeps the log consistent |
-| 4 | Do not end the subject line with a period | The period is unnecessary and space is limited |
-| 5 | Use the imperative mood in the subject line | It matches Git's own messages ("Merge branch …"). Test: *"If applied, this commit will …"*, so "Fix bug" passes and "Fixed bug" fails |
-| 6 | Wrap the body at 72 characters | Git doesn't wrap text, and 72 leaves room for indentation within 80 columns |
-| 7 | Use the body to explain what and why rather than how | The code shows how. The body records the problem, the previous behaviour and why this approach was chosen |
+| #   | Rule                                                 | Reason                                                                                                                                |
+| --- | ---------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------- |
+| 1   | Separate the subject from the body with a blank line | `log`, `shortlog` and `rebase` use the blank line to find the subject                                                                 |
+| 2   | Limit the subject line to 50 characters              | It keeps subjects readable and forces concision. 72 is the hard limit, because GitHub truncates longer subjects                       |
+| 3   | Capitalise the subject line                          | It keeps the log consistent                                                                                                           |
+| 4   | Do not end the subject line with a period            | The period is unnecessary and space is limited                                                                                        |
+| 5   | Use the imperative mood in the subject line          | It matches Git's own messages ("Merge branch …"). Test: _"If applied, this commit will …"_, so "Fix bug" passes and "Fixed bug" fails |
+| 6   | Wrap the body at 72 characters                       | Git doesn't wrap text, and 72 leaves room for indentation within 80 columns                                                           |
+| 7   | Use the body to explain what and why rather than how | The code shows how. The body records the problem, the previous behaviour and why this approach was chosen                             |
 
 ## Gitmoji
 
@@ -38,13 +38,15 @@ Source: [gitmoji.dev](https://gitmoji.dev/), and the [gitmoji README](https://gi
 ## Atomic commits
 
 Combined from the rules above and common practice:
+
 - **One logical change per commit.** It is complete, and the linter and tests pass at that commit.
 - **Easy to work with later:** each commit can be reviewed, reverted and searched with `git bisect` on its own.
 - **Don't mix intents:** keep refactors, features, fixes, dependency changes and formatting in separate commits.
 
 ## The candidate's mood rule
 
-The candidate added: *"use the imperative mood in the subject body to describe the changes we made. Use the indicative mood for why we made those changes."* We read this as follows:
+The candidate added: _"use the imperative mood in the subject body to describe the changes we made. Use the indicative mood for why we made those changes."_ We read this as follows:
+
 - **Subject and the "what" part of the body:** imperative ("Add …", "Rename …").
 - **The "why" part of the body:** indicative ("Reviewers need …", "Spelling varies …, so …").
 

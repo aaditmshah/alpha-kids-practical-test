@@ -10,6 +10,6 @@ summary: Every raw source page, captured as it was and never edited afterwards.
 
 Back to: [Home](index.md)
 
-| Page | Status | Summary |
-|---|---|---|
+| Page                                                   | Status | Summary                                            |
+| ------------------------------------------------------ | ------ | -------------------------------------------------- |
 | [Practical test brief](source-practical-test-brief.md) | active | The practical test brief from Alpha Kids, verbatim |

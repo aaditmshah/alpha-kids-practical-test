@@ -37,52 +37,55 @@ Co-Authored-By: ...   (trailers last, when attribution applies)
 ```
 
 ### Subject line
+
 - Start with **one Unicode gitmoji** (✨, not `:sparkles:`), then a space. Unicode renders in the terminal and in every tool; shortcodes render only on some websites.
-- Use the **imperative mood**, which completes the sentence *"If applied, this commit will …"*. For example: `✨ Add safety pre-check`, not `Added …` or `Adds …`.
+- Use the **imperative mood**, which completes the sentence _"If applied, this commit will …"_. For example: `✨ Add safety pre-check`, not `Added …` or `Adds …`.
 - Capitalise the first word after the emoji. **No trailing period.**
 - Keep the text after the emoji to **50 characters or fewer**. 72 is the hard limit.
 - No scope prefix; the repo is small.
 
 ### Body
+
 - Separate it from the subject with **one blank line**. Wrap lines at **72 characters**.
 - **What changed: imperative mood**, for example "Add a Roman Urdu keyword list to the pre-check."
 - **Why: indicative mood.** State facts and reasons, for example "Spelling varies widely in Roman Urdu, so exact matching misses crisis messages."
-- Explain *what* and *why*, not *how*; the diff shows how. Include the previous behaviour or problem, and why this approach was chosen.
+- Explain _what_ and _why_, not _how_; the diff shows how. Include the previous behaviour or problem, and why this approach was chosen.
 - Reference wiki pages or ticket IDs when relevant, for example "Closes ticket-0004."
 - A trivial change (such as a typo) may have no body.
 
 ### Choosing the gitmoji
+
 Choose the emoji for the commit's **main intent**. Common choices in this repo:
 
-| Emoji | Use for |
-|---|---|
-| 🎉 | Begin a project (first commit only) |
-| ✨ | Introduce a feature |
-| 🐛 | Fix a bug |
-| 🩹 | Simple fix for a non-critical issue |
-| ✅ | Add, update or pass tests |
-| 🧪 | Add a failing test (deliberately red commit) |
-| ♻️ | Refactor code |
-| 🎨 | Improve structure or format |
-| 📝 | Add or update documentation (including the wiki) |
-| 💬 | Add or update text and literals (prompts, UI copy) |
-| 🌐 | Internationalisation and localisation (Roman Urdu) |
-| 💄 | Add or update the UI and style files |
-| 🚸 | Improve user experience or usability |
-| 🦺 | Add or update validation code (reply-schema checks) |
-| 🥅 | Catch errors (for example, 429 handling) |
-| 👔 | Add or update business logic (coach rules, escalation) |
-| 🤡 | Mock things |
-| 🔧 | Add or update configuration files |
-| 🔨 | Add or update development scripts |
-| 🧑‍💻 | Improve developer experience (skills, tooling) |
-| ➕ / ➖ / ⬆️ | Add, remove or upgrade a dependency |
-| 🙈 | Add or update `.gitignore` |
-| 🔥 | Remove code or files |
-| 🚚 | Move or rename files |
-| ✏️ | Fix typos |
-| 🔒️ | Fix security or privacy issues |
-| ⏪️ | Revert changes |
+| Emoji        | Use for                                                |
+| ------------ | ------------------------------------------------------ |
+| 🎉           | Begin a project (first commit only)                    |
+| ✨           | Introduce a feature                                    |
+| 🐛           | Fix a bug                                              |
+| 🩹           | Simple fix for a non-critical issue                    |
+| ✅           | Add, update or pass tests                              |
+| 🧪           | Add a failing test (deliberately red commit)           |
+| ♻️           | Refactor code                                          |
+| 🎨           | Improve structure or format                            |
+| 📝           | Add or update documentation (including the wiki)       |
+| 💬           | Add or update text and literals (prompts, UI copy)     |
+| 🌐           | Internationalisation and localisation (Roman Urdu)     |
+| 💄           | Add or update the UI and style files                   |
+| 🚸           | Improve user experience or usability                   |
+| 🦺           | Add or update validation code (reply-schema checks)    |
+| 🥅           | Catch errors (for example, 429 handling)               |
+| 👔           | Add or update business logic (coach rules, escalation) |
+| 🤡           | Mock things                                            |
+| 🔧           | Add or update configuration files                      |
+| 🔨           | Add or update development scripts                      |
+| 🧑‍💻           | Improve developer experience (skills, tooling)         |
+| ➕ / ➖ / ⬆️ | Add, remove or upgrade a dependency                    |
+| 🙈           | Add or update `.gitignore`                             |
+| 🔥           | Remove code or files                                   |
+| 🚚           | Move or rename files                                   |
+| ✏️           | Fix typos                                              |
+| 🔒️           | Fix security or privacy issues                         |
+| ⏪️           | Revert changes                                         |
 
 The full list is at https://gitmoji.dev/. If two emoji fit, the change is probably not atomic; consider splitting it.
 

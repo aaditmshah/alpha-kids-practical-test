@@ -12,7 +12,7 @@ Back to: [Home](index.md) · [Decisions](index-decisions.md) · Session: [2026-1
 
 ## Context
 
-The options were a public demo (for example, a free Vercel deployment) or a local-only app. The candidate said: *"I don't want to deploy the application anywhere. Keep it completely local for now. The interviewer can create a production build and run it locally when he wants to test it. Deploying the application on Vercel is too much effort for an interview test."*
+The options were a public demo (for example, a free Vercel deployment) or a local-only app. The candidate said: _"I don't want to deploy the application anywhere. Keep it completely local for now. The interviewer can create a production build and run it locally when he wants to test it. Deploying the application on Vercel is too much effort for an interview test."_
 
 ## Options considered
 

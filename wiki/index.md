@@ -18,21 +18,21 @@ This wiki records the **whole process** of building a small bilingual (English/R
 
 ## Start here
 
-| Page | What it is |
-|---|---|
-| [Requirements](requirements.md) | The brief as numbered, testable requirements (R1–R12) |
-| [Plan](plan.md) | Phases, approach and milestones |
-| [Kanban board](kanban.md) | Work status at a glance |
-| [Open questions](open-questions.md) | Unresolved decisions and unknowns |
-| [Log](log.md) | Chronological record of every notable event |
-| [Conventions](conventions.md) | How this wiki is organised and maintained |
+| Page                                | What it is                                            |
+| ----------------------------------- | ----------------------------------------------------- |
+| [Requirements](requirements.md)     | The brief as numbered, testable requirements (R1–R12) |
+| [Plan](plan.md)                     | Phases, approach and milestones                       |
+| [Kanban board](kanban.md)           | Work status at a glance                               |
+| [Open questions](open-questions.md) | Unresolved decisions and unknowns                     |
+| [Log](log.md)                       | Chronological record of every notable event           |
+| [Conventions](conventions.md)       | How this wiki is organised and maintained             |
 
 ## Category indexes
 
-| Index | Contents |
-|---|---|
-| [Sources](index-sources.md) | Raw inputs, captured as they were |
-| [Research](index-research.md) | What we learned, with citations |
+| Index                           | Contents                              |
+| ------------------------------- | ------------------------------------- |
+| [Sources](index-sources.md)     | Raw inputs, captured as they were     |
+| [Research](index-research.md)   | What we learned, with citations       |
 | [Decisions](index-decisions.md) | Architectural decision records (ADRs) |
-| [Tickets](index-tickets.md) | Every unit of work |
-| [Sessions](index-sessions.md) | Records of each working conversation |
+| [Tickets](index-tickets.md)     | Every unit of work                    |
+| [Sessions](index-sessions.md)   | Records of each working conversation  |

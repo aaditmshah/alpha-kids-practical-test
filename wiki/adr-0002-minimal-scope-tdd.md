@@ -12,7 +12,7 @@ Back to: [Home](index.md) · [Decisions](index-decisions.md) · Session: [2026-1
 
 ## Context
 
-The candidate said: *"This is a simple throwaway app. I don't want to spend too much time on this … Let's use test-driven development. However, I don't want to implement all the bells and whistles of a full-scale application."*
+The candidate said: _"This is a simple throwaway app. I don't want to spend too much time on this … Let's use test-driven development. However, I don't want to implement all the bells and whistles of a full-scale application."_
 
 ## Decision
 

@@ -10,11 +10,11 @@ summary: Use Google's Gemini API free tier (gemini-3.8-flash, falling back to ge
 
 Back to: [Home](index.md) · [Decisions](index-decisions.md) · Research: [Free LLM providers](research-free-llm-providers.md)
 
-**Status: accepted** on 2026-11-18 ([session #2](session-2026-11-18-02-decisions.md)). The candidate: *"let's go with Gemini free tier for now. We can visit this decision later if it doesn't work out for us."* If it disappoints, supersede this ADR with a new one (for example, switching to Groq).
+**Status: accepted** on 2026-11-18 ([session #2](session-2026-11-18-02-decisions.md)). The candidate: _"let's go with Gemini free tier for now. We can visit this decision later if it doesn't work out for us."_ If it disappoints, supersede this ADR with a new one (for example, switching to Groq).
 
 ## Context
 
-The candidate's main concern is cost: *"I don't want to pay for the LLM model for a simple throwaway application."* The coach must also handle Urdu well and return structured output reliably. See [Requirements](requirements.md) R2, R3, R10 and R12. Urdu means Roman Urdu ([ADR-0004](adr-0004-roman-urdu-only.md)).
+The candidate's main concern is cost: _"I don't want to pay for the LLM model for a simple throwaway application."_ The coach must also handle Urdu well and return structured output reliably. See [Requirements](requirements.md) R2, R3, R10 and R12. Urdu means Roman Urdu ([ADR-0004](adr-0004-roman-urdu-only.md)).
 
 ## Options considered
 

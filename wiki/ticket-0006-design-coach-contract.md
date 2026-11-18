@@ -13,17 +13,17 @@ Back to: [Home](index.md) · [Tickets](index-tickets.md) · [Kanban](kanban.md) 
 Depends on: [ticket-0004](ticket-0004-research-safety-escalation.md), [ticket-0005](ticket-0005-research-roman-urdu.md)
 
 ## Starting sketch (not decided)
+
 ```ts
 type CoachReply = {
-  language: "en" | "ur";
-  risk: "none" | "emergency" | "abuse" | "self_harm";
-  summary: string;              // one line reflecting the concern back
-  plan: string[];               // 2–4 short, practical steps
-  checkIn:
-    | { type: "question"; text: string }
-    | { type: "time"; text: string };   // e.g. "Come back in 3 days and tell me…"
+	language: "en" | "ur";
+	risk: "none" | "emergency" | "abuse" | "self_harm";
+	summary: string; // one line reflecting the concern back
+	plan: string[]; // 2–4 short, practical steps
+	checkIn: { type: "question"; text: string } | { type: "time"; text: string }; // e.g. "Come back in 3 days and tell me…"
 };
 ```
 
 ## Output
+
 An ADR for the schema, and the prompt's design rationale recorded in the wiki.

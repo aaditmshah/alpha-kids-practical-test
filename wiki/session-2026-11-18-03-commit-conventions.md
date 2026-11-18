@@ -11,18 +11,22 @@ summary: First commits. Researched Gitmoji and cbeams' seven rules, created the 
 Back to: [Home](index.md) · [Sessions](index-sessions.md) · Previous: [Session #2](session-2026-11-18-02-decisions.md)
 
 ## Request
+
 The candidate asked to:
+
 - commit everything so far, using Gitmoji-style messages
 - research [gitmoji.dev](https://gitmoji.dev/) and [cbea.ms/git-commit](https://cbea.ms/git-commit/)
 - create a skill for writing good commit messages and committing atomic changes
 - record it all in the wiki
 
-They added the rule: *"use the imperative mood in the subject body to describe the changes we made. Use the indicative mood for why we made those changes."*
+They added the rule: _"use the imperative mood in the subject body to describe the changes we made. Use the indicative mood for why we made those changes."_
 
 ## Decisions
+
 - [ADR-0006](adr-0006-gitmoji-atomic-commits.md): Unicode gitmoji, cbeams' seven rules, the mood rule, and atomic commits with their wiki updates included.
 
 ## Work done
+
 - Wrote [Research: Commit messages](research-commit-messages.md).
 - Created the [`git-commit` skill](../.claude/skills/git-commit/SKILL.md) and pointed the root CLAUDE.md to it.
 - Made the commits:
@@ -32,4 +36,5 @@ They added the rule: *"use the imperative mood in the subject body to describe t
 - No `.gitignore` yet. It is added when the app is scaffolded, because nothing needs ignoring until then.
 
 ## Open at end of session
+
 Unchanged: Q3, Q4 and Q6 in [Open questions](open-questions.md). Next: [ticket-0004](ticket-0004-research-safety-escalation.md).
