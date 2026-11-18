@@ -34,7 +34,7 @@ Dependabot alert #2, [GHSA-5pm8-86m8-9m6r](https://github.com/advisories/GHSA-5p
 
 ## Review
 
-_(Recorded here before merge.)_
+Aadit reviewed PR #5 together with [PR #4](pr-0004-record-pr-3-review.md), the PR beneath it: _"Both look good. Please update and restack them. After that, I'll merge them."_ No changes requested. PR #5 was then restacked onto PR #4's final commit, which records that review.
 
 ## See also
 
