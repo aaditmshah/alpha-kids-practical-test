@@ -62,3 +62,4 @@ The candidate: _"I don't believe in running lint and other checks in the staging
 - [ticket-0011: Protect Main and Enforce Linear History](ticket-0011-protect-main.md)
 - [Index: Pull Requests](index-pull-requests.md)
 - [PR #1: Bootstrap the Next.js App with Vite+](pr-0001-bootstrap-nextjs.md)
+- [ADR-0010: PR Pages Have No Status, and CI Requires One per PR](adr-0010-pr-pages-without-status.md)

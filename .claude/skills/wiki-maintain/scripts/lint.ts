@@ -28,9 +28,9 @@ const PREFIX_INDEX: Readonly<Record<string, string>> = {
 const STATUSES: Readonly<Partial<Record<string, readonly string[]>>> = {
 	adr: ["proposed", "accepted", "superseded", "rejected"],
 	ticket: ["todo", "in-progress", "done", "dropped"],
-	pr: ["open", "merged", "closed"],
 };
 const DEFAULT_STATUSES: readonly string[] = ["active", "draft", "stale"];
+const STATUSLESS_TYPES: ReadonlySet<string> = new Set(["pr"]);
 const KANBAN_COLUMNS: Readonly<Partial<Record<string, string>>> = {
 	"todo": "Todo",
 	"in-progress": "In progress",
@@ -91,11 +91,17 @@ for (const page of pages) {
 	if (fm === null) {
 		errors.push(`${page}: missing YAML frontmatter`);
 	} else {
-		for (const key of REQUIRED_KEYS)
-			if (!fm[key]) errors.push(`${page}: frontmatter missing "${key}"`);
 		const { title, type, status, updated } = fm;
+		// A PR page has no status: it would go stale as soon as the PR merges, and the GitHub link
+		// always shows the current one.
+		const statusless = STATUSLESS_TYPES.has(type ?? "");
+		for (const key of REQUIRED_KEYS)
+			if (!fm[key] && !(key === "status" && statusless))
+				errors.push(`${page}: frontmatter missing "${key}"`);
+		if (statusless && status !== undefined)
+			errors.push(`${page}: "${type}" pages have no status; link to the source of truth instead`);
 		const allowed = (type !== undefined && STATUSES[type]) || DEFAULT_STATUSES;
-		if (status !== undefined && !allowed.includes(status))
+		if (status !== undefined && !statusless && !allowed.includes(status))
 			errors.push(
 				`${page}: status "${status}" not valid for type "${type}" (allowed: ${allowed.join(", ")})`,
 			);

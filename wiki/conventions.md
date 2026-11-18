@@ -50,7 +50,7 @@ Status values:
 
 - **ADRs:** `proposed`, `accepted`, `superseded`, `rejected`. A superseded ADR links to the ADR that replaces it.
 - **Tickets:** `todo`, `in-progress`, `done`, `dropped`.
-- **Pull requests:** `open`, `merged`, `closed`.
+- **Pull requests:** no `status` at all. It would be out of date as soon as the PR merged, and the GitHub link always shows the current one. The linter rejects a `status` on PR pages.
 - **Everything else:** `active`, `draft`, `stale`.
 
 ## Linking
@@ -78,7 +78,7 @@ The user's standing instruction is that **everything we discuss, decide and do i
   - the review comments and how each was resolved
   - links to the tickets, ADRs and session pages involved
 
-  `main` is protected, so a PR page can't be marked `merged` after the fact on `main`. The next branch updates it, adding the merge date, as its first change.
+  The file name must match the PR's number and head branch exactly. CI checks this on every pull request (`vp run pr:wiki-page`), so a PR without its page can't merge. PR pages have no status ([ADR-0010](adr-0010-pr-pages-without-status.md)).
 
 - **Every working conversation gets a session page.** It records the user's requests (quoted where wording matters), the options discussed, the decisions made (with links to ADRs), and what was done.
 - **Every decision with real alternatives gets an ADR.** It covers context, options, the decision and its consequences. Small preferences can go in the session page instead.

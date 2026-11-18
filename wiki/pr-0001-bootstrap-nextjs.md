@@ -1,9 +1,8 @@
 ---
 title: "PR #1: Bootstrap the Next.js App with Vite+"
 type: pr
-status: open
 updated: 2026-11-18
-summary: Scaffolds Next.js with Vite+, adopts the candidate's website conventions, adds CI and branch protection, and tightens the wiki (markdownlint, TypeScript linter, backlinks, PR tracking). 24 atomic commits; reviewed by the candidate.
+summary: Scaffolds Next.js with Vite+, adopts the candidate's website conventions, adds CI and branch protection, and tightens the wiki (markdownlint, TypeScript linter, backlinks, PR tracking). 26 atomic commits; reviewed by the candidate.
 ---
 
 # PR #1: Bootstrap the Next.js App with Vite+
@@ -20,7 +19,6 @@ Back to: [Pull requests](index-pull-requests.md) · Session: [2026-11-18 #4](ses
 | Written by  | Claude Code (Claude Opus 5.5), working with the candidate. Commits carry the candidate's git identity and a `Co-Authored-By: Claude` trailer |
 | Reviewed by | The candidate (aaditmshah)                                                                                                                   |
 | Merge       | Rebase only ([ADR-0008](adr-0008-protected-main-linear-history.md)), after the required `ci` check passes                                    |
-| Status      | Open, approved by the candidate pending these final changes                                                                                  |
 
 ## Why
 
@@ -74,13 +72,21 @@ In order. Commit SHAs are left out, because GitHub's rebase merge rewrites them.
 | 23  | `✨ Require a backlink for every wiki link` | Linter rule, `--fix` mode, "See also" sections, "Back to:" lines pointing at category indexes | VS Code's preview has no back button      |
 | 24  | `✨ Track pull requests in the wiki`        | `pr-` page type, this page, the PR index                                                      | PR descriptions don't give enough context |
 
+### Review round 4: PR pages without status, checked in CI
+
+| #   | Commit                                           | What                                                                                                       | Why                                                                               |
+| --- | ------------------------------------------------ | ---------------------------------------------------------------------------------------------------------- | --------------------------------------------------------------------------------- |
+| 25  | `👷 Check in CI that every PR has its wiki page` | Tested script comparing the PR's number and branch with `wiki/pr-NNNN-<branch>.md`; a step in the `ci` job | A PR without its page can't merge                                                 |
+| 26  | `🔥 Drop the status from PR wiki pages`          | No `status` on PR pages; the linter rejects one; [ADR-0010](adr-0010-pr-pages-without-status.md)           | A status would be stale after every merge; the GitHub link is the source of truth |
+
 ## Review
 
-The candidate reviewed the PR in three rounds:
+The candidate reviewed the PR in four rounds:
 
 1. **markdownlint.** _"MD025/single-title/single-h1"_ on every wiki page. Four options were compared, and the candidate chose to keep both the title and the H1 ([ADR-0009](adr-0009-title-in-frontmatter-and-h1.md)). Then the rest of markdownlint's findings, and two nits: a trailing comma in JSONC, and MD041 in `AGENTS.md`. Commits 14–18.
 2. **Hardcoded gitmoji table; lint script in JavaScript.** Replaced with the CLI, and converted to TypeScript. The conversion exposed a build failure after `next dev`, which had come in with commit 5. Commits 19–22.
 3. **Backlinks and PR tracking.** _"Let's ensure that all page hyperlinks have backreferences"_, and _"Let's also track PRs in the wiki … Reading the PR description doesn't give me enough context."_ Commits 23–24.
+4. **PR page status and a CI check.** _"It's not practical to have to update outdated information in a separate PR. That's an infinite regress."_ The page check was first built against PR titles, then rewritten after the candidate clarified that they meant branch names. Commits 25–26.
 
 Also recorded: the agent once committed a staged `git mv` into the wrong commit. It rebuilt both commits before pushing, so the history never contained the mistake.
 

@@ -48,3 +48,4 @@ Format: `YYYY-MM-DD: [type] what happened (links)`. Append only; never rewrite e
 - 2026-11-18: [review] PR #1 review: gitmoji list now comes from the CLI; wiki linter converted to TypeScript; build failure after `next dev` fixed ([session](session-2026-11-18-04-bootstrap.md))
 - 2026-11-18: [wiki] Every wiki link now needs a backlink: linter rule and `--fix` added, 111 backlinks added under "See also", leaf "Back to:" lines point at their category index ([Conventions](conventions.md))
 - 2026-11-18: [wiki] Pull requests tracked in the wiki: `pr-` pages, an index, and [PR #1](pr-0001-bootstrap-nextjs.md) recorded ([ticket-0012](ticket-0012-backlinks-and-pr-tracking.md))
+- 2026-11-18: [decision] PR pages have no status; CI requires a wiki page named after each PR's number and branch ([ADR-0010](adr-0010-pr-pages-without-status.md))

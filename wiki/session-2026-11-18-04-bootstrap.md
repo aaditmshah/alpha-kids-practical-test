@@ -101,6 +101,15 @@ What was added:
 
 Tracked as [ticket-0012](ticket-0012-backlinks-and-pr-tracking.md).
 
+## Final review: no status on PR pages, and a CI check
+
+The candidate asked to remove the status from PR pages (_"That's an infinite regress. The last PR that's merged will always be out of date"_), and for a workflow check that every PR has its wiki page with a matching PR number and title. The agent built the check test-first, against PR titles. The candidate then clarified: _"Sorry, by title I meant the name of the branch."_ The check was rewritten test-first to compare the PR's number and head branch with `wiki/pr-NNNN-<branch>.md`. Page titles are free-form again. → [ADR-0010](adr-0010-pr-pages-without-status.md)
+
+Supporting changes:
+
+- `allowImportingTsExtensions` was added to tsconfig, as on the website, because Node's type stripping needs `.ts` import paths.
+- Vitest now also runs `scripts/**/*.test.ts`.
+
 ## Open at end of session
 
 - PR #1 is waiting for CI and for the candidate's review and merge (rebase).
