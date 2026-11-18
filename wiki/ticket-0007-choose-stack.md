@@ -27,3 +27,4 @@ An ADR for the LLM client library.
 - [Research: Free LLM Providers](research-free-llm-providers.md)
 - [Session 2026-11-18 #4: Bootstrap the App](session-2026-11-18-04-bootstrap.md)
 - [ticket-0008: Write the Implementation Plan and Build Tickets](ticket-0008-write-implementation-plan.md)
+- [Session 2026-11-18 #5: Fast-Forward Merges](session-2026-11-18-05-fast-forward-merges.md)

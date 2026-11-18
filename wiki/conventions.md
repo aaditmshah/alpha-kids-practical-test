@@ -74,7 +74,7 @@ The user's standing instruction is that **everything we discuss, decide and do i
 
 - **Every pull request gets a PR page** (`pr-NNNN-<branch>.md`). It is created on the PR's own branch when the PR opens, and updated as commits and review comments arrive. It records:
   - who opened, wrote and reviewed the PR
-  - every commit by its subject line, with what it does and why (SHAs are left out, because a rebase merge rewrites them)
+  - every commit by its subject line, with what it does and why (SHAs are left out: a page can't contain the hash of the commit that adds it, and rebasing a branch onto a newer `main` changes them)
   - the review comments and how each was resolved
   - links to the tickets, ADRs and session pages involved
 
@@ -105,3 +105,4 @@ Commits use the `git-commit` skill ([SKILL.md](../.claude/skills/git-commit/SKIL
 ## See also
 
 - [Session 2026-11-18 #4: Bootstrap the App](session-2026-11-18-04-bootstrap.md)
+- [Session 2026-11-18 #5: Fast-Forward Merges](session-2026-11-18-05-fast-forward-merges.md)

@@ -34,8 +34,11 @@ even for admins. So:
    matches its number and branch. Keep the page current as commits and review comments arrive.
 6. If `main` moves, rebase the branch onto it (`git rebase origin/main`) and push with
    `--force-with-lease`. Never create merge commits.
-7. Merging is the user's call: rebase merges only (`gh pr merge --rebase`), and only after `ci`
-   passes. Squash and merge commits are disabled.
+7. Merging is the user's call, after `ci` passes. The user merges by fast-forward:
+   `git switch main && git pull --ff-only && git merge --ff-only <branch> && git push`. GitHub
+   accepts the push because the commits passed the PR's checks, and marks the PR merged. The
+   commits keep their hashes and CI results. Never use `gh pr merge` or the merge button: its
+   rebase creates new commits, and merge commits and squash merging are disabled.
 
 ## 1. Plan atomic commits
 

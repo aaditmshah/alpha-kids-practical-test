@@ -50,3 +50,5 @@ Format: `YYYY-MM-DD: [type] what happened (links)`. Append only; never rewrite e
 - 2026-11-18: [wiki] Pull requests tracked in the wiki: `pr-` pages, an index, and [PR #1](pr-0001-bootstrap-nextjs.md) recorded ([ticket-0012](ticket-0012-backlinks-and-pr-tracking.md))
 - 2026-11-18: [decision] PR pages have no status; CI requires a wiki page named after each PR's number and branch ([ADR-0010](adr-0010-pr-pages-without-status.md))
 - 2026-11-18: [wiki] "The candidate" renamed to "Aadit" and "the agent" to "Claude" throughout the wiki; earlier log entries reworded to match ([session](session-2026-11-18-04-bootstrap.md))
+- 2026-11-18: [git] Aadit fast-forwarded `main` to PR #1 ([PR #1](pr-0001-bootstrap-nextjs.md))
+- 2026-11-18: [wiki] Merges documented as local fast-forwards, not GitHub rebase merges ([PR #2](pr-0002-fast-forward-merges.md), [ADR-0008](adr-0008-protected-main-linear-history.md))

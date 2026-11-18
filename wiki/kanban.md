@@ -37,3 +37,4 @@ Nothing in progress.
 - [ADR-0001: Record Everything in a Flat, Linked LLM Wiki](adr-0001-flat-llm-wiki.md)
 - [Wiki Conventions](conventions.md)
 - [Plan](plan.md)
+- [Session 2026-11-18 #5: Fast-Forward Merges](session-2026-11-18-05-fast-forward-merges.md)

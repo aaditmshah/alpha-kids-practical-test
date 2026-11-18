@@ -10,11 +10,12 @@ summary: Every pull request into main, with its status, plus the few commits pus
 
 Back to: [Home](index.md)
 
-`main` is protected ([ADR-0008](adr-0008-protected-main-linear-history.md)), so every change since the bootstrap arrives as a pull request merged by rebase. Each PR has a page recording who made and reviewed it, what every commit does and why, and how the review went. The pages carry no status; follow the GitHub link for it ([ADR-0010](adr-0010-pr-pages-without-status.md)).
+`main` is protected ([ADR-0008](adr-0008-protected-main-linear-history.md)), so every change since the bootstrap arrives as a pull request, which Aadit fast-forwards into `main` ([ADR-0008](adr-0008-protected-main-linear-history.md)). Each PR has a page recording who made and reviewed it, what every commit does and why, and how the review went. The pages carry no status; follow the GitHub link for it ([ADR-0010](adr-0010-pr-pages-without-status.md)).
 
 | PR                                                                         | Summary                                                                                                              |
 | -------------------------------------------------------------------------- | -------------------------------------------------------------------------------------------------------------------- |
 | [PR #1: Bootstrap the Next.js app with Vite+](pr-0001-bootstrap-nextjs.md) | Next.js scaffolded with Vite+; website conventions; CI; markdownlint; TypeScript wiki linter; backlinks; PR tracking |
+| [PR #2: Document fast-forward merges](pr-0002-fast-forward-merges.md)      | Corrects the docs: PRs are fast-forwarded into `main` locally, not rebase-merged on GitHub                           |
 
 ## Before pull requests
 

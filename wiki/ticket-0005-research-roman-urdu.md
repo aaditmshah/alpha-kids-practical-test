@@ -31,3 +31,4 @@ A `research-roman-urdu.md` page, plus a set of Roman Urdu test concerns for the 
 - [Plan](plan.md)
 - [Session 2026-11-18 #2: Decisions](session-2026-11-18-02-decisions.md)
 - [ticket-0006: Design the Coach Reply Schema and Prompt](ticket-0006-design-coach-contract.md)
+- [Session 2026-11-18 #5: Fast-Forward Merges](session-2026-11-18-05-fast-forward-merges.md)

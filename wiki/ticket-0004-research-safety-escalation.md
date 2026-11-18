@@ -35,3 +35,4 @@ A `research-safety-escalation.md` page, plus an ADR for the detection approach.
 - [ticket-0005: Research Roman Urdu Handling](ticket-0005-research-roman-urdu.md)
 - [ticket-0006: Design the Coach Reply Schema and Prompt](ticket-0006-design-coach-contract.md)
 - [ticket-0008: Write the Implementation Plan and Build Tickets](ticket-0008-write-implementation-plan.md)
+- [Session 2026-11-18 #5: Fast-Forward Merges](session-2026-11-18-05-fast-forward-merges.md)

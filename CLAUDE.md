@@ -47,7 +47,8 @@ serves the app, and Vite+ provides pnpm, Oxlint, Oxfmt and Vitest.
 
 `main` is protected (`wiki/adr-0008-protected-main-linear-history.md`): nobody can push to it
 directly. Every change, wiki updates included, goes through a branch and a pull request that must
-pass the `ci` check while up to date with `main`. Pull requests merge by rebase only, so history
+pass the `ci` check while up to date with `main`. Aadit merges pull requests by fast-forwarding
+`main` locally (`git merge --ff-only`), so commits keep their hashes and CI results and history
 stays linear. There are no pre-commit checks; run the checks yourself before pushing. Use the
 `git-commit` skill for branches, commits and pull requests. Every pull request is recorded on its
 own wiki page (`wiki/pr-NNNN-<branch>.md`), and every wiki link needs a backlink.

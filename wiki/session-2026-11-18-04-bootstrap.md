@@ -127,3 +127,4 @@ Throughout the wiki, "the candidate" became "Aadit" and "the agent" (meaning Cla
 ## See also
 
 - [PR #1: Bootstrap the Next.js App with Vite+](pr-0001-bootstrap-nextjs.md)
+- [Session 2026-11-18 #5: Fast-Forward Merges](session-2026-11-18-05-fast-forward-merges.md)

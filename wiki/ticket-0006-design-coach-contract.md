@@ -31,3 +31,4 @@ An ADR for the schema, and the prompt's design rationale recorded in the wiki.
 ## See also
 
 - [Plan](plan.md)
+- [Session 2026-11-18 #5: Fast-Forward Merges](session-2026-11-18-05-fast-forward-merges.md)

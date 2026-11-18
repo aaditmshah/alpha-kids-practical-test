@@ -11,14 +11,14 @@ Back to: [Pull requests](index-pull-requests.md) · Session: [2026-11-18 #4](ses
 
 ## Facts
 
-|             |                                                                                                                              |
-| ----------- | ---------------------------------------------------------------------------------------------------------------------------- |
-| GitHub      | [aaditmshah/alpha-kids-practical-test#1](https://github.com/aaditmshah/alpha-kids-practical-test/pull/1)                     |
-| Branch      | `bootstrap-nextjs` → `main`                                                                                                  |
-| Opened      | 2026-11-18, by Aadit's GitHub account (aaditmshah)                                                                           |
-| Written by  | Claude Code (Claude Opus 5.5), working with Aadit. Commits carry Aadit's git identity and a `Co-Authored-By: Claude` trailer |
-| Reviewed by | Aadit (aaditmshah)                                                                                                           |
-| Merge       | Rebase only ([ADR-0008](adr-0008-protected-main-linear-history.md)), after the required `ci` check passes                    |
+|             |                                                                                                                                             |
+| ----------- | ------------------------------------------------------------------------------------------------------------------------------------------- |
+| GitHub      | [aaditmshah/alpha-kids-practical-test#1](https://github.com/aaditmshah/alpha-kids-practical-test/pull/1)                                    |
+| Branch      | `bootstrap-nextjs` → `main`                                                                                                                 |
+| Opened      | 2026-11-18, by Aadit's GitHub account (aaditmshah)                                                                                          |
+| Written by  | Claude Code (Claude Opus 5.5), working with Aadit. Commits carry Aadit's git identity and a `Co-Authored-By: Claude` trailer                |
+| Reviewed by | Aadit (aaditmshah)                                                                                                                          |
+| Merge       | Fast-forward of `main`, done locally by Aadit, after the required `ci` check passed ([ADR-0008](adr-0008-protected-main-linear-history.md)) |
 
 ## Why
 
@@ -26,7 +26,7 @@ Aadit asked for a Next.js app bootstrapped with [Vite+](https://viteplus.dev/), 
 
 ## Commits
 
-In order. Commit SHAs are left out, because GitHub's rebase merge rewrites them. Find a commit on `main` by its subject.
+In order, by subject. SHAs are left out, as on every PR page: a page can't contain the hash of the commit that adds it, and rebasing a branch changes them. The PR was fast-forwarded into `main`, so `git log --oneline main` shows these subjects with their original hashes.
 
 ### Bootstrap
 
@@ -99,3 +99,5 @@ The full discussion is in [session #4](session-2026-11-18-04-bootstrap.md).
 - [Wiki Conventions](conventions.md)
 - [Log](log.md)
 - [ticket-0012: Wiki Backlinks and Pull Request Tracking](ticket-0012-backlinks-and-pr-tracking.md)
+- [PR #2: Document Fast-Forward Merges](pr-0002-fast-forward-merges.md)
+- [Session 2026-11-18 #5: Fast-Forward Merges](session-2026-11-18-05-fast-forward-merges.md)
