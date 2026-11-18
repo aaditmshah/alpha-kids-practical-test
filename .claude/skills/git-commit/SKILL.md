@@ -34,6 +34,11 @@ even for admins. So:
    matches its number and branch. Keep the page current as commits and review comments arrive.
 6. If `main` moves, rebase the branch onto it (`git rebase origin/main`) and push with
    `--force-with-lease`. Never create merge commits.
+   **Stacked PRs are welcome.** For work that depends on an open PR, branch from that PR's
+   branch and still open the new PR against `main`. The user fast-forwards the stack in order,
+   bottom PR first, and each later PR then fast-forwards cleanly. Say in the PR body and on
+   its wiki page which PR it stacks on. If a lower PR changes, rebase the PRs above it onto
+   the new tip.
 7. Before the user merges, record the review on the PR's wiki page: the user's answers to any
    questions the PR asked (quoted), the ADRs they accept or change, and any comments with how
    each was resolved. Push that as the PR's last commit. If a PR merges before its review is
