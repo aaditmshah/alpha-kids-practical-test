@@ -26,8 +26,8 @@ Back to: [Home](index.md)
 | [ADR-0012: Indian helplines only](adr-0012-india-helplines.md)                        | accepted | Escalation lists 112, 1098, 181 and 14416, all verified from official sources                                                               |
 | [ADR-0013: Roman Urdu detection](adr-0013-roman-urdu-detection.md)                    | accepted | Model reports reply language; marker-word heuristic for fixed text; Hindustani vocabulary; regex crisis phrases                             |
 | [ADR-0014: Vercel AI SDK](adr-0014-vercel-ai-sdk.md)                                  | accepted | Call Gemini via `ai` + `@ai-sdk/google` with Zod schemas, behind a one-function adapter                                                     |
-| [ADR-0015: Coach reply schema](adr-0015-coach-reply-schema.md)                        | proposed | Flat Zod schema, length limits, dose and diagnosis post-checks, display rules, last 6 messages as history                                   |
-| [ADR-0016: System prompt](adr-0016-system-prompt.md)                                  | proposed | Seven rules (language, brevity, content, boundaries, risk with Roman Urdu examples, check-in, injection) plus two examples; temperature 0.3 |
+| [ADR-0015: Coach reply schema](adr-0015-coach-reply-schema.md)                        | accepted | Flat Zod schema, length limits, dose and diagnosis post-checks, display rules, last 6 messages as history                                   |
+| [ADR-0016: System prompt](adr-0016-system-prompt.md)                                  | accepted | Seven rules (language, brevity, content, boundaries, risk with Roman Urdu examples, check-in, injection) plus two examples; temperature 0.3 |
 
 ## See also
 

@@ -25,5 +25,5 @@ Aadit: _"Merged."_ That was [PR #7](pr-0007-choose-llm-client.md). Claude then t
 
 ## Open at end of session
 
-- Aadit's review of ADR-0015, ADR-0016 and the referral wording, to be recorded on [PR #8](pr-0008-design-coach-contract.md) before merge.
+- ~~Aadit's review of ADR-0015, ADR-0016 and the referral wording.~~ All approved as drafted (_"Approved, record it and I'll merge"_), recorded on [PR #8](pr-0008-design-coach-contract.md).
 - Next: [ticket-0008](ticket-0008-write-implementation-plan.md), the implementation plan and build tickets.

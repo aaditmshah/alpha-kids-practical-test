@@ -30,8 +30,8 @@ An ADR for the schema, and the prompt's design rationale recorded in the wiki.
 
 ## Result
 
-- [ADR-0015](adr-0015-coach-reply-schema.md): reply schema, length limits, post-checks, display rules, conversation history (proposed)
-- [ADR-0016](adr-0016-system-prompt.md): system prompt and model settings (proposed)
+- [ADR-0015](adr-0015-coach-reply-schema.md): reply schema, length limits, post-checks, display rules, conversation history (accepted)
+- [ADR-0016](adr-0016-system-prompt.md): system prompt and model settings (accepted)
 - Delivered in [PR #8](pr-0008-design-coach-contract.md)
 
 ## See also

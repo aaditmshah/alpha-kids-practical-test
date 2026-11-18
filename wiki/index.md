@@ -16,7 +16,7 @@ This wiki records the **whole process** of building a small bilingual (English/R
 
 - **Phase:** research and planning. The Next.js app is scaffolded with Vite+ ([ADR-0007](adr-0007-nextjs-with-vite-plus.md)), but the coach is not built yet. `main` is protected: changes arrive as pull requests that pass CI and are fast-forwarded into `main` ([ADR-0008](adr-0008-protected-main-linear-history.md)). The work is committed to git, following [ADR-0006](adr-0006-gitmoji-atomic-commits.md), and pushed to the public repository [github.com/aaditmshah/alpha-kids-practical-test](https://github.com/aaditmshah/alpha-kids-practical-test).
 - **Decided:** [flat LLM wiki](adr-0001-flat-llm-wiki.md); [minimal scope, built with TDD](adr-0002-minimal-scope-tdd.md); [Gemini free tier](adr-0003-llm-provider.md); [Roman Urdu only](adr-0004-roman-urdu-only.md); [local only, no deployment](adr-0005-local-only.md); [Gitmoji and atomic commits](adr-0006-gitmoji-atomic-commits.md); [Next.js with Vite+](adr-0007-nextjs-with-vite-plus.md); [protected main, linear history](adr-0008-protected-main-linear-history.md).
-- **Next:** Aadit's review of the [reply schema](adr-0015-coach-reply-schema.md) and [system prompt](adr-0016-system-prompt.md), then the implementation [plan](plan.md) ([ticket-0008](ticket-0008-write-implementation-plan.md)).
+- **Next:** the implementation [plan](plan.md) and build tickets ([ticket-0008](ticket-0008-write-implementation-plan.md)).
 
 ## Start here
 
@@ -52,3 +52,5 @@ This wiki records the **whole process** of building a small bilingual (English/R
 - [ticket-0007: Choose the Stack and Test Tooling](ticket-0007-choose-stack.md)
 - [ADR-0014: Call Gemini Through the Vercel AI SDK](adr-0014-vercel-ai-sdk.md)
 - [ticket-0006: Design the Coach Reply Schema and Prompt](ticket-0006-design-coach-contract.md)
+- [ADR-0015: Coach Reply Schema and Post-Checks](adr-0015-coach-reply-schema.md)
+- [ADR-0016: The Coach's System Prompt](adr-0016-system-prompt.md)

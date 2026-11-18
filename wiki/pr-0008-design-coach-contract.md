@@ -29,6 +29,8 @@ The schema and prompt are the contract between the app and the model. The implem
 | #   | Commit                                        | What                                                                                                                        | Why                                                                                    |
 | --- | --------------------------------------------- | --------------------------------------------------------------------------------------------------------------------------- | -------------------------------------------------------------------------------------- |
 | 1   | `📝 Design the coach reply schema and prompt` | [ADR-0015](adr-0015-coach-reply-schema.md), [ADR-0016](adr-0016-system-prompt.md), ticket-0006 done, session #10, this page | The brief's structure, brevity and safety rules have to be pinned down before building |
+| 2   | `📝 Record PR #8's review`                    | ADR-0015 and ADR-0016 accepted, log entry (partial)                                                                         | Records the review before merge                                                        |
+| 3   | `📝 Finish recording PR #8's review`          | The rest: this review section, the indexes, ticket-0006, Home, session #10                                                  | A script error left commit 2 incomplete                                                |
 
 ## Review
 
@@ -38,7 +40,15 @@ Questions for Aadit:
 2. Accept ADR-0016 (system prompt)?
 3. Is the Roman Urdu referral reply wording right?
 
-_(Answers are recorded here before merge.)_
+Aadit's answer:
+
+> "Approved, record it and I'll merge"
+
+- **ADR-0015:** accepted, with no changes ([ADR-0015](adr-0015-coach-reply-schema.md)).
+- **ADR-0016:** accepted, with no changes ([ADR-0016](adr-0016-system-prompt.md)).
+- **Roman Urdu referral wording:** approved as drafted.
+
+The review was recorded in two commits. A script error left the first one partial, and the second finishes it.
 
 ## See also
 

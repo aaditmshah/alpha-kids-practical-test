@@ -49,7 +49,7 @@ These checks cover the model's text only. A hit replaces the reply with a fixed 
 
 Referral reply (Aadit approved the wording in [PR #8](pr-0008-design-coach-contract.md)):
 
-| English                                                                                                                    | Roman Urdu (draft)                                                                                                                                 |
+| English                                                                                                                    | Roman Urdu                                                                                                                                         |
 | -------------------------------------------------------------------------------------------------------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------- |
 | This needs a doctor's advice, so medicines, doses or a diagnosis can't come from here. Please talk to your child's doctor. | Is ke liye doctor ki salah zaroori hai, isliye dawai, dose ya bimari ka naam yahan se nahi bataya ja sakta. Apne bachche ke doctor se baat karein. |
 | Check-in: What would help most before you see the doctor?                                                                  | Check-in: Doctor se milne se pehle aapko kis cheez mein sabse zyada madad chahiye?                                                                 |
@@ -72,7 +72,7 @@ The page keeps the history in browser state (R9) and sends the **last 6 messages
 
 - Every rule that matters is enforced in code that unit tests can cover: schema validation, lengths, post-checks and the display decision.
 - The post-checks are narrow, so they will miss some phrasings. The prompt ([ADR-0016](adr-0016-system-prompt.md)) is the first line of defence for R6 and R7, and the post-checks are a net.
-- The referral reply's Roman Urdu wording needs Aadit's check.
+- The referral reply's Roman Urdu wording was approved by Aadit as drafted.
 
 ## See also
 
