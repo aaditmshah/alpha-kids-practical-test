@@ -63,6 +63,20 @@ Running markdownlint over the whole repository then showed 339 findings from oth
 
 The candidate then pointed out two nits. First, `.markdownlint.jsonc` had a trailing comma, which the formatter had added and which the JSONC spec doesn't guarantee is allowed. Fixed with an Oxfmt override for `*.jsonc`. Second, `AGENTS.md` started with an H2 (MD041). Fixed with an H1 above Next's managed block, after checking that `next dev` keeps content outside its markers. markdownlint now reports no issues in the repository.
 
+## PR review comments
+
+While reviewing PR #1, the candidate asked for two more changes:
+
+1. _"The choosing a gitmoji section contains a hardcoded list of gitmojis. We can get this list by running the command `vpx gitmoji list`."_ The table in the [`git-commit` skill](../.claude/skills/git-commit/SKILL.md) was replaced with `vpx gitmoji list` and `vpx gitmoji search <word>`.
+2. _"May we convert [the wiki-maintain lint script] to TypeScript?"_ Converted to `lint.ts`, typed under the strict tsconfig and run with plain `node`, which strips the types. A copy of the wiki seeded with seven kinds of error confirmed it still catches all of them.
+
+The conversion turned up two problems, both now fixed and listed in [Research: Vite+ and Next.js](research-vite-plus-nextjs.md):
+
+- **The checker skipped `.claude/`.** TypeScript's include globs skip dot-directories, so `.claude/**/*.ts` was added to `include`.
+- **`next build` failed after a `next dev` run.** That bug came in with the strict tsconfig commit: the generated `.next/dev/types/validator.ts` broke the build under `noUnusedLocals` and `noUnusedParameters`. Both options were dropped, and Oxlint's `no-unused-vars` now reports unused code.
+
+The agent also made and caught a mistake of its own. A staged `git mv` slipped into the bug-fix commit, so the two commits were rebuilt before pushing.
+
 ## Open at end of session
 
 - PR #1 is waiting for CI and for the candidate's review and merge (rebase).

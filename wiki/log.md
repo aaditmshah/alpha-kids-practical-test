@@ -39,3 +39,4 @@ Format: `YYYY-MM-DD: [type] what happened (links)`. Append only; never rewrite e
 - 2026-11-18: [decision] Keep page titles in both frontmatter and H1; configure markdownlint MD025; the wiki linter enforces a match ([ADR-0009](adr-0009-title-in-frontmatter-and-h1.md))
 - 2026-11-18: [wiki] markdownlint aligned with the formatter (MD010 and MD013 off); genuine findings fixed in the wiki, the skills and CLAUDE.md ([ADR-0009](adr-0009-title-in-frontmatter-and-h1.md))
 - 2026-11-18: [wiki] Trailing commas kept out of JSONC files; H1 added to AGENTS.md; markdownlint now reports no issues ([ADR-0009](adr-0009-title-in-frontmatter-and-h1.md))
+- 2026-11-18: [review] PR #1 review: gitmoji list now comes from the CLI; wiki linter converted to TypeScript; build failure after `next dev` fixed ([session](session-2026-11-18-04-bootstrap.md))
