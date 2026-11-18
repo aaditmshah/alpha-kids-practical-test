@@ -15,3 +15,4 @@ Back to: [Home](index.md)
 | [2026-11-18 #1: Kickoff](session-2026-11-18-01-kickoff.md)                       | Brief received; scope, TDD and the wiki agreed; Alpha Kids and free LLM providers researched; wiki and skills created |
 | [2026-11-18 #2: Decisions](session-2026-11-18-02-decisions.md)                   | Alpha Kids website confirmed; Gemini accepted; Roman Urdu only; local only                                            |
 | [2026-11-18 #3: Commit conventions](session-2026-11-18-03-commit-conventions.md) | Gitmoji and cbeams researched; git-commit skill created; first commits made                                           |
+| [2026-11-18 #4: Bootstrap](session-2026-11-18-04-bootstrap.md)                   | Next.js bootstrapped with Vite+; website conventions copied; CI added; main protected; PR #1 opened                   |

@@ -3,7 +3,7 @@ title: "ticket-0007: Choose the Stack and Test Tooling"
 type: ticket
 status: todo
 updated: 2026-11-18
-summary: Choose the web framework (Next.js or plain Node), the LLM client library, the test runner and the UI approach, keeping it as small as possible.
+summary: Framework, test runner and styling are decided (ADR-0007). Still open is the LLM client library (Google Gen AI SDK or Vercel AI SDK).
 ---
 
 # ticket-0007: Choose the Stack and Test Tooling
@@ -12,11 +12,11 @@ Back to: [Home](index.md) · [Tickets](index-tickets.md) · [Kanban](kanban.md) 
 
 ## Questions to answer
 
-- Next.js App Router (one route handler plus one page) or a plain Node server with static HTML?
+- ~~Next.js App Router (one route handler plus one page) or a plain Node server with static HTML?~~ Decided: Next.js with the Vite+ toolchain ([ADR-0007](adr-0007-nextjs-with-vite-plus.md)).
 - LLM client: the official Google Gen AI SDK, or the Vercel AI SDK (whose schema-based object generation makes switching to Groq easy)?
-- Tests: Vitest for units, with the model adapter mocked. Optionally React Testing Library for the UI.
-- Styling: plain CSS or Tailwind.
+- ~~Tests: Vitest for units, with the model adapter mocked.~~ Decided: Vitest through Vite+ ([ADR-0007](adr-0007-nextjs-with-vite-plus.md)). React Testing Library for the UI is still optional.
+- ~~Styling: plain CSS or Tailwind.~~ Decided: Tailwind CSS 4 ([ADR-0007](adr-0007-nextjs-with-vite-plus.md)).
 
 ## Output
 
-An ADR for the stack.
+An ADR for the LLM client library.

@@ -28,3 +28,5 @@ _(none)_
 - [ticket-0002](ticket-0002-research-alpha-kids.md): Research Alpha Kids
 - [ticket-0003](ticket-0003-research-llm-providers.md): Research free LLM providers
 - [ticket-0009](ticket-0009-commit-conventions.md): Commit conventions and the git-commit skill
+- [ticket-0010](ticket-0010-bootstrap-app.md): Bootstrap the Next.js app with Vite+
+- [ticket-0011](ticket-0011-protect-main.md): Protect main and enforce linear history

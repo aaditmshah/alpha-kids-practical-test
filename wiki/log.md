@@ -30,3 +30,9 @@ Format: `YYYY-MM-DD: [type] what happened (links)`. Append only; never rewrite e
 - 2026-11-18: [decision] Gitmoji, atomic commits and the mood rule; git-commit skill created ([ADR-0006](adr-0006-gitmoji-atomic-commits.md), [ticket-0009](ticket-0009-commit-conventions.md))
 - 2026-11-18: [git] First commit made: `🎉 Begin project with an LLM wiki`
 - 2026-11-18: [git] Candidate pushed `main` to the public GitHub repository ([aaditmshah/alpha-kids-practical-test](https://github.com/aaditmshah/alpha-kids-practical-test))
+- 2026-11-18: [session] Bootstrap session ([session](session-2026-11-18-04-bootstrap.md))
+- 2026-11-18: [research] Vite+ with Next.js, and the candidate's website conventions ([research](research-vite-plus-nextjs.md), [research](research-website-conventions.md))
+- 2026-11-18: [decision] Next.js with the Vite+ toolchain ([ADR-0007](adr-0007-nextjs-with-vite-plus.md))
+- 2026-11-18: [decision] Protected main, linear history, checks in CI only ([ADR-0008](adr-0008-protected-main-linear-history.md))
+- 2026-11-18: [git] Repository set to rebase-only merging; branch protection applied to `main` ([ticket-0011](ticket-0011-protect-main.md))
+- 2026-11-18: [git] App bootstrapped on `bootstrap-nextjs`; [PR #1](https://github.com/aaditmshah/alpha-kids-practical-test/pull/1) opened ([ticket-0010](ticket-0010-bootstrap-app.md))

@@ -1,0 +1,39 @@
+---
+title: "Research: The Candidate's Website Conventions"
+type: research
+status: active
+updated: 2026-11-18
+summary: What we copied from the candidate's website repo (kybernetic-systems/kybernetic.systems) into this project, what we left out, and why.
+---
+
+# Research: The Candidate's Website Conventions
+
+Back to: [Home](index.md) · [Research](index-research.md) · Ticket: [ticket-0010](ticket-0010-bootstrap-app.md)
+
+Source: [github.com/kybernetic-systems/kybernetic.systems](https://github.com/kybernetic-systems/kybernetic.systems), the candidate's own website. It is a TanStack Start site built with Vite+. Accessed 2026-11-18.
+
+## Copied (adapted where noted)
+
+| What                                                                                                                                                                   | Where it went                                 | Adaptation                                                                                                           |
+| ---------------------------------------------------------------------------------------------------------------------------------------------------------------------- | --------------------------------------------- | -------------------------------------------------------------------------------------------------------------------- |
+| `.editorconfig`: UTF-8, LF, tabs, 100 columns                                                                                                                          | `.editorconfig`                               | None. Oxfmt reads it too                                                                                             |
+| `fmt` config: sorted imports, sorted package.json scripts, Tailwind class sorting, consistent quoting                                                                  | `vite.config.ts`                              | Pointed at `src/app/globals.css`, and the `tv`/`cn` helpers dropped                                                  |
+| `lint` config: plugin list, `correctness`, `suspicious` and `perf` as errors, type-aware linting and type checking                                                     | `vite.config.ts`                              | Added the `nextjs` plugin. Dropped the Storybook plugin                                                              |
+| Strict `tsconfig` options                                                                                                                                              | `tsconfig.json`                               | Merged with what Next.js requires: the `next` plugin, `.next/types`, `incremental`, `allowJs`                        |
+| `#/*` subpath imports                                                                                                                                                  | `package.json` `imports` and tsconfig `paths` | None                                                                                                                 |
+| `engines` (Node.js) and `devEngines` (pnpm, downloaded on demand)                                                                                                      | `package.json`                                | Updated to the versions installed now: Node.js 26.13.0, pnpm 12.21.0                                                 |
+| `pnpm-workspace.yaml`: one-week `minimumReleaseAge` (Vite+ toolchain exempt), `allowBuilds` for sharp                                                                  | `pnpm-workspace.yaml`                         | Dropped settings specific to Storybook and Cloudflare                                                                |
+| `.vscode/settings.json` and `extensions.json`                                                                                                                          | `.vscode/`                                    | Dropped the MDX and route-tree settings, and the MDX and TOML extensions                                             |
+| `.githooks/prepare-commit-msg`: gitmoji picker, skipped when no terminal is attached                                                                                   | `.githooks/`                                  | None                                                                                                                 |
+| `githooks:install` script, which sets `core.hooksPath` to `.githooks`                                                                                                  | `package.json`                                | None                                                                                                                 |
+| `gitmoji-cli` dev dependency                                                                                                                                           | `package.json`                                | Plus a project `gitmoji` config with `emojiFormat: "emoji"`, matching [ADR-0006](adr-0006-gitmoji-atomic-commits.md) |
+| CI workflow: `setup-vp` pinned exactly, `vp install`, `vp check`, `vp test`                                                                                            | `.github/workflows/ci.yml`                    | Runs on pushes to `main` as well as on PRs. Adds `typegen`, `wiki:lint` and `next build`. Drops Playwright           |
+| Dependabot for GitHub Actions                                                                                                                                          | `.github/dependabot.yml`                      | None                                                                                                                 |
+| Branch protection on `main`: required `ci` check (branch up to date), PR required with 0 approvals, rules apply to admins, linear history, no force pushes or deletion | GitHub settings                               | None. See [ADR-0008](adr-0008-protected-main-linear-history.md)                                                      |
+| Repo merge settings: rebase only, delete merged branches, allow updating a PR branch                                                                                   | GitHub settings                               | None                                                                                                                 |
+
+## Left out, and why
+
+- **Storybook, Playwright browser tests, Content Collections, Wrangler/Cloudflare and favicon generation.** The website needs them, but a throwaway coach app doesn't ([ADR-0002](adr-0002-minimal-scope-tdd.md), [ADR-0005](adr-0005-local-only.md)).
+- **TypeScript 7 (the native `tsgo`).** Next.js runs the `typescript` package's API during `next build`, so we kept the TypeScript 5 that Next ships with. The VS Code setting `js/ts.experimental.useTsgo` still gives the faster editor experience.
+- **Vite+'s own commit hooks (`.vite-hooks`, `vp staged`).** The candidate: _"I don't believe in running lint and other checks in the staging area on commit … I believe in enforcing code quality by protecting the main branch and enforcing GitHub checks to pass."_
