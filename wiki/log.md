@@ -57,3 +57,4 @@ Format: `YYYY-MM-DD: [type] what happened (links)`. Append only; never rewrite e
 - 2026-11-18: [security] basic-ftp overridden to 6.2.6 to fix Dependabot alert #2, GHSA-5pm8-86m8-9m6r ([PR #5](pr-0005-security-basic-ftp.md))
 - 2026-11-18: [git] PRs #4 and #5 merged by one fast-forward push, confirming ADR-0008; Dependabot alert #2 fixed ([PR #5](pr-0005-security-basic-ftp.md))
 - 2026-11-18: [research] Roman Urdu handling researched; escalation wording drafted in English and Roman Urdu; ADR-0013 proposed ([research](research-roman-urdu.md), [ADR-0013](adr-0013-roman-urdu-detection.md))
+- 2026-11-18: [decision] ADR-0013 accepted and the Roman Urdu escalation wording approved as drafted ([PR #6](pr-0006-research-roman-urdu.md))

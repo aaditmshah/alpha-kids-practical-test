@@ -31,5 +31,5 @@ Aadit: _"Done."_ One fast-forward push merged [PR #4](pr-0004-record-pr-3-review
 
 ## Open at end of session
 
-- Aadit's check of the Roman Urdu wording and of ADR-0013, to be recorded on [PR #6](pr-0006-research-roman-urdu.md) before merge.
+- ~~Aadit's check of the Roman Urdu wording and of ADR-0013.~~ Approved: the wording is unchanged and ADR-0013 is accepted as a demo-grade solution (_"It's a pre-programmed demo, which is all right for this practical test"_), recorded on [PR #6](pr-0006-research-roman-urdu.md).
 - Next: [ticket-0007](ticket-0007-choose-stack.md) (LLM client library), then [ticket-0006](ticket-0006-design-coach-contract.md) (reply schema and prompt).

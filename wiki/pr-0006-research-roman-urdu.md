@@ -38,4 +38,13 @@ Questions for Aadit:
 1. Is the Roman Urdu escalation wording right and natural? Which lines should change?
 2. Accept ADR-0013, or amend it?
 
-_(Answers are recorded here before merge.)_
+Aadit's answer:
+
+> "Sounds good. Supporting Roman Urdu is a complicated feature because it's non-deterministic and fuzzy natural language processing. Especially handling different spellings. This is a difficult problem to solve. Your proposed solution is good. Especially for the practical test. It's like the Tesla demo of its car which can go upside down and land safely. It's a pre-programmed demo, which is all right for this practical test. Approved."
+
+- **Roman Urdu escalation wording:** approved as drafted, with no changes.
+- **ADR-0013:** accepted ([ADR-0013](adr-0013-roman-urdu-detection.md)), as a scoped, demo-grade solution: the fixtures define what works, and robust handling of arbitrary spellings is out of scope.
+
+## See also
+
+- [Log](log.md)

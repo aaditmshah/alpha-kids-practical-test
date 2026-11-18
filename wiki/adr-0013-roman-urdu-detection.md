@@ -1,16 +1,16 @@
 ---
 title: "ADR-0013: Roman Urdu Detection and Reply Language"
 type: adr
-status: proposed
+status: accepted
 updated: 2026-11-18
-summary: Proposed. The model reports the language it replied in. Fixed text uses a marker-word heuristic. Mixed messages get Roman Urdu replies in shared Hindustani vocabulary, with no gendered first-person verbs. Crisis phrases are regex patterns that allow spelling variants.
+summary: The model reports the language it replied in. Fixed text uses a marker-word heuristic. Mixed messages get Roman Urdu replies in shared Hindustani vocabulary, with no gendered first-person verbs. Crisis phrases are regex patterns that allow spelling variants.
 ---
 
 # ADR-0013: Roman Urdu Detection and Reply Language
 
 Back to: [Decisions](index-decisions.md) · Research: [Roman Urdu handling](research-roman-urdu.md) · Ticket: [ticket-0005](ticket-0005-research-roman-urdu.md)
 
-**Status: proposed.** It becomes accepted when Aadit agrees, after checking the Roman Urdu wording.
+**Status: accepted** on 2026-11-18, in Aadit's review of [PR #6](pr-0006-research-roman-urdu.md). He accepts it as a deliberately scoped, demo-grade solution to a hard, fuzzy problem: _"It's a pre-programmed demo, which is all right for this practical test."_
 
 ## Context
 
@@ -36,7 +36,8 @@ The coach must reply in the parent's language, English or Roman Urdu ([ADR-0004]
 - Escalation and fail-safe text needs no model call and can be fully unit-tested.
 - The thresholds are guesses until the TDD fixtures tune them.
 - Urdu-script crisis messages rely on the model layer only, an accepted gap.
-- The escalation wording in [Research: Roman Urdu handling](research-roman-urdu.md) needs Aadit's check before it ships.
+- The escalation wording in [Research: Roman Urdu handling](research-roman-urdu.md) was approved by Aadit as drafted.
+- This is demo-grade Roman Urdu support: it handles the cases the fixtures cover. Robust handling of arbitrary spellings would need real NLP (normalisation, language ID), which is out of scope ([ADR-0002](adr-0002-minimal-scope-tdd.md)).
 
 ## See also
 

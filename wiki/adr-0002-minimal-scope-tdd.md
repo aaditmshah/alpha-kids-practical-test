@@ -34,3 +34,4 @@ Aadit said: _"This is a simple throwaway app. I don't want to spend too much tim
 - [Plan](plan.md)
 - [Research: Aadit's Website Conventions](research-website-conventions.md)
 - [ticket-0007: Choose the Stack and Test Tooling](ticket-0007-choose-stack.md)
+- [ADR-0013: Roman Urdu Detection and Reply Language](adr-0013-roman-urdu-detection.md)

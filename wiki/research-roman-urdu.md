@@ -61,7 +61,7 @@ Matching happens after normalising: lowercase, collapse runs of the same letter 
 
 ## Draft escalation wording, for Aadit to check
 
-The fixed text from [ADR-0011](adr-0011-layered-safety-escalation.md), with helplines from [ADR-0012](adr-0012-india-helplines.md). Aadit should check the Roman Urdu column before it is used.
+The fixed text from [ADR-0011](adr-0011-layered-safety-escalation.md), with helplines from [ADR-0012](adr-0012-india-helplines.md). Aadit approved the Roman Urdu column as drafted ([PR #6](pr-0006-research-roman-urdu.md)).
 
 | Part             | English                                                                                                  | Roman Urdu (draft)                                                                                                                                                  |
 | ---------------- | -------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
