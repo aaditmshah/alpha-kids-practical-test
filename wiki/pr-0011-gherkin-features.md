@@ -44,3 +44,4 @@ _(Answers are recorded here before merge.)_
 ## See also
 
 - [Log](log.md)
+- [PR #12: Add the Keyword Safety Pre-Check](pr-0012-safety-precheck.md)

@@ -25,6 +25,7 @@ Back to: [Home](index.md)
 | [PR #9: Write the implementation plan](pr-0009-implementation-plan.md)          | Architecture, test plan, milestones and build tickets 0013–0023                                                         |
 | [PR #10: Add dependencies and test projects](pr-0010-test-and-runtime-setup.md) | AI SDK, Zod, Testing Library, jsdom, vitest-cucumber; unit and component test projects; `.env.example` (ticket-0013)    |
 | [PR #11: Write the Gherkin features](pr-0011-gherkin-features.md)               | Six executable-ready features quoting the brief; coverage check in CI; ADR-0019 (learning exercises). Stacked on PR #10 |
+| [PR #12: Add the keyword safety pre-check](pr-0012-safety-precheck.md)          | `normalize`, `precheck` (English and Roman Urdu crisis phrases), and the `detectLanguage` stub. Stacked on PR #11       |
 
 ## Before pull requests
 

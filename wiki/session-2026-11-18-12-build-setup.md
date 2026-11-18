@@ -30,6 +30,8 @@ Aadit approved [PR #10](pr-0010-test-and-runtime-setup.md) and asked for the nex
   - a tested coverage check in CI, which also verifies each quote word for word against the brief
 - **A change to ADR-0017.** Because unimplemented steps fail, each feature's spec arrives with the ticket that builds the behaviour, not with the features.
 
+- **[PR #12](pr-0012-safety-precheck.md), ticket-0015:** `normalize` and the keyword pre-check, written test-first with 38 cases. When a message describes several crises, the most urgent wins. Also the `detectLanguage` stub.
+
 ## Open at end of session
 
 - Aadit's review of [PR #10](pr-0010-test-and-runtime-setup.md).

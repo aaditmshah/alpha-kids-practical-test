@@ -92,3 +92,4 @@ GitHub accepts the push to protected `main` because those exact commits passed t
 - [PR #9: Write the Implementation Plan](pr-0009-implementation-plan.md)
 - [PR #10: Add Dependencies and Test Projects](pr-0010-test-and-runtime-setup.md)
 - [PR #11: Write the Gherkin Features](pr-0011-gherkin-features.md)
+- [PR #12: Add the Keyword Safety Pre-Check](pr-0012-safety-precheck.md)

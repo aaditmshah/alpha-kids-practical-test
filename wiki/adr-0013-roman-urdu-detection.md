@@ -49,3 +49,4 @@ The coach must reply in the parent's language, English or Roman Urdu ([ADR-0004]
 - [ADR-0016: The Coach's System Prompt](adr-0016-system-prompt.md)
 - [ticket-0014: Detect the Reply Language](ticket-0014-language-detection.md)
 - [ticket-0015: Build the Keyword Safety Pre-Check](ticket-0015-safety-precheck.md)
+- [PR #12: Add the Keyword Safety Pre-Check](pr-0012-safety-precheck.md)

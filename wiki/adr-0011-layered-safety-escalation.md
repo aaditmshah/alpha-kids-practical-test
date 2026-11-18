@@ -63,3 +63,4 @@ R8 in [Requirements](requirements.md) says the coach must _"clearly escalate if 
 - [ticket-0019: Build the Coach Orchestrator](ticket-0019-coach-orchestrator.md)
 - [ticket-0021: Build the Chat Page](ticket-0021-chat-ui.md)
 - [ticket-0025: Design the UI in Claude Design](ticket-0025-ui-design.md)
+- [PR #12: Add the Keyword Safety Pre-Check](pr-0012-safety-precheck.md)

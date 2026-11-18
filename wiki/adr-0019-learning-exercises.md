@@ -43,3 +43,4 @@ Aadit: _"You can go ahead and create a PR stack. I'll review them and merge them
 
 - [Log](log.md)
 - [PR #11: Write the Gherkin Features](pr-0011-gherkin-features.md)
+- [PR #12: Add the Keyword Safety Pre-Check](pr-0012-safety-precheck.md)

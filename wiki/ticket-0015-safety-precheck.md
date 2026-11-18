@@ -1,7 +1,7 @@
 ---
 title: "ticket-0015: Build the Keyword Safety Pre-Check"
 type: ticket
-status: todo
+status: done
 updated: 2026-11-18
 summary: precheck(text) returns the risk (emergency, abuse, self_harm) or null, from English and Roman Urdu phrase patterns, before any model call.
 ---
@@ -21,10 +21,19 @@ Also builds `normalize` (moved here from [ticket-0014](ticket-0014-language-dete
 
 ## Tests that drive it
 
-- [ ] Each category in English and Roman Urdu from [Research: Safety](research-safety-escalation.md) and [Research: Roman Urdu](research-roman-urdu.md) → that risk
-- [ ] Spelling variants and both gendered verb forms (_chahta/chahti_) match
-- [ ] Benign look-alikes (_I'm dying to know…_, sibling hitting, toddler biting) → null
+- [x] Each category in English and Roman Urdu from [Research: Safety](research-safety-escalation.md) and [Research: Roman Urdu](research-roman-urdu.md) → that risk
+- [x] Spelling variants and both gendered verb forms (_chahta/chahti_) match
+- [x] Benign look-alikes (_I'm dying to know…_, sibling hitting, toddler biting) → null
 
 ## Also
 
-- [ ] Patterns stay phrase-level, never single words like _die_
+- [x] Patterns stay phrase-level, never single words like _die_
+
+## Result
+
+Delivered in [PR #12](pr-0012-safety-precheck.md):
+
+- `src/coach/normalize.ts`: lowercase, straight apostrophes, runs of three or more letters collapsed, single spaces
+- `src/coach/precheck.ts`: English and Roman Urdu phrase patterns for emergencies, self-harm and abuse; when several match, the most urgent wins (emergency, then self-harm, then abuse)
+- 38 unit tests, including spelling variants (_zahar_, _khud kashi_), shouting, and benign look-alikes (_I'm dying to know_, sibling and toddler hitting, _killing it at school_)
+- The `detectLanguage` stub for [Aadit's exercise](adr-0019-learning-exercises.md)
