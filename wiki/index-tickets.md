@@ -23,6 +23,7 @@ Back to: [Home](index.md) · Board view: [Kanban](kanban.md)
 | [ticket-0009](ticket-0009-commit-conventions.md)         | done   | Commit conventions and the git-commit skill     |
 | [ticket-0010](ticket-0010-bootstrap-app.md)              | done   | Bootstrap the Next.js app with Vite+            |
 | [ticket-0011](ticket-0011-protect-main.md)               | done   | Protect main and enforce linear history         |
+| [ticket-0012](ticket-0012-backlinks-and-pr-tracking.md)  | done   | Wiki backlinks and pull request tracking        |
 
 ## See also
 

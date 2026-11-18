@@ -60,3 +60,5 @@ The candidate: _"I don't believe in running lint and other checks in the staging
 - [Log](log.md)
 - [Research: The Candidate's Website Conventions](research-website-conventions.md)
 - [ticket-0011: Protect Main and Enforce Linear History](ticket-0011-protect-main.md)
+- [Index: Pull Requests](index-pull-requests.md)
+- [PR #1: Bootstrap the Next.js App with Vite+](pr-0001-bootstrap-nextjs.md)

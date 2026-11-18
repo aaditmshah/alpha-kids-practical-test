@@ -24,3 +24,4 @@ Back to: [Tickets](index-tickets.md) · [Kanban](kanban.md) · Decision: [ADR-00
 
 - [Log](log.md)
 - [Plan](plan.md)
+- [PR #1: Bootstrap the Next.js App with Vite+](pr-0001-bootstrap-nextjs.md)

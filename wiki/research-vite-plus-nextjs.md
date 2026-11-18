@@ -72,3 +72,4 @@ What it produced:
 
 - [Log](log.md)
 - [Session 2026-11-18 #4: Bootstrap the App](session-2026-11-18-04-bootstrap.md)
+- [PR #1: Bootstrap the Next.js App with Vite+](pr-0001-bootstrap-nextjs.md)

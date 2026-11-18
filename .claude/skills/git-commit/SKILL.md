@@ -12,13 +12,17 @@ The full rationale is on the wiki pages `wiki/research-commit-messages.md` and `
 `main` is protected (`wiki/adr-0008-protected-main-linear-history.md`). Direct pushes are rejected,
 even for admins. So:
 
-1. Start from an up-to-date `main`: `git switch main && git pull --ff-only`.
+1. Start from an up-to-date `main`: `git switch main && git pull --ff-only`. If the previous PR
+   was merged, mark its `wiki/pr-NNNN-*.md` page `merged` (with the date) as the new branch's
+   first change.
 2. Create a short kebab-case branch named after the work, for example `git switch -c safety-precheck`.
 3. Commit on the branch (sections 1 to 3).
 4. Before pushing, run the CI checks locally: `vp run typegen`, `vp check`, `vp test --run`,
    `vp run wiki:lint` and `vp run build`.
 5. Push with `git push -u origin <branch>`, then open a pull request with
    `gh pr create --base main`. Give it a gitmoji title and a body that says what changes and why.
+   Record it in the wiki on the same branch as `wiki/pr-NNNN-<branch>.md` (see the `wiki-update`
+   skill), and keep that page current as commits and review comments arrive.
 6. If `main` moves, rebase the branch onto it (`git rebase origin/main`) and push with
    `--force-with-lease`. Never create merge commits.
 7. Merging is the user's call: rebase merges only (`gh pr merge --rebase`), and only after `ci`

@@ -89,8 +89,24 @@ What changed:
 - **The fixer added 111 backlinks across 36 pages.**
 - **Frozen pages:** the [Conventions](conventions.md) now allow navigation changes on source pages and the log, but never content changes.
 
+## Final review: pull request tracking
+
+The candidate also asked: _"Let's also track PRs in the wiki … to keep track of what changes were made, who made the changes, who reviewed them, what the commits do and why … Reading the PR description doesn't give me enough context."_
+
+What was added:
+
+- a new `pr-` page type and an [index of pull requests](index-pull-requests.md), which also lists the three commits pushed before `main` was protected
+- [PR #1's page](pr-0001-bootstrap-nextjs.md), which lists all 24 commits by subject. SHAs are left out because a rebase merge rewrites them
+- a rule that each PR page is created on its own branch, and marked `merged` as the first change of the next branch, since `main` can't be pushed to directly
+
+Tracked as [ticket-0012](ticket-0012-backlinks-and-pr-tracking.md).
+
 ## Open at end of session
 
 - PR #1 is waiting for CI and for the candidate's review and merge (rebase).
 - Still open: Q3 (helpline regions) and Q6 (Gemini quota). The LLM client library is still to be chosen in [ticket-0007](ticket-0007-choose-stack.md).
 - Next: [ticket-0004](ticket-0004-research-safety-escalation.md), safety and escalation research.
+
+## See also
+
+- [PR #1: Bootstrap the Next.js App with Vite+](pr-0001-bootstrap-nextjs.md)

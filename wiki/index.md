@@ -29,13 +29,14 @@ This wiki records the **whole process** of building a small bilingual (English/R
 
 ## Category indexes
 
-| Index                           | Contents                              |
-| ------------------------------- | ------------------------------------- |
-| [Sources](index-sources.md)     | Raw inputs, captured as they were     |
-| [Research](index-research.md)   | What we learned, with citations       |
-| [Decisions](index-decisions.md) | Architectural decision records (ADRs) |
-| [Tickets](index-tickets.md)     | Every unit of work                    |
-| [Sessions](index-sessions.md)   | Records of each working conversation  |
+| Index                                   | Contents                                                   |
+| --------------------------------------- | ---------------------------------------------------------- |
+| [Sources](index-sources.md)             | Raw inputs, captured as they were                          |
+| [Research](index-research.md)           | What we learned, with citations                            |
+| [Decisions](index-decisions.md)         | Architectural decision records (ADRs)                      |
+| [Tickets](index-tickets.md)             | Every unit of work                                         |
+| [Sessions](index-sessions.md)           | Records of each working conversation                       |
+| [Pull requests](index-pull-requests.md) | Every pull request: authors, reviewers, commits and review |
 
 ## See also
 

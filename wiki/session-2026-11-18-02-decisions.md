@@ -45,3 +45,4 @@ Q3 (helpline regions), Q4 (Next.js or Node) and Q6 (actual Gemini quota) in [Ope
 
 - [Log](log.md)
 - [Session 2026-11-18 #3: Commit Conventions](session-2026-11-18-03-commit-conventions.md)
+- [Index: Pull Requests](index-pull-requests.md)

@@ -41,3 +41,4 @@ The candidate's constraint: _"a human reading the wiki should be able to see the
 ## See also
 
 - [Log](log.md)
+- [PR #1: Bootstrap the Next.js App with Vite+](pr-0001-bootstrap-nextjs.md)

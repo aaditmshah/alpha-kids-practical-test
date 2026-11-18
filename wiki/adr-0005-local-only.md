@@ -42,3 +42,4 @@ The options were a public demo (for example, a free Vercel deployment) or a loca
 - [Requirements](requirements.md)
 - [Research: The Candidate's Website Conventions](research-website-conventions.md)
 - [ticket-0010: Bootstrap the Next.js App with Vite+](ticket-0010-bootstrap-app.md)
+- [PR #1: Bootstrap the Next.js App with Vite+](pr-0001-bootstrap-nextjs.md)

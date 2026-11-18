@@ -43,3 +43,4 @@ Unchanged: Q3, Q4 and Q6 in [Open questions](open-questions.md). Next: [ticket-0
 
 - [Log](log.md)
 - [Session 2026-11-18 #4: Bootstrap the App](session-2026-11-18-04-bootstrap.md)
+- [Index: Pull Requests](index-pull-requests.md)

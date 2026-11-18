@@ -43,3 +43,4 @@ Source: [github.com/kybernetic-systems/kybernetic.systems](https://github.com/ky
 - [ADR-0007: Next.js App with the Vite+ Toolchain](adr-0007-nextjs-with-vite-plus.md)
 - [Log](log.md)
 - [Session 2026-11-18 #4: Bootstrap the App](session-2026-11-18-04-bootstrap.md)
+- [PR #1: Bootstrap the Next.js App with Vite+](pr-0001-bootstrap-nextjs.md)

@@ -56,3 +56,4 @@ See [Open questions](open-questions.md), Q1–Q6.
 
 - [Log](log.md)
 - [Session 2026-11-18 #2: Decisions](session-2026-11-18-02-decisions.md)
+- [Index: Pull Requests](index-pull-requests.md)

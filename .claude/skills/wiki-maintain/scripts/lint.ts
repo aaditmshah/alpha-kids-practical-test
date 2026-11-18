@@ -23,10 +23,12 @@ const PREFIX_INDEX: Readonly<Record<string, string>> = {
 	"adr-": "index-decisions.md",
 	"ticket-": "index-tickets.md",
 	"session-": "index-sessions.md",
+	"pr-": "index-pull-requests.md",
 };
 const STATUSES: Readonly<Partial<Record<string, readonly string[]>>> = {
 	adr: ["proposed", "accepted", "superseded", "rejected"],
 	ticket: ["todo", "in-progress", "done", "dropped"],
+	pr: ["open", "merged", "closed"],
 };
 const DEFAULT_STATUSES: readonly string[] = ["active", "draft", "stale"];
 const KANBAN_COLUMNS: Readonly<Partial<Record<string, string>>> = {
