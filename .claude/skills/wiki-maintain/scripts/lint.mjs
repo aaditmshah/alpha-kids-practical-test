@@ -110,9 +110,12 @@ for (const page of pages.filter((p) => p.startsWith("ticket-"))) {
 	const kanban = contents["kanban.md"] ?? "";
 	const sections = kanban.split(/^## /m).slice(1);
 	const section = sections.find((s) => s.includes(`](${page})`));
-	const expected = { todo: "Todo", "in-progress": "In progress", done: "Done", dropped: "Dropped" }[
-		status
-	];
+	const expected = {
+		"todo": "Todo",
+		"in-progress": "In progress",
+		"done": "Done",
+		"dropped": "Dropped",
+	}[status];
 	if (!section) errors.push(`kanban.md: ${page} missing from board`);
 	else if (expected && !section.startsWith(expected))
 		errors.push(`kanban.md: ${page} is in the wrong column (ticket says ${status})`);
