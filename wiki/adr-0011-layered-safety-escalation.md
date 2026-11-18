@@ -1,16 +1,16 @@
 ---
 title: "ADR-0011: Layered Safety with Fixed Escalation Messages"
 type: adr
-status: proposed
+status: accepted
 updated: 2026-11-18
-summary: Proposed. Crisis detection has three layers. A keyword pre-check in code runs before the model, the model's structured reply carries a risk field, and any failure falls back to a safe message. Every escalation shows fixed, pre-written text with Indian helplines, never generated text.
+summary: Crisis detection has three layers. A keyword pre-check in code runs before the model, the model's structured reply carries a risk field, and any failure falls back to a safe message. Every escalation shows fixed, pre-written text with Indian helplines, never generated text.
 ---
 
 # ADR-0011: Layered Safety with Fixed Escalation Messages
 
 Back to: [Decisions](index-decisions.md) · Research: [Safety and escalation](research-safety-escalation.md) · Ticket: [ticket-0004](ticket-0004-research-safety-escalation.md)
 
-**Status: proposed.** It becomes accepted when Aadit agrees.
+**Status: accepted** on 2026-11-18. Aadit reviewed [PR #3](pr-0003-research-safety-escalation.md), which proposed it: _"Reviewed and merged. Everything looks good."_ Recorded afterwards in [PR #4](pr-0004-record-pr-3-review.md).
 
 ## Context
 
@@ -49,3 +49,4 @@ R8 in [Requirements](requirements.md) says the coach must _"clearly escalate if 
 - [Log](log.md)
 - [PR #3: Research Safety and Escalation](pr-0003-research-safety-escalation.md)
 - [Session 2026-11-18 #6: Safety Research](session-2026-11-18-06-safety-research.md)
+- [Session 2026-11-18 #7: PR #3 Review and a Security Alert](session-2026-11-18-07-review-and-security.md)

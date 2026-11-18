@@ -76,3 +76,4 @@ GitHub accepts the push to protected `main` because those exact commits passed t
 - [PR #2: Document Fast-Forward Merges](pr-0002-fast-forward-merges.md)
 - [Session 2026-11-18 #5: Fast-Forward Merges](session-2026-11-18-05-fast-forward-merges.md)
 - [PR #3: Research Safety and Escalation](pr-0003-research-safety-escalation.md)
+- [PR #4: Record PR #3's Review](pr-0004-record-pr-3-review.md)

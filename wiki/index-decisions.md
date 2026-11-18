@@ -22,7 +22,7 @@ Back to: [Home](index.md)
 | [ADR-0008: Protected main, linear history](adr-0008-protected-main-linear-history.md) | accepted | PRs must pass the `ci` check; merged by local fast-forward; no pre-commit checks                                    |
 | [ADR-0009: Title in frontmatter and H1](adr-0009-title-in-frontmatter-and-h1.md)      | accepted | Keep both; MD025 told to ignore the frontmatter title; wiki linter enforces a match                                 |
 | [ADR-0010: PR pages without status](adr-0010-pr-pages-without-status.md)              | accepted | PR pages have no status (GitHub is the source of truth); CI requires a page named after each PR's number and branch |
-| [ADR-0011: Layered safety, fixed escalation](adr-0011-layered-safety-escalation.md)   | proposed | Keyword pre-check before the model, model risk field, fail-safe; escalation text is fixed, never generated          |
+| [ADR-0011: Layered safety, fixed escalation](adr-0011-layered-safety-escalation.md)   | accepted | Keyword pre-check before the model, model risk field, fail-safe; escalation text is fixed, never generated          |
 | [ADR-0012: Indian helplines only](adr-0012-india-helplines.md)                        | accepted | Escalation lists 112, 1098, 181 and 14416, all verified from official sources                                       |
 
 ## See also

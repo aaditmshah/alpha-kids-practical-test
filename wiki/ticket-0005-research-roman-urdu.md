@@ -35,3 +35,4 @@ A `research-roman-urdu.md` page, plus a set of Roman Urdu test concerns for the 
 - [ADR-0011: Layered Safety with Fixed Escalation Messages](adr-0011-layered-safety-escalation.md)
 - [Research: Safety and Escalation](research-safety-escalation.md)
 - [Session 2026-11-18 #6: Safety Research](session-2026-11-18-06-safety-research.md)
+- [Session 2026-11-18 #7: PR #3 Review and a Security Alert](session-2026-11-18-07-review-and-security.md)

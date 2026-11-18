@@ -18,3 +18,4 @@ Back to: [Home](index.md)
 | [2026-11-18 #4: Bootstrap](session-2026-11-18-04-bootstrap.md)                     | Next.js bootstrapped with Vite+; website conventions copied; CI added; main protected; PR #1 opened                   |
 | [2026-11-18 #5: Fast-forward merges](session-2026-11-18-05-fast-forward-merges.md) | PR #1 merged by fast-forward; docs corrected in PR #2; next steps listed                                              |
 | [2026-11-18 #6: Safety research](session-2026-11-18-06-safety-research.md)         | Safety and escalation researched; India-only helplines; layered detection proposed                                    |
+| [2026-11-18 #7: Review and security](session-2026-11-18-07-review-and-security.md) | PR #3's review recorded after the fact; basic-ftp alert triaged                                                       |

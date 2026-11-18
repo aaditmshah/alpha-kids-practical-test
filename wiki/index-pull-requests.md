@@ -17,6 +17,7 @@ Back to: [Home](index.md)
 | [PR #1: Bootstrap the Next.js app with Vite+](pr-0001-bootstrap-nextjs.md)     | Next.js scaffolded with Vite+; website conventions; CI; markdownlint; TypeScript wiki linter; backlinks; PR tracking |
 | [PR #2: Document fast-forward merges](pr-0002-fast-forward-merges.md)          | Corrects the docs: PRs are fast-forwarded into `main` locally, not rebase-merged on GitHub                           |
 | [PR #3: Research safety and escalation](pr-0003-research-safety-escalation.md) | Safety and escalation research, ADR-0011 (layered detection) and ADR-0012 (Indian helplines)                         |
+| [PR #4: Record PR #3's review](pr-0004-record-pr-3-review.md)                  | ADR-0011 accepted; reviews are recorded before merge from now on                                                     |
 
 ## Before pull requests
 

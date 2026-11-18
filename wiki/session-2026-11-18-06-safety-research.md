@@ -34,3 +34,7 @@ After merging [PR #2](pr-0002-fast-forward-merges.md), Aadit said: _"Merged. Yes
 
 - Aadit's review of ADR-0011 and of the escalation wording, especially the Roman Urdu, which [ticket-0005](ticket-0005-research-roman-urdu.md) will draft.
 - Next: [ticket-0005](ticket-0005-research-roman-urdu.md), then [ticket-0007](ticket-0007-choose-stack.md).
+
+## See also
+
+- [Session 2026-11-18 #7: PR #3 Review and a Security Alert](session-2026-11-18-07-review-and-security.md)

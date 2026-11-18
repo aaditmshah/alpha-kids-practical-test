@@ -32,4 +32,13 @@ Safety is the core of the brief: R6, R7 and R8 in [Requirements](requirements.md
 
 ## Review
 
-_(Review comments are recorded here as they arrive.)_
+Aadit reviewed the PR and fast-forwarded it into `main` on 2026-11-18: _"Reviewed and merged. Everything looks good."_
+
+- **ADR-0011:** accepted, with no changes ([ADR-0011](adr-0011-layered-safety-escalation.md)).
+- **Helpline list:** no changes requested.
+
+The PR asked for these answers, but they were only recorded after the merge, in [PR #4](pr-0004-record-pr-3-review.md). Aadit: _"Oops, I forgot that you need to record any answers on PR #3 before merging."_ To stop this happening again, the `git-commit` skill now asks for review answers to be recorded on the PR before it merges.
+
+## See also
+
+- [Session 2026-11-18 #7: PR #3 Review and a Security Alert](session-2026-11-18-07-review-and-security.md)

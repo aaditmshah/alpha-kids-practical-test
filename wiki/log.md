@@ -53,3 +53,4 @@ Format: `YYYY-MM-DD: [type] what happened (links)`. Append only; never rewrite e
 - 2026-11-18: [git] Aadit fast-forwarded `main` to PR #1 ([PR #1](pr-0001-bootstrap-nextjs.md))
 - 2026-11-18: [wiki] Merges documented as local fast-forwards, not GitHub rebase merges ([PR #2](pr-0002-fast-forward-merges.md), [ADR-0008](adr-0008-protected-main-linear-history.md))
 - 2026-11-18: [research] Safety and escalation researched; Indian helplines only, verified from official sources; layered detection proposed ([research](research-safety-escalation.md), [ADR-0011](adr-0011-layered-safety-escalation.md), [ADR-0012](adr-0012-india-helplines.md))
+- 2026-11-18: [decision] ADR-0011 accepted after Aadit reviewed PR #3; reviews are now recorded before merge ([PR #4](pr-0004-record-pr-3-review.md))
