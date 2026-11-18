@@ -48,12 +48,33 @@ export default defineConfig({
 		rules: {
 			"import/no-unassigned-import": ["error", { allow: ["**/*.css"] }],
 			"react/react-in-jsx-scope": "off",
+			// Gherkin steps from @amiceli/vitest-cucumber are test blocks too (ADR-0017).
+			"vitest/no-standalone-expect": [
+				"error",
+				{ additionalTestBlockFunctions: ["Given", "When", "Then", "And", "But"] },
+			],
 		},
 	},
 	test: {
-		include: ["src/**/*.test.{ts,tsx}", "scripts/**/*.test.ts"],
-		environment: "node",
-		// The app has no tests until the first TDD cycle, and CI must still pass until then.
-		passWithNoTests: true,
+		projects: [
+			{
+				extends: true,
+				test: {
+					// Pure logic, Gherkin features run against it, and the repository's scripts.
+					name: "unit",
+					include: ["src/**/*.test.ts", "scripts/**/*.test.ts", "features/**/*.spec.ts"],
+					environment: "node",
+				},
+			},
+			{
+				extends: true,
+				test: {
+					// React components and the Gherkin features that exercise them.
+					name: "component",
+					include: ["src/**/*.test.tsx", "features/**/*.spec.tsx"],
+					environment: "jsdom",
+				},
+			},
+		],
 	},
 });
