@@ -29,3 +29,4 @@ Format: `YYYY-MM-DD: [type] what happened (links)`. Append only; never rewrite e
 - 2026-11-18: [research] Commit messages: cbeams' seven rules and Gitmoji ([research](research-commit-messages.md))
 - 2026-11-18: [decision] Gitmoji, atomic commits and the mood rule; git-commit skill created ([ADR-0006](adr-0006-gitmoji-atomic-commits.md), [ticket-0009](ticket-0009-commit-conventions.md))
 - 2026-11-18: [git] First commit made: `🎉 Begin project with an LLM wiki`
+- 2026-11-18: [git] Candidate pushed `main` to the public GitHub repository ([aaditmshah/alpha-kids-practical-test](https://github.com/aaditmshah/alpha-kids-practical-test))
