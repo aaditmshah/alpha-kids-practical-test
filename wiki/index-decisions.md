@@ -17,3 +17,4 @@ Back to: [Home](index.md)
 | [ADR-0003: LLM provider: Gemini free tier](adr-0003-llm-provider.md) | accepted | Gemini Flash (free), behind an adapter, with Groq as the fallback |
 | [ADR-0004: Roman Urdu only](adr-0004-roman-urdu-only.md) | accepted | Urdu supported only in Latin script; no Urdu script or right-to-left layout |
 | [ADR-0005: Local only](adr-0005-local-only.md) | accepted | No deployment; reviewers build and run it locally from the README |
+| [ADR-0006: Gitmoji, atomic commits](adr-0006-gitmoji-atomic-commits.md) | accepted | Unicode gitmoji with an imperative subject, what/why in the body, and atomic commits |

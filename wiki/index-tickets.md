@@ -20,3 +20,4 @@ Back to: [Home](index.md) · Board view: [Kanban](kanban.md)
 | [ticket-0006](ticket-0006-design-coach-contract.md) | todo | Design the coach reply schema and prompt |
 | [ticket-0007](ticket-0007-choose-stack.md) | todo | Choose the stack and test tooling |
 | [ticket-0008](ticket-0008-write-implementation-plan.md) | todo | Write the implementation plan and build tickets |
+| [ticket-0009](ticket-0009-commit-conventions.md) | done | Commit conventions and the git-commit skill |

@@ -12,8 +12,8 @@ This wiki records the **whole process** of building a small bilingual (English/R
 
 ## Current state (2026-11-18)
 
-- **Phase:** research and planning. No app code yet.
-- **Decided:** [flat LLM wiki](adr-0001-flat-llm-wiki.md); [minimal scope, built with TDD](adr-0002-minimal-scope-tdd.md); [Gemini free tier](adr-0003-llm-provider.md); [Roman Urdu only](adr-0004-roman-urdu-only.md); [local only, no deployment](adr-0005-local-only.md).
+- **Phase:** research and planning. No app code yet. The work is committed to git, following [ADR-0006](adr-0006-gitmoji-atomic-commits.md).
+- **Decided:** [flat LLM wiki](adr-0001-flat-llm-wiki.md); [minimal scope, built with TDD](adr-0002-minimal-scope-tdd.md); [Gemini free tier](adr-0003-llm-provider.md); [Roman Urdu only](adr-0004-roman-urdu-only.md); [local only, no deployment](adr-0005-local-only.md); [Gitmoji and atomic commits](adr-0006-gitmoji-atomic-commits.md).
 - **Next:** [safety and escalation research](ticket-0004-research-safety-escalation.md), [Roman Urdu research](ticket-0005-research-roman-urdu.md), then [stack](ticket-0007-choose-stack.md) and the [plan](plan.md).
 
 ## Start here

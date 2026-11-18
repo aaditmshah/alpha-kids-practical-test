@@ -84,3 +84,5 @@ Agents should use these project skills rather than editing the wiki by hand:
 - `wiki-query`: answer questions from the wiki ([SKILL.md](../.claude/skills/wiki-query/SKILL.md))
 - `wiki-update`: record new information, decisions, sessions and tickets ([SKILL.md](../.claude/skills/wiki-update/SKILL.md))
 - `wiki-maintain`: check the wiki for broken links, orphans, stale indexes and contradictions ([SKILL.md](../.claude/skills/wiki-maintain/SKILL.md))
+
+Commits use the `git-commit` skill ([SKILL.md](../.claude/skills/git-commit/SKILL.md), [ADR-0006](adr-0006-gitmoji-atomic-commits.md)). Wiki updates go in the same commit as the change they record.

@@ -24,3 +24,4 @@ Back to: [Home](index.md) · List view: [Tickets](index-tickets.md)
 - [ticket-0001](ticket-0001-set-up-wiki.md): Set up the LLM wiki and its skills
 - [ticket-0002](ticket-0002-research-alpha-kids.md): Research Alpha Kids
 - [ticket-0003](ticket-0003-research-llm-providers.md): Research free LLM providers
+- [ticket-0009](ticket-0009-commit-conventions.md): Commit conventions and the git-commit skill
