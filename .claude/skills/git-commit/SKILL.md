@@ -40,16 +40,17 @@ even for admins. So:
    bottom PR targets `main`. Say in the PR body and on its wiki page which PR it stacks on.
    If a lower PR changes, rebase the PRs above it onto its new tip and push them with
    `--force-with-lease`. The user may review a whole stack at once. Then record every PR's
-   review in one commit on the top PR, so the stack doesn't need restacking. To merge, the
-   user fast-forwards `main` to the top of the stack and pushes once. GitHub marks a PR merged
-   when its head is reachable from its base, and retargets PRs based on a deleted branch to that
-   branch's base. Check afterwards that every PR in the stack shows as merged (see ADR-0008).
+   review in one commit on the top PR, so the stack doesn't need restacking. To merge a stack, the
+   user fast-forwards `main` one PR at a time, bottom-up, pushing after each. Protected `main`
+   rejects a single push to the top of the stack, because the upper PRs don't target `main`.
+   Each push marks one PR merged, and GitHub retargets the next PR to `main` (see ADR-0008).
 7. Before the user merges, record the review on the PR's wiki page: the user's answers to any
    questions the PR asked (quoted), the ADRs they accept or change, and any comments with how
    each was resolved. Push that as the PR's last commit. If a PR merges before its review is
    recorded, record it in the next PR.
 8. Merging is the user's call, after `ci` passes. The user merges by fast-forward:
-   `git switch main && git pull --ff-only && git merge --ff-only <branch> && git push`. GitHub
+   `git switch main && git pull --ff-only && git merge --ff-only <branch> && git push`, repeated
+   for each PR of a stack from the bottom up. GitHub
    accepts the push because the commits passed the PR's checks, and marks the PR merged. The
    commits keep their hashes and CI results. Never use `gh pr merge` or the merge button: its
    rebase creates new commits, and merge commits and squash merging are disabled.

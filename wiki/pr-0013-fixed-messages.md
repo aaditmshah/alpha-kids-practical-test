@@ -11,14 +11,14 @@ Back to: [Pull requests](index-pull-requests.md) · Session: [2026-11-18 #12](se
 
 ## Facts
 
-|             |                                                                                                                                  |
-| ----------- | -------------------------------------------------------------------------------------------------------------------------------- |
-| GitHub      | [aaditmshah/alpha-kids-practical-test#13](https://github.com/aaditmshah/alpha-kids-practical-test/pull/13)                       |
-| Branch      | `fixed-messages` → `safety-precheck` (stacked; Aadit corrected the base from `main`)                                             |
-| Opened      | 2026-11-18, by Aadit's GitHub account (aaditmshah)                                                                               |
-| Written by  | Claude Code (Claude Opus 5.5), working with Aadit                                                                                |
-| Reviewed by | Aadit                                                                                                                            |
-| Merge       | Fast-forward of `main` with the rest of the stack, done locally by Aadit ([ADR-0008](adr-0008-protected-main-linear-history.md)) |
+|             |                                                                                                                |
+| ----------- | -------------------------------------------------------------------------------------------------------------- |
+| GitHub      | [aaditmshah/alpha-kids-practical-test#13](https://github.com/aaditmshah/alpha-kids-practical-test/pull/13)     |
+| Branch      | `fixed-messages` → `safety-precheck` (stacked; Aadit corrected the base from `main`)                           |
+| Opened      | 2026-11-18, by Aadit's GitHub account (aaditmshah)                                                             |
+| Written by  | Claude Code (Claude Opus 5.5), working with Aadit                                                              |
+| Reviewed by | Aadit                                                                                                          |
+| Merge       | Bottom-up fast-forward push by Aadit, one PR at a time ([ADR-0008](adr-0008-protected-main-linear-history.md)) |
 
 ## Why
 

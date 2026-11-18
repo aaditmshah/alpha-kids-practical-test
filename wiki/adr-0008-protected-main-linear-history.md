@@ -56,11 +56,22 @@ git push
 
 GitHub accepts the push to protected `main` because those exact commits passed the PR's required checks, and it marks the PR as merged. If `main` has moved, the branch is first rebased onto it (_"I use rebase when the base is out of date"_). Rebase merging stays enabled only as the least-bad option the GitHub UI offers.
 
-**Stacked PRs merge with one push.** GitHub marks a PR as merged once its head commit is reachable from the base branch, however it got there. Its docs call these indirect merges: a PR _"can be marked as merged if its head branch commits become reachable from the base branch outside that pull request … pushed directly to the default branch"_ ([GitHub docs](https://docs.github.com/en/pull-requests/reference/pull-request-merges)). The Enterprise docs give the stacked case as an example: _"Merging feature_2 into main and pushing main to the server from the command line will mark both pull requests as merged"_ ([GitHub Enterprise Server docs](https://docs.github.com/en/enterprise-server@3.18/pull-requests/collaborating-with-pull-requests/incorporating-changes-from-a-pull-request/about-pull-request-merges)). So fast-forwarding `main` to the top of a stack and pushing once merges the whole stack. Confirmed on 2026-11-18: one push of `main` to the top of the stack marked [PR #4](pr-0004-record-pr-3-review.md) and [PR #5](pr-0005-security-basic-ftp.md) merged at the same second, and protected `main` accepted the push. Two cautions:
+**PRs that all target `main` merge with one push.** GitHub marks a PR as merged once its head commit is reachable from the base branch, however it got there. Its docs call these indirect merges: a PR _"can be marked as merged if its head branch commits become reachable from the base branch outside that pull request … pushed directly to the default branch"_ ([GitHub docs](https://docs.github.com/en/pull-requests/reference/pull-request-merges)). The Enterprise docs give the stacked case as an example: _"Merging feature_2 into main and pushing main to the server from the command line will mark both pull requests as merged"_ ([GitHub Enterprise Server docs](https://docs.github.com/en/enterprise-server@3.18/pull-requests/collaborating-with-pull-requests/incorporating-changes-from-a-pull-request/about-pull-request-merges)). So fast-forwarding `main` to the top of a stack and pushing once merges the whole stack. Confirmed on 2026-11-18: one push of `main` to the top of the stack marked [PR #4](pr-0004-record-pr-3-review.md) and [PR #5](pr-0005-security-basic-ftp.md) merged at the same second, and protected `main` accepted the push. Two cautions:
 
 **Correction (2026-11-18): stacked PRs target the branch below them, not `main`.** Aadit, reviewing the first real stack ([PR #10](pr-0010-test-and-runtime-setup.md) to [PR #15](pr-0015-model-adapter.md)): _"All your PRs had the base branch set to main, which is incorrect. For stacked PRs, the base branch should be the head of the previous PR branch."_ He retargeted them himself. With the right bases, each PR's diff shows only its own commits.
 
-This changes how the one push works. GitHub marks a PR merged when its head is reachable from _its own base_. After `main` is fast-forwarded to the top of the stack, only the bottom PR targets `main`. The others rely on GitHub's retargeting: when a merged PR's branch is deleted, PRs based on it are retargeted to its base instead of being closed ([2020 changelog](https://github.blog/changelog/2020-05-19-pull-request-retargeting), [2026 stacked-PRs changelog](https://github.blog/changelog/2026-10-06-stacked-pull-requests-generally-available)). Whether that happens after a local fast-forward push, not just a merge from the UI, was unconfirmed when this was written. It is checked on the PR #10–#15 merge.
+This changes how a stack is merged. **Confirmed on the PR #10–#15 merge (2026-11-18):** with stacked bases, one push to the top of the stack is **rejected**, because protected `main` won't accept commits whose PR targets another branch. Aadit merged the stack one PR at a time, from the bottom up:
+
+```bash
+git switch main
+git reset --hard test-and-runtime-setup && git push   # PR #10 merged; GitHub retargets #11 to main
+git reset --hard gherkin-features && git push         # PR #11 merged; #12 retargeted
+# … and so on, up to the top of the stack (model-adapter, PR #15)
+git fetch --all --tags --prune
+git branch --delete --force <each merged branch>
+```
+
+Each push merged exactly one PR, then GitHub deleted its branch and retargeted the next PR to `main`, so the next fast-forward was accepted. The six merges landed between 17:09:37 and 17:11:49. `git merge --ff-only <branch>` works the same as `git reset --hard <branch>` here, since `main` is always an ancestor. The earlier one-push merge (PRs #4 and #5) worked only because both of those PRs targeted `main`.
 
 - GitHub marks the lower PRs merged _"even if branch protection rules on that pull request"_ haven't been met. Each PR's own CI and recorded review must be checked before the push.
 - GitHub's native stacked PRs (a public preview) merge a whole stack from the UI, but only by merge commit, squash or rebase, never by fast-forward ([About stacked PRs](https://docs.github.com/en/pull-requests/get-started/about-stacked-prs)). They don't fit this workflow.
@@ -101,3 +112,4 @@ This changes how the one push works. GitHub marks a PR merged when its head is r
 - [PR #14: Define the Reply Schema](pr-0014-reply-schema.md)
 - [PR #15: Build the Model Adapter and Prompt](pr-0015-model-adapter.md)
 - [Session 2026-11-18 #12: Build Setup](session-2026-11-18-12-build-setup.md)
+- [PR #16: Document How a Stack Is Merged](pr-0016-document-stack-merge.md)

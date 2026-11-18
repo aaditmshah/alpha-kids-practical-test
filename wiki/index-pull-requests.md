@@ -29,6 +29,7 @@ Back to: [Home](index.md)
 | [PR #13: Write the fixed messages](pr-0013-fixed-messages.md)                   | Helplines constant and the escalation, referral and fail-safe messages in English and Roman Urdu. Stacked on PR #12     |
 | [PR #14: Define the reply schema](pr-0014-reply-schema.md)                      | `CoachReply` Zod schema and the `postcheck` stub for Aadit. Stacked on PR #13                                           |
 | [PR #15: Build the model adapter and prompt](pr-0015-model-adapter.md)          | System prompt with examples, history trimming, and `askModel` with typed failures. Stacked on PR #14                    |
+| [PR #16: Document how a stack is merged](pr-0016-document-stack-merge.md)       | Stacks merge bottom-up, one fast-forward push per PR, as Aadit found when one push was rejected                         |
 
 ## Before pull requests
 

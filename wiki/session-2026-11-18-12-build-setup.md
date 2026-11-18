@@ -57,6 +57,18 @@ Claude made three changes:
 
 With per-branch bases, the one-push merge now depends on GitHub retargeting the upper PRs when the lower branches are deleted. That behaviour is documented for merges from the UI, and is to be confirmed on this merge.
 
+## Merging the stack
+
+Aadit: _"I set main to model-adapter locally. On pushing, the remote rejected the changes because the base branch of PR #15 is not main. So, the fix is to fast-forward to the HEAD of each PR and push separately. Each time I did that, GitHub would automatically mark the PR as merged and change the base of the next PR to main."_
+
+Claude read his shell history:
+
+- `git rebase model-adapter` on `main`, and a rejected push
+- then `git reset --hard <branch> && git push` for each PR from `test-and-runtime-setup` up to `model-adapter`
+- then pruning, and deleting the local branches
+
+The six PRs merged between 17:09:37 and 17:11:49. [ADR-0008](adr-0008-protected-main-linear-history.md) and the `git-commit` skill now describe the bottom-up procedure, in [PR #16](pr-0016-document-stack-merge.md). The earlier one-push merge only worked because PRs #4 and #5 both targeted `main`.
+
 ## Open at end of session
 
 - Aadit's review of [PR #10](pr-0010-test-and-runtime-setup.md).

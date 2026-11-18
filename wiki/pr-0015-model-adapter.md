@@ -11,14 +11,14 @@ Back to: [Pull requests](index-pull-requests.md) · Session: [2026-11-18 #12](se
 
 ## Facts
 
-|             |                                                                                                                                  |
-| ----------- | -------------------------------------------------------------------------------------------------------------------------------- |
-| GitHub      | [aaditmshah/alpha-kids-practical-test#15](https://github.com/aaditmshah/alpha-kids-practical-test/pull/15)                       |
-| Branch      | `model-adapter` → `reply-schema` (stacked; Aadit corrected the base from `main`)                                                 |
-| Opened      | 2026-11-18, by Aadit's GitHub account (aaditmshah)                                                                               |
-| Written by  | Claude Code (Claude Opus 5.5), working with Aadit                                                                                |
-| Reviewed by | Aadit                                                                                                                            |
-| Merge       | Fast-forward of `main` to this PR merges the whole stack, PRs #10 to #15 ([ADR-0008](adr-0008-protected-main-linear-history.md)) |
+|             |                                                                                                                                                                      |
+| ----------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| GitHub      | [aaditmshah/alpha-kids-practical-test#15](https://github.com/aaditmshah/alpha-kids-practical-test/pull/15)                                                           |
+| Branch      | `model-adapter` → `reply-schema` (stacked; Aadit corrected the base from `main`)                                                                                     |
+| Opened      | 2026-11-18, by Aadit's GitHub account (aaditmshah)                                                                                                                   |
+| Written by  | Claude Code (Claude Opus 5.5), working with Aadit                                                                                                                    |
+| Reviewed by | Aadit                                                                                                                                                                |
+| Merge       | Last of six bottom-up fast-forward pushes by Aadit, after a single push to the top of the stack was rejected ([ADR-0008](adr-0008-protected-main-linear-history.md)) |
 
 ## Why
 
