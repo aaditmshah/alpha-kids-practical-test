@@ -40,3 +40,4 @@ _(Recorded here before merge.)_
 ## See also
 
 - [Log](log.md)
+- [PR #13: Write the Fixed Messages](pr-0013-fixed-messages.md)

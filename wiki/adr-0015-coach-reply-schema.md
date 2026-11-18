@@ -86,3 +86,4 @@ The page keeps the history in browser state (R9) and sends the **last 6 messages
 - [ticket-0019: Build the Coach Orchestrator](ticket-0019-coach-orchestrator.md)
 - [ticket-0021: Build the Chat Page](ticket-0021-chat-ui.md)
 - [ADR-0019: Leave Learning Exercises for Aadit](adr-0019-learning-exercises.md)
+- [PR #13: Write the Fixed Messages](pr-0013-fixed-messages.md)

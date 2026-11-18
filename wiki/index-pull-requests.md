@@ -26,6 +26,7 @@ Back to: [Home](index.md)
 | [PR #10: Add dependencies and test projects](pr-0010-test-and-runtime-setup.md) | AI SDK, Zod, Testing Library, jsdom, vitest-cucumber; unit and component test projects; `.env.example` (ticket-0013)    |
 | [PR #11: Write the Gherkin features](pr-0011-gherkin-features.md)               | Six executable-ready features quoting the brief; coverage check in CI; ADR-0019 (learning exercises). Stacked on PR #10 |
 | [PR #12: Add the keyword safety pre-check](pr-0012-safety-precheck.md)          | `normalize`, `precheck` (English and Roman Urdu crisis phrases), and the `detectLanguage` stub. Stacked on PR #11       |
+| [PR #13: Write the fixed messages](pr-0013-fixed-messages.md)                   | Helplines constant and the escalation, referral and fail-safe messages in English and Roman Urdu. Stacked on PR #12     |
 
 ## Before pull requests
 

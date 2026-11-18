@@ -43,3 +43,4 @@ Each number is verified in [Research: Safety and escalation](research-safety-esc
 - [Alpha Kids Practical Test Wiki](index.md)
 - [ticket-0016: Write the Fixed Messages](ticket-0016-fixed-messages.md)
 - [ticket-0023: Finish the README and Submit](ticket-0023-readme-and-submission.md)
+- [PR #13: Write the Fixed Messages](pr-0013-fixed-messages.md)

@@ -32,6 +32,8 @@ Aadit approved [PR #10](pr-0010-test-and-runtime-setup.md) and asked for the nex
 
 - **[PR #12](pr-0012-safety-precheck.md), ticket-0015:** `normalize` and the keyword pre-check, written test-first with 38 cases. When a message describes several crises, the most urgent wins. Also the `detectLanguage` stub.
 
+- **[PR #13](pr-0013-fixed-messages.md), ticket-0016:** the helplines and the fixed messages as structured objects, using the approved wording, with 18 tests.
+
 ## Open at end of session
 
 - Aadit's review of [PR #10](pr-0010-test-and-runtime-setup.md).
