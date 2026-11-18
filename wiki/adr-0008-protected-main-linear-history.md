@@ -56,6 +56,11 @@ git push
 
 GitHub accepts the push to protected `main` because those exact commits passed the PR's required checks, and it marks the PR as merged. If `main` has moved, the branch is first rebased onto it (_"I use rebase when the base is out of date"_). Rebase merging stays enabled only as the least-bad option the GitHub UI offers.
 
+**Stacked PRs merge with one push.** GitHub marks a PR as merged once its head commit is reachable from the base branch, however it got there. Its docs call these indirect merges: a PR _"can be marked as merged if its head branch commits become reachable from the base branch outside that pull request … pushed directly to the default branch"_ ([GitHub docs](https://docs.github.com/en/pull-requests/reference/pull-request-merges)). The Enterprise docs give the stacked case as an example: _"Merging feature_2 into main and pushing main to the server from the command line will mark both pull requests as merged"_ ([GitHub Enterprise Server docs](https://docs.github.com/en/enterprise-server@3.18/pull-requests/collaborating-with-pull-requests/incorporating-changes-from-a-pull-request/about-pull-request-merges)). So fast-forwarding `main` to the top of a stack and pushing once merges the whole stack. Two cautions:
+
+- GitHub marks the lower PRs merged _"even if branch protection rules on that pull request"_ haven't been met. Each PR's own CI and recorded review must be checked before the push.
+- GitHub's native stacked PRs (a public preview) merge a whole stack from the UI, but only by merge commit, squash or rebase, never by fast-forward ([About stacked PRs](https://docs.github.com/en/pull-requests/get-started/about-stacked-prs)). They don't fit this workflow.
+
 **Hooks:** only `.githooks/prepare-commit-msg`, which opens the gitmoji picker. Install it with `vp run githooks:install`.
 
 ## Consequences
@@ -78,3 +83,4 @@ GitHub accepts the push to protected `main` because those exact commits passed t
 - [PR #3: Research Safety and Escalation](pr-0003-research-safety-escalation.md)
 - [PR #4: Record PR #3's Review](pr-0004-record-pr-3-review.md)
 - [PR #5: Fix the basic-ftp Vulnerability](pr-0005-security-basic-ftp.md)
+- [Session 2026-11-18 #7: PR #3 Review and a Security Alert](session-2026-11-18-07-review-and-security.md)

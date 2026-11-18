@@ -33,6 +33,8 @@ Claude chose the override. It resolves to `basic-ftp@6.2.6`, the newest version 
 
 Aadit added: _"By the way, you can create stacked PRs. I can merge them quickly."_ The `git-commit` skill now covers stacking.
 
+Aadit then asked: _"If I fast-forward main to the top of a stacked PR and push it, does it close all the PRs in the stack at once? Or, do I need to fast-forward and push multiple times?"_ Claude's research found that one push is enough: GitHub marks a PR merged once its head commit is reachable from the base branch, and its docs give this exact stacked case. The lower PRs are marked merged even if their own protection rules weren't met, so each PR's CI and review must be checked first. Recorded in [ADR-0008](adr-0008-protected-main-linear-history.md).
+
 ## Open at end of session
 
 - Next: [ticket-0005](ticket-0005-research-roman-urdu.md), Roman Urdu handling, including the Roman Urdu escalation wording for Aadit to check.

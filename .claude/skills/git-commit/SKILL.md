@@ -36,7 +36,10 @@ even for admins. So:
    `--force-with-lease`. Never create merge commits.
    **Stacked PRs are welcome.** For work that depends on an open PR, branch from that PR's
    branch and still open the new PR against `main`. The user fast-forwards the stack in order,
-   bottom PR first, and each later PR then fast-forwards cleanly. Say in the PR body and on
+   bottom PR first, and each later PR then fast-forwards cleanly. Fast-forwarding `main` to the
+   top of the stack and pushing once marks every PR in the stack merged, because GitHub treats a
+   PR as merged once its head commit is reachable from `main`. So every PR in the stack must have
+   passing CI and a recorded review before that push. Say in the PR body and on
    its wiki page which PR it stacks on. If a lower PR changes, rebase the PRs above it onto
    the new tip.
 7. Before the user merges, record the review on the PR's wiki page: the user's answers to any
