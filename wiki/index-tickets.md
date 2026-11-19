@@ -32,7 +32,7 @@ Back to: [Home](index.md) · Board view: [Kanban](kanban.md)
 | [ticket-0018](ticket-0018-model-adapter.md)               | done   | Build the model adapter and prompt              |
 | [ticket-0019](ticket-0019-coach-orchestrator.md)          | done   | Build the coach orchestrator                    |
 | [ticket-0020](ticket-0020-server-action.md)               | done   | Add the Server Action                           |
-| [ticket-0021](ticket-0021-chat-ui.md)                     | todo   | Build the chat page                             |
+| [ticket-0021](ticket-0021-chat-ui.md)                     | done   | Build the chat page                             |
 | [ticket-0022](ticket-0022-live-smoke-test.md)             | todo   | Add the opt-in live smoke test                  |
 | [ticket-0023](ticket-0023-readme-and-submission.md)       | todo   | Finish the README and submit                    |
 | [ticket-0024](ticket-0024-gherkin-features.md)            | done   | Write the Gherkin features                      |

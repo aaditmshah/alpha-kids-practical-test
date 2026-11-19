@@ -1,26 +1,54 @@
 @import "tailwindcss";
 
-:root {
-	--background: #ffffff;
-	--foreground: #171717;
-}
+/* The approved design's tokens (wiki/design.md). Every text and background pair meets WCAG AA. */
+@theme {
+	--font-display: var(--font-fredoka), ui-rounded, system-ui, sans-serif;
+	--font-sans: var(--font-nunito), system-ui, sans-serif;
 
-@theme inline {
-	--color-background: var(--background);
-	--color-foreground: var(--foreground);
-	--font-sans: var(--font-geist-sans);
-	--font-mono: var(--font-geist-mono);
-}
+	--color-page: #fbf7ff;
+	--color-ink: #2a2140;
+	--color-soft: #4a4060;
+	--color-muted: #5b5170;
+	--color-line: #efe8ff;
+	--color-card-line: #e9e1ff;
+	--color-field-line: #d9ccff;
 
-@media (prefers-color-scheme: dark) {
-	:root {
-		--background: #0a0a0a;
-		--foreground: #ededed;
-	}
+	--color-accent: #5a3cc4;
+	--color-accent-strong: #3f2696;
+	--color-accent-muted: #c9bdeb;
+
+	--color-blush: #ffd6e4;
+	--color-blush-ink: #9b2c5a;
+	--color-lavender: #e9e1ff;
+	--color-mint: #cdefe0;
+	--color-mint-ink: #17382a;
+	--color-mint-deep: #1f4d3a;
+	--color-peach: #ffe0d1;
+	--color-peach-ink: #6e2e12;
+	--color-butter: #fff1c9;
+	--color-butter-ink: #4d3800;
+	--color-butter-icon: #8a6400;
+	--color-butter-pale: #fff8e1;
+	--color-butter-line: #e3c77a;
+	--color-butter-deep: #ffe7a3;
+	--color-sky: #ddebff;
+	--color-sky-ink: #13365c;
+	--color-sky-icon: #1f5fa8;
+	--color-sky-deep: #193e6b;
+
+	/* The escalation breaks the pastel palette on purpose (ADR-0018). */
+	--color-alert: #b42318;
+	--color-alert-deep: #8e1a11;
+	--color-alert-ink: #8a1c12;
+	--color-alert-soft: #ffe4e0;
+	--color-alert-ring: #ffd6d1;
+
+	--color-dot-pink: #f4a3c0;
+	--color-dot-yellow: #f7c873;
+	--color-dot-green: #8ed1b4;
 }
 
 body {
-	background: var(--background);
-	color: var(--foreground);
-	font-family: Arial, Helvetica, sans-serif;
+	background: var(--color-page);
+	color: var(--color-ink);
 }

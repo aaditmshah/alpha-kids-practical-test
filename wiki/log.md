@@ -79,3 +79,4 @@ Format: `YYYY-MM-DD: [type] what happened (links)`. Append only; never rewrite e
 - 2026-11-19: [design] UI design canvas drafted in Claude Design, eight artboards, waiting for Aadit's review ([ticket-0025](ticket-0025-ui-design.md), [PR #18](pr-0018-coach-orchestrator.md))
 - 2026-11-19: [review] UI design approved and added to the wiki as screenshots and standalone HTML; the interface stays English; ticket-0025 done ([UI Design](design.md), [PR #18](pr-0018-coach-orchestrator.md))
 - 2026-11-19: [build] askCoach Server Function added with input validation; ticket-0020 done ([PR #19](pr-0019-server-action.md))
+- 2026-11-19: [build] Chat page built from the approved design; every Gherkin scenario runs; ticket-0021 done ([PR #20](pr-0020-chat-page.md))
