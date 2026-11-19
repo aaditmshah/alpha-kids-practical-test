@@ -15,7 +15,7 @@ Back to: [Home](index.md)
 ## Layout
 
 - **Flat directory.** Every page lives directly in `wiki/`. Never create subdirectories. Flat files make links trivial: every link is just `[Text](other-page.md)`.
-- **Assets sit beside the pages.** Screenshots (`.png`) and standalone mock-ups (`.html`) live in `wiki/` too, named after the page that shows them (for example `design-05-escalation.png`). Every asset must be linked from a page; the linter reports orphans.
+- **Assets sit beside the pages.** Screenshots (`.png`) and standalone mock-ups (`.html`) live in `wiki/` too, named after the page that shows them (for example `design-05-escalation.png`). Every asset must be linked from a page, with Markdown or with an HTML `src` or `href` (an HTML `<img width>` is the only way to size an image); the linter reports orphans and broken asset links.
 - **Page type comes from the filename prefix.** Without folders, a prefix groups related pages so they sort together:
 
 | Prefix                   | Type                                                                                                                               | Example                                                                                                                                  |

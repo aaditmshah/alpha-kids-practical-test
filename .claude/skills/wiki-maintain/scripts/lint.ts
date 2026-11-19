@@ -153,13 +153,18 @@ for (const page of pages) {
 	}
 }
 
-// Every link between wiki pages needs a link back, because VS Code's preview has no back button.
-// Links woven into the prose count; the rest go in a "See also" section.
+// Assets are linked with Markdown, or with HTML attributes when a page lays images out in a table.
 const allText = [...contents.values()].join("\n");
 for (const asset of assets)
-	if (!allText.includes(`](${asset})`))
+	if (!allText.includes(`](${asset})`) && !allText.includes(`="${asset}"`))
 		errors.push(`${asset}: orphan asset (no wiki page links to it)`);
+for (const [page, text] of contents)
+	for (const [, target] of text.matchAll(/(?:src|href)="([^"/:#]+\.(?:png|html))"/g))
+		if (target !== undefined && !assets.includes(target))
+			errors.push(`${page}: broken asset link ${target}`);
 
+// Every link between wiki pages needs a link back, because VS Code's preview has no back button.
+// Links woven into the prose count; the rest go in a "See also" section.
 const missingBacklinks = new Map<string, string[]>();
 for (const [page, targets] of outbound) {
 	for (const target of targets) {
