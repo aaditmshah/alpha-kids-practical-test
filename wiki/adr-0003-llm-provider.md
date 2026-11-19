@@ -2,8 +2,8 @@
 title: "ADR-0003: LLM Provider: Gemini Free Tier"
 type: adr
 status: accepted
-updated: 2026-11-18
-summary: Use Google's Gemini API free tier (gemini-3.8-flash, falling back to gemini-3.5-flash-lite) through a swappable adapter, with Groq as the fallback provider. Chosen for $0 cost, Urdu quality and native JSON-schema output.
+updated: 2026-11-19
+summary: Use Google's Gemini API free tier (gemini-3.5-flash-lite by default since the live smoke test; gemini-3.8-flash when it isn't overloaded) through a swappable adapter, with Groq as the fallback provider. Chosen for $0 cost, Urdu quality and native JSON-schema output.
 ---
 
 # ADR-0003: LLM Provider: Gemini Free Tier
@@ -26,6 +26,16 @@ Gemini free tier, Groq, OpenRouter `:free`, Cerebras, Mistral, GitHub Models, Cl
 - **Fallback provider:** Groq `gpt-oss-120b`, if Gemini's quota or quality disappoints.
 - The model sits behind a one-function adapter (`coach(history) -> CoachReply`), so tests mock it and the provider can be swapped.
 
+## Amendment (2026-11-19): Flash-Lite by default
+
+The live smoke test ([ticket-0022](ticket-0022-live-smoke-test.md)) ran with Aadit's free-tier key:
+
+- `gemini-3.8-flash` never answered: even a three-word prompt was still waiting after 45 seconds, and the smoke test timed out.
+- `gemini-3.5-flash` and `gemini-3.7-flash` returned **503**, _"This model is currently experiencing high demand"_.
+- `gemini-3.5-flash-lite` answered in about 5 seconds and passed all eight live checks: plans in English and Roman Urdu, three crises the keywords miss, and dose, diagnosis and prompt-injection bait.
+
+So the default is now `gemini-3.5-flash-lite`. `COACH_MODEL` still selects any other model, such as `gemini-3.8-flash` when demand is low. The model call also gives up after 20 seconds, so an overloaded model shows the fail-safe instead of an endless wait. The free tier's actual rate limits are still not visible from the API ([Q6](open-questions.md)).
+
 ## Consequences
 
 - **$0, and no card needed.**
@@ -45,3 +55,4 @@ Gemini free tier, Groq, OpenRouter `:free`, Cerebras, Mistral, GitHub Models, Cl
 - [Research: LLM Client Library](research-llm-client.md)
 - [ticket-0023: Finish the README and Submit](ticket-0023-readme-and-submission.md)
 - [ADR-0020: Keep Secrets Out of Claude's Reach](adr-0020-keep-secrets-from-claude.md)
+- [ticket-0020: Add the Server Action](ticket-0020-server-action.md)

@@ -9,8 +9,11 @@ const MAX_COACH_LENGTH = 4000;
 /** The most messages a request may carry. Only the latest six reach the model (ADR-0015). */
 export const MAX_HISTORY = 40;
 
-/** The Gemini model used when COACH_MODEL isn't set (ADR-0003). */
-export const DEFAULT_MODEL = "gemini-3.8-flash";
+/**
+ * The Gemini model used when COACH_MODEL isn't set (ADR-0003). Flash-Lite, because the larger flash
+ * models were often overloaded on the free tier, and Flash-Lite passed the live smoke test.
+ */
+export const DEFAULT_MODEL = "gemini-3.5-flash-lite";
 
 const Message = z.discriminatedUnion("role", [
 	z.strictObject({

@@ -73,7 +73,7 @@ src/
 
 **State:** the conversation lives only in the page's React state (R9). Nothing is stored on the server.
 
-**Configuration:** `GOOGLE_GENERATIVE_AI_API_KEY` (required) and `COACH_MODEL` (default `gemini-3.8-flash`), in `.env.local`. `.env.example` is committed.
+**Configuration:** `GOOGLE_GENERATIVE_AI_API_KEY` (required) and `COACH_MODEL` (default `gemini-3.5-flash-lite`, see [ADR-0003](adr-0003-llm-provider.md)), in `.env.local`. `.env.example` is committed.
 
 **Why a Server Function rather than a route handler:** Next.js 16 recommends Server Functions for mutations, and `useActionState` gives the pending state for free. Next.js also warns that Server Functions are _"reachable via direct POST requests"_, so `askCoach` validates its own input.
 
