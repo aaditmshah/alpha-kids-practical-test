@@ -31,3 +31,4 @@ Back to: [Tickets](index-tickets.md) · [Kanban](kanban.md) · [Plan](plan.md)
 
 - [ticket-0023: Finish the README and Submit](ticket-0023-readme-and-submission.md)
 - [Session 2026-11-19 #2: Orchestrator and Design](session-2026-11-19-02-orchestrator-and-design.md)
+- [ADR-0020: Keep Secrets Out of Claude's Reach](adr-0020-keep-secrets-from-claude.md)

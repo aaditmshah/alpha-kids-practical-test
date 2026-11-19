@@ -44,3 +44,4 @@ Gemini free tier, Groq, OpenRouter `:free`, Cerebras, Mistral, GitHub Models, Cl
 - [ADR-0014: Call Gemini Through the Vercel AI SDK](adr-0014-vercel-ai-sdk.md)
 - [Research: LLM Client Library](research-llm-client.md)
 - [ticket-0023: Finish the README and Submit](ticket-0023-readme-and-submission.md)
+- [ADR-0020: Keep Secrets Out of Claude's Reach](adr-0020-keep-secrets-from-claude.md)

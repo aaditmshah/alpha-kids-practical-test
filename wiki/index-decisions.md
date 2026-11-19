@@ -31,6 +31,7 @@ Back to: [Home](index.md)
 | [ADR-0017: Executable Gherkin features](adr-0017-bdd-gherkin-features.md)             | accepted | User stories in `features/`, quoting the brief, tagged with requirement IDs, run by `@amiceli/vitest-cucumber`; CI checks coverage          |
 | [ADR-0018: UI design in Claude Design](adr-0018-ui-design-claude-design.md)           | accepted | Designed from the scenarios before the chat page; fun, pastel, friendly fonts; escalation banner stays loud                                 |
 | [ADR-0019: Learning exercises for Aadit](adr-0019-learning-exercises.md)              | accepted | `detectLanguage` and the post-checks are Aadit's to build test-first, from typed stubs; the stack pauses before the orchestrator            |
+| [ADR-0020: Keep secrets out of Claude's reach](adr-0020-keep-secrets-from-claude.md)  | accepted | Claude settings deny reading .env secrets files, and a Bash hook blocks commands that name them                                             |
 
 ## See also
 

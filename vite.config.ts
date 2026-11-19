@@ -63,7 +63,12 @@ export default defineConfig({
 				test: {
 					// Pure logic, Gherkin features run against it, and the repository's scripts.
 					name: "unit",
-					include: ["src/**/*.test.ts", "scripts/**/*.test.ts", "features/**/*.spec.ts"],
+					include: [
+						"src/**/*.test.ts",
+						"scripts/**/*.test.ts",
+						".claude/**/*.test.ts",
+						"features/**/*.spec.ts",
+					],
 					environment: "node",
 				},
 			},

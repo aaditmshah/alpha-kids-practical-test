@@ -26,7 +26,7 @@ Wiki rules (full detail in `wiki/conventions.md`):
 
 - **Minimal scope.** Throwaway-sized: implement the brief well, with no extras (`wiki/adr-0002-minimal-scope-tdd.md`).
 - **TDD.** Write a failing test first. The LLM is mocked in unit tests; live calls happen only in an opt-in smoke test.
-- **$0 LLM cost.** Gemini free tier (`wiki/adr-0003-llm-provider.md`). Never commit API keys.
+- **$0 LLM cost.** Gemini free tier (`wiki/adr-0003-llm-provider.md`). Never commit API keys, and never try to read `.env` secrets files: `.claude/settings.json` denies it (`wiki/adr-0020-keep-secrets-from-claude.md`).
 - **Urdu means Roman Urdu (Latin script) only.** No Urdu script and no right-to-left work (`wiki/adr-0004-roman-urdu-only.md`).
 - **Local only.** No deployment; the README explains how to build and run it (`wiki/adr-0005-local-only.md`).
 - **Work from tickets.** Pick work from `wiki/kanban.md`, and move tickets as their status changes.

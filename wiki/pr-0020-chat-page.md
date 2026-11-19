@@ -39,3 +39,4 @@ Waiting for Aadit's review.
 ## See also
 
 - [Log](log.md)
+- [PR #21: Keep Secrets Out of Claude's Reach](pr-0021-protect-secrets.md)
