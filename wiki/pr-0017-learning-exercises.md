@@ -37,7 +37,9 @@ Back to: [Pull requests](index-pull-requests.md) · Session: [2026-11-19 #1](ses
 
 ## Review
 
-_(Recorded here before merge.)_
+Aadit: _"Looks good to me."_ No changes requested.
+
+He also gave feedback on the exercises themselves, recorded in [ADR-0019](adr-0019-learning-exercises.md) and [session 2026-11-19 #1](session-2026-11-19-01-learning-exercises.md).
 
 ## See also
 

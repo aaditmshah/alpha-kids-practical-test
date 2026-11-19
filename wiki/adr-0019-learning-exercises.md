@@ -33,6 +33,14 @@ Aadit: _"You can go ahead and create a PR stack. I'll review them and merge them
 - **Claude builds everything that doesn't call them:** `normalize` (moved from ticket-0014 to [ticket-0015](ticket-0015-safety-precheck.md)), the pre-check, the fixed messages, the reply schema and the model adapter.
 - **The stack stops before [ticket-0019](ticket-0019-coach-orchestrator.md),** whose orchestrator calls both functions. Aadit's exercises unblock it.
 
+## Retrospective (2026-11-19)
+
+After doing both exercises ([PR #17](pr-0017-learning-exercises.md)), Aadit: _"I didn't actually get to learn a lot from these exercises. This is my fault. I didn't state the learning objectives at the beginning. The functions that I did implement were very simple pure functions. In addition, they were both fuzzy in the sense that they were related to natural language processing. I didn't have to think too much for the answers. The algorithm was already documented in the wiki. Now, what I would love to have learned through practical exercises is how to implement the `askModel` function. In doing so, I would have had to read the documentation of the Vercel AI SDK. I would also have learned how to integrate AI into future projects if I wanted to."_
+
+**What went wrong:** Claude chose exercises for being self-contained and non-blocking, not for what Aadit wanted to learn, and never asked about learning objectives. Both had their algorithm already written down in the wiki, so they were transcription more than learning.
+
+**What to do differently:** ask about learning objectives first. Prefer exercises that make the learner read new documentation and integrate an unfamiliar tool (here, the AI SDK in `askModel`), over pure functions whose design is already settled.
+
 ## Consequences
 
 - CI stays green: nothing calls a stub until the orchestrator exists.

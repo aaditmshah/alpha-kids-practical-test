@@ -40,6 +40,10 @@ Aadit did his two [learning exercises](adr-0019-learning-exercises.md) on a bran
 - [PR #16](pr-0016-document-stack-merge.md)'s review hadn't been recorded before merge, so it is recorded here.
 - Branch `tmp` renamed to `learning-exercises`, and [PR #17](pr-0017-learning-exercises.md) opened.
 
+## Review and feedback
+
+Aadit approved [PR #17](pr-0017-learning-exercises.md): _"Looks good to me."_ He then gave honest feedback: the exercises taught him little. They were simple pure functions with their algorithms already documented, and what he'd have liked to learn was integrating the Vercel AI SDK, as in `askModel`. He added: _"No hard feelings."_ The lesson is recorded in [ADR-0019](adr-0019-learning-exercises.md): ask about learning objectives first.
+
 ## Open at end of session
 
 - Aadit's review and merge of [PR #17](pr-0017-learning-exercises.md).
