@@ -12,11 +12,9 @@ Back to: [Home](index.md) · List view: [Tickets](index-tickets.md)
 
 ## Todo
 
-- [ticket-0023](ticket-0023-readme-and-submission.md): Finish the README and submit
-
 ## In progress
 
-Nothing in progress.
+- [ticket-0023](ticket-0023-readme-and-submission.md): Finish the README and submit _(waiting for Aadit's helpline recheck)_
 
 ## Done
 

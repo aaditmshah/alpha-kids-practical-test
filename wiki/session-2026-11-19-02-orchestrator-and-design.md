@@ -49,6 +49,10 @@ Back to: [Sessions](index-sessions.md) · Previous: [Session 2026-11-19 #1](sess
 - Eight live calls with Aadit's key. On the first run, `gemini-3.8-flash` never answered and the larger flash models returned 503 for high demand. `gemini-3.5-flash-lite` passed every check.
 - So model calls now give up after 20 seconds, which shows the fail-safe, and Flash-Lite is the default ([ADR-0003](adr-0003-llm-provider.md)). Opened as [PR #22](pr-0022-live-smoke-test.md), stacked on PR #21.
 
+### The README ([ticket-0023](ticket-0023-readme-and-submission.md))
+
+- The README now takes a reviewer from a fresh clone to a working coach, with screenshots, the safety layers, things to try and the scope. Home's current state is up to date. Opened as [PR #23](pr-0023-readme-and-submission.md), stacked on PR #22.
+
 ## Review
 
 Aadit approved [PR #18](pr-0018-coach-orchestrator.md) and the design (_"The design looks beautiful. I love it."_), and asked for the artboards in the wiki, as raw HTML if need be. Claude rendered each artboard to a PNG with headless Chromium and saved its standalone HTML beside it, on the new [UI Design](design.md) page. The linter now accepts these assets. He also ruled out translating the interface: _"English is fine. No need for Roman Urdu. This is a practical test, not a full product."_
@@ -61,8 +65,8 @@ Aadit approved [PR #22](pr-0022-live-smoke-test.md), glad the smoke test checked
 
 ## Open at end of session
 
-- Aadit's merge of [PR #18](pr-0018-coach-orchestrator.md).
-- Next: the opt-in live smoke test ([ticket-0022](ticket-0022-live-smoke-test.md)), which needs Aadit's Gemini key, and the README ([ticket-0023](ticket-0023-readme-and-submission.md)).
+- Aadit rechecks the helpline numbers against the [safety research](research-safety-escalation.md).
+- Aadit reviews [PR #23](pr-0023-readme-and-submission.md) and merges the stack, #18 to #23, bottom-up.
 
 ## See also
 

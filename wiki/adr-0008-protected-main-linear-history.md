@@ -119,3 +119,4 @@ Each push merged exactly one PR, then GitHub deleted its branch and retargeted t
 - [PR #20: Build the Chat Page](pr-0020-chat-page.md)
 - [PR #21: Keep Secrets Out of Claude's Reach](pr-0021-protect-secrets.md)
 - [PR #22: Add the Live Smoke Test](pr-0022-live-smoke-test.md)
+- [PR #23: Finish the README](pr-0023-readme-and-submission.md)

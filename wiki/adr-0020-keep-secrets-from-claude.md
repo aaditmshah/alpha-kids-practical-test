@@ -33,3 +33,4 @@ Both were checked: reading the file is refused by the permission rules, and the 
 
 - [ADR-0003: Use the Gemini Free Tier](adr-0003-llm-provider.md)
 - [Log](log.md)
+- [Alpha Kids Practical Test Wiki](index.md)

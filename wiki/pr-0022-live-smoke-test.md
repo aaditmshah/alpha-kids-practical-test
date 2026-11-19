@@ -40,3 +40,4 @@ Aadit: _"Looks good. I'm glad that we did the smoke test to check whether the ch
 ## See also
 
 - [Log](log.md)
+- [PR #23: Finish the README](pr-0023-readme-and-submission.md)
