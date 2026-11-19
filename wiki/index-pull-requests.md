@@ -35,6 +35,7 @@ Back to: [Home](index.md)
 | [PR #19: Add the Server Action](pr-0019-server-action.md)                       | `askCoach` validates the conversation and calls `respond` with Gemini; stacked on PR #18                                |
 | [PR #20: Build the chat page](pr-0020-chat-page.md)                             | The chat page from the approved design; every Gherkin scenario runs; stacked on PR #19                                  |
 | [PR #21: Keep secrets out of Claude's reach](pr-0021-protect-secrets.md)        | Claude settings deny reading .env secrets files; a Bash hook blocks commands naming them                                |
+| [PR #22: Add the live smoke test](pr-0022-live-smoke-test.md)                   | An opt-in live test against Gemini; model calls time out; Flash-Lite by default                                         |
 
 ## Before pull requests
 

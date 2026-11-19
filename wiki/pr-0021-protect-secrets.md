@@ -38,3 +38,4 @@ Aadit reviewed the stack: _"I reviewed all the PRs. They all look good."_ No cha
 ## See also
 
 - [Log](log.md)
+- [PR #22: Add the Live Smoke Test](pr-0022-live-smoke-test.md)

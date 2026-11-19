@@ -44,6 +44,11 @@ Back to: [Sessions](index-sessions.md) · Previous: [Session 2026-11-19 #1](sess
 
 - Before adding his Gemini key, Aadit asked that Claude be unable to read it. Project settings now deny reading or editing `.env` secrets files, and a Bash hook blocks commands that name them. Both were checked live. Opened as [PR #21](pr-0021-protect-secrets.md), stacked on PR #20.
 
+### The live smoke test ([ticket-0022](ticket-0022-live-smoke-test.md))
+
+- Eight live calls with Aadit's key. On the first run, `gemini-3.8-flash` never answered and the larger flash models returned 503 for high demand. `gemini-3.5-flash-lite` passed every check.
+- So model calls now give up after 20 seconds, which shows the fail-safe, and Flash-Lite is the default ([ADR-0003](adr-0003-llm-provider.md)). Opened as [PR #22](pr-0022-live-smoke-test.md), stacked on PR #21.
+
 ## Review
 
 Aadit approved [PR #18](pr-0018-coach-orchestrator.md) and the design (_"The design looks beautiful. I love it."_), and asked for the artboards in the wiki, as raw HTML if need be. Claude rendered each artboard to a PNG with headless Chromium and saved its standalone HTML beside it, on the new [UI Design](design.md) page. The linter now accepts these assets. He also ruled out translating the interface: _"English is fine. No need for Roman Urdu. This is a practical test, not a full product."_

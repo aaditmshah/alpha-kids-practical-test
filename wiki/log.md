@@ -81,3 +81,4 @@ Format: `YYYY-MM-DD: [type] what happened (links)`. Append only; never rewrite e
 - 2026-11-19: [build] askCoach Server Function added with input validation; ticket-0020 done ([PR #19](pr-0019-server-action.md))
 - 2026-11-19: [build] Chat page built from the approved design; every Gherkin scenario runs; ticket-0021 done ([PR #20](pr-0020-chat-page.md))
 - 2026-11-19: [decision] Claude settings deny access to .env secrets files, with a Bash hook as a second layer ([ADR-0020](adr-0020-keep-secrets-from-claude.md), [PR #21](pr-0021-protect-secrets.md))
+- 2026-11-19: [build] Live smoke test passes on gemini-3.5-flash-lite; the larger flash models were overloaded, so it is now the default and model calls time out after 20 seconds; ticket-0022 done ([PR #22](pr-0022-live-smoke-test.md))

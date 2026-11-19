@@ -56,3 +56,5 @@ So the default is now `gemini-3.5-flash-lite`. `COACH_MODEL` still selects any o
 - [ticket-0023: Finish the README and Submit](ticket-0023-readme-and-submission.md)
 - [ADR-0020: Keep Secrets Out of Claude's Reach](adr-0020-keep-secrets-from-claude.md)
 - [ticket-0020: Add the Server Action](ticket-0020-server-action.md)
+- [PR #22: Add the Live Smoke Test](pr-0022-live-smoke-test.md)
+- [Session 2026-11-19 #2: Orchestrator and Design](session-2026-11-19-02-orchestrator-and-design.md)
