@@ -76,3 +76,4 @@ Format: `YYYY-MM-DD: [type] what happened (links)`. Append only; never rewrite e
 - 2026-11-19: [build] Aadit built detectLanguage and postcheck test-first; Claude reviewed and extended both; tickets 0014 and 0017 done ([PR #17](pr-0017-learning-exercises.md))
 - 2026-11-19: [decision] No more learning exercises, because of Aadit's deadline; the UI design runs alongside the code ([session 2026-11-19 #2](session-2026-11-19-02-orchestrator-and-design.md))
 - 2026-11-19: [build] Coach orchestrator built, and the respond-level Gherkin scenarios run; ticket-0019 done ([PR #18](pr-0018-coach-orchestrator.md))
+- 2026-11-19: [design] UI design canvas drafted in Claude Design, eight artboards, waiting for Aadit's review ([ticket-0025](ticket-0025-ui-design.md), [PR #18](pr-0018-coach-orchestrator.md))

@@ -3,7 +3,7 @@ title: "Session 2026-11-19 #2: Orchestrator and Design"
 type: session
 status: active
 updated: 2026-11-19
-summary: Aadit has a deadline, so there are no more exercises and the UI design runs alongside the code. Claude built the coach orchestrator with executable Gherkin specs and opened PR #18.
+summary: Aadit has a deadline, so there are no more exercises and the UI design runs alongside the code. Claude built the coach orchestrator with executable Gherkin specs, drafted the design canvas and opened PR #18.
 ---
 
 # Session 2026-11-19 #2: Orchestrator and Design
@@ -26,9 +26,14 @@ Back to: [Sessions](index-sessions.md) · Previous: [Session 2026-11-19 #1](sess
 - **Shared mocks:** `src/coach/testing.ts` now holds the mock models, so the model adapter's tests, the orchestrator's tests and the specs share one copy.
 - **Executable Gherkin:** five spec files run 22 scenario examples against `respond()`, excluding `@component` scenarios, which wait for the chat page ([ADR-0017](adr-0017-bdd-gherkin-features.md)).
 
+### The UI design ([ticket-0025](ticket-0025-ui-design.md))
+
+- **Canvas drafted** in Claude Design with eight artboards: seven phone states and a desktop page with history. The ticket records the palette, fonts, layout, escalation treatment and contrast checks.
+- **Pastel, with a loud exception:** the escalation is a solid red alert with big `tel:` buttons, so the playful style never softens a crisis ([ADR-0018](adr-0018-ui-design-claude-design.md)).
+
 ## Open at end of session
 
-- Aadit's review and merge of [PR #18](pr-0018-coach-orchestrator.md).
+- Aadit's review and merge of [PR #18](pr-0018-coach-orchestrator.md), and his review of the design canvas.
 - Next: the Server Action ([ticket-0020](ticket-0020-server-action.md)), stacked on PR #18.
 
 ## See also

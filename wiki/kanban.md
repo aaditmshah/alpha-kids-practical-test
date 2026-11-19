@@ -12,7 +12,6 @@ Back to: [Home](index.md) · List view: [Tickets](index-tickets.md)
 
 ## Todo
 
-- [ticket-0025](ticket-0025-ui-design.md): Design the UI in Claude Design _(M0; needed before 0021)_
 - [ticket-0020](ticket-0020-server-action.md): Add the Server Action
 - [ticket-0021](ticket-0021-chat-ui.md): Build the chat page
 - [ticket-0022](ticket-0022-live-smoke-test.md): Add the opt-in live smoke test
@@ -20,7 +19,7 @@ Back to: [Home](index.md) · List view: [Tickets](index-tickets.md)
 
 ## In progress
 
-Nothing in progress.
+- [ticket-0025](ticket-0025-ui-design.md): Design the UI in Claude Design _(draft ready; waiting for Aadit's review)_
 
 ## Done
 
