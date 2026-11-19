@@ -1,9 +1,8 @@
-import { APICallError } from "ai";
-import { MockLanguageModelV4 } from "ai/test";
 import { describe, expect, it } from "vite-plus/test";
 
 import { askModel } from "./model.ts";
 import { SYSTEM_PROMPT } from "./prompt.ts";
+import { apiError, failingWith, replyingWith } from "./testing.ts";
 
 const REPLY = {
 	language: "en",
@@ -13,39 +12,6 @@ const REPLY = {
 	checkIn: { kind: "question", text: "What happens just before he gets scared?" },
 	referral: null,
 };
-
-const USAGE = {
-	inputTokens: { total: 10, noCache: 10, cacheRead: undefined, cacheWrite: undefined },
-	outputTokens: { total: 20, text: 20, reasoning: undefined },
-};
-
-/** A model that answers every call with the given text. */
-const replyingWith = (text: string) =>
-	new MockLanguageModelV4({
-		doGenerate: async () => ({
-			content: [{ type: "text", text }],
-			finishReason: { unified: "stop", raw: undefined },
-			usage: USAGE,
-			warnings: [],
-		}),
-	});
-
-/** A model whose every call fails with the given error. */
-const failingWith = (error: Error) =>
-	new MockLanguageModelV4({
-		doGenerate: async () => {
-			throw error;
-		},
-	});
-
-const apiError = (statusCode: number) =>
-	new APICallError({
-		message: `HTTP ${statusCode}`,
-		url: "https://example.test",
-		requestBodyValues: {},
-		statusCode,
-		isRetryable: statusCode === 429 || statusCode >= 500,
-	});
 
 const HISTORY = [{ role: "parent" as const, text: "My son is scared of the dark" }];
 
