@@ -1,9 +1,7 @@
 import { z } from "zod";
 
+import { MAX_MESSAGE_LENGTH } from "./limits.ts";
 import type { ChatMessage } from "./prompt.ts";
-
-/** The longest message a parent can send. The page's text box enforces it too. */
-export const MAX_MESSAGE_LENGTH = 1000;
 
 /** The longest coach turn accepted back from the page. Escalations are the longest fixed text. */
 const MAX_COACH_LENGTH = 4000;

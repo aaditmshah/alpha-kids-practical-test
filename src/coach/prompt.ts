@@ -1,5 +1,6 @@
 import type { ModelMessage } from "ai";
 
+import { HISTORY_LIMIT } from "./limits.ts";
 import type { CoachReply } from "./schema.ts";
 
 /** One message in the conversation the page keeps (R9). Coach turns are sent as their rendered text. */
@@ -7,9 +8,6 @@ export interface ChatMessage {
 	readonly role: "parent" | "coach";
 	readonly text: string;
 }
-
-/** How many of the latest messages are sent to the model (ADR-0015). */
-export const HISTORY_LIMIT = 6;
 
 /** Worked examples that show the model the target length and tone in both languages (ADR-0016). */
 export const EXAMPLES: ReadonlyArray<{ readonly concern: string; readonly reply: CoachReply }> = [

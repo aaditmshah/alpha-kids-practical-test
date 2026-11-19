@@ -1,6 +1,7 @@
 import { describe, expect, it } from "vite-plus/test";
 
-import { DEFAULT_MODEL, MAX_HISTORY, MAX_MESSAGE_LENGTH, modelId, parseHistory } from "./input.ts";
+import { DEFAULT_MODEL, MAX_HISTORY, modelId, parseHistory } from "./input.ts";
+import { MAX_MESSAGE_LENGTH } from "./limits.ts";
 
 const parent = (text: string) => ({ role: "parent", text });
 const coach = (text: string) => ({ role: "coach", text });
