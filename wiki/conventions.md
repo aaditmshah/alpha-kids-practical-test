@@ -2,7 +2,7 @@
 title: Wiki Conventions
 type: meta
 status: active
-updated: 2026-11-18
+updated: 2026-11-19
 summary: The rules for this wiki. Covers the flat layout, file naming, frontmatter, linking, and how to add, change and record things.
 ---
 
@@ -15,6 +15,7 @@ Back to: [Home](index.md)
 ## Layout
 
 - **Flat directory.** Every page lives directly in `wiki/`. Never create subdirectories. Flat files make links trivial: every link is just `[Text](other-page.md)`.
+- **Assets sit beside the pages.** Screenshots (`.png`) and standalone mock-ups (`.html`) live in `wiki/` too, named after the page that shows them (for example `design-05-escalation.png`). Every asset must be linked from a page; the linter reports orphans.
 - **Page type comes from the filename prefix.** Without folders, a prefix groups related pages so they sort together:
 
 | Prefix                   | Type                                                                                                                               | Example                                                                                                                                  |
@@ -106,3 +107,4 @@ Commits use the `git-commit` skill ([SKILL.md](../.claude/skills/git-commit/SKIL
 
 - [Session 2026-11-18 #4: Bootstrap the App](session-2026-11-18-04-bootstrap.md)
 - [Session 2026-11-18 #5: Fast-Forward Merges](session-2026-11-18-05-fast-forward-merges.md)
+- [PR #18: Build the Coach Orchestrator](pr-0018-coach-orchestrator.md)

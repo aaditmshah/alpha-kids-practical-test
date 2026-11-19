@@ -73,11 +73,15 @@ const entries = readdirSync(wikiDir);
 for (const entry of entries) {
 	if (statSync(join(wikiDir, entry)).isDirectory())
 		errors.push(`subdirectory not allowed (flat wiki): ${entry}/`);
-	else if (!entry.endsWith(".md")) warnings.push(`non-markdown file in wiki: ${entry}`);
-	else if (!/^[a-z0-9]+(-[a-z0-9]+)*\.md$/.test(entry))
+	else if (!/\.(md|png|html)$/.test(entry))
+		warnings.push(`file that is neither a page nor an asset: ${entry}`);
+	else if (!/^[a-z0-9]+(-[a-z0-9]+)*\.(md|png|html)$/.test(entry))
 		errors.push(`filename not lowercase kebab-case: ${entry}`);
 }
 const pages = entries.filter((entry) => entry.endsWith(".md"));
+// Assets (PNG screenshots and standalone HTML mock-ups) sit beside the pages, and each must be
+// linked from at least one page.
+const assets = entries.filter((entry) => /\.(png|html)$/.test(entry));
 
 // Wiki-page links in both directions, so every link can be checked for a link back.
 const inbound = new Map(pages.map((page) => [page, new Set<string>()]));
@@ -151,6 +155,11 @@ for (const page of pages) {
 
 // Every link between wiki pages needs a link back, because VS Code's preview has no back button.
 // Links woven into the prose count; the rest go in a "See also" section.
+const allText = [...contents.values()].join("\n");
+for (const asset of assets)
+	if (!allText.includes(`](${asset})`))
+		errors.push(`${asset}: orphan asset (no wiki page links to it)`);
+
 const missingBacklinks = new Map<string, string[]>();
 for (const [page, targets] of outbound) {
 	for (const target of targets) {
