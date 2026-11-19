@@ -32,6 +32,7 @@ Back to: [Home](index.md)
 | [PR #16: Document how a stack is merged](pr-0016-document-stack-merge.md)       | Stacks merge bottom-up, one fast-forward push per PR, as Aadit found when one push was rejected                         |
 | [PR #17: Aadit's learning exercises](pr-0017-learning-exercises.md)             | `detectLanguage` and `postcheck`, built by Aadit test-first, with review additions; separate type imports required      |
 | [PR #18: Build the coach orchestrator](pr-0018-coach-orchestrator.md)           | `respond()` applies the safety layers in order; the respond-level Gherkin scenarios run; the UI design canvas recorded  |
+| [PR #19: Add the Server Action](pr-0019-server-action.md)                       | `askCoach` validates the conversation and calls `respond` with Gemini; stacked on PR #18                                |
 
 ## Before pull requests
 

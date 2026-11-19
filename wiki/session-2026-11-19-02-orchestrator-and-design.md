@@ -31,6 +31,10 @@ Back to: [Sessions](index-sessions.md) · Previous: [Session 2026-11-19 #1](sess
 - **Canvas drafted** in Claude Design with eight artboards: seven phone states and a desktop page with history. The ticket records the palette, fonts, layout, escalation treatment and contrast checks.
 - **Pastel, with a loud exception:** the escalation is a solid red alert with big `tel:` buttons, so the playful style never softens a crisis ([ADR-0018](adr-0018-ui-design-claude-design.md)).
 
+### The Server Action ([ticket-0020](ticket-0020-server-action.md))
+
+- **`askCoach(history)`** validates the conversation with Zod and calls `respond` with the Gemini model named by `COACH_MODEL`. Invalid input gets the fail-safe without calling the model. Opened as [PR #19](pr-0019-server-action.md), stacked on PR #18.
+
 ## Review
 
 Aadit approved [PR #18](pr-0018-coach-orchestrator.md) and the design (_"The design looks beautiful. I love it."_), and asked for the artboards in the wiki, as raw HTML if need be. Claude rendered each artboard to a PNG with headless Chromium and saved its standalone HTML beside it, on the new [UI Design](design.md) page. The linter now accepts these assets. He also ruled out translating the interface: _"English is fine. No need for Roman Urdu. This is a practical test, not a full product."_
@@ -38,7 +42,8 @@ Aadit approved [PR #18](pr-0018-coach-orchestrator.md) and the design (_"The des
 ## Open at end of session
 
 - Aadit's merge of [PR #18](pr-0018-coach-orchestrator.md).
-- Next: the Server Action ([ticket-0020](ticket-0020-server-action.md)), stacked on PR #18.
+- Aadit's review of [PR #19](pr-0019-server-action.md).
+- Next: the chat page ([ticket-0021](ticket-0021-chat-ui.md)), built from the [UI Design](design.md).
 
 ## See also
 
