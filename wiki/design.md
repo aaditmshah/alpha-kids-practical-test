@@ -30,55 +30,58 @@ Aadit: _"Don't worry about Intl right now. English is fine. No need for Roman Ur
 
 ## Screens
 
-Seven phone screens (390×844, captured at 2×) and one desktop page (1280 wide).
+Seven phone screens (390×844) and one desktop page (1280 wide). Select a screen to open its standalone HTML; the PNGs are full size (phones at 2×) if you open them on their own.
 
-### 01. Empty chat
+<!-- An HTML table lays the screens out in a grid at a size that fits the window; Markdown images can't be sized. -->
+<!-- markdownlint-disable MD033 -->
 
-Three suggestion chips, two English and one Roman Urdu. [Open the HTML](design-01-empty-chat.html)
+<table>
+<tr>
+<td align="center" valign="top" width="25%">
+<a href="design-01-empty-chat.html"><img src="design-01-empty-chat.png" width="180" alt="Empty chat"></a><br>
+<b>1. Empty chat</b><br>
+<sub>Suggestion chips in both languages</sub>
+</td>
+<td align="center" valign="top" width="25%">
+<a href="design-02-waiting.html"><img src="design-02-waiting.png" width="180" alt="Waiting"></a><br>
+<b>2. Waiting</b><br>
+<sub>"The coach is replying…"; Send disabled</sub>
+</td>
+<td align="center" valign="top" width="25%">
+<a href="design-03-plan-english.html"><img src="design-03-plan-english.png" width="180" alt="Plan, English"></a><br>
+<b>3. Plan, English</b><br>
+<sub>Summary, steps, a time check-in</sub>
+</td>
+<td align="center" valign="top" width="25%">
+<a href="design-04-plan-roman-urdu.html"><img src="design-04-plan-roman-urdu.png" width="180" alt="Plan, Roman Urdu"></a><br>
+<b>4. Plan, Roman Urdu</b><br>
+<sub>The same card, a question check-in</sub>
+</td>
+</tr>
+<tr>
+<td align="center" valign="top" width="25%">
+<a href="design-05-escalation.html"><img src="design-05-escalation.png" width="180" alt="Escalation"></a><br>
+<b>5. Escalation</b><br>
+<sub>Red alert first; 1098, 181, 112 as <code>tel:</code> buttons</sub>
+</td>
+<td align="center" valign="top" width="25%">
+<a href="design-06-referral.html"><img src="design-06-referral.png" width="180" alt="Referral"></a><br>
+<b>6. Referral</b><br>
+<sub>The fixed referral to a doctor</sub>
+</td>
+<td align="center" valign="top" width="25%">
+<a href="design-07-fail-safe.html"><img src="design-07-fail-safe.png" width="180" alt="Fail-safe"></a><br>
+<b>7. Fail-safe</b><br>
+<sub>The fixed message, with 112 as a link</sub>
+</td>
+</tr>
+</table>
 
-![Empty chat](design-01-empty-chat.png)
-
-### 02. Waiting for the coach
-
-A status bubble, "The coach is replying…", and a disabled Send button. [Open the HTML](design-02-waiting.html)
-
-![Waiting for the coach](design-02-waiting.png)
-
-### 03. Plan reply in English
-
-Summary, numbered steps, and a check-in with a time. [Open the HTML](design-03-plan-english.html)
-
-![Plan reply in English](design-03-plan-english.png)
-
-### 04. Plan reply in Roman Urdu
-
-The same card, with a question check-in. [Open the HTML](design-04-plan-roman-urdu.html)
-
-![Plan reply in Roman Urdu](design-04-plan-roman-urdu.png)
-
-### 05. Escalation (abuse)
-
-The red alert, first, with 1098, 181 and 112 as large `tel:` buttons. [Open the HTML](design-05-escalation.html)
-
-![Escalation (abuse)](design-05-escalation.png)
-
-### 06. Referral to a doctor
-
-The fixed referral and its check-in, on sky blue. [Open the HTML](design-06-referral.html)
-
-![Referral to a doctor](design-06-referral.png)
-
-### 07. Fail-safe
-
-The fixed message, with 112 as a `tel:` link. [Open the HTML](design-07-fail-safe.html)
-
-![Fail-safe](design-07-fail-safe.png)
-
-### 08. Desktop with history
+### 8. Desktop with history
 
 Two exchanges in a centred column (R9); the second has a referral line. [Open the HTML](design-08-desktop-history.html)
 
-![Desktop with history](design-08-desktop-history.png)
+<a href="design-08-desktop-history.html"><img src="design-08-desktop-history.png" width="640" alt="Desktop with history"></a>
 
 ## See also
 
