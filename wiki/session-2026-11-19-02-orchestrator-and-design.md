@@ -57,6 +57,8 @@ Aadit approved [PR #19](pr-0019-server-action.md) too: _"Looks good to me."_
 
 He then approved [PR #20](pr-0020-chat-page.md) and [PR #21](pr-0021-protect-secrets.md): _"I reviewed all the PRs. They all look good."_ He added his Gemini key for the smoke test.
 
+Aadit approved [PR #22](pr-0022-live-smoke-test.md), glad the smoke test checked that the chat really works and that the timeout stops a parent waiting indefinitely.
+
 ## Open at end of session
 
 - Aadit's merge of [PR #18](pr-0018-coach-orchestrator.md).

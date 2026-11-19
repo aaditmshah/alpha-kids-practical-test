@@ -31,10 +31,11 @@ The unit tests mock the model, so only a live run shows whether the real model f
 | 1   | `⏱️ Give up on a model that doesn't answer in time` | A 20-second limit on model calls, with a hanging mock and a test                                   | `gemini-3.8-flash` held requests for over a minute                          |
 | 2   | `🔧 Default to Gemini 3.5 Flash-Lite`               | The default model, `.env.example`, and an [ADR-0003](adr-0003-llm-provider.md) amendment           | The larger flash models were overloaded; Flash-Lite passed every live check |
 | 3   | `✅ Add the opt-in live smoke test`                 | `src/coach/coach.live.test.ts` and `vp run smoke`; ticket-0022 done; Q6 partly answered; this page | [ticket-0022](ticket-0022-live-smoke-test.md)                               |
+| 4   | `📝 Record PR #22's review`                         | Aadit's approval                                                                                   | Reviews are recorded before merge                                           |
 
 ## Review
 
-Waiting for Aadit's review.
+Aadit: _"Looks good. I'm glad that we did the smoke test to check whether the chat actually works and added a timeout to prevent the user from waiting indefinitely."_ No changes requested.
 
 ## See also
 
