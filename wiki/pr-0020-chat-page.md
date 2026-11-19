@@ -34,7 +34,7 @@ The brief asks for a simple web UI where a parent types a concern and sees the c
 
 ## Review
 
-Waiting for Aadit's review.
+Aadit reviewed the stack: _"I reviewed all the PRs. They all look good."_ No changes requested.
 
 ## See also
 

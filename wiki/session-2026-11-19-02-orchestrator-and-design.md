@@ -50,10 +50,11 @@ Aadit approved [PR #18](pr-0018-coach-orchestrator.md) and the design (_"The des
 
 Aadit approved [PR #19](pr-0019-server-action.md) too: _"Looks good to me."_
 
+He then approved [PR #20](pr-0020-chat-page.md) and [PR #21](pr-0021-protect-secrets.md): _"I reviewed all the PRs. They all look good."_ He added his Gemini key for the smoke test.
+
 ## Open at end of session
 
 - Aadit's merge of [PR #18](pr-0018-coach-orchestrator.md).
-- Aadit's review of [PR #20](pr-0020-chat-page.md) and [PR #21](pr-0021-protect-secrets.md).
 - Next: the opt-in live smoke test ([ticket-0022](ticket-0022-live-smoke-test.md)), which needs Aadit's Gemini key, and the README ([ticket-0023](ticket-0023-readme-and-submission.md)).
 
 ## See also

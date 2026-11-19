@@ -29,10 +29,11 @@ Aadit asked for Claude to be unable to read his Gemini key before he adds it for
 | #   | Commit                                       | What                                                                                                                                              | Why                                     |
 | --- | -------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------- | --------------------------------------- |
 | 1   | `🔒️ Keep .env secrets out of Claude's reach` | `.claude/settings.json`, the hook and its tests, the test project include, [ADR-0020](adr-0020-keep-secrets-from-claude.md), CLAUDE.md, this page | The key must never enter a conversation |
+| 2   | `📝 Record the reviews of PRs #20 and #21`   | Aadit's approval on both PR pages                                                                                                                 | Reviews are recorded before merge       |
 
 ## Review
 
-Waiting for Aadit's review.
+Aadit reviewed the stack: _"I reviewed all the PRs. They all look good."_ No changes requested.
 
 ## See also
 
