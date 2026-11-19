@@ -1,14 +1,15 @@
+import type { LanguageModel } from "ai";
 import {
 	APICallError,
 	generateText,
-	type LanguageModel,
 	NoObjectGeneratedError,
 	NoOutputGeneratedError,
 	Output,
 	RetryError,
 } from "ai";
 
-import { type ChatMessage, SYSTEM_PROMPT, toModelMessages } from "./prompt.ts";
+import type { ChatMessage } from "./prompt.ts";
+import { SYSTEM_PROMPT, toModelMessages } from "./prompt.ts";
 import { CoachReply } from "./schema.ts";
 
 /** Why the model couldn't give a usable reply. Every failure leads to the fail-safe (ADR-0011). */

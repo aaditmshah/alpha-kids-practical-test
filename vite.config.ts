@@ -46,6 +46,7 @@ export default defineConfig({
 			perf: "error",
 		},
 		rules: {
+			"import/consistent-type-specifier-style": "error",
 			"import/no-unassigned-import": ["error", { allow: ["**/*.css"] }],
 			"react/react-in-jsx-scope": "off",
 			// Gherkin steps from @amiceli/vitest-cucumber are test blocks too (ADR-0017).

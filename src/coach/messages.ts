@@ -1,4 +1,5 @@
-import { HELPLINES, type Helpline } from "./helplines.ts";
+import type { Helpline } from "./helplines.ts";
+import { HELPLINES } from "./helplines.ts";
 import type { Language, Risk } from "./types.ts";
 
 /**
