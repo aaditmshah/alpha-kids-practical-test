@@ -2,10 +2,10 @@
 
 import { google } from "@ai-sdk/google";
 
-import type { CoachTurn } from "#/coach/coach.ts";
 import { respond } from "#/coach/coach.ts";
 import { modelId, parseHistory } from "#/coach/input.ts";
 import { failSafeMessage } from "#/coach/messages.ts";
+import type { CoachTurn } from "#/coach/turn.ts";
 
 /**
  * The Server Function the chat page calls with the conversation so far (ticket-0020). It runs only

@@ -2,9 +2,9 @@ import { describeFeature, loadFeature } from "@amiceli/vitest-cucumber";
 import type { MockLanguageModelV4 } from "ai/test";
 import { expect } from "vite-plus/test";
 
-import type { CoachTurn } from "#/coach/coach.ts";
 import { referralMessage } from "#/coach/messages.ts";
 import { replyingWithReply } from "#/coach/testing.ts";
+import type { CoachTurn } from "#/coach/turn.ts";
 
 import { ENGLISH_PLAN, send } from "./support/coach.ts";
 

@@ -1,21 +1,12 @@
 import type { LanguageModel } from "ai";
 
 import { detectLanguage } from "./language.ts";
-import type { EscalationMessage, FailSafeMessage, ReferralMessage } from "./messages.ts";
 import { escalationMessage, failSafeMessage, referralMessage } from "./messages.ts";
 import { askModel } from "./model.ts";
 import { postcheck } from "./postcheck.ts";
 import { precheck } from "./precheck.ts";
 import type { ChatMessage } from "./prompt.ts";
-import type { CoachReply } from "./schema.ts";
-import type { Language } from "./types.ts";
-
-/** What the coach shows for one parent message (ADR-0015's display table). */
-export type CoachTurn =
-	| { readonly kind: "escalation"; readonly message: EscalationMessage }
-	| { readonly kind: "referral"; readonly message: ReferralMessage }
-	| { readonly kind: "failSafe"; readonly message: FailSafeMessage }
-	| { readonly kind: "plan"; readonly reply: CoachReply };
+import type { CoachTurn } from "./turn.ts";
 
 /** What respond needs from outside: the model, so tests can pass a mock (ADR-0014). */
 export interface CoachDeps {
@@ -49,37 +40,4 @@ export const respond = async (
 		return { kind: "escalation", message: escalationMessage(reply.risk, reply.language) };
 	if (postcheck(reply)) return { kind: "referral", message: referralMessage(reply.language) };
 	return { kind: "plan", reply };
-};
-
-/** The language a turn is written in, for the page's `lang` attribute (R10). */
-export const turnLanguage = (turn: CoachTurn): Language =>
-	turn.kind === "plan" ? turn.reply.language : turn.message.language;
-
-/**
- * A turn as plain text, which is how coach turns go back to the model in the history (ADR-0015).
- * The model then sees what the parent saw, including fixed messages it never wrote.
- */
-export const turnToText = (turn: CoachTurn): string => {
-	switch (turn.kind) {
-		case "plan": {
-			const { summary, plan, referral, checkIn } = turn.reply;
-			const steps = plan.map((step, index) => `${index + 1}. ${step}`);
-			return [summary, ...steps, ...(referral ? [referral] : []), checkIn.text].join("\n");
-		}
-		case "escalation": {
-			const { message } = turn;
-			return [
-				message.title,
-				message.immediateDanger,
-				...message.guidance,
-				...message.helplines.map((helpline) => `${helpline.name}: ${helpline.number}`),
-				message.trustedPerson,
-				message.checkIn,
-			].join("\n");
-		}
-		case "referral":
-			return `${turn.message.text}\n${turn.message.checkIn}`;
-	}
-	// Only the fail-safe is left.
-	return turn.message.text;
 };

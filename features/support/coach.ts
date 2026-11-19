@@ -1,8 +1,8 @@
 import type { MockLanguageModelV4 } from "ai/test";
 
-import type { CoachTurn } from "#/coach/coach.ts";
 import { respond } from "#/coach/coach.ts";
 import { exampleReply } from "#/coach/testing.ts";
+import type { CoachTurn } from "#/coach/turn.ts";
 import type { Language } from "#/coach/types.ts";
 
 /** Shared helpers for the respond-level Gherkin specs (ADR-0017). */
