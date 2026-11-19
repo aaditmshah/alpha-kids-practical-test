@@ -1,7 +1,7 @@
 ---
 title: "ticket-0027: Write the Coding Agents Note"
 type: ticket
-status: in-progress
+status: done
 updated: 2026-11-19
 summary: A brief note on how Aadit used Claude Code, linked from the README, with prompts for exploring the project through its wiki.
 ---
@@ -21,7 +21,7 @@ Back to: [Tickets](index-tickets.md) · [Kanban](kanban.md) · [Plan](plan.md)
 - [x] A brief note: who did what, what kept the agent honest, what went wrong, and the numbers
 - [x] Every claim links to the ADR, PR or page that records it
 - [x] The README links to it, and suggests prompts for exploring the project with Claude Code through the wiki
-- [ ] Aadit reviews it before submitting
+- [x] Aadit reviews it before submitting: _"The coding agents note is good."_
 
 ## See also
 

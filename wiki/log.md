@@ -84,3 +84,4 @@ Format: `YYYY-MM-DD: [type] what happened (links)`. Append only; never rewrite e
 - 2026-11-19: [build] Live smoke test passes on gemini-3.5-flash-lite; the larger flash models were overloaded, so it is now the default and model calls time out after 20 seconds; ticket-0022 done ([PR #22](pr-0022-live-smoke-test.md))
 - 2026-11-19: [docs] README finished for reviewers; Home brought up to date ([PR #23](pr-0023-readme-and-submission.md))
 - 2026-11-19: [docs] The interviewer's deliverables recorded; coding agents note, video script and README prompts for exploring the wiki added ([PR #24](pr-0024-submission-notes.md))
+- 2026-11-19: [review] Coding agents note approved and helpline numbers confirmed by Aadit; tickets 0023 and 0027 done ([PR #24](pr-0024-submission-notes.md))

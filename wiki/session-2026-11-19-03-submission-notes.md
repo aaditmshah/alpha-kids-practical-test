@@ -23,7 +23,14 @@ Back to: [Sessions](index-sessions.md) · Previous: [Session 2026-11-19 #2](sess
 - **README:** links for the interviewer at the top, and an "Explore it with Claude Code" section with seven prompts, Aadit's two included.
 - Opened as [PR #24](pr-0024-submission-notes.md), stacked on PR #23.
 
+## Review
+
+Aadit approved [PR #24](pr-0024-submission-notes.md) and confirmed the helplines: _"The coding agents note is good. The helpline numbers are correct. I'll record the video now."_ Tickets 0023 and 0027 are done.
+
 ## Open at end of session
 
-- Aadit reviews [PR #24](pr-0024-submission-notes.md), especially the [coding agents note](coding-agents.md).
-- Aadit rechecks the helpline numbers ([ticket-0023](ticket-0023-readme-and-submission.md)), records the video ([ticket-0026](ticket-0026-video-walkthrough.md)), merges the stack (#18 to #24) and submits.
+- Aadit records the video ([ticket-0026](ticket-0026-video-walkthrough.md)), merges the stack (#18 to #24) and submits.
+
+## See also
+
+- [ticket-0023: Finish the README and Submit](ticket-0023-readme-and-submission.md)

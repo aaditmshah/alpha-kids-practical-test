@@ -26,13 +26,14 @@ The interviewer asked for a README, a 2-minute video and a note on coding agents
 
 ## Commits
 
-| #   | Commit                                           | What                                                                                                                                                                                                 | Why                            |
-| --- | ------------------------------------------------ | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------ |
-| 1   | `📝 Add the coding agents note and video script` | The deliverables source and D1–D3, [the note](coding-agents.md), [the script](walkthrough.md), tickets 0026 and 0027, the README links and prompts, Home, PR #23's review, the session and this page | The interviewer's deliverables |
+| #   | Commit                                             | What                                                                                                                                                                                                 | Why                               |
+| --- | -------------------------------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | --------------------------------- |
+| 1   | `📝 Add the coding agents note and video script`   | The deliverables source and D1–D3, [the note](coding-agents.md), [the script](walkthrough.md), tickets 0026 and 0027, the README links and prompts, Home, PR #23's review, the session and this page | The interviewer's deliverables    |
+| 2   | `📝 Record PR #24's review and the helpline check` | Aadit's approval; tickets 0023 and 0027 done                                                                                                                                                         | Reviews are recorded before merge |
 
 ## Review
 
-Waiting for Aadit's review.
+Aadit: _"The coding agents note is good. The helpline numbers are correct. I'll record the video now."_ No changes requested.
 
 ## See also
 
