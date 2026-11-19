@@ -45,7 +45,7 @@ Aadit approved the PR and the design:
 - On the design: _"The design looks beautiful. I love it. May we include the artboards, etc. in the wiki?"_ Then: _"you can include the artboards as raw HTML files. They don't have to be embedded in the wiki pages. If you can that's awesome."_ **Resolved:** the [UI Design](design.md) page shows a PNG of every artboard and links its standalone HTML. The wiki linter now allows `.png` and `.html` assets, each linked from a page ([conventions](conventions.md)).
 - On the referral heading and other interface strings: _"Don't worry about Intl right now. English is fine. No need for Roman Urdu. This is a practical test, not a full product."_ **Resolved:** the page's own strings stay English.
 - On the rest: _"Everything else looks good to me."_
-- On the design page: _"Could you lay out the screenshots spatially in the design page? The images are quite large and I have to scroll to see the whole image."_ **Resolved:** the phone screens sit in a four-column grid at 180 px wide, and the desktop page at 640 px, each linking to its HTML.
+- On the design page: _"Could you lay out the screenshots spatially in the design page? The images are quite large and I have to scroll to see the whole image."_ **Resolved:** the phone screens sit in a four-column grid at 180 px wide, and the desktop page at 640 px, each linking to its HTML. Aadit: _"It looks perfect in VS Code too. Brilliant."_
 
 ## See also
 

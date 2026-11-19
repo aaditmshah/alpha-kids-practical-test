@@ -29,10 +29,11 @@ The chat page needs a server-side entry point that holds the API key and calls t
 | #   | Commit                                | What                                                                                                                         | Why                                         |
 | --- | ------------------------------------- | ---------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------- |
 | 1   | `✨ Add the askCoach Server Function` | `parseHistory` and `modelId` in `src/coach/input.ts`, `askCoach` in `src/app/actions.ts`, tests; ticket-0020 done; this page | [ticket-0020](ticket-0020-server-action.md) |
+| 2   | `📝 Record PR #19's review`           | This review, and Aadit's check of the design page in VS Code on PR #18                                                       | Reviews are recorded before merge           |
 
 ## Review
 
-Waiting for Aadit's review.
+Aadit: _"Looks good to me."_ No changes requested.
 
 ## See also
 
