@@ -31,13 +31,14 @@ Dependabot alert #5, [GHSA-g3hv-75wg-m249](https://github.com/advisories/GHSA-g3
 
 ## Commits
 
-| #   | Commit                                    | What                                                       | Why                 |
-| --- | ----------------------------------------- | ---------------------------------------------------------- | ------------------- |
-| 1   | `🔒️ Override minimatch to fix a glob DoS` | The override, the lockfile, this page, the session and log | Dependabot alert #5 |
+| #   | Commit                                    | What                                                       | Why                               |
+| --- | ----------------------------------------- | ---------------------------------------------------------- | --------------------------------- |
+| 1   | `🔒️ Override minimatch to fix a glob DoS` | The override, the lockfile, this page, the session and log | Dependabot alert #5               |
+| 2   | `📝 Record PR #25's review`               | Aadit's approval                                           | Reviews are recorded before merge |
 
 ## Review
 
-Aadit asked for this fix (_"Yes, let's fix the dependabot alert too."_) after approving the rest of the stack.
+Aadit asked for this fix (_"Yes, let's fix the dependabot alert too."_) after approving the rest of the stack. He approved it: _"Everything looks good."_ No changes requested.
 
 ## See also
 
