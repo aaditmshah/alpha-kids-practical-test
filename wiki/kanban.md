@@ -19,7 +19,7 @@ Back to: [Home](index.md) · List view: [Tickets](index-tickets.md)
 
 ## In progress
 
-- [ticket-0025](ticket-0025-ui-design.md): Design the UI in Claude Design _(draft ready; waiting for Aadit's review)_
+Nothing in progress.
 
 ## Done
 
@@ -38,6 +38,7 @@ Back to: [Home](index.md) · List view: [Tickets](index-tickets.md)
 - [ticket-0017](ticket-0017-reply-schema-and-postchecks.md): Implement the reply schema and post-checks
 - [ticket-0024](ticket-0024-gherkin-features.md): Write the Gherkin features
 - [ticket-0019](ticket-0019-coach-orchestrator.md): Build the coach orchestrator
+- [ticket-0025](ticket-0025-ui-design.md): Design the UI in Claude Design
 - [ticket-0006](ticket-0006-design-coach-contract.md): Design the coach reply schema and prompt
 - [ticket-0009](ticket-0009-commit-conventions.md): Commit conventions and the git-commit skill
 - [ticket-0010](ticket-0010-bootstrap-app.md): Bootstrap the Next.js app with Vite+

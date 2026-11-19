@@ -77,3 +77,4 @@ Format: `YYYY-MM-DD: [type] what happened (links)`. Append only; never rewrite e
 - 2026-11-19: [decision] No more learning exercises, because of Aadit's deadline; the UI design runs alongside the code ([session 2026-11-19 #2](session-2026-11-19-02-orchestrator-and-design.md))
 - 2026-11-19: [build] Coach orchestrator built, and the respond-level Gherkin scenarios run; ticket-0019 done ([PR #18](pr-0018-coach-orchestrator.md))
 - 2026-11-19: [design] UI design canvas drafted in Claude Design, eight artboards, waiting for Aadit's review ([ticket-0025](ticket-0025-ui-design.md), [PR #18](pr-0018-coach-orchestrator.md))
+- 2026-11-19: [review] UI design approved and added to the wiki as screenshots and standalone HTML; the interface stays English; ticket-0025 done ([UI Design](design.md), [PR #18](pr-0018-coach-orchestrator.md))

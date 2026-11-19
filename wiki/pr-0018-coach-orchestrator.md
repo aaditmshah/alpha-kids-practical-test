@@ -2,7 +2,7 @@
 title: "PR #18: Build the Coach Orchestrator"
 type: pr
 updated: 2026-11-19
-summary: respond() applies the safety layers in order and returns one CoachTurn, with executable Gherkin specs for every respond-level scenario. Closes ticket-0019, and records the Claude Design canvas for ticket-0025.
+summary: respond() applies the safety layers in order and returns one CoachTurn, with executable Gherkin specs for every respond-level scenario. Also adds the approved UI design to the wiki. Closes ticket-0019 and ticket-0025.
 ---
 
 # PR #18: Build the Coach Orchestrator
@@ -35,7 +35,11 @@ The orchestrator is where the safety layers of [ADR-0011](adr-0011-layered-safet
 
 ## Review
 
-Waiting for Aadit's review.
+Aadit approved the PR and the design:
+
+- On the design: _"The design looks beautiful. I love it. May we include the artboards, etc. in the wiki?"_ Then: _"you can include the artboards as raw HTML files. They don't have to be embedded in the wiki pages. If you can that's awesome."_ **Resolved:** the [UI Design](design.md) page shows a PNG of every artboard and links its standalone HTML. The wiki linter now allows `.png` and `.html` assets, each linked from a page ([conventions](conventions.md)).
+- On the referral heading and other interface strings: _"Don't worry about Intl right now. English is fine. No need for Roman Urdu. This is a practical test, not a full product."_ **Resolved:** the page's own strings stay English.
+- On the rest: _"Everything else looks good to me."_
 
 ## See also
 

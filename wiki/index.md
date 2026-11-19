@@ -25,6 +25,7 @@ This wiki records the **whole process** of building a small bilingual (English/R
 | [Requirements](requirements.md)     | The brief as numbered, testable requirements (R1–R12) |
 | [Plan](plan.md)                     | Phases, approach and milestones                       |
 | [Kanban board](kanban.md)           | Work status at a glance                               |
+| [UI design](design.md)              | The approved chat UI: screens, HTML and decisions     |
 | [Open questions](open-questions.md) | Unresolved decisions and unknowns                     |
 | [Log](log.md)                       | Chronological record of every notable event           |
 | [Conventions](conventions.md)       | How this wiki is organised and maintained             |
