@@ -38,6 +38,7 @@ Back to: [Home](index.md)
 | [PR #22: Add the live smoke test](pr-0022-live-smoke-test.md)                   | An opt-in live test against Gemini; model calls time out; Flash-Lite by default                                         |
 | [PR #23: Finish the README](pr-0023-readme-and-submission.md)                   | The README for reviewers and a final wiki pass; stacked on PR #22                                                       |
 | [PR #24: Add the submission notes](pr-0024-submission-notes.md)                 | The coding agents note, the video script, their tickets, and README prompts for exploring the wiki; stacked on PR #23   |
+| [PR #25: Override minimatch](pr-0025-minimatch-override.md)                     | Closes Dependabot alert #5 with a pnpm override; stacked on PR #24                                                      |
 
 ## Before pull requests
 

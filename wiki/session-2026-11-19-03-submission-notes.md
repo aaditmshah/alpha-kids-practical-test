@@ -32,9 +32,13 @@ Aadit approved [PR #24](pr-0024-submission-notes.md) and confirmed the helplines
 - Aadit wanted to show the app on his phone, but the phone couldn't reach `http://192.168.0.100:3000`. Claude found nothing on the laptop blocking it: the server listened on all interfaces, no firewall was running, and Mullvad's local network sharing was on. The laptop reached the router, but the phone never answered ARP, so the router (Jio_27) isolates its Wi-Fi clients. Claude suggested recording in the browser's phone view instead.
 - Aadit recorded the walkthrough with the Loom Chrome extension: [the video](https://www.loom.com/share/1a78d5e4b4a547e68c894b3afa76bc6f). It is linked from the README, and [ticket-0026](ticket-0026-video-walkthrough.md) is done.
 
+## The Dependabot alert
+
+Aadit: _"Yes, let's fix the dependabot alert too. Everything else looks good."_ Alert #5 was a denial of service in minimatch, reached only through the Gherkin runner. A pnpm override lifts it to 11.0.8, and every check passes: [PR #25](pr-0025-minimatch-override.md), stacked on PR #24.
+
 ## Open at end of session
 
-- Aadit merges the stack (#18 to #24) and submits.
+- Aadit merges the stack (#18 to #25) and submits.
 
 ## See also
 

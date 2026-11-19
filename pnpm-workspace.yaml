@@ -11,6 +11,11 @@ overrides:
   # listing. gitmoji-cli reaches it through proxy-agent -> pac-proxy-agent -> get-uri@6, which still
   # asks for basic-ftp 5. Drop this once that chain moves to get-uri@8.0.2 or later.
   basic-ftp@<6.2.4: ^6.2.4
+  # GHSA-g3hv-75wg-m249 (Dependabot alert #5): minimatch 7 to 11.0.0 can be made to expand a glob
+  # pattern exponentially. vitest-cucumber reaches it through ts-morph -> @ts-morph/common, which
+  # asks for minimatch 10 and only calls minimatch(path, pattern), unchanged in 11. Drop this once
+  # @ts-morph/common asks for 11.0.1 or later.
+  minimatch@>=7 <11.0.1: ^11.0.1
 peerDependencyRules:
   allowAny:
     - vite
