@@ -90,3 +90,4 @@ The page keeps the history in browser state (R9) and sends the **last 6 messages
 - [PR #14: Define the Reply Schema](pr-0014-reply-schema.md)
 - [PR #17: Aadit's Learning Exercises](pr-0017-learning-exercises.md)
 - [Session 2026-11-19 #1: Learning Exercises](session-2026-11-19-01-learning-exercises.md)
+- [Session 2026-11-19 #2: Orchestrator and Design](session-2026-11-19-02-orchestrator-and-design.md)

@@ -33,3 +33,5 @@ Back to: [Tickets](index-tickets.md) · [Kanban](kanban.md) · [Plan](plan.md)
 ## See also
 
 - [ticket-0023: Finish the README and Submit](ticket-0023-readme-and-submission.md)
+- [Session 2026-11-19 #2: Orchestrator and Design](session-2026-11-19-02-orchestrator-and-design.md)
+- [ticket-0019: Build the Coach Orchestrator](ticket-0019-coach-orchestrator.md)

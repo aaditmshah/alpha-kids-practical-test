@@ -2,7 +2,7 @@
 title: "ADR-0019: Leave Learning Exercises for Aadit"
 type: adr
 status: accepted
-updated: 2026-11-18
+updated: 2026-11-19
 summary: Two self-contained pieces are left for Aadit to build test-first, as typed stubs that throw. They are detectLanguage (ticket-0014) and the dose and diagnosis post-checks (part of ticket-0017). Claude builds everything that doesn't depend on them, and the stack pauses before the orchestrator (ticket-0019), which needs both.
 ---
 
@@ -40,6 +40,10 @@ After doing both exercises ([PR #17](pr-0017-learning-exercises.md)), Aadit: _"I
 **What went wrong:** Claude chose exercises for being self-contained and non-blocking, not for what Aadit wanted to learn, and never asked about learning objectives. Both had their algorithm already written down in the wiki, so they were transcription more than learning.
 
 **What to do differently:** ask about learning objectives first. Prefer exercises that make the learner read new documentation and integrate an unfamiliar tool (here, the AI SDK in `askModel`), over pure functions whose design is already settled.
+
+## Ending the exercises (2026-11-19)
+
+After PR #17, Aadit said he has a submission deadline and no time for more exercises. Claude builds the remaining tickets ([session 2026-11-19 #2](session-2026-11-19-02-orchestrator-and-design.md)).
 
 ## Consequences
 

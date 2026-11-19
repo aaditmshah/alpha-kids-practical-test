@@ -31,6 +31,7 @@ Back to: [Home](index.md)
 | [PR #15: Build the model adapter and prompt](pr-0015-model-adapter.md)          | System prompt with examples, history trimming, and `askModel` with typed failures. Stacked on PR #14                    |
 | [PR #16: Document how a stack is merged](pr-0016-document-stack-merge.md)       | Stacks merge bottom-up, one fast-forward push per PR, as Aadit found when one push was rejected                         |
 | [PR #17: Aadit's learning exercises](pr-0017-learning-exercises.md)             | `detectLanguage` and `postcheck`, built by Aadit test-first, with review additions; separate type imports required      |
+| [PR #18: Build the coach orchestrator](pr-0018-coach-orchestrator.md)           | `respond()` applies the safety layers in order; the respond-level Gherkin scenarios run; the UI design canvas recorded  |
 
 ## Before pull requests
 

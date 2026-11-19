@@ -29,3 +29,4 @@ Back to: [Tickets](index-tickets.md) · [Kanban](kanban.md) · [Plan](plan.md)
 ## See also
 
 - [ticket-0021: Build the Chat Page](ticket-0021-chat-ui.md)
+- [Session 2026-11-19 #2: Orchestrator and Design](session-2026-11-19-02-orchestrator-and-design.md)

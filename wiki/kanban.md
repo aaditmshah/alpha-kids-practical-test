@@ -2,7 +2,7 @@
 title: Kanban Board
 type: board
 status: active
-updated: 2026-11-18
+updated: 2026-11-19
 summary: Board view of all tickets by status. The ticket pages are the source of truth; keep this board in sync with them.
 ---
 
@@ -13,7 +13,6 @@ Back to: [Home](index.md) · List view: [Tickets](index-tickets.md)
 ## Todo
 
 - [ticket-0025](ticket-0025-ui-design.md): Design the UI in Claude Design _(M0; needed before 0021)_
-- [ticket-0019](ticket-0019-coach-orchestrator.md): Build the coach orchestrator
 - [ticket-0020](ticket-0020-server-action.md): Add the Server Action
 - [ticket-0021](ticket-0021-chat-ui.md): Build the chat page
 - [ticket-0022](ticket-0022-live-smoke-test.md): Add the opt-in live smoke test
@@ -39,6 +38,7 @@ Nothing in progress.
 - [ticket-0014](ticket-0014-language-detection.md): Detect the reply language
 - [ticket-0017](ticket-0017-reply-schema-and-postchecks.md): Implement the reply schema and post-checks
 - [ticket-0024](ticket-0024-gherkin-features.md): Write the Gherkin features
+- [ticket-0019](ticket-0019-coach-orchestrator.md): Build the coach orchestrator
 - [ticket-0006](ticket-0006-design-coach-contract.md): Design the coach reply schema and prompt
 - [ticket-0009](ticket-0009-commit-conventions.md): Commit conventions and the git-commit skill
 - [ticket-0010](ticket-0010-bootstrap-app.md): Bootstrap the Next.js app with Vite+

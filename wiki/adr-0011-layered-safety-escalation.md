@@ -66,3 +66,5 @@ R8 in [Requirements](requirements.md) says the coach must _"clearly escalate if 
 - [PR #12: Add the Keyword Safety Pre-Check](pr-0012-safety-precheck.md)
 - [PR #13: Write the Fixed Messages](pr-0013-fixed-messages.md)
 - [PR #15: Build the Model Adapter and Prompt](pr-0015-model-adapter.md)
+- [PR #18: Build the Coach Orchestrator](pr-0018-coach-orchestrator.md)
+- [Session 2026-11-19 #2: Orchestrator and Design](session-2026-11-19-02-orchestrator-and-design.md)

@@ -30,7 +30,7 @@ Back to: [Home](index.md) · Board view: [Kanban](kanban.md)
 | [ticket-0016](ticket-0016-fixed-messages.md)              | done   | Write the fixed messages                        |
 | [ticket-0017](ticket-0017-reply-schema-and-postchecks.md) | done   | Implement the reply schema and post-checks      |
 | [ticket-0018](ticket-0018-model-adapter.md)               | done   | Build the model adapter and prompt              |
-| [ticket-0019](ticket-0019-coach-orchestrator.md)          | todo   | Build the coach orchestrator                    |
+| [ticket-0019](ticket-0019-coach-orchestrator.md)          | done   | Build the coach orchestrator                    |
 | [ticket-0020](ticket-0020-server-action.md)               | todo   | Add the Server Action                           |
 | [ticket-0021](ticket-0021-chat-ui.md)                     | todo   | Build the chat page                             |
 | [ticket-0022](ticket-0022-live-smoke-test.md)             | todo   | Add the opt-in live smoke test                  |

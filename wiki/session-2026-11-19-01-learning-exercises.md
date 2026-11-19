@@ -48,3 +48,7 @@ Aadit approved [PR #17](pr-0017-learning-exercises.md): _"Looks good to me."_ He
 
 - Aadit's review and merge of [PR #17](pr-0017-learning-exercises.md).
 - Next: the orchestrator ([ticket-0019](ticket-0019-coach-orchestrator.md)), which makes the `respond()` scenarios of the Gherkin features executable.
+
+## See also
+
+- [Session 2026-11-19 #2: Orchestrator and Design](session-2026-11-19-02-orchestrator-and-design.md)
