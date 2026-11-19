@@ -27,8 +27,8 @@ instructions, and it escalates clearly when the parent describes an emergency, a
 
 **For the interviewer:**
 
-- 🎥 **Video walkthrough** (2 minutes): _link to come_. The [script](wiki/walkthrough.md) shows one
-  everyday concern and one crisis.
+- 🎥 **[Video walkthrough](https://www.loom.com/share/1a78d5e4b4a547e68c894b3afa76bc6f)** (2 minutes, on Loom): one everyday concern, and one crisis
+  where the coach sends the parent to help instead of coaching. Here is the [script](wiki/walkthrough.md).
 - 🤖 **How we used coding agents:** [a brief note](wiki/coding-agents.md). This was built with Claude
   Code, and every decision is recorded in the wiki. You can
   [explore it with Claude Code](#explore-it-with-claude-code) yourself.

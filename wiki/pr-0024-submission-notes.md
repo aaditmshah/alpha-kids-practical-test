@@ -26,10 +26,11 @@ The interviewer asked for a README, a 2-minute video and a note on coding agents
 
 ## Commits
 
-| #   | Commit                                             | What                                                                                                                                                                                                 | Why                               |
-| --- | -------------------------------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | --------------------------------- |
-| 1   | `📝 Add the coding agents note and video script`   | The deliverables source and D1–D3, [the note](coding-agents.md), [the script](walkthrough.md), tickets 0026 and 0027, the README links and prompts, Home, PR #23's review, the session and this page | The interviewer's deliverables    |
-| 2   | `📝 Record PR #24's review and the helpline check` | Aadit's approval; tickets 0023 and 0027 done                                                                                                                                                         | Reviews are recorded before merge |
+| #   | Commit                                             | What                                                                                                                                                                                                 | Why                                  |
+| --- | -------------------------------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------ |
+| 1   | `📝 Add the coding agents note and video script`   | The deliverables source and D1–D3, [the note](coding-agents.md), [the script](walkthrough.md), tickets 0026 and 0027, the README links and prompts, Home, PR #23's review, the session and this page | The interviewer's deliverables       |
+| 2   | `📝 Record PR #24's review and the helpline check` | Aadit's approval; tickets 0023 and 0027 done                                                                                                                                                         | Reviews are recorded before merge    |
+| 3   | `🎥 Link the video walkthrough`                    | The Loom link in the README and the wiki; ticket-0026 done                                                                                                                                           | The interviewer's second deliverable |
 
 ## Review
 

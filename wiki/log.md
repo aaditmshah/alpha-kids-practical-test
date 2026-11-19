@@ -85,3 +85,4 @@ Format: `YYYY-MM-DD: [type] what happened (links)`. Append only; never rewrite e
 - 2026-11-19: [docs] README finished for reviewers; Home brought up to date ([PR #23](pr-0023-readme-and-submission.md))
 - 2026-11-19: [docs] The interviewer's deliverables recorded; coding agents note, video script and README prompts for exploring the wiki added ([PR #24](pr-0024-submission-notes.md))
 - 2026-11-19: [review] Coding agents note approved and helpline numbers confirmed by Aadit; tickets 0023 and 0027 done ([PR #24](pr-0024-submission-notes.md))
+- 2026-11-19: [docs] Video walkthrough recorded by Aadit on Loom and linked from the README; ticket-0026 done ([video](https://www.loom.com/share/1a78d5e4b4a547e68c894b3afa76bc6f), [PR #24](pr-0024-submission-notes.md))

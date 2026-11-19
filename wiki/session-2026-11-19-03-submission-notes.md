@@ -27,9 +27,14 @@ Back to: [Sessions](index-sessions.md) · Previous: [Session 2026-11-19 #2](sess
 
 Aadit approved [PR #24](pr-0024-submission-notes.md) and confirmed the helplines: _"The coding agents note is good. The helpline numbers are correct. I'll record the video now."_ Tickets 0023 and 0027 are done.
 
+## The video
+
+- Aadit wanted to show the app on his phone, but the phone couldn't reach `http://192.168.0.100:3000`. Claude found nothing on the laptop blocking it: the server listened on all interfaces, no firewall was running, and Mullvad's local network sharing was on. The laptop reached the router, but the phone never answered ARP, so the router (Jio_27) isolates its Wi-Fi clients. Claude suggested recording in the browser's phone view instead.
+- Aadit recorded the walkthrough with the Loom Chrome extension: [the video](https://www.loom.com/share/1a78d5e4b4a547e68c894b3afa76bc6f). It is linked from the README, and [ticket-0026](ticket-0026-video-walkthrough.md) is done.
+
 ## Open at end of session
 
-- Aadit records the video ([ticket-0026](ticket-0026-video-walkthrough.md)), merges the stack (#18 to #24) and submits.
+- Aadit merges the stack (#18 to #24) and submits.
 
 ## See also
 

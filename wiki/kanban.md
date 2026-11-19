@@ -12,7 +12,7 @@ Back to: [Home](index.md) · List view: [Tickets](index-tickets.md)
 
 ## Todo
 
-- [ticket-0026](ticket-0026-video-walkthrough.md): Record the video walkthrough _(Aadit, from the [script](walkthrough.md))_
+Nothing to do.
 
 ## In progress
 
@@ -41,6 +41,7 @@ Nothing in progress.
 - [ticket-0022](ticket-0022-live-smoke-test.md): Add the opt-in live smoke test
 - [ticket-0023](ticket-0023-readme-and-submission.md): Finish the README and submit
 - [ticket-0027](ticket-0027-coding-agents-note.md): Write the coding agents note
+- [ticket-0026](ticket-0026-video-walkthrough.md): Record the video walkthrough
 - [ticket-0006](ticket-0006-design-coach-contract.md): Design the coach reply schema and prompt
 - [ticket-0009](ticket-0009-commit-conventions.md): Commit conventions and the git-commit skill
 - [ticket-0010](ticket-0010-bootstrap-app.md): Bootstrap the Next.js app with Vite+
@@ -55,3 +56,4 @@ Nothing in progress.
 - [Session 2026-11-18 #5: Fast-Forward Merges](session-2026-11-18-05-fast-forward-merges.md)
 - [ticket-0026: Record the Video Walkthrough](ticket-0026-video-walkthrough.md)
 - [ticket-0027: Write the Coding Agents Note](ticket-0027-coding-agents-note.md)
+- [Video Walkthrough Script](walkthrough.md)

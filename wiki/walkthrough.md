@@ -10,7 +10,7 @@ summary: A 2-minute script for the walkthrough video the interviewer asked for. 
 
 Back to: [Home](index.md) · Deliverable 2 of the [submission](source-submission-deliverables.md) · Ticket: [ticket-0026](ticket-0026-video-walkthrough.md)
 
-The interviewer asked for _"a 2-minute Loom or similar video walkthrough including: one everyday concern, and one case where the parent describes a crisis so that I can see the safe refusal."_ Aadit records it. This script fits in two minutes at a relaxed pace.
+The interviewer asked for _"a 2-minute Loom or similar video walkthrough including: one everyday concern, and one case where the parent describes a crisis so that I can see the safe refusal."_ Aadit recorded it: [watch it on Loom](https://www.loom.com/share/1a78d5e4b4a547e68c894b3afa76bc6f). This script fits in two minutes at a relaxed pace.
 
 ## Before recording
 
