@@ -32,8 +32,9 @@ Back to: [Pull requests](index-pull-requests.md) · Session: [2026-11-18 #12](se
 
 ## Review
 
-_(Recorded here before merge.)_
+Aadit fast-forwarded it into `main` without comments: _"Merged. I'll now work through the exercises."_ No changes were requested. This review was recorded afterwards, in [PR #17](pr-0017-learning-exercises.md).
 
 ## See also
 
 - [Log](log.md)
+- [Session 2026-11-19 #1: Learning Exercises](session-2026-11-19-01-learning-exercises.md)

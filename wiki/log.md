@@ -73,3 +73,4 @@ Format: `YYYY-MM-DD: [type] what happened (links)`. Append only; never rewrite e
 - 2026-11-18: [build] Model adapter and system prompt built; the stack (PRs #10 to #15) is ready for review, and pauses for Aadit's exercises ([PR #15](pr-0015-model-adapter.md))
 - 2026-11-18: [review] Stack PRs #10–#15 approved; stacked PRs now target the branch below them, as Aadit corrected; ticket-0024 done ([PR #15](pr-0015-model-adapter.md), [ADR-0008](adr-0008-protected-main-linear-history.md))
 - 2026-11-18: [git] Stack PRs #10–#15 merged bottom-up, one fast-forward push each, after one push to the top was rejected; ADR-0008 corrected ([PR #16](pr-0016-document-stack-merge.md))
+- 2026-11-19: [build] Aadit built detectLanguage and postcheck test-first; Claude reviewed and extended both; tickets 0014 and 0017 done ([PR #17](pr-0017-learning-exercises.md))

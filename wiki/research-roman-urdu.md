@@ -105,3 +105,4 @@ The fixed text from [ADR-0011](adr-0011-layered-safety-escalation.md), with help
 - [ADR-0017: Executable Gherkin Features Drive the Build](adr-0017-bdd-gherkin-features.md)
 - [ticket-0024: Write the Gherkin Features](ticket-0024-gherkin-features.md)
 - [ADR-0019: Leave Learning Exercises for Aadit](adr-0019-learning-exercises.md)
+- [Session 2026-11-19 #1: Learning Exercises](session-2026-11-19-01-learning-exercises.md)

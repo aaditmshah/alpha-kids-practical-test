@@ -113,3 +113,4 @@ Each push merged exactly one PR, then GitHub deleted its branch and retargeted t
 - [PR #15: Build the Model Adapter and Prompt](pr-0015-model-adapter.md)
 - [Session 2026-11-18 #12: Build Setup](session-2026-11-18-12-build-setup.md)
 - [PR #16: Document How a Stack Is Merged](pr-0016-document-stack-merge.md)
+- [PR #17: Aadit's Learning Exercises](pr-0017-learning-exercises.md)

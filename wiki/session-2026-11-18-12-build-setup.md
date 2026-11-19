@@ -75,3 +75,7 @@ The six PRs merged between 17:09:37 and 17:11:49. [ADR-0008](adr-0008-protected-
 - Aadit reviews and merges the stack, PRs #10 to #15. His review of the features (PR #11) completes [ticket-0024](ticket-0024-gherkin-features.md).
 - Aadit's exercises: [ticket-0014](ticket-0014-language-detection.md) (`detectLanguage`) and the post-checks in [ticket-0017](ticket-0017-reply-schema-and-postchecks.md).
 - Then Claude: the orchestrator ([ticket-0019](ticket-0019-coach-orchestrator.md)). The UI design ([ticket-0025](ticket-0025-ui-design.md)) can start any time.
+
+## See also
+
+- [Session 2026-11-19 #1: Learning Exercises](session-2026-11-19-01-learning-exercises.md)

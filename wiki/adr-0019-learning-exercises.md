@@ -46,3 +46,5 @@ Aadit: _"You can go ahead and create a PR stack. I'll review them and merge them
 - [PR #12: Add the Keyword Safety Pre-Check](pr-0012-safety-precheck.md)
 - [PR #14: Define the Reply Schema](pr-0014-reply-schema.md)
 - [Alpha Kids Practical Test Wiki](index.md)
+- [PR #17: Aadit's Learning Exercises](pr-0017-learning-exercises.md)
+- [Session 2026-11-19 #1: Learning Exercises](session-2026-11-19-01-learning-exercises.md)

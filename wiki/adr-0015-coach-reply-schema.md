@@ -88,3 +88,5 @@ The page keeps the history in browser state (R9) and sends the **last 6 messages
 - [ADR-0019: Leave Learning Exercises for Aadit](adr-0019-learning-exercises.md)
 - [PR #13: Write the Fixed Messages](pr-0013-fixed-messages.md)
 - [PR #14: Define the Reply Schema](pr-0014-reply-schema.md)
+- [PR #17: Aadit's Learning Exercises](pr-0017-learning-exercises.md)
+- [Session 2026-11-19 #1: Learning Exercises](session-2026-11-19-01-learning-exercises.md)

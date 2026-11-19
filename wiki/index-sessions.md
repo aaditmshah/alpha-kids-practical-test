@@ -24,3 +24,8 @@ Back to: [Home](index.md)
 | [2026-11-18 #10: Coach contract](session-2026-11-18-10-coach-contract.md)           | Reply schema, post-checks and system prompt designed                                                                  |
 | [2026-11-18 #11: Implementation plan](session-2026-11-18-11-implementation-plan.md) | Plan written; 11 build tickets created; stale Home and plan statuses fixed                                            |
 | [2026-11-18 #12: Build setup](session-2026-11-18-12-build-setup.md)                 | Ticket-0013: dependencies, test projects, Gherkin runner, `.env.example`                                              |
+| [2026-11-19 #1: Learning exercises](session-2026-11-19-01-learning-exercises.md)    | Aadit builds `detectLanguage` and `postcheck`; Claude reviews; PR #17                                                 |
+
+## See also
+
+- [Session 2026-11-19 #1: Learning Exercises](session-2026-11-19-01-learning-exercises.md)

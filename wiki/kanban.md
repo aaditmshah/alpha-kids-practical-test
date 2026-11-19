@@ -13,7 +13,6 @@ Back to: [Home](index.md) · List view: [Tickets](index-tickets.md)
 ## Todo
 
 - [ticket-0025](ticket-0025-ui-design.md): Design the UI in Claude Design _(M0; needed before 0021)_
-- [ticket-0014](ticket-0014-language-detection.md): Detect the reply language _(Aadit's exercise)_
 - [ticket-0019](ticket-0019-coach-orchestrator.md): Build the coach orchestrator
 - [ticket-0020](ticket-0020-server-action.md): Add the Server Action
 - [ticket-0021](ticket-0021-chat-ui.md): Build the chat page
@@ -22,7 +21,7 @@ Back to: [Home](index.md) · List view: [Tickets](index-tickets.md)
 
 ## In progress
 
-- [ticket-0017](ticket-0017-reply-schema-and-postchecks.md): Implement the reply schema and post-checks _(schema done; post-checks are Aadit's exercise)_
+Nothing in progress.
 
 ## Done
 
@@ -37,6 +36,8 @@ Back to: [Home](index.md) · List view: [Tickets](index-tickets.md)
 - [ticket-0015](ticket-0015-safety-precheck.md): Build the keyword safety pre-check
 - [ticket-0016](ticket-0016-fixed-messages.md): Write the fixed messages
 - [ticket-0018](ticket-0018-model-adapter.md): Build the model adapter and prompt
+- [ticket-0014](ticket-0014-language-detection.md): Detect the reply language
+- [ticket-0017](ticket-0017-reply-schema-and-postchecks.md): Implement the reply schema and post-checks
 - [ticket-0024](ticket-0024-gherkin-features.md): Write the Gherkin features
 - [ticket-0006](ticket-0006-design-coach-contract.md): Design the coach reply schema and prompt
 - [ticket-0009](ticket-0009-commit-conventions.md): Commit conventions and the git-commit skill

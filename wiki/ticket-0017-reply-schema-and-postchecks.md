@@ -1,7 +1,7 @@
 ---
 title: "ticket-0017: Implement the Reply Schema and Post-Checks"
 type: ticket
-status: in-progress
+status: done
 updated: 2026-11-18
 summary: The CoachReply Zod schema and the dose and diagnosis post-checks from ADR-0015.
 ---
@@ -22,11 +22,19 @@ Back to: [Tickets](index-tickets.md) · [Kanban](kanban.md) · [Plan](plan.md)
 ## Tests that drive it
 
 - [x] Valid replies parse; missing fields, 1 or 5 plan steps, unknown enums and over-length strings fail _(Claude, [PR #14](pr-0014-reply-schema.md))_
-- [ ] _(Aadit)_ `5 ml`, `2 tablets`, `10mg` → dose hit; `sounds like ADHD`, `might have autism` → diagnosis hit
-- [ ] _(Aadit)_ Echoing the parent's own diagnosis (_since your son has ADHD_) → no hit
+- [x] _(Aadit, [PR #17](pr-0017-learning-exercises.md))_ `5 ml`, `2 tablets`, `10mg` → dose hit; `sounds like ADHD`, `might have autism` → diagnosis hit
+- [x] _(Aadit, [PR #17](pr-0017-learning-exercises.md))_ Echoing the parent's own diagnosis (_since your son has ADHD_) → no hit
 
 ## See also
 
 - [ticket-0018: Build the Model Adapter and Prompt](ticket-0018-model-adapter.md)
 - [Alpha Kids Practical Test Wiki](index.md)
 - [Session 2026-11-18 #12: Build Setup](session-2026-11-18-12-build-setup.md)
+- [PR #17: Aadit's Learning Exercises](pr-0017-learning-exercises.md)
+- [Session 2026-11-19 #1: Learning Exercises](session-2026-11-19-01-learning-exercises.md)
+
+## Result
+
+- **Schema:** Claude, [PR #14](pr-0014-reply-schema.md).
+- **Post-checks:** Aadit, test-first, in [PR #17](pr-0017-learning-exercises.md). He matched case-insensitively, which closed a gap in [ADR-0015](adr-0015-coach-reply-schema.md), whose patterns were lowercase while the model writes "ADHD".
+- **Review:** Claude added table tests for every phrasing, a test per field and a precedence test, plus the hedges _may have_, _could have_ and _could be_ (ADR-0015 updated).

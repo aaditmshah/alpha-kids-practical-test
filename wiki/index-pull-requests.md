@@ -30,6 +30,7 @@ Back to: [Home](index.md)
 | [PR #14: Define the reply schema](pr-0014-reply-schema.md)                      | `CoachReply` Zod schema and the `postcheck` stub for Aadit. Stacked on PR #13                                           |
 | [PR #15: Build the model adapter and prompt](pr-0015-model-adapter.md)          | System prompt with examples, history trimming, and `askModel` with typed failures. Stacked on PR #14                    |
 | [PR #16: Document how a stack is merged](pr-0016-document-stack-merge.md)       | Stacks merge bottom-up, one fast-forward push per PR, as Aadit found when one push was rejected                         |
+| [PR #17: Aadit's learning exercises](pr-0017-learning-exercises.md)             | `detectLanguage` and `postcheck`, built by Aadit test-first, with review additions; separate type imports required      |
 
 ## Before pull requests
 
@@ -45,3 +46,4 @@ Before branch protection existed, three commits went straight to `main`:
 
 - [Session 2026-11-18 #4: Bootstrap the App](session-2026-11-18-04-bootstrap.md)
 - [ticket-0012: Wiki Backlinks and Pull Request Tracking](ticket-0012-backlinks-and-pr-tracking.md)
+- [PR #17: Aadit's Learning Exercises](pr-0017-learning-exercises.md)
