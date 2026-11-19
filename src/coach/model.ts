@@ -34,9 +34,13 @@ const classify = (error: unknown): ModelFailure => {
  * (ADR-0016). The reply is held to the CoachReply schema, and any failure becomes a ModelFailure
  * rather than an exception.
  */
+/** How long to wait for the model before giving up (each try, retries included). */
+export const MODEL_TIMEOUT_MS = 20_000;
+
 export const askModel = async (
 	history: readonly ChatMessage[],
 	model: LanguageModel,
+	{ timeoutMs = MODEL_TIMEOUT_MS }: { readonly timeoutMs?: number } = {},
 ): Promise<ModelResult> => {
 	try {
 		const { output } = await generateText({
@@ -48,6 +52,9 @@ export const askModel = async (
 			maxOutputTokens: 800,
 			// One quick retry for a blip. Free-tier rate limits won't clear in a second, so no more.
 			maxRetries: 1,
+			// An overloaded free-tier model can hold a request for minutes. A parent shouldn't wait
+			// that long, so a slow model counts as unavailable and gets the fail-safe.
+			abortSignal: AbortSignal.timeout(timeoutMs),
 		});
 		return { ok: true, reply: output };
 	} catch (error) {

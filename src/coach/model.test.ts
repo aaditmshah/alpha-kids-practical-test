@@ -2,7 +2,7 @@ import { describe, expect, it } from "vite-plus/test";
 
 import { askModel } from "./model.ts";
 import { SYSTEM_PROMPT } from "./prompt.ts";
-import { apiError, failingWith, replyingWith } from "./testing.ts";
+import { apiError, failingWith, hanging, replyingWith } from "./testing.ts";
 
 const REPLY = {
 	language: "en",
@@ -42,6 +42,13 @@ describe("askModel", () => {
 		expect(await askModel(HISTORY, replyingWith(text))).toEqual({
 			ok: false,
 			failure: "invalid_output",
+		});
+	});
+
+	it("gives up on a model that doesn't answer in time", async () => {
+		expect(await askModel(HISTORY, hanging(), { timeoutMs: 50 })).toEqual({
+			ok: false,
+			failure: "unavailable",
 		});
 	});
 

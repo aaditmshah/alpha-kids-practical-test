@@ -38,6 +38,15 @@ export const failingWith = (error: Error): MockLanguageModelV4 =>
 		},
 	});
 
+/** A model that never answers, like an overloaded one, until the request is aborted. */
+export const hanging = (): MockLanguageModelV4 =>
+	new MockLanguageModelV4({
+		doGenerate: ({ abortSignal }) =>
+			new Promise((_, reject) => {
+				abortSignal?.addEventListener("abort", () => reject(abortSignal.reason));
+			}),
+	});
+
 /** An HTTP error from the provider. 429 and 5xx are retryable, as they are for Gemini. */
 export const apiError = (statusCode: number): APICallError =>
 	new APICallError({
