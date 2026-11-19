@@ -51,3 +51,4 @@ Built by Claude in [PR #20](pr-0020-chat-page.md), stacked on PR #19, from the a
 - [Session 2026-11-19 #2: Orchestrator and Design](session-2026-11-19-02-orchestrator-and-design.md)
 - [ticket-0019: Build the Coach Orchestrator](ticket-0019-coach-orchestrator.md)
 - [UI Design](design.md)
+- [ticket-0026: Record the Video Walkthrough](ticket-0026-video-walkthrough.md)

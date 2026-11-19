@@ -2,7 +2,7 @@
 title: Requirements
 type: plan
 status: active
-updated: 2026-11-18
+updated: 2026-11-19
 summary: The brief broken into numbered, testable requirements (R1–R13), plus explicit non-goals and the scope constraints Aadit set.
 ---
 
@@ -34,6 +34,16 @@ Each requirement has an ID so that [tickets](index-tickets.md) and tests can ref
 | R11 | Built test-first (TDD). The LLM is mocked in unit tests, so tests cost nothing | Aadit ([ADR-0002](adr-0002-minimal-scope-tdd.md)) |
 | R12 | Costs nothing to run: uses a free LLM tier (Gemini)                            | Aadit ([ADR-0003](adr-0003-llm-provider.md))      |
 | R13 | Runs locally only. A reviewer builds and starts it from the README             | Aadit ([ADR-0005](adr-0005-local-only.md))        |
+
+## Submission deliverables
+
+What the interviewer asked for, from [Submission deliverables](source-submission-deliverables.md):
+
+| ID  | Deliverable                                                                       | Where                                                                                            |
+| --- | --------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------ |
+| D1  | A GitHub repo link with a short README on how to run it                           | `README.md` ([ticket-0023](ticket-0023-readme-and-submission.md))                                |
+| D2  | A 2-minute video walkthrough: one everyday concern, and one crisis's safe refusal | [Script](walkthrough.md) ([ticket-0026](ticket-0026-video-walkthrough.md))                       |
+| D3  | A brief note on how coding agents were used                                       | [How we used coding agents](coding-agents.md) ([ticket-0027](ticket-0027-coding-agents-note.md)) |
 
 ## Non-goals
 
@@ -74,3 +84,5 @@ These are explicitly out of scope: login, a database, Urdu script and right-to-l
 - [ADR-0017: Executable Gherkin Features Drive the Build](adr-0017-bdd-gherkin-features.md)
 - [ticket-0024: Write the Gherkin Features](ticket-0024-gherkin-features.md)
 - [ticket-0025: Design the UI in Claude Design](ticket-0025-ui-design.md)
+- [Source: Submission Deliverables](source-submission-deliverables.md)
+- [Session 2026-11-19 #3: Submission Notes](session-2026-11-19-03-submission-notes.md)

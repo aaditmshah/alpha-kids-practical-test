@@ -46,3 +46,4 @@ Aadit prefers Gitmoji-style commit messages and asked for a skill that writes go
 - [Index: Pull Requests](index-pull-requests.md)
 - [PR #1: Bootstrap the Next.js App with Vite+](pr-0001-bootstrap-nextjs.md)
 - [Plan](plan.md)
+- [How We Used Coding Agents](coding-agents.md)

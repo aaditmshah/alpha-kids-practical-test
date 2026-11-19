@@ -27,7 +27,7 @@ Back to: [Home](index.md) · [Requirements](requirements.md) · [Kanban](kanban.
 | 3   | Design the reply schema and prompt, and write the implementation plan                                          | [0006](ticket-0006-design-coach-contract.md), [0008](ticket-0008-write-implementation-plan.md)                                                                  | done   |
 | 3½  | Bootstrap the app and protect `main`                                                                           | [0010](ticket-0010-bootstrap-app.md), [0011](ticket-0011-protect-main.md)                                                                                       | done   |
 | 4   | Specify (Gherkin), design (Claude Design), then build with BDD and TDD                                         | [0024](ticket-0024-gherkin-features.md), [0025](ticket-0025-ui-design.md), [0013](ticket-0013-test-and-runtime-setup.md)–[0022](ticket-0022-live-smoke-test.md) | todo   |
-| 5   | Submit: README with local build and run steps ([ADR-0005](adr-0005-local-only.md)), live smoke run, wiki check | [0023](ticket-0023-readme-and-submission.md)                                                                                                                    | todo   |
+| 5   | Submit: README with local build and run steps ([ADR-0005](adr-0005-local-only.md)), live smoke run, wiki check | [0023](ticket-0023-readme-and-submission.md), [0026](ticket-0026-video-walkthrough.md), [0027](ticket-0027-coding-agents-note.md)                               | todo   |
 
 ## Architecture
 
@@ -110,3 +110,5 @@ Each ticket is one PR, stacked on the previous one where it depends on it ([ADR-
 - [Session 2026-11-18 #11: Implementation Plan](session-2026-11-18-11-implementation-plan.md)
 - [PR #10: Add Dependencies and Test Projects](pr-0010-test-and-runtime-setup.md)
 - [ADR-0019: Leave Learning Exercises for Aadit](adr-0019-learning-exercises.md)
+- [ticket-0026: Record the Video Walkthrough](ticket-0026-video-walkthrough.md)
+- [ticket-0027: Write the Coding Agents Note](ticket-0027-coding-agents-note.md)

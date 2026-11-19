@@ -37,7 +37,11 @@ Back to: [Home](index.md) · Board view: [Kanban](kanban.md)
 | [ticket-0023](ticket-0023-readme-and-submission.md)       | in-progress | Finish the README and submit                    |
 | [ticket-0024](ticket-0024-gherkin-features.md)            | done        | Write the Gherkin features                      |
 | [ticket-0025](ticket-0025-ui-design.md)                   | done        | Design the UI in Claude Design                  |
+| [ticket-0026](ticket-0026-video-walkthrough.md)           | todo        | Record the video walkthrough                    |
+| [ticket-0027](ticket-0027-coding-agents-note.md)          | in-progress | Write the coding agents note                    |
 
 ## See also
 
 - [Requirements](requirements.md)
+- [ticket-0026: Record the Video Walkthrough](ticket-0026-video-walkthrough.md)
+- [ticket-0027: Write the Coding Agents Note](ticket-0027-coding-agents-note.md)

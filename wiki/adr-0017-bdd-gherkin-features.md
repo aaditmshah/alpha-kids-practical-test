@@ -50,3 +50,4 @@ Aadit chose option 3: _"It's simpler and more popular"_, and _"we should have ex
 - [PR #10: Add Dependencies and Test Projects](pr-0010-test-and-runtime-setup.md)
 - [Session 2026-11-18 #12: Build Setup](session-2026-11-18-12-build-setup.md)
 - [Session 2026-11-19 #2: Orchestrator and Design](session-2026-11-19-02-orchestrator-and-design.md)
+- [How We Used Coding Agents](coding-agents.md)

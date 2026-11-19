@@ -37,6 +37,7 @@ Back to: [Home](index.md)
 | [PR #21: Keep secrets out of Claude's reach](pr-0021-protect-secrets.md)        | Claude settings deny reading .env secrets files; a Bash hook blocks commands naming them                                |
 | [PR #22: Add the live smoke test](pr-0022-live-smoke-test.md)                   | An opt-in live test against Gemini; model calls time out; Flash-Lite by default                                         |
 | [PR #23: Finish the README](pr-0023-readme-and-submission.md)                   | The README for reviewers and a final wiki pass; stacked on PR #22                                                       |
+| [PR #24: Add the submission notes](pr-0024-submission-notes.md)                 | The coding agents note, the video script, their tickets, and README prompts for exploring the wiki; stacked on PR #23   |
 
 ## Before pull requests
 

@@ -32,8 +32,9 @@ The interviewers build and run the app locally, so the README must get them from
 
 ## Review
 
-Waiting for Aadit's review, and his recheck of the helpline numbers.
+Aadit: _"The README looks excellent."_ He then shared what the interviewer asked for, which led to [PR #24](pr-0024-submission-notes.md). His recheck of the helpline numbers is still to come.
 
 ## See also
 
 - [Log](log.md)
+- [Session 2026-11-19 #3: Submission Notes](session-2026-11-19-03-submission-notes.md)

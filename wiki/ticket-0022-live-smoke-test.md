@@ -43,3 +43,4 @@ Built by Claude in [PR #22](pr-0022-live-smoke-test.md), stacked on PR #21, and 
 - [Session 2026-11-19 #2: Orchestrator and Design](session-2026-11-19-02-orchestrator-and-design.md)
 - [ADR-0020: Keep Secrets Out of Claude's Reach](adr-0020-keep-secrets-from-claude.md)
 - [ADR-0003: LLM Provider: Gemini Free Tier](adr-0003-llm-provider.md)
+- [ticket-0026: Record the Video Walkthrough](ticket-0026-video-walkthrough.md)

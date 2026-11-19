@@ -43,3 +43,4 @@ Aadit: _"I want to use Claude Design to design a great UI/UX for the app, keepin
 - [ticket-0021: Build the Chat Page](ticket-0021-chat-ui.md)
 - [Session 2026-11-19 #2: Orchestrator and Design](session-2026-11-19-02-orchestrator-and-design.md)
 - [UI Design](design.md)
+- [How We Used Coding Agents](coding-agents.md)

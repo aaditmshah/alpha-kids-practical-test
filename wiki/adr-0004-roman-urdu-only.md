@@ -46,3 +46,4 @@ The [brief](source-practical-test-brief.md) says a parent should be able to type
 - [Research: Safety and Escalation](research-safety-escalation.md)
 - [ADR-0013: Roman Urdu Detection and Reply Language](adr-0013-roman-urdu-detection.md)
 - [Research: Roman Urdu Handling](research-roman-urdu.md)
+- [How We Used Coding Agents](coding-agents.md)

@@ -46,3 +46,4 @@ The options were a public demo (for example, a free Vercel deployment) or a loca
 - [ADR-0012: Indian Helplines Only](adr-0012-india-helplines.md)
 - [ticket-0023: Finish the README and Submit](ticket-0023-readme-and-submission.md)
 - [PR #10: Add Dependencies and Test Projects](pr-0010-test-and-runtime-setup.md)
+- [How We Used Coding Agents](coding-agents.md)

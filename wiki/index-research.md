@@ -25,3 +25,4 @@ Back to: [Home](index.md)
 
 - [ticket-0004: Research Safety and Escalation](ticket-0004-research-safety-escalation.md)
 - [ticket-0005: Research Roman Urdu Handling](ticket-0005-research-roman-urdu.md)
+- [How We Used Coding Agents](coding-agents.md)

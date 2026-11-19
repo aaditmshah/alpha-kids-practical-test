@@ -12,8 +12,11 @@ Back to: [Home](index.md) · List view: [Tickets](index-tickets.md)
 
 ## Todo
 
+- [ticket-0026](ticket-0026-video-walkthrough.md): Record the video walkthrough _(Aadit, from the [script](walkthrough.md))_
+
 ## In progress
 
+- [ticket-0027](ticket-0027-coding-agents-note.md): Write the coding agents note _(waiting for Aadit's review)_
 - [ticket-0023](ticket-0023-readme-and-submission.md): Finish the README and submit _(waiting for Aadit's helpline recheck)_
 
 ## Done
@@ -49,3 +52,5 @@ Back to: [Home](index.md) · List view: [Tickets](index-tickets.md)
 - [Wiki Conventions](conventions.md)
 - [Plan](plan.md)
 - [Session 2026-11-18 #5: Fast-Forward Merges](session-2026-11-18-05-fast-forward-merges.md)
+- [ticket-0026: Record the Video Walkthrough](ticket-0026-video-walkthrough.md)
+- [ticket-0027: Write the Coding Agents Note](ticket-0027-coding-agents-note.md)

@@ -41,3 +41,4 @@ Written by Claude in [PR #23](pr-0023-readme-and-submission.md), stacked on PR #
 - [ticket-0008: Write the Implementation Plan and Build Tickets](ticket-0008-write-implementation-plan.md)
 - [Session 2026-11-19 #2: Orchestrator and Design](session-2026-11-19-02-orchestrator-and-design.md)
 - [Alpha Kids Practical Test Wiki](index.md)
+- [Session 2026-11-19 #3: Submission Notes](session-2026-11-19-03-submission-notes.md)

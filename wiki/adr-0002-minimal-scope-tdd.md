@@ -40,3 +40,4 @@ Aadit said: _"This is a simple throwaway app. I don't want to spend too much tim
 - [ADR-0016: The Coach's System Prompt](adr-0016-system-prompt.md)
 - [ticket-0013: Add Dependencies and Test Projects](ticket-0013-test-and-runtime-setup.md)
 - [ticket-0022: Add the Opt-In Live Smoke Test](ticket-0022-live-smoke-test.md)
+- [How We Used Coding Agents](coding-agents.md)

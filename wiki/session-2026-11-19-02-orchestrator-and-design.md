@@ -71,3 +71,4 @@ Aadit approved [PR #22](pr-0022-live-smoke-test.md), glad the smoke test checked
 ## See also
 
 - [Log](log.md)
+- [Session 2026-11-19 #3: Submission Notes](session-2026-11-19-03-submission-notes.md)

@@ -60,3 +60,4 @@ After PR #17, Aadit said he has a submission deadline and no time for more exerc
 - [Alpha Kids Practical Test Wiki](index.md)
 - [PR #17: Aadit's Learning Exercises](pr-0017-learning-exercises.md)
 - [Session 2026-11-19 #1: Learning Exercises](session-2026-11-19-01-learning-exercises.md)
+- [How We Used Coding Agents](coding-agents.md)

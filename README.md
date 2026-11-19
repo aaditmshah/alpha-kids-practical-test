@@ -5,6 +5,9 @@ concern in English or Roman Urdu, and an LLM coach replies with a short, structu
 follow-up check-in: a question, or a time to come back. It doesn't diagnose or give medical or legal
 instructions, and it escalates clearly when the parent describes an emergency, abuse or self-harm.
 
+<!-- Markdown can't size images, so the screenshots sit in an HTML table. -->
+<!-- markdownlint-disable MD033 -->
+
 <table>
 <tr>
 <td align="center" valign="top" width="33%">
@@ -13,7 +16,7 @@ instructions, and it escalates clearly when the parent describes an emergency, a
 </td>
 <td align="center" valign="top" width="33%">
 <img src="wiki/design-04-plan-roman-urdu.png" width="220" alt="A plan reply in Roman Urdu"><br>
-<sub>The same in Roman Urdu</sub>
+<sub>A plan in Roman Urdu</sub>
 </td>
 <td align="center" valign="top" width="33%">
 <img src="wiki/design-05-escalation.png" width="220" alt="An escalation with helpline buttons"><br>
@@ -21,6 +24,14 @@ instructions, and it escalates clearly when the parent describes an emergency, a
 </td>
 </tr>
 </table>
+
+**For the interviewer:**
+
+- 🎥 **Video walkthrough** (2 minutes): _link to come_. The [script](wiki/walkthrough.md) shows one
+  everyday concern and one crisis.
+- 🤖 **How we used coding agents:** [a brief note](wiki/coding-agents.md). This was built with Claude
+  Code, and every decision is recorded in the wiki. You can
+  [explore it with Claude Code](#explore-it-with-claude-code) yourself.
 
 These are the approved design's screens, which the app is built from. The [UI design](wiki/design.md)
 shows all eight.
@@ -111,11 +122,29 @@ This is a practical test, kept deliberately small ([ADR-0002](wiki/adr-0002-mini
 - **India only** for helplines.
 - **No accounts, no database and no deployment.**
 
-## Project wiki
+## Explore it with Claude Code
 
-The [`wiki/`](wiki/index.md) directory is the project's memory, and it is part of the submission.
-It holds the research, architectural decision records, tickets, a Kanban board, a page for every
-pull request and a record of every working session. Start at the [home page](wiki/index.md).
+The [`wiki/`](wiki/index.md) directory is the project's memory, and it is part of the submission. It
+holds the research, the architectural decision records (ADRs), tickets, a Kanban board, a page for
+every pull request and a record of every working session. It is written for agents as well as
+people: `CLAUDE.md` tells Claude Code to start there, through the project's `wiki-query` skill.
 
-The project was built by Aadit Shah with [Claude Code](https://claude.com/claude-code). The wiki
+Open the repository in [Claude Code](https://claude.com/claude-code) and try:
+
+- _Explain how this codebase was built using the wiki as reference._
+- _Teach me everything I need to know about building this project from scratch using the wiki. Make
+  it a structured course._
+- _Walk me through what happens, layer by layer, when a parent writes "My toddler swallowed poison".
+  Cite the ADRs and the code._
+- _Trace requirement R8, escalating a crisis, from the brief to the Gherkin feature, the tests and
+  the code._
+- _Which decisions did Aadit make himself, and where did he correct Claude? Quote the wiki._
+- _Show me how one pull request went from ticket to merge, using its wiki page._
+- _What are this app's known limitations, and what would you build next for a real product?_
+
+Any other agent, or a person, can start at the [wiki's home page](wiki/index.md).
+
+## Credits
+
+Built by Aadit Shah with [Claude Code](https://claude.com/claude-code). The wiki
 records who asked, decided and did what.

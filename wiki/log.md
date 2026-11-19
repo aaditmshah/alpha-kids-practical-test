@@ -83,3 +83,4 @@ Format: `YYYY-MM-DD: [type] what happened (links)`. Append only; never rewrite e
 - 2026-11-19: [decision] Claude settings deny access to .env secrets files, with a Bash hook as a second layer ([ADR-0020](adr-0020-keep-secrets-from-claude.md), [PR #21](pr-0021-protect-secrets.md))
 - 2026-11-19: [build] Live smoke test passes on gemini-3.5-flash-lite; the larger flash models were overloaded, so it is now the default and model calls time out after 20 seconds; ticket-0022 done ([PR #22](pr-0022-live-smoke-test.md))
 - 2026-11-19: [docs] README finished for reviewers; Home brought up to date ([PR #23](pr-0023-readme-and-submission.md))
+- 2026-11-19: [docs] The interviewer's deliverables recorded; coding agents note, video script and README prompts for exploring the wiki added ([PR #24](pr-0024-submission-notes.md))

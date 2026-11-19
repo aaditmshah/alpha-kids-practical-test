@@ -26,6 +26,7 @@ Back to: [Home](index.md)
 | [2026-11-18 #12: Build setup](session-2026-11-18-12-build-setup.md)                        | Ticket-0013: dependencies, test projects, Gherkin runner, `.env.example`                                              |
 | [2026-11-19 #1: Learning exercises](session-2026-11-19-01-learning-exercises.md)           | Aadit builds `detectLanguage` and `postcheck`; Claude reviews; PR #17                                                 |
 | [2026-11-19 #2: Orchestrator and design](session-2026-11-19-02-orchestrator-and-design.md) | No more exercises (deadline); orchestrator built; UI design drafted in parallel; PR #18                               |
+| [2026-11-19 #3: Submission notes](session-2026-11-19-03-submission-notes.md)               | The interviewer's deliverables; coding agents note; video script; README prompts; PR #24                              |
 
 ## See also
 

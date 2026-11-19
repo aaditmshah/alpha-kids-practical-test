@@ -44,3 +44,4 @@ Each number is verified in [Research: Safety and escalation](research-safety-esc
 - [ticket-0016: Write the Fixed Messages](ticket-0016-fixed-messages.md)
 - [ticket-0023: Finish the README and Submit](ticket-0023-readme-and-submission.md)
 - [PR #13: Write the Fixed Messages](pr-0013-fixed-messages.md)
+- [How We Used Coding Agents](coding-agents.md)

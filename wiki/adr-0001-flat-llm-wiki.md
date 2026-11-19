@@ -43,3 +43,4 @@ The rules are in [Conventions](conventions.md). Three project skills (`wiki-quer
 - [ADR-0006: Gitmoji, Atomic Commits and the Mood Rule](adr-0006-gitmoji-atomic-commits.md)
 - [Plan](plan.md)
 - [ticket-0001: Set Up the LLM Wiki and Its Skills](ticket-0001-set-up-wiki.md)
+- [How We Used Coding Agents](coding-agents.md)
